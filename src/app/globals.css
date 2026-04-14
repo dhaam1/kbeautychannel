@@ -1,0 +1,958 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* html,
+body {
+  overflow-x: hidden;
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #fff;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Next.js 15+ screen-safe height utility */
+.h-screen-safe {
+  height: 100vh;
+  height: 100svh;
+}
+
+.prata-regular {
+  font-family: var(--font-prata), serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bodoni-moda {
+  font-family: var(--font-bodoni-moda), serif;
+}
+
+/* ========================================
+   WordPress Blog Content Styles
+   ======================================== */
+.entry-content,
+.wp-block-post-content {
+  font-family: "Pretendard JP Variable", "Pretendard Variable", "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 1.75;
+  color: #171717;
+}
+
+/* 제목 스타일 - WordPress 원본 디자인 반영 */
+.entry-content h1,
+.wp-block-post-content h1 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  line-height: 1.3;
+}
+
+/* H2 - Teal Color (#047e74) */
+.entry-content h2,
+.wp-block-post-content h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #047e74;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(4, 126, 116, 0.2);
+  line-height: 1.3;
+}
+
+.entry-content h3,
+.wp-block-post-content h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  line-height: 1.4;
+}
+
+.entry-content h4,
+.wp-block-post-content h4 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 1.25em;
+  margin-bottom: 0.625em;
+  line-height: 1.4;
+}
+
+/* 단락 스타일 - WordPress 원본 디자인 반영 */
+.entry-content p,
+.wp-block-post-content p {
+  font-size: 16px;
+  /* Mobile base */
+  line-height: 1.8;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 28px;
+  /* Paragraph spacing */
+}
+
+@media (min-width: 768px) {
+
+  /* md breakpoint */
+  .entry-content p,
+  .wp-block-post-content p {
+    font-size: 18px;
+    /* Desktop */
+  }
+}
+
+/* Ensure the content below doesn't try to wrap around floated elements */
+.entry-content::after,
+.wp-block-post-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 목록 스타일 */
+.entry-content ul,
+.entry-content ol,
+.wp-block-post-content ul,
+.wp-block-post-content ol {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  /* Ensure lists have bottom margin */
+  padding-left: 2em;
+}
+
+.entry-content ul,
+.wp-block-post-content ul {
+  list-style-type: disc;
+}
+
+.entry-content ol,
+.wp-block-post-content ol {
+  list-style-type: decimal;
+}
+
+.entry-content li,
+.wp-block-post-content li {
+  font-size: 16px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 768px) {
+
+  .entry-content li,
+  .wp-block-post-content li {
+    font-size: 18px;
+  }
+}
+
+/* 링크 스타일 - WordPress 원본 디자인 반영 (Teal/Mint) */
+.entry-content a,
+.wp-block-post-content a {
+  color: #047e74;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.entry-content a:hover,
+.wp-block-post-content a:hover {
+  color: #7ECEC0;
+}
+
+/* 이미지 스타일 - WordPress 원본 스타일 */
+.entry-content.clear img,
+.entry-content img,
+.wp-block-post-content img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.wp-post-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+/* 이미지 figure 스타일 - 여백 추가 */
+.entry-content figure,
+.wp-block-post-content figure {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* 인용구 스타일 */
+.entry-content blockquote,
+.wp-block-post-content blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-style: italic;
+  color: #6b7280;
+}
+
+/* 코드 스타일 */
+.entry-content code,
+.wp-block-post-content code {
+  background-color: #f3f4f6;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.entry-content pre,
+.wp-block-post-content pre {
+  background-color: #1f2937;
+  color: #f9fafb;
+  padding: 1.5em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.entry-content pre code,
+.wp-block-post-content pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+/* 테이블 스타일 - WordPress 원본 스타일 (#81cac4 톤앤매너) */
+:root {
+  --table-accent: #81cac4;
+  /* 포인트 컬러 */
+  --table-bg: #ffffff;
+  /* 테이블 바탕 */
+  --table-head-bg: #e8f7f5;
+  /* 헤더 배경(엷은 민트) */
+  --table-head-text: #0f3b39;
+  /* 헤더 텍스트(딥 틸) */
+  --table-border: #cfe9e6;
+  /* 테두리/구분선 */
+  --table-stripe-bg: rgba(129, 202, 196, .06);
+  /* 지브라 */
+  --table-hover-bg: rgba(129, 202, 196, .12);
+  /* 호버 */
+  --table-radius: 14px;
+  --table-shadow: 0 1px 0 rgba(0, 0, 0, .02), 0 6px 18px rgba(0, 0, 0, .06);
+}
+
+/* 본문 테이블 공통 (아스트라/GP/Gutenberg 범용) */
+.entry-content table,
+.post-content table,
+.page-content table,
+.wp-block-post-content table,
+.wp-block-table table {
+  width: 100%;
+  border-collapse: separate;
+  /* 둥근 모서리 위해 separate */
+  border-spacing: 0;
+  background: var(--table-bg);
+  border: 1px solid var(--table-border);
+  border-radius: var(--table-radius);
+  overflow: hidden;
+  /* radius 적용 */
+  box-shadow: var(--table-shadow);
+  font-size: 0.95rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/* 스크롤 래퍼(Gutenberg figure) */
+figure.wp-block-table {
+  overflow-x: auto;
+  margin: 1.2rem 0;
+}
+
+/* 셀 기본 */
+.entry-content table th,
+.entry-content table td,
+.post-content table th,
+.post-content table td,
+.page-content table th,
+.page-content table td,
+.wp-block-post-content table th,
+.wp-block-post-content table td,
+.wp-block-table table th,
+.wp-block-table table td {
+  padding: 12px 16px;
+  border: 0;
+  /* 개별 보더 제거 */
+  line-height: 1.6;
+  vertical-align: top;
+  color: inherit;
+}
+
+/* 행 구분선(첫 행 제외) */
+.entry-content table tr+tr td,
+.post-content table tr+tr td,
+.page-content table tr+tr td,
+.wp-block-post-content table tr+tr td,
+.wp-block-table table tr+tr td {
+  border-top: 1px solid var(--table-border);
+}
+
+/* 머리글 */
+.entry-content table thead th,
+.post-content table thead th,
+.page-content table thead th,
+.wp-block-post-content table thead th,
+.wp-block-table table thead th {
+  background: var(--table-head-bg);
+  color: var(--table-head-text);
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid var(--table-border);
+  position: sticky;
+  top: 0;
+  /* 긴 표에서 헤더 고정(지원 브라우저) */
+  z-index: 1;
+}
+
+/* 지브라/호버 */
+.entry-content table tbody tr:nth-child(odd),
+.post-content table tbody tr:nth-child(odd),
+.page-content table tbody tr:nth-child(odd),
+.wp-block-post-content table tbody tr:nth-child(odd),
+.wp-block-table table tbody tr:nth-child(odd) {
+  background: var(--table-stripe-bg);
+}
+
+.entry-content table tbody tr:hover,
+.post-content table tbody tr:hover,
+.page-content table tbody tr:hover,
+.wp-block-post-content table tbody tr:hover,
+.wp-block-table table tbody tr:hover {
+  background: var(--table-hover-bg);
+}
+
+/* 캡션 */
+.entry-content table caption,
+.post-content table caption,
+.page-content table caption,
+.wp-block-post-content table caption,
+.wp-block-table table caption {
+  caption-side: top;
+  text-align: left;
+  padding: .5rem 0 .75rem;
+  font-size: .9rem;
+  color: #5a6b69;
+  background: linear-gradient(180deg, transparent 70%, rgba(129, 202, 196, .28) 0) no-repeat;
+  display: inline-block;
+}
+
+/* 링크/뱃지 느낌 */
+.entry-content table a,
+.post-content table a,
+.page-content table a,
+.wp-block-post-content table a,
+.wp-block-table table a {
+  color: var(--table-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+
+/* Gutenberg 기본 스트라이프 스타일 덮어쓰기 */
+.wp-block-table.is-style-stripes table tbody tr:nth-child(odd) {
+  background: var(--table-stripe-bg);
+}
+
+/* 반응형: 패딩/폰트 살짝 축소 */
+@media (max-width: 768px) {
+
+  .entry-content table,
+  .post-content table,
+  .page-content table,
+  .wp-block-post-content table,
+  .wp-block-table table {
+    font-size: 0.92rem;
+  }
+
+  .entry-content table th,
+  .entry-content table td,
+  .post-content table th,
+  .post-content table td,
+  .page-content table th,
+  .page-content table td,
+  .wp-block-post-content table th,
+  .wp-block-post-content table td,
+  .wp-block-table table th,
+  .wp-block-table table td {
+    padding: 10px 12px;
+  }
+}
+
+/* === Strong → 형광펜 마킹 스타일 (#81cac4) === */
+:root {
+  --marker-bg: rgba(129, 202, 196, .62);
+}
+
+.entry-content strong,
+.post-content strong,
+.page-content strong,
+.wp-block-post-content strong,
+/* 일부 WP 콘텐츠는 <b> 또는 inline style로 굵게 처리되기도 함 → 동일하게 강조 처리 */
+.entry-content b,
+.wp-block-post-content b,
+.entry-content span[style*="font-weight"],
+.wp-block-post-content span[style*="font-weight"] {
+  color: #047e74;
+  /* 강조 텍스트 색상 추가 */
+  font-weight: 700;
+  /* 형광펜 텍스트는 진하게 */
+  padding: 0 .05em;
+  background: linear-gradient(180deg, transparent 60%, var(--marker-bg) 0) no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+a strong {
+  color: inherit;
+  /* 링크 내의 strong은 링크 색상을 따름 */
+  background: linear-gradient(180deg, transparent 60%, var(--marker-bg) 0) no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* NOTE:
+ * 제목(heading) 안의 <strong>까지 형광펜을 적용하고 싶으면 아래 block을 삭제하면 됨.
+ * 현재는 본문 강조에만 집중하고, 제목은 가독성 유지 위해 배경을 끔.
+ */
+/* 헤딩/타이틀 안의 strong도 본문과 동일하게 형광펜 강조를 적용 */
+.no-marker strong {
+  font-weight: 700;
+  background: none;
+}
+
+/* WordPress 테마 호환 클래스 */
+/* .post-template-default .entry-content - 기존 WordPress 테마와 동일한 클래스명 유지 */
+
+/* WordPress entry-header 스타일 */
+.entry-header {
+  margin-bottom: 1.5em;
+}
+
+.entry-title {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .entry-title {
+    font-size: 1.75em;
+  }
+}
+
+/* ===== WordPress FAQ 스타일 (details/summary 기반) ===== */
+/* FAQ 컨테이너 */
+.faq-wrap {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-family: "Pretendard JP Variable", "Pretendard Variable", "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+/* FAQ 제목 */
+.faq-title {
+  color: #047e74;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(4, 126, 116, 0.2);
+  font-family: "Pretendard JP Variable", "Pretendard Variable", "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 20px;
+  }
+}
+
+/* FAQ 아이템 (details 태그) */
+.faq-item {
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.faq-item:hover {}
+
+/* FAQ 질문 (summary 태그) */
+.faq-q,
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  color: #171717;
+  font-size: 18px;
+  line-height: 1.5;
+  list-style: none;
+  user-select: none;
+  transition: color 0.2s ease;
+  font-family: "Pretendard JP Variable", "Pretendard Variable", "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+/* 질문(summary)은 항상 검정색 유지 */
+.faq-q:hover,
+.faq-item summary:hover {
+  color: #171717;
+}
+
+/* 기본 summary 마커 제거 */
+.faq-q::-webkit-details-marker,
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-q::marker,
+.faq-item summary::marker {
+  display: none;
+}
+
+/* 커스텀 + 아이콘 (summary에 추가) */
+.faq-q::after,
+.faq-item summary::after {
+  content: "+";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #666;
+  transition: transform 0.3s ease, color 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+/* details가 열렸을 때 + 아이콘을 45도 회전 (X 모양) */
+.faq-item[open] .faq-q::after,
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+  color: #047e74;
+}
+
+@media (max-width: 768px) {
+
+  .faq-q,
+  .faq-item summary {
+    font-size: 16px;
+    padding: 1rem 1.25rem;
+  }
+
+  .faq-q::after,
+  .faq-item summary::after {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+  }
+}
+
+/* FAQ 답변 */
+.faq-a {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: "Pretendard JP Variable", "Pretendard Variable", "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+/* details가 닫혀있을 때 답변 숨김 (기본 동작) */
+.faq-item:not([open]) .faq-a {
+  display: none;
+}
+
+/* details가 열렸을 때 답변 표시 및 애니메이션 */
+.faq-item[open] .faq-a {
+  display: block;
+  animation: faqSlideDown 0.3s ease-out;
+}
+
+@keyframes faqSlideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 1000px;
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-a {
+    font-size: 15px;
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+}
+
+/* ===== Easy Table of Contents (ez-toc) 스타일 ===== */
+/* WordPress Easy Table of Contents 플러그인 v2.0.80 스타일 - 원본 디자인 반영 */
+
+/* Hide WordPress-generated TOC (we use custom sidebar TOC instead) */
+#ez-toc-container,
+.ez-toc-container {
+  display: none !important;
+}
+
+/* 버전별 클래스 */
+.ez-toc-v2_0_80 {
+  /* v2.0.80 특정 스타일 */
+}
+
+/* 왼쪽 정렬 래퍼 - Float 비활성화 (레이아웃 깨짐 방지) */
+.ez-toc-wrap-left {
+  float: none !important;
+  margin-right: 0 !important;
+  margin-bottom: 2rem !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* 카운터 계층 구조 */
+.counter-hierarchy .ez-toc-list li {
+  counter-increment: toc-counter;
+}
+
+.counter-hierarchy .ez-toc-list {
+  counter-reset: toc-counter;
+}
+
+.counter-hierarchy .ez-toc-list li::before {
+  content: counter(toc-counter) ". ";
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+.counter-hierarchy .ez-toc-list-level-2 {
+  counter-reset: toc-counter;
+}
+
+.counter-hierarchy .ez-toc-list-level-2 li::before {
+  content: counter(toc-counter, lower-alpha) ". ";
+}
+
+.counter-hierarchy .ez-toc-list-level-3 {
+  counter-reset: toc-counter;
+}
+
+.counter-hierarchy .ez-toc-list-level-3 li::before {
+  content: "(" counter(toc-counter, lower-roman) ") ";
+}
+
+/* 회색 테마 */
+.ez-toc-grey {
+  background: #f5f5f5;
+  border-color: #ddd;
+}
+
+.ez-toc-grey .ez-toc-title {
+  color: #333;
+}
+
+/* 컨테이너 방향 */
+.ez-toc-container-direction {
+  /* 방향 관련 스타일 */
+}
+
+/* 제목 컨테이너 */
+.ez-toc-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.ez-toc-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #171717;
+  margin: 0;
+  padding: 0;
+  cursor: inherit;
+}
+
+/* 토글 버튼 */
+.ez-toc-title-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.ez-toc-pull-right {
+  margin-left: auto;
+}
+
+.ez-toc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #999;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.ez-toc-btn:hover {
+  color: #171717;
+  border-color: #999;
+  background: #f0f0f0;
+}
+
+.ez-toc-btn-xs {
+  padding: 2px 6px;
+  font-size: 0.875rem;
+}
+
+.ez-toc-btn-default {
+  /* 기본 버튼 스타일 */
+}
+
+.ez-toc-toggle {
+  /* 토글 관련 스타일 */
+}
+
+.ez-toc-loaded {
+  /* 로드 완료 상태 */
+}
+
+/* 아이콘 컨테이너 */
+.ez-toc-js-icon-con {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.eztoc-hide {
+  display: none !important;
+}
+
+.ez-toc-icon-toggle-span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ez-toc-icon-toggle-span svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.ez-toc-icon-toggle-span .arrow-unsorted-368013 {
+  width: 10px;
+  height: 10px;
+}
+
+/* 목록 스타일 */
+.ez-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ez-toc-list-level-1 {
+  padding-left: 0;
+}
+
+.ez-toc-list-level-2 {
+  padding-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+.ez-toc-list-level-3 {
+  padding-left: 2.5em;
+  margin-top: 0.5em;
+}
+
+.ez-toc-list li {
+  margin: 0.5em 0;
+  line-height: 1.6;
+  position: relative;
+}
+
+.ez-toc-page-1 {
+  /* 페이지 1 관련 스타일 */
+}
+
+/* 링크 스타일 - WordPress 원본 디자인 반영 */
+.ez-toc-link {
+  color: #333333;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.ez-toc-link:hover {
+  color: #047e74;
+  text-decoration: underline;
+}
+
+/* 제목 레벨별 스타일 */
+.ez-toc-heading-level-2 {
+  font-weight: 500;
+}
+
+.ez-toc-heading-level-2 .ez-toc-link {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #0066cc;
+}
+
+.ez-toc-heading-level-3 {
+  font-weight: 400;
+}
+
+.ez-toc-heading-level-3 .ez-toc-link {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* 숨김 상태 (토글 시) */
+.ez-toc-container nav[style*="display: none"] {
+  display: none !important;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .ez-toc-wrap-left {
+    float: none !important;
+    margin-right: 0 !important;
+    margin-bottom: 1.5rem !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  #ez-toc-container,
+  .ez-toc-container {
+    padding: 1rem !important;
+    margin: 0 0 1.5rem 0 !important;
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+  }
+
+  .ez-toc-title {
+    font-size: 1rem;
+  }
+
+  .ez-toc-link {
+    font-size: 0.85rem;
+  }
+}
+
+/* WordPress embed iframe 스타일 */
+.wp-block-embed iframe,
+.wp-block-embed object,
+.wp-block-embed embed,
+.entry-content iframe {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+/* WordPress 자체 업로드 비디오 스타일 */
+.wp-block-video,
+.entry-content figure.wp-block-video {
+  width: 100%;
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+.wp-block-video video,
+.entry-content video {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+
+  .entry-content h1,
+  .wp-block-post-content h1 {
+    font-size: 1.75em;
+  }
+
+  .entry-content h2,
+  .wp-block-post-content h2 {
+    font-size: 1.5em;
+  }
+
+  .entry-content h3,
+  .wp-block-post-content h3 {
+    font-size: 1.25em;
+  }
+}
+
+/* ========================================
+   Naver Map SEO Optimization
+   ======================================== */
+/* Map API 내부에서 자동으로 생성되는 h4, h5 태그 숨김 처리 (SEO 구조 개선) */
+#map h4,
+#map h5,
+.naver-map-root h4,
+.naver-map-root h5 {
+  display: none !important;
+}

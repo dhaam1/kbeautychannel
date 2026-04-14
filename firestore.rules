@@ -1,0 +1,17 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // 상담 신청 컬렉션
+    match /consultations/{docId} {
+      // 누구나 읽기/쓰기/생성 가능 (클라이언트 SDK 전용, 테스트 모드)
+      // 프로덕션 배포 시에는 반드시 인증(auth) 규칙을 추가하세요.
+      allow read, write: if true;
+    }
+
+    // 그 외 컬렉션은 전부 차단
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

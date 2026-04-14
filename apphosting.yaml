@@ -1,0 +1,86 @@
+# Firebase App Hosting 설정 파일
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  minInstances: 1
+  maxInstances: 60
+  concurrency: 80
+  cpu: 2
+  memoryMiB: 2048
+
+env:
+  # 네이버 지도 API Client ID (클라이언트 사이드에서 사용)
+  # NEXT_PUBLIC_ 접두사가 있는 변수는 브라우저에서도 접근 가능
+  - variable: NEXT_PUBLIC_NAVER_MAP_CLIENT_ID
+    value: x2hii8nej1
+    availability:
+      - BUILD
+      - RUNTIME
+  # WordPress base URL (IP 직접 사용 - DNS 와일드카드 이슈 회피)
+  - variable: NEXT_PUBLIC_WP_BASE_URL
+    value: http://34.81.150.207
+    availability:
+      - BUILD
+      - RUNTIME
+  # Site URL - 최종 서비스 도메인 (www.blanche.kr로 통일)
+  - variable: NEXT_PUBLIC_SITE_URL
+    value: https://www.blanche.kr
+    availability:
+      - BUILD
+      - RUNTIME
+  # Site Live Status - 런칭 전에는 "false", 런칭 시 "true"로 변경
+  - variable: NEXT_PUBLIC_SITE_IS_LIVE
+    value: "false"
+    availability:
+      - BUILD
+      - RUNTIME
+  # Admin Access Keys (클라이언트 사이드에서 비교되므로 NEXT_PUBLIC_로 노출됨)
+  # - STAFF_KEY: /admin/consultations 접근
+  # - MASTER_KEY: /admin/master 접근
+  - variable: NEXT_PUBLIC_STAFF_KEY
+    value: rSsyG6Il4l6ST8wngwTuPuq-a2OPcbgD
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_MASTER_KEY
+    value: 79JYGAD4f-5YKz11eyeIR9cth6xcB7O8JJvanQ4whJA
+    availability:
+      - BUILD
+      - RUNTIME
+  # Firebase (Web SDK) - 클라이언트에서 Firestore 접근에 필요
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyB39z8qAGgefdMzpDaIoa56YbNEAxRnr-s
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: blanche-backend-d9526.firebaseapp.com
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: blanche-backend-d9526
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: blanche-backend-d9526.firebasestorage.app
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: "188653310408"
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:188653310408:web:dda09a9756aada382db0fd
+    availability:
+      - BUILD
+      - RUNTIME
+  # Firestore Database ID (대부분 프로젝트는 '(default)' 사용)
+  - variable: NEXT_PUBLIC_FIREBASE_DATABASE_ID
+    value: "(default)"
+    availability:
+      - BUILD
+      - RUNTIME

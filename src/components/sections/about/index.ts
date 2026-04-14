@@ -1,0 +1,10 @@
+export { AboutHeroSection } from './AboutHeroSection';
+export { AboutDirectorSection } from './AboutDirectorSection';
+export { AboutStrengthSection } from './AboutStrengthSection';
+export { AboutDoctorsSection } from './AboutDoctorsSection';
+export { AboutHistorySection } from './AboutHistorySection';
+export { AboutTechSection } from './AboutTechSection';
+export { AboutEquipmentSection } from './AboutEquipmentSection';
+export { AboutFacilitySection } from './AboutFacilitySection';
+export { AboutMapSection } from './AboutMapSection';
+export { AboutOtherCompanySection } from './AboutOtherCompanySection';

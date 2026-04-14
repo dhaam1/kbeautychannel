@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "source": "functions"
+  },
+  "hosting": {
+    "public": "out",
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "redirects": [
+      {
+        "source": "blanche.kr/**",
+        "destination": "https://www.blanche.kr/:path*",
+        "type": 308
+      }
+    ]
+  }
+}

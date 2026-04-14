@@ -1,0 +1,2309 @@
+{
+  "common": {
+    "siteName": "Blanche Dental Clinic",
+    "ariaLabels": {
+      "menu": "Menu",
+      "viewDetails": "View Details",
+      "close": "Close",
+      "prevCard": "Previous Card",
+      "nextCard": "Next Card"
+    },
+    "altText": {
+      "heroMain": "Where a smile becomes a masterpiece",
+      "expertTeam": "Expert Team",
+      "modelImage": "Model Image"
+    },
+    "home": "Home",
+    "confirm": "Confirm"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for has been moved or is currently unavailable.\nPlease check the URL again.",
+    "goHome": "Go back to Home",
+    "quickLinks": {
+      "title": "Quick Links",
+      "intro": "About Us",
+      "special": "Treatments",
+      "review": "Before & After",
+      "blog": "Blog"
+    },
+    "specialMenu": {
+      "implant": "Implant",
+      "laminate": "Blanche Laminate",
+      "orthodontics": "Invisalign",
+      "whitening": "Teeth Whitening",
+      "sleep": "Sleep Dentistry"
+    }
+  },
+  "homeCustomer": {
+    "label": "Blanche Procedure Count",
+    "count": "70,011",
+    "date": "As of Jan 16, 2026",
+    "title": "Blanche, with over 70,000 procedures,\nis now available in the US and Japan",
+    "achievements": [
+      "Top 100 Doctors in Korea 'Laminate Division'",
+      "11 years of accumulated aesthetic research data",
+      "Collaborative system of 6 specialists with over 15 years average experience"
+    ]
+  },
+  "nav": {
+    "intro": "About Us",
+    "special": "Treatments",
+    "review": "Before & After",
+    "blog": "Blog",
+    "price": "Pricing",
+    "consultation": "Consultation",
+    "consultationBtn": "Book Appointment",
+    "mobileConsultationBtn": "Book Appointment Now",
+    "language": {
+      "kr": "Korean",
+      "jp": "Japanese",
+      "en": "English"
+    },
+    "specialMenu": {
+      "laminate": "Blanche Laminate",
+      "implant": "Implant",
+      "orthodontics": "Orthodontics",
+      "whitening": "Teeth Whitening",
+      "sleep": "Sleep Dentistry"
+    }
+  },
+  "aboutHero": {
+    "label": "About Blanche Dental Clinic",
+    "consultationBtn": "Book Consultation",
+    "title": "The Dental Atelier Designing Your Smile, \nBlanche",
+    "description": "White as snow, Blanche.\nWe restore the clearest and most transparent natural beauty.\nWe complete a natural and luxurious smile with detailed design."
+  },
+  "aboutStrength": {
+    "category": "Treatment Philosophy",
+    "title": "We think about your smile\neven 20 years later",
+    "description": "Blanche Dental Clinic creates masterpieces\nthat last a long time.",
+    "cases": {
+      "0": {
+        "title": "Not just a simple laminate",
+        "quote": "Is it necessary to damage teeth worth over $100k just to look pretty?\nBlanche started from that question.\nMaximum beauty with minimal intervention.\nThat is the value Blanche pursues."
+      },
+      "1": {
+        "title": "We communicate kindly\nand listen carefully",
+        "quote": "Dental treatment is never an easy process.\n\nBlanche makes it a rule to repeat all explanations at least four times.\nWe constantly check for any discomfort\nand will continue to improve."
+      },
+      "2": {
+        "title": "We constantly invest\nfor the best environment",
+        "quote": "While skill is important in dental treatment,\nthe environment and equipment are equally important.\nWe constantly invest to treat without fear and pain."
+      },
+      "3": {
+        "title": "If we can't do it,\nno one can",
+        "quote": "Trained at Seoul National University and Columbia & UCLA Dental Hospitals.\n\nWe are confident that Blanche's treatment, equipment, and medical staff are world-class."
+      }
+    }
+  },
+  "aboutDirector": {
+    "category": "Introducing the Chief Director",
+    "title": "Beyond teeth,\nwe design lives",
+    "description": "We create teeth that will be with you for a lifetime,\nand restore a healthy smile",
+    "name": "Chief Director Kim Tae-Hyung",
+    "credentials": "Major Career\n• Graduated from Seoul National University Dental College\n• Master's from SNU Graduate School of Dentistry\n• Trained at US Columbia & UCLA Dental Hospitals\n• Dental Advisor for SBS 'Doctor O's Clinic', YouTube 'Doctor Friends'\n• Clinical Advisor for Straumann & Osstem Implants\n• Surgery Center Director for Flapless Sleep Implants\n• Holds record for most Straumann BLX procedures\n• Selected among Top 100 Doctors in Korea (Implant Division)\n• Thesis (Study on the effect of professional teeth whitening)"
+  },
+  "aboutDoctors": {
+    "category": "Introducing the Medical Team",
+    "title": "Blanche Dental Clinic does not rely on one person's judgment.\nSpecialists from each field collaborate",
+    "list": {
+      "0": {
+        "name": "Director Han Geon-Hee",
+        "title": "Specialist in Advanced General Dentistry",
+        "quote": "\"I promise conscientious treatment faithful to the basics so you can smile comfortably without pain.\"",
+        "description": {
+          "0": "Graduated from Wonkwang University Dental College",
+          "1": "Completed Implant Course at SNU Graduate School of Dentistry",
+          "2": "Completed PS Endo Course",
+          "3": "Full Member of KAP and KAGD",
+          "4": "Full Member of Korean Academy of Oral & Maxillofacial Implantology",
+          "5": "Selected among Top 100 Doctors in Korea (Implant Division)",
+          "6": "Completed Implant Course at Columbia Dental College",
+          "7": "Completed Conservative Dentistry Course at Penn State University"
+        }
+      },
+      "1": {
+        "name": "Director Park Kyung-Ri",
+        "title": "Specialist in Advanced General Dentistry",
+        "quote": "\"Considering the balance of the entire oral cavity,\nI promise safe and stable treatment.\"",
+        "description": {
+          "0": "Graduated from Stanford University, USA",
+          "1": "Graduated from SNU Dental College",
+          "2": "Completed Implant Course at SNU Graduate School of Dentistry",
+          "3": "Full Member of Korean Dental Society of Anesthesiology",
+          "4": "Full Member of Korean Academy of Oral & Maxillofacial Implantology",
+          "5": "Full Member of Korean Academy of Prosthodontics"
+        }
+      },
+      "2": {
+        "name": "Director Baek Ju-Hee",
+        "title": "Specialist in Orthodontics",
+        "quote": "\"With know-how accumulated through numerous orthodontic cases,\nI will treat you delicately and comfortably.\"",
+        "description": {
+          "0": "Graduated from Kyung Hee University Dental College (Valedictorian)",
+          "1": "Resident completed and Master's from Kyung Hee University Dental Hospital",
+          "2": "Certified Specialist in Orthodontics",
+          "3": "Adjunct Professor at Kyung Hee University School of Dentistry",
+          "4": "Presented Excellent Non-Extraction Orthodontic Case (Osaka Dental College)",
+          "5": "Presented Bracket Non-Extraction Orthodontic Case for Protruding Teeth (Japan)"
+        }
+      },
+      "3": {
+        "name": "Director Kim Min-Ju",
+        "title": "",
+        "quote": "\"I will reward you with the best treatment so your smile becomes Blanche's calling card.\"",
+        "description": {
+          "0": "Graduated from Pusan National University Dental College and Master's",
+          "1": "Completed Osstem Implant AIC Advanced Course",
+          "2": "Completed TMD Course by Korean Academy of TMD Education",
+          "3": "Full Member of IDAS (Implant Dentistry Art and Science)"
+        }
+      },
+      "4": {
+        "name": "Director Kim Ha-Young",
+        "title": "",
+        "quote": "\"With precision built over a long time,\nI find the optimal answer for patients.\"",
+        "description": {
+          "0": "Graduated from Kyung Hee University Dental College (Top Scholar)",
+          "1": "Recognized Fellow of Korean Academy of Esthetic Dentistry",
+          "2": "Completed Osstem Implant AIC Course",
+          "3": "Completed Dental Art Korea (DeArK) Course",
+          "4": "Full Member of KAED",
+          "5": "Full Member of Korean Academy of Conservative Dentistry",
+          "6": "Full Member of Korean Academy of Prosthodontics"
+        }
+      }
+    }
+  },
+  "aboutHistory": {
+    "category": "Clinic History",
+    "title": "Built on 11 years of technology,\nBlanche Dental Clinic keeps growing",
+    "items": {
+      "0": {
+        "year": "2025.06",
+        "description": [
+          "Relocated to 'B722 Building', Nonhyeon Landmark (Grand Open)",
+          "Established high-end treatment environment & university hospital-level digital equipment",
+          "Built cooperative system of specialists by field",
+          "Strengthened foreign patient attraction system for Global K-Medical Hub leap"
+        ]
+      },
+      "1": {
+        "year": "2024",
+        "description": [
+          "Selected among Top 100 Doctors in Korea 'Implant Division'",
+          "Appointed Clinical Advisor for Straumann & Osstem Implants",
+          "Dental Advisor for SBS 'Doctor O's Clinic', YouTube 'Doctor Friends'",
+          "Advanced in-house treatment system to increase customer satisfaction"
+        ]
+      },
+      "2": {
+        "year": "2023.07",
+        "description": [
+          "Opened Blanche Dental Clinic",
+          "Launched 'No-prep Laminate Blanche' signature solution",
+          "Introduced 1:1 responsible care and dedicated attending physician system",
+          "Established in-house dental lab 'Blanche Lab' & dedicated lab team",
+          "Established Blanche's unique aesthetic prosthetic design protocol"
+        ]
+      },
+      "3": {
+        "year": "2020.02",
+        "description": [
+          "Opened Seoul Haru Dental Clinic",
+          "Accumulated clinical data for no-prep laminates and implants",
+          "*A total of 11 years of clinical research and data accumulation since before Seoul Haru Dental Clinic"
+        ]
+      }
+    }
+  },
+  "aboutTech": {
+    "category": "In-house Lab",
+    "title": "The only tooth in the world,\ndesigned one by one at our in-house Blanche Lab",
+    "features": {
+      "0": {
+        "title": "1:1 Custom Design",
+        "description": "We analyze your face shape, lip line, skin tone, and gum line to design the most natural tooth. It's a custom prosthesis just for you, not a ready-made product from a factory."
+      },
+      "1": {
+        "title": "Replicating Natural Teeth",
+        "description": "A natural tooth is not just one color. Through dozens of ceramic layerings, we replicate the transparency for light transmission and subtle color tones."
+      },
+      "2": {
+        "title": "Real-time Communication",
+        "description": "Our resident lab team participates in treatments. Since the medical staff and lab technicians communicate and modify instantly, more precise and faster results are possible compared to external labs."
+      },
+      "3": {
+        "title": "Premium Materials and Equipment",
+        "description": "We use verified top-grade zirconia & ceramic materials, and ultra-precise 3D digital scanners. We create prosthetics that are aesthetically beautiful and functionally long-lasting."
+      }
+    }
+  },
+  "aboutEquipment": {
+    "category": "Digital Equipment",
+    "title": "With university hospital-level equipment,\nwe treat more precisely and safely",
+    "list": {
+      "0": {
+        "nameKo": "Prime Scan",
+        "nameEn": "Dentsply Sirona, Germany",
+        "tag": "Precise Diagnosis",
+        "subText": "Scans with light, without impressions",
+        "description": "Scans the mouth digitally without uncomfortable rubber impression materials. Precise to over 1M points/sec, enabling flawless prosthetic design."
+      },
+      "1": {
+        "nameKo": "Ultra-precise 3D CT",
+        "nameEn": "Dentium Bright CT",
+        "tag": "Precise Diagnosis",
+        "subText": "Checks bones and nerves in 3D",
+        "description": "Identifies gum bone condition and nerve position in 0.1mm units. Low-dose tech minimizes radiation exposure while establishing safe implant/orthodontic plans."
+      },
+      "2": {
+        "nameKo": "WaterLase",
+        "nameEn": "Water Drop Laser",
+        "tag": "Precise Diagnosis",
+        "subText": "Treats smoothly, without vibration",
+        "description": "Uses water and laser instead of drill noise and vibration to treat gums. Less pain and bleeding for faster recovery."
+      },
+      "3": {
+        "nameKo": "Ivoclar Press Furnace",
+        "nameEn": "Ivoclar Programat",
+        "tag": "Precise Production · In-house Lab",
+        "subText": "Replicates the transparency of natural teeth exactly",
+        "description": "Produces ceramic prosthetics using equipment from Ivoclar, a global dental material company. Bakes at a constant temperature/pressure for a color and transparency hard to distinguish from natural teeth."
+      },
+      "4": {
+        "nameKo": "Zirconia Milling Machine",
+        "nameEn": "Zirconia Milling Machine",
+        "tag": "Precise Production · In-house Lab",
+        "subText": "Carves precisely down to the micro unit",
+        "description": "Precisely processes zirconia based on digital design data. Produces prosthetics that fit the teeth and gum line perfectly."
+      },
+      "5": {
+        "nameKo": "Digital Painless Anesthesia Machine",
+        "nameEn": "I-JECT",
+        "tag": "Comfort and Safety",
+        "subText": "Minimizes the pain of anesthesia injections",
+        "description": "Injects anesthetic fluid at a constant speed and pressure, reducing stinging pain."
+      },
+      "6": {
+        "nameKo": "Ultra-high Pressure Sterilization System",
+        "nameEn": "Autoclave",
+        "tag": "Comfort and Safety",
+        "subText": "Thorough sterilization system with no cross-infection worries",
+        "description": "All instruments undergo ultra-high pressure sterilization. We strictly adhere to the 1-instrument-per-person rule, prioritizing patient safety."
+      }
+    }
+  },
+  "aboutFacility": {
+    "category": "Clinic Facilities",
+    "title": "A private and comfortable space\nthat goes beyond treatment to become a rest",
+    "description": "From a waiting room like a hotel lounge\nto isolated private treatment rooms,\nexperience comfortable care in a premium space you want to stay in",
+    "features": {
+      "0": {
+        "title": "Hotel-style Lounge",
+        "description": "We have prepared a hotel-style lounge space so even your waiting time is comfortable. Warm lighting and cozy furniture welcome our patients."
+      },
+      "1": {
+        "title": "1:1 Private Treatment Rooms",
+        "description": "All treatments are conducted 1:1 in isolated private rooms so you can receive care comfortably without worrying about others' gazes."
+      },
+      "2": {
+        "title": "Digital Diagnosis Center",
+        "description": "Precise and safe checkups are conducted in a center equipped with university hospital-level digital diagnostic equipment."
+      }
+    }
+  },
+  "aboutOtherCompany": {
+    "category": "Partners",
+    "title": "Places with Blanche",
+    "description": "Blanche Dental Clinic provides treatment convenience through partnerships with major corporations and various entertainment companies.",
+    "inquiry": "For partnership inquiries, please contact our Kakao channel <kakaoLink>@BlancheDental</kakaoLink>.",
+    "partners": {
+      "0": "Google",
+      "1": "Amorepacific",
+      "2": "Samsung Asset Management",
+      "3": "Big Boss Ent",
+      "4": "Barun Dental Ent",
+      "5": "Just Ent",
+      "6": "Gold Medalist Ent"
+    }
+  },
+  "aboutMap": {
+    "category": "Directions",
+    "title": "Right in front of Nonhyeon Station Exit 4,\nthe most convenient way to visit",
+    "subtitle": "With Sunday and night clinics,\nyou can visit comfortably even in your busy daily life",
+    "info": {
+      "address": "7F, 531 Gangnam-daero, Seocho-gu, Seoul",
+      "parking": "On-site parking available (Free Valet)",
+      "subway": "Line 7 / Shinbundang Line Nonhyeon Station Exit 4, 1-min walk",
+      "bus": "Get off at Nonhyeon Station Bus Stop"
+    },
+    "hours": {
+      "title": "Treatment Hours",
+      "day": "Day",
+      "time": "Hours",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "토",
+      "sun": "일",
+      "night": "야간진료",
+      "noLunch": "점심시간 없음",
+      "lunchTitle": "점심 시간",
+      "lunchInfo": "점심시간 평일 13:30 - 14:30\n일요일 13:00 - 14:00"
+    },
+    "parkingLabel": "주차 안내",
+    "supercar": "슈퍼카 주차 가능",
+    "addressLabel": "주소",
+    "directionsLabel": "오시는 방법",
+    "address  "casesHero": {
+    "title": "Blanche Dental Clinic Treatment Cases",
+    "subtitle": {
+      "mobile": "Blanche's unique technology,\nCheck out the before and after now",
+      "desktop": "Blanche's unique technology,\nCheck out the before and after now"
+    },
+    "button": "Book Consultation",
+    "metadata": {
+      "title": "Blanche Dental Clinic | Treatment Cases",
+      "description": "Blanche's unique technology, check out the before and after now"
+    }
+  },
+  "casesPhilosophy": {
+    "category": "Treatment Philosophy",
+    "title": "Blanche Dental Clinic,\ntreating with sincerity",
+    "description": "What gives us strength is\nour patients' bright smiles.\nTo help you regain a healthy and happy smile,\nBlanche Dental Clinic will be with you."
+  },
+  "casesLaminate": {
+    "category": "Blanche",
+    "title": "Blanche Treatment Cases",
+    "description": "Smiles completed with no prep or minimal prep.\nYour smile can change too.",
+    "instruction": "Drag the screen to compare before and after",
+    "more": "Learn more about Blanche",
+    "items": {
+      "0": "Female 20s, crooked front teeth",
+      "1": "Female 20s, snaggletooth",
+      "2": "Female 20s, improved tooth shape",
+      "3": "Female 20s, black triangle",
+      "4": "Female 20s, improved tooth shape",
+      "5": "Male 40s, improved tooth color"
+    }
+  },
+  "casesImplant": {
+    "category": "Implant",
+    "title": "Implant Treatment Cases",
+    "description": "Blanche implants sought out nationwide.\nWith sleep implants and precise minimal incision,\neven temporary teeth are completed on the same day.",
+    "instruction": "Drag the screen to compare before and after",
+    "more": "Learn more about Blanche Implants",
+    "cases": {
+      "daegu": {
+        "title": "Late 50s Male, Full Arch Implant",
+        "story": "A male patient in his late 50s who visited from Daegu to Seoul and had temporary teeth attached on the same day after surgery. Reclaimed a bright smile and the joy of chewing after implant surgery at Blanche Dental Clinic."
+      },
+      "usa": {
+        "title": "Late 70s Male, Full Arch Implant",
+        "story": "A patient who visited Blanche Dental Clinic in Korea from the USA for SOI implant placement. Returned to the USA after completing the implants, having regained aesthetics and functionality through full arch implant surgery at Blanche."
+      }
+    },
+    "items": {
+      "3": "Male 50s, Full Arch Implant (Upper)",
+      "4": "Male 50s, Full Arch Implant (Upper)",
+      "5": "Male 60s, Full Arch Implant (Upper/Lower)"
+    }
+  },
+  "casesOrthodontics": {
+    "category": "Orthodontics",
+    "title": "Orthodontic Treatment Cases",
+    "description": "Customized orthodontics tailored to age and condition,\nFrom brackets to Clippy-C and Invisalign,\nBlanche is with you.",
+    "instruction": "Drag the screen to compare before and after",
+    "more": "Learn more about Blanche Orthodontics",
+    "items": {
+      "0": "Female 20s, Snaggletooth Bracket",
+      "1": "Female 30s, Invisalign",
+      "2": "Female 40s, Invisalign"
+    }
+  },
+  "casesReviews": {
+    "category": "Treatment Reviews",
+    "title": "Reviews from those who\nvisited Blanche Dental Clinic",
+    "items": {
+      "0": {
+        "name": "Kim Ji*",
+        "info": "Female, 22 / Cavity Treatment",
+        "content": "Diagnosed with 4 cavities elsewhere, but after examination at Blanche, only 2 were treated and 2 observed. Truly conscientious like on YouTube, valuing natural teeth. Will entrust my teeth to Blanche. Thank you Director ♡"
+      },
+      "1": {
+        "name": "Sung Min*",
+        "info": "Male, 45 / Implant",
+        "content": "Chose here because the head director operates directly. Many hospitals change doctors, which made me anxious. Thank you for treating me carefully without pain. Highly recommend to friends and family."
+      },
+      "2": {
+        "name": "Ji Soo*",
+        "info": "Female, 33 / Implant",
+        "content": "Born missing a tooth (haha). Found Dr. Kim Tae-Hyung while searching for an implant ♡ (No secret he's handsomer in person). Implant took just 5 minutes! Removed stitches today and it healed nicely. Will bring my mother too! Director is the best, clinic interior is so pretty."
+      },
+      "3": {
+        "name": "Moon Jun*",
+        "info": "Female, 27 / Blanche Laminate",
+        "content": "Got laminates elsewhere but didn't consider tooth color, so top and bottom colors were too different and looked artificial. Came for a revision. The color came out beautifully, very satisfied."
+      },
+      "4": {
+        "name": "Park Mi*",
+        "info": "Female, 30 / Blanche Laminate",
+        "content": "Hesitated due to hearing about laminate side effects. Unlike what I saw online, there was almost no tooth reduction and detailed explanations even for a layperson. The whitening nurse was so kind. The director quickly understood what I wanted and went with minimal (no) prep. Thank you!"
+      },
+      "5": {
+        "name": "Park Sun*",
+        "info": "Female, 38 / Blanche Laminate",
+        "content": "Whitening was always a concern due to frequent coffee drinking. Heard laminates are possible with almost no tooth reduction. It was done meticulously and beautifully without looking artificial."
+      },
+      "6": {
+        "name": "Yoo Seung*",
+        "info": "Female, 34 / Blanche Laminate",
+        "content": "Always bothered by uneven bottom teeth compared to top :) Writing this review with great satisfaction as they carefully checked color and shape. Confidence boosted (haha). Thank you Blanche!"
+      },
+      "7": {
+        "name": "Han Ye*",
+        "info": "Female, 37 / Implant",
+        "content": "Came after watching the director's YouTube. Delayed implant out of fear, but he explained in detail and operated painlessly. Only meant to consult but everyone was so kind I got surgery the same day. Relieved I can come without worries now."
+      },
+      "8": {
+        "name": "Lee Hye*",
+        "info": "Female, 31 / Cavity Treatment",
+        "content": "Came to change old amalgam to tooth color. Found a cavity via X-ray but treated painlessly. Manager, staff, and director were so kind. ♡ Clean and neat tooth color amalgam replacement >_<"
+      },
+      "9": {
+        "name": "Lee Kyung*",
+        "info": "Male, 42 / TMJ",
+        "content": "Visited because another clinic couldn't fix my jaw bite. Think it'll improve with regular care. Will sleep comfortably thanks to you. Thank you~ ♡ Fighting!!"
+      },
+      "10": {
+        "name": "Seo Chae*",
+        "info": "Female, 35 / Full Arch",
+        "content": "First visit today. Great facilities and trendy interior made me happy immediately. Kind hygienist, director, and manager made treatment pleasant. Thank you for the detailed X-ray and checkups. Receptionists were helpful too. May Blanche prosper~ Fighting~"
+      }
+    },
+    "altText": "Patient Treatment Review Image",
+    "beforeAlt": "Before Treatment",
+    "afterAlt": "After Treatment"
+  },
+  "casesPhilosophyDetails": {
+    "category": "Philosophy",
+    "title": "We think like this",
+    "description1": "Blanche Dental Clinic\nwill shoulder your worries for you.",
+    "description2": "Not just a good dental clinic,\nbut a clinic that brings happiness.",
+    "description3": "We will repay the courage you mustered to visit amidst worries\nwith a bright smile and health."
+  },
+  "casesCTA": {
+    "category": "Book Consultation",
+    "title": "A smile that lasts a lifetime,\nBlanche will create it for you",
+    "description": "The choice to protect your teeth,\nfor that choice, we deeply analyze your dental condition\nand explain it transparently.\n\nFor dental concerns, consult with Blanche.",
+    "designElements": {
+      "box": "Where\na smile\nbecomes a masterpiece",
+      "text": "At Blanche,\nstart your\ntransformation"
+    }
+  }��족스럽습니다."
+      },
+      "4": {
+        "name": "박미*님",
+        "info": "여성, 30세 / 블랑쉬 라미네이트",
+        "content": "평소 라미네이트의 부작용이 많다는 말을 듣고 많이 주저했었습니다. 하지만 제가 여태껏 인터넷으로 보았던 것과는 다르게 삭제량도 거의 없다시피 하고 설명도 비전문가인 저도 알아듣게 상세히 해주셨어요. 미백해주신 간호사 선생님도 너무 친절하셔서 받는 내내 안심할 수 있었습니다. 저 진료 봐주셨던 원장님도 제가 원하는 바를 빨리 파악해주시고 최소삭제(무삭제) 방향으로 해주셔서 좋았습니다. 앞으로도 잘 부탁드립니다."
+      },
+      "5": {
+        "name": "박선*님",
+        "info": "여성, 38세 / 블랑쉬 라미네이트",
+        "content": "커피를 자주 마셔서 늘 미백이 신경 쓰였는데 치아 삭제를 거의 하지 않고도 라미네이트가 가능하다고 해서 상담 후 치료 받았습니다. 불편함 없이 꼼꼼히 인위적이지 않게 예쁘게 잘 됐어요."
+      },
+      "6": {
+        "name": "유승*님",
+        "info": "여성, 34세 / 블랑쉬-라미네이트",
+        "content": "윗니에 비해 고르지 못한 아랫니 때문에 항상 신경이 쓰여서 찾게 되었어요 :) 치아 컬러, 모양 등 세심하게 봐주셔서 아주 만족스러운 마음으로 후기를 작성합니다. 자신감도 더욱 상승했어요 (ㅎㅎ) 블랑쉬치과 감사합니다!"
+      },
+      "7": {
+        "name": "한예*님",
+        "info": "여성, 37세 / 임플란트",
+        "content": "원장님 유튜브 보고 왔어요. 무서워서 임플란트 못하고 미뤄왔는데 자세히 설명해주시고 아프지 않게 신경 써서 수술해 주셨어요. 원래는 상담만 하고 가려 했는데 다들 친절하셔서 당일 수술 받았습니다. 앞으로도 걱정없이 올 수 있을 것 같아서 안심이예요. 남은 기간에도 잘 부탁드립니다 ~ ^^ ~"
+      },
+      "8": {
+        "name": "이혜*님",
+        "info": "여성, 31세 / 충치 치료",
+        "content": "예전의 아말감이 입 안에서 보기 싫어서 치아 색으로 바꾸러 왔어요. 엑스레이 찍어보니 충치도 있었는데 안 아프게 치료받아서 오길 잘한 것 같아요. 실장님, 선생님, 원장님도 너무 친절하셔서 무섭지 않게 치료 잘 받고 갈 수 있었어요 ♡ 아말감도 치아 색으로 바뀌어서 깔끔하고 깨끗해 보여서 좋아요 >_<"
+      },
+      "9": {
+        "name": "이경*님",
+        "info": "남성, 42세 / 턱관절",
+        "content": "다른 치과에서 턱 교합을 못 잡아서 방문했어요. 주기적으로 관리를 받으면 나아질 것 같아요. 덕분에 잠도 편하게 잘 것 같아요. 감사해요~ ♡ 화이팅!!"
+      },
+      "10": {
+        "name": "서채*님",
+        "info": "여성, 35세 / 전체",
+        "content": "오늘 처음 방문했는데 병원 시설도 좋고 인테리어도 트렌디하고 예뻐서 방문하자마자 기분이 좋았어요. 진료 시에는 진료해주신 치위생사 선생님과 원장님, 상담해주신 실장님 모두 친절하셔서 기분 좋게 진료받았습니다. X-ray 촬영이나 다른 검진 모두 친절하게 해주신 치위생사 선생님 정말 감사드려요~ 인포데스크에 계신 선생님들도 모두 친절하셔서 감사했습니다. 블랑쉬 치과 흥하세요~ 화이팅~"
+      }
+    },
+    "altText": "환자 치료 후기 이미지",
+    "beforeAlt": "치료 전",
+    "afterAlt": "치료 후"
+  },
+  "casesPhilosophyDetails": {
+    "category": "철학",
+    "title": "저희는 이렇게 생각합니다",
+    "description1": "블랑쉬치과는\n여러분의 걱정을 대신 짊어지겠습니다.",
+    "description2": "그저 잘하는 치과가 아닌,\n행복까지 드리는 치과가 되겠습니다.",
+    "description3": "걱정 속에 내원해주신 용기를\n환한 미소와 건강으로 보답하겠습니다."
+  },
+  "casesCTA": {
+    "category": "상담 예약 신청하기",
+    "title": "평생을 함께하는 미소,\n블랑쉬가 만들어 드릴게요",
+    "description": "치아를 지키는 선택,\n그 선택을 위해 치아 상태를\n면밀히 분석하고\n투명하게 설명해 드립니다.\n\n치아 고민, 블랑쉬에 상담해 주세요.",
+    "designElements": {
+      "box": "미소가\n작품이\n되는곳",
+      "text": "블랑쉬에서,\n당신의 변화를\n시작하세요"
+    }
+  },
+  "floatingActionButton": {
+    "kakao": "KakaoTalk",
+    "naverBooking": "Naver Booking",
+    "dentalKing": "Dental King",
+    "blog": "Official Blog",
+    "naverTalk": "Naver Talk",
+    "location": "Directions",
+    "quickMenu": "Quick Menu",
+    "fold": "Fold"
+  },
+  "hero": {
+    "subtitle1": "At Blanche,",
+    "subtitle2": "Rediscover your",
+    "subtitle3": "hidden smile.",
+    "rightContent": {
+      "text1": {
+        "default": "6 professional specialists"
+      },
+      "text2": {
+        "default": "design your most natural smile"
+      },
+      "cta": {
+        "default": "Book Consultation Now"
+      }
+    }
+  },
+  "model": {
+    "topText": {
+      "desktop": [
+        "If you want to smile confidently,"
+      ]
+    },
+    "bottomText": {
+      "mobile": [
+        "Blanche",
+        "will restore",
+        "your confidence."
+      ],
+      "desktop": [
+        "Blanche",
+        "will restore",
+        "your confidence."
+      ]
+    }
+  },
+  "brand": {
+    "natural": {
+      "title": "Natural",
+      "description": {
+        "default": [
+          "Not an artificial laminate,",
+          "but a natural Blanche"
+        ]
+      }
+    },
+    "masterpieces": {
+      "title": "Masterpieces",
+      "description": {
+        "default": [
+          "With the mindset of",
+          "'creating a masterpiece'"
+        ]
+      }
+    },
+    "trust": {
+      "title": "Trust",
+      "description": {
+        "default": [
+          "For teeth that will last a lifetime,",
+          "rather than immediate treatment"
+        ]
+      }
+    },
+    "footer": {
+      "text": {
+        "desktop": [
+          "Your smile is",
+          "our pride."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "meta": {
+      "title": "Blanche Dental Clinic | Treatments",
+      "description": "Any dental concern, solved with Blanche's unique solutions."
+    },
+    "header": {
+      "subtitle": {
+        "default": "Blanche Signature Treatment Programs"
+      },
+      "title": {
+        "desktop": [
+          "Any dental concern,",
+          "solve it with",
+          "Blanche's unique solutions"
+        ]
+      }
+    },
+    "programs": [
+      {
+        "id": 1,
+        "title": "Blanche",
+        "description": [
+          "Making teeth white",
+          "and even"
+        ],
+        "image": "/assets/solution/item-01.webp",
+        "backgroundColor": "#EDECEA",
+        "alt": "Blanche making teeth white and even"
+      },
+      {
+        "id": 2,
+        "title": "Blanche One-Day Implant",
+        "description": [
+          "Shining as #1",
+          "in the nation"
+        ],
+        "image": "/assets/solution/item-02.webp",
+        "backgroundColor": "#EDECEA",
+        "alt": "Blanche implant structure object image representing implant treatment"
+      },
+      {
+        "id": 3,
+        "title": "Invisalign Orthodontics",
+        "description": [
+          "With a 22-year veteran",
+          "orthodontist"
+        ],
+        "image": "/assets/solution/item-03.webp",
+        "backgroundColor": "#EDECEA",
+        "alt": "Invisalign orthodontic appliance image used in Blanche transparent orthodontics treatment"
+      },
+      {
+        "id": 4,
+        "title": "#1 Nationwide Teeth Whitening",
+        "description": [
+          "Certified by SNU Master's thesis,",
+          "100% satisfaction"
+        ],
+        "image": "/assets/solution/item-04.webp",
+        "backgroundColor": "#EDECEA",
+        "alt": "Patient image with reborn teeth after laminate procedure at Blanche Dental Clinic"
+      },
+      {
+        "id": 5,
+        "title": "Sleep Dentistry",
+        "description": [
+          "For a comfortable treatment,",
+          "as if you just woke up"
+        ],
+        "image": "/assets/solution/item-05.webp",
+        "backgroundColor": "#EDECEA",
+        "alt": "Actual treatment scene performed by Blanche medical staff"
+      }
+    ],
+    "labels": {
+      "prevCard": "Previous Card",
+      "nextCard": "Next Card"
+    },
+    "laminate": {
+      "title": "무삭제 라미네이트 | 블랑쉬치과 의원",
+      "description": "블랑쉬치과 의원의 무삭제 라미네이트는 자연치를 보존하면서 더욱 자연스러운 미소를 완성합니다. 치아 손상 없이 아름다운 치아를 만들 수 있는 혁신적인 치료법입니다.",
+      "meta": {
+        "title": "블랑쉬 라미네이트 | 블랑쉬치과의원 - 강남치과, 논현역치과, 무삭제 라미네이트",
+        "description": "자연 치아를 보존하여 더욱 자연스럽게 완성하는 블랑쉬 라미네이트. 자체 기공소의 정교한 수작업과 10년 보증으로 10년 뒤에도 건강한 치아를 약속드립니다."
+      },
+      "hero": {
+        "subtitle": "무삭제 라미네이트",
+        "title": "자연치를 보존하며 완벽한 미소를 완성합니다",
+        "description": "치아를 삭제하지 않고도 아름다운 치아를 만들 수 있습니다",
+        "button": {
+          "text": "상담 예약하기"
+        },
+        "textLayout": {
+          "text": "블랑쉬 라미네이트",
+          "subtitle": "자연치아를 지키는\n프리미엄 라미네이트"
+        }
+      },
+      "what": {
+        "title": "무삭제 라미네이트란?",
+        "description": "치아를 삭제하지 않고 얇은 도자기 판을 부착하여 치아의 색상, 형태, 크기를 개선하는 심미치과 치료입니다.",
+        "image": {
+          "src": "/assets/laminate/laminate-1.webp",
+          "alt": "무삭제 라미네이트 설명 이미지"
+        },
+        "textGroup": {
+          "firstText": "무삭제 라미네이트",
+          "secondText": "무삭제 라미네이트란",
+          "thirdText": "치아를 삭제하지 않고\n앞니 인상을 바꾸는 방법입니다.\n\n단, 치아 상태에 따라 \n최소한의 삭제가 필요할 수 있습니다."
+        },
+        "items": [
+          {
+            "title": "No-Prep Laminate",
+            "firstText": "무삭제\n라미네이트",
+            "secondText": "• 완전 무삭제\n• 시림 없음"
+          },
+          {
+            "title": "Minimal-prep Laminate",
+            "firstText": "최소삭제\n라미네이트",
+            "secondText": "• 0.1mm미만 삭제\n• 시림 없음"
+          },
+          {
+            "title": "General Laminate",
+            "firstText": "일반\n라미네이트",
+            "secondText": "• 무리한 치아 삭제\n• 시림 발생"
+          }
+        ]
+      },
+      "highlight": {
+        "title": "블랑쉬 라미네이트는\n완전 무삭제 또는\n최소삭제로만 진행됩니다.",
+        "description": "자연치를 최대한 보존하면서도 완벽한 미소를 만들어냅니다.",
+        "image": {
+          "src": "/assets/laminate/laminate-2.webp",
+          "alt": "라미네이트 특징 이미지"
+        }
+      },
+      "process": {
+        "label": "블랑쉬란",
+        "title": "치아를 지키는\n가장 안전한 선택, 블랑쉬",
+        "description": "11년의 연구, 2만 건 이상의\n임상 실험을 통해 개발한\n독자적인 라미네이트 솔루션입니다"
+      },
+      "solution": {
+        "title": "치료 과정",
+        "steps": [
+          {
+            "number": 1,
+            "title": "상담 및 진단",
+            "description": [
+              "정확한 진단을 통해",
+              "최적의 치료 계획을 수립합니다."
+            ]
+          },
+          {
+            "number": 2,
+            "title": "임시 라미네이트 제작",
+            "description": [
+              "치아 형태를 미리 확인할 수 있는",
+              "임시 라미네이트를 제작합니다."
+            ]
+          },
+          {
+            "number": 3,
+            "title": "최종 라미네이트 부착",
+            "description": [
+              "완벽하게 맞춤 제작된",
+              "라미네이트를 부착합니다."
+            ]
+          }
+        ]
+      },
+      "recommendation": {
+        "label": "추천대상",
+        "title": "이런 고민이라면,",
+        "footer": "블랑쉬로\n미소를 되찾으세요",
+        "subtitle": "치아 색상이 어둡거나, 치아 사이 간격이 넓거나, 치아 형태가 불규칙한 경우 무삭제 라미네이트가 적합합니다.",
+        "features": [
+          {
+            "title": "치아 색상 개선",
+            "description": "치아가 노랗거나 어두운 경우"
+          },
+          {
+            "title": "치아 간격 조정",
+            "description": "치아 사이 간격이 넓은 경우"
+          },
+          {
+            "title": "치아 형태 개선",
+            "description": "치아 형태가 불규칙한 경우"
+          },
+          {
+            "title": "토끼이빨 개선",
+            "description": "앞니가 유독 커보이거나 도드라져 보이는 경우"
+          }
+        ],
+        "cases": [
+          {
+            "title": "블랙트라이앵글",
+            "description": "틈을 메우고싶지만\n교정이 부담스럽다면"
+          },
+          {
+            "title": "토끼이빨",
+            "description": "앞니가 유독 커보이거나\n도드라져 보인다면"
+          },
+          {
+            "title": "왜소치",
+            "description": "치아 크기가 작아\n볼륨감이 아쉽다면"
+          },
+          {
+            "title": "치아 변색",
+            "description": "심한 누런이로\n미백 치료도 어렵다면"
+          },
+          {
+            "title": "불규칙한 치열",
+            "description": "앞니가 겹치거나\n배열 개선이 필요하다면"
+          },
+          {
+            "title": "라미네이트 재시술",
+            "description": "오래된 라미네이트\n교체가 필요하다면"
+          }
+        ]
+      },
+      "highlight2": {
+        "title": "라미네이트 부작용",
+        "description": "치아를 보존할 수 있음에도 무리하게 삭제한다면\n시림, 잇몸 염증과 같은 부작용을 많이 겪습니다.",
+        "image": {
+          "src": "/assets/laminate/laminate-3.webp",
+          "alt": "블랑쉬 기공소 이미지"
+        }
+      },
+      "sideeffect": {
+        "title": "부작용 및 주의사항",
+        "description": "무삭제 라미네이트는 치아를 삭제하지 않아 부작용이 거의 없습니다. 다만, 하드 음식 섭취 시 주의가 필요하며 정기적인 관리가 중요합니다."
+      },
+      "strength": {
+        "header": {
+          "title": {
+            "default": "블랑쉬 강점"
+          },
+          "subtitle": {
+            "desktop": [
+              "블랑쉬는 다릅니다",
+              "10년 뒤에도 건강한 치아를 목표로 합니다"
+            ]
+          }
+        },
+        "labels": {
+          "treatmentPeriod": "치료 기간"
+        },
+        "cases": [
+          {
+            "id": 1,
+            "treatmentType": "스위스산 프리미엄\n하이브리드 세라믹",
+            "treatmentPeriod": "",
+            "quote": "100% 스위스산 Feldspar 기반의\n프리미엄 세라믹 사용\n\n자연치와 가장 유사한 굴절률로\n인위적이지 않고 자연스러운\n투명함 구현",
+            "patientName": "",
+            "image": "/assets/laminate/laminate-9.webp",
+            "reviewTitle": "스위스산 프리미엄 하이브리드 세라믹",
+            "reviewContent": "100% 스위스산 Feldspar 기반의 프리미엄 세라믹 사용. 자연치와 가장 유사한 굴절률로 인위적이지 않고 자연스러운 투명함 구현"
+          },
+          {
+            "id": 2,
+            "treatmentType": "자체 기공소,\n블랑쉬랩",
+            "treatmentPeriod": "",
+            "quote": "치과 옆 자체 기공소에서\n프랑스 수련 기공사의 수작업\n\n환자의 잇몸, 얼굴형을 1:1 분석해\n맞춤형으로 제작",
+            "patientName": "",
+            "image": "/assets/laminate/laminate-10.webp",
+            "reviewTitle": "자체 기공소, 블랑쉬랩",
+            "reviewContent": "치과 옆 자체 기공소에서 프랑스 수련 기공사의 수작업. 환자의 잇몸, 얼굴형을 1:1 분석해 맞춤형으로 제작"
+          },
+          {
+            "id": 3,
+            "treatmentType": "0.01mm\n초정밀 설계 기술",
+            "treatmentPeriod": "",
+            "quote": "11년 연구로 완성한\n초박막 제작 및 접착 기술\n\n치아와 잇몸 건강을 고려한\n프렙(Prep) 디자인",
+            "patientName": "",
+            "image": "/assets/laminate/laminate-11.webp",
+            "reviewTitle": "0.01mm 초정밀 설계 기술",
+            "reviewContent": "11년 연구로 완성한 초박막 제작 및 접착 기술. 치아와 잇몸 건강을 고려한 프렙(Prep) 디자인"
+          },
+          {
+            "id": 4,
+            "treatmentType": "업계 최대 10년 보증과\n사후관리 시스템",
+            "treatmentPeriod": "",
+            "quote": "별도 추가 비용 없이\n최대 10년 보증\n\n문제 발생을 차단하는\n정기 점검 시스템까지",
+            "patientName": "",
+            "image": "/assets/laminate/laminate-12.webp",
+            "reviewTitle": "업계 최대 10년 보증과 사후관리 시스템",
+            "reviewContent": "별도 추가 비용 없이 최대 10년 보증. 문제 발생을 차단하는 정기 점검 시스템까지"
+          }
+        ],
+        "title": "블랑쉬 라미네이트의 강점",
+        "subtitle": "3만 건의 시술 경험을 보유한\n대표원장이 직접 시술합니다",
+        "features": [
+          {
+            "title": "스위스산 프리미엄 하이브리드 세라믹",
+            "description": "100% 스위스산 Feldspar 기반의 프리미엄 세라믹 사용. 자연치와 가장 유사한 굴절률로 인위적이지 않고 자연스러운 투명함 구현"
+          },
+          {
+            "title": "자체 기공소, 블랑쉬랩",
+            "description": "치과 옆 자체 기공소에서 프랑스 수련 기공사의 수작업. 환자의 잇몸, 얼굴형을 1:1 분석해 맞춤형으로 제작"
+          },
+          {
+            "title": "0.01mm 초정밀 설계 기술",
+            "description": "11년 연구로 완성한 초박막 제작 및 접착 기술. 치아와 잇몸 건강을 고려한 프렙(Prep) 디자인"
+          },
+          {
+            "title": "업계 최대 10년 보증과 사후관리 시스템",
+            "description": "별도 추가 비용 없이 최대 10년 보증. 문제 발생을 차단하는 정기 점검 시스템까지"
+          }
+        ],
+        "textGroup": {
+          "firstText": "블랑쉬란",
+          "secondText": "치아를 지키는 가장 안전한 선택, 블랑쉬"
+        }
+      },
+      "doctor": {
+        "label": "대표원장이 직접 시술하는 블랑쉬",
+        "title": "3만 건의 시술 경험을 보유한\n대표원장이 직접 시술합니다",
+        "description": "무삭제 또는 최소삭제로 \n진행되는 라미네이트는 \n의료진의 숙련도와 경험이 \n결과를 좌우합니다.",
+        "career": [
+          "서울대학교 졸업",
+          "뉴욕 컬럼비아 대학 연수",
+          "UCLA 치과병원 연수"
+        ],
+        "name": "김태형 원장"
+      },
+      "masterpiece": {
+        "title": "치료 사례",
+        "textGroup": {
+          "firstText": "블랑쉬 라미네이트",
+          "secondText": "블랑쉬로 미소를 찾은 분들입니다",
+          "thirdText": "실제 치료 결과를 확인하세요"
+        },
+        "items": [
+          {
+            "image": {
+              "src": "/assets/common/logo.svg",
+              "alt": "치료 사례 1"
+            },
+            "firstText": "토끼이빨",
+            "secondText": "앞니가 유독 커보이거나 도드라져 보인다면",
+            "backgroundColor": "#F4F7FE4D"
+          },
+          {
+            "image": {
+              "src": "/assets/common/logo.svg",
+              "alt": "치료 사례 2"
+            },
+            "firstText": "치아 색상 개선",
+            "secondText": "치아가 노랗거나 어두운 경우",
+            "backgroundColor": "#FFFFFF"
+          },
+          {
+            "image": {
+              "src": "/assets/common/logo.svg",
+              "alt": "치료 사례 3"
+            },
+            "firstText": "치아 간격 조정",
+            "secondText": "치아 사이 간격이 넓은 경우",
+            "backgroundColor": "#FFFFFF"
+          },
+          {
+            "image": {
+              "src": "/assets/common/logo.svg",
+              "alt": "치료 사례 4"
+            },
+            "firstText": "치아 형태 개선",
+            "secondText": "치아 형태가 불규칙한 경우",
+            "backgroundColor": "#FFFFFF"
+          },
+          {
+            "image": {
+              "src": "/assets/common/logo.svg",
+              "alt": "치료 사례 5"
+            },
+            "firstText": "심미 개선",
+            "secondText": "전반적인 미소 라인 개선",
+            "backgroundColor": "#FFFFFF"
+          }
+        ]
+      },
+      "procedure": {
+        "label": "블랑쉬 시술 과정",
+        "title": "단 하루면\n당신의 미소가\n작품이 됩니다",
+        "subtitle": "상담부터 완성까지 원데이로 진행됩니다.",
+        "steps": [
+          {
+            "number": "01",
+            "title": "디자인 상담",
+            "description": "얼굴형과 취향에 맞게\n치아모양, 색상, 라인을\n설계합니다."
+          },
+          {
+            "number": "02",
+            "title": "치아 정리",
+            "description": "완전 무삭제 혹은\n최소삭제로\n치아를 정돈합니다."
+          },
+          {
+            "number": "03",
+            "title": "3D 스캔",
+            "description": "구강스캐너로\n치아를 정밀하게\n측측합니다."
+          },
+          {
+            "number": "04",
+            "title": "보철물 제작",
+            "description": "자체 기공소에서\n프랑스 수련 기공사가\n제작합니다."
+          },
+          {
+            "number": "05",
+            "title": "부착 완료",
+            "description": "당일 블랑쉬를 부착하고\n시술을 완료합니다"
+          }
+        ]
+      },
+      "beforeAfter": {
+        "label": "라미네이트 시술 후기",
+        "title": "블랑쉬로 미소를 찾은 분들입니다",
+        "description": "화면을 드래그하여 전/후를 비교해 보세요",
+        "footer": "당신의 미소도,\n아름답게 변합니다",
+        "cases": [
+          {
+            "id": 1,
+            "title": "블랙트라이앵글",
+            "description": "틈을 메우고 싶지만 교정이 부담스럽다면"
+          },
+          {
+            "id": 2,
+            "title": "토끼이빨",
+            "description": "앞니가 유독 커보이거나 도드라져 보인다면"
+          },
+          {
+            "id": 3,
+            "title": "왜소치",
+            "description": "치아 크기가 작아 볼륨감이 아쉽다면"
+          },
+          {
+            "id": 4,
+            "title": "치아 변색",
+            "description": "심한 누런이로 미백 치료도 어렵다면"
+          },
+          {
+            "id": 5,
+            "title": "불규칙한 치열",
+            "description": "앞니가 겹치거나 배열 개선이 필요하다면"
+          },
+          {
+            "id": 6,
+            "title": "라미네이트 재시술",
+            "description": "오래된 라미네이트 교체가 필요하다면"
+          }
+        ]
+      },
+      "faq": {
+        "title": "자주 묻는 질문",
+        "mainTitle": "블랑쉬가 \n 친절하게 답해드릴게요",
+        "items": [
+          {
+            "question": "블랑쉬와 일반 라미네이트는\n어떻게 다른가요?",
+            "answer": "answer_rich_handled_in_component",
+            "answer_p1": "블랑쉬는 단순히 치아를 가리는 보철물이 아니라, 당신만의 아름다움을 끌어내는 맞춤 디자인입니다.",
+            "answer_p2": "블랑쉬는 전문 세라미스트가 상담부터 제작, 최종 부착까지 전 과정을 직접 진행합니다."
+          },
+          {
+            "question": "얇으면 쉽게 깨지지 않나요?\n얼마나 오래 쓸 수 있나요?",
+            "answer": "블랑쉬 라미네이트는 얇지만 고강도 세라믹 소재를 사용하여 내구성이 뛰어납니다. 적절한 관리와 정기적인 검진을 통해 10년 이상 사용할 수 있으며, 일상적인 음식 섭취에는 문제가 없습니다."
+          },
+          {
+            "question": "시술 후 잇몸이 붓거나\n냄새가 나지 않나요?",
+            "answer": "블랑쉬 라미네이트는 무삭제 또는 최소삭제 방식으로 진행되어 잇몸 자극이 최소화됩니다. 또한 정밀한 맞춤 제작으로 잇몸과의 접촉면이 최적화되어 부작용이 거의 없습니다."
+          },
+          {
+            "question": "다른 곳에서 한 라미네이트를\n블랑쉬로 바꿀 수 있나요?",
+            "answer": "네, 가능합니다. 기존 라미네이트를 제거한 후 블랑쉬 라미네이트로 교체할 수 있습니다. 먼저 상담을 통해 현재 상태를 확인하고, 최적의 교체 방안을 제안해드립니다."
+          },
+          {
+            "question": "시술 후 관리는 어떻게 하나요?",
+            "answer": "일반적인 칫솔질과 치실 사용으로 충분합니다. 다만, 너무 딱딱한 음식이나 얼음 등을 씹는 것은 피해주시고, 정기적인 검진을 받으시는 것을 권장합니다."
+          },
+          {
+            "question": "제작 기간은 얼마나 걸리나요?",
+            "answer": "블랑쉬 라미네이트는 정밀한 맞춤 제작을 위해 약 2-3주 정도 소요됩니다. 시술 전 상담과 설계를 포함하면 총 3-4주 정도의 기간이 필요합니다."
+          }
+        ],
+        "comparison": {
+          "headers": [
+            "구분",
+            "일반 라미네이트",
+            "블랑쉬"
+          ],
+          "rows": [
+            [
+              "치아 삭제",
+              "0.5mm 이상 삭제",
+              "무삭제 혹은 0.1mm 내외 정리"
+            ],
+            [
+              "제작 방식",
+              "외부 기공소 의뢰",
+              "원내 기공소 직접 제작"
+            ],
+            [
+              "디자인",
+              "일률적인 하얀 치아",
+              "개인형 맞춤 자연스러운 디자인"
+            ],
+            [
+              "내구성",
+              "단순 접착 방식",
+              "치아와 화학적 결합 방식"
+            ]
+          ]
+        }
+      },
+      "ctaSection": {
+        "label": "상담 예약 신청하기",
+        "title": "평생을 함께하는 미소,\n 블랑쉬가 만들어 드릴게요",
+        "description": "치아를 지키는 선택,\n그 선택을 위해 치아 상태를 \n면밀히 분석하고 \n투명하게 설명해드립니다 \n\n치아 고민, 블랑쉬를 찾아주세요",
+        "boxText": "미소가 \n작품이 \n되는곳",
+        "footerText": "블랑쉬에서,\n당신의 변화를 \n시작하세요"
+      }
+    },
+    "orthodontics": {
+      "hero": {
+        "text": "인비절라인 치아교정",
+        "subtitle": "아무도 모르게 비밀스럽고 예쁘게, 블랑쉬 투명교정"
+      },
+      "what": {
+        "description": "눈에 띄지 않는 투명한 교정 장치를 사용하여 통증과 불편함을 최소화하면서 이상적인 치열을 완성하는 최첨단 교정 치료입니다."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "교정 치료, 많이 아픈가요?",
+            "answer": "철사에 찔리는 통증은 걱정하지 마세요. 장치를 새로 교체한 직후 2~3일 정도 치아를 꽉 잡아주는 느낌이 들 수 있는데, 이는 치아가 계획된 위치로 잘 이동하고 있다는 긍정적인 신호입니다. 블랑쉬는 마찰력을 줄인 자가결찰 장치를 사용하여 환자분이 느끼는 불편함을 세심하게 관리합니다."
+          },
+          {
+            "question": "라미네이트와 교정 중 저에게 맞는 건 무엇인가요?",
+            "answer": "치아 자체가 깨지거나 변색되어 형태를 바꾸고 싶다면 '블랑쉬(라미네이트)'가 효과적이고, 삐뚤빼뚤한 위치를 바로잡고 싶으면 '인비절라인(교정)'이 정답입니다. 저희는 두 가지 솔루션을 모두 보유하고 있기에, 한쪽으로 치우치지 않고 환자분께 가장 이득이 되는 최선의 답을 제안해 드립니다."
+          },
+          {
+            "question": "장치는 하루에 얼마나 끼고 있어야 하나요?",
+            "answer": "치아는 끊임없이 원래 자리로 되돌아가려 합니다. 식사와 양치 시간을 제외한 잠잘 때를 포함해 항상 착용하셔야 세포 단위의 이동이 멈추지 않고 계획대로 진행됩니다. 장치를 빼놓는 시간이 길어질수록 고정 기간도 그만큼 늘어날 수 있습니다."
+          },
+          {
+            "question": "발음이 새서 일상생활이 불편하진 않을까요?",
+            "answer": "처음 착용 시 'ㅅ', 'ㅆ' 발음이 약간 어색할 수 있지만, 2~3일의 적응기만 지나면 혀가 장치에 익숙해져 자연스러워집니다. 실제로 정확한 전달력이 생명인 아나운서나 승무원분들도 장치를 착용한 채 근무할 만큼 일상생활에 지장이 없습니다."
+          },
+          {
+            "question": "교정 기간은 얼마나 걸릴까요?",
+            "answer": "치아 상태에 따라 다르지만, 앞니만 바로잡는 부분 교정은 3~6개월이면 충분합니다. 전체 교정은 평균 1년 6개월에서 2년 정도 소요되는데, 블랑쉬치과는 치아 이동을 방해하는 마찰력을 줄인 '2세대 클리피씨' 장치를 사용하여 일반 교정보다 기간을 2~6개월 더 단축해 드립니다."
+          },
+          {
+            "question": "병원마다 비용 차이가 나는 이유가 궁금해요.",
+            "answer": "교정은 단순히 치아를 펴는 것이 아니라 턱관절과 얼굴 전체의 균형을 맞추는 고난도 치료입니다. 블랑쉬치과는 10,000명 이상의 임상 케이스를 경험한 20년 경력의 전문의가 직접 진료하며, 아이테로(iTero) 3D 스캐너와 100% 정품 장치만을 사용합니다. 단 한 번에 제대로 끝내는 것이 가장 경제적인 교정입니다."
+          }
+        ]
+      }
+    },
+    "blog": {
+      "authors": {
+        "blanche_ms": {
+          "name": "치과왕 김태형",
+          "description": "안녕하세요. 서울 강남의 논현역에서 블랑쉬치과를 운영하는 치과의사 김태형입니다. 서울대학교 치과대학을 졸업했으며 블랑쉬, 임플란트, 교정 등의 진료를 통해 아름다운 미소를 만들고 자존감을 올려주는 일을 합니다."
+        }
+      },
+      "title": "BLOG",
+      "h1": "블랑쉬치과의원 블로그 | 강남치과, 논현역치과, 무삭제 라미네이트",
+      "description": "치과의사가 직접 작성하는 치아 이야기",
+      "metadata": {
+        "title": "블랑쉬치과의원 블로그 | 강남치과, 논현역치과, 무삭제 라미네이트",
+        "description": "서울대 출신 치과 전문의 전하는 치아 정보 라미네이트, 임플란트, 치아교정, 치아미백 등 궁금했던 정보를 쉽고 유익하게 알려드립니다",
+        "ogAlt": "블랑쉬치과 블로그"
+      },
+      "categories": {
+        "laminate": "라미네이트",
+        "scaling": "스케일링",
+        "implant": "임플란트",
+        "doctor-column": "전문의 칼럼",
+        "cavity": "충치",
+        "orthodontic": "치아교정",
+        "tooth-whitening": "치아미백",
+        "case": "치료 사례",
+        "notice": "공지",
+        "uncategorized": "미분류"
+      },
+      "common": {
+        "home": "홈",
+        "blog": "블로그",
+        "blogHome": "블로그 홈",
+        "back": "뒤로가기",
+        "prev": "이전",
+        "next": "다음",
+        "prevPost": "이전글",
+        "nextPost": "다음글",
+        "more": "더보기",
+        "author": "블랑쉬치과",
+        "authorLabel": "글쓴이",
+        "introSuffix": "와 관련된 유익한 치과 정보와 치료 사례를 확인해 보세요",
+        "noPrevPost": "이전 글이 없습니다",
+        "noNextPost": "다음 글이 없습니다",
+        "pagination": "페이지네이션",
+        "prevPage": "이전 페이지",
+        "nextPage": "다음 페이지",
+        "pageLabel": "페이지 {page}"
+      },
+      "post": {
+        "blancheBlog": "블랑쉬 블로그",
+        "consultationHeader": "블랑쉬치과 상담신청",
+        "faqTitle": "자주하는 질문",
+        "toc": "목차",
+        "form": {
+          "name": "성함",
+          "phone": "전화번호",
+          "department": "진료과목",
+          "departments": {
+            "blanche": "블랑쉬",
+            "implant": "임플란트",
+            "orthodontic": "교정",
+            "etc": "기타진료"
+          },
+          "privacy": "개인정보처리방침에 동의합니다",
+          "privacyLink": "자세히보기",
+          "choice": "선택해주세요",
+          "submit": "상담 예약하기",
+          "submitting": "제출 중",
+          "success": "상담 신청이 완료되었습니다.",
+          "successBody": "빠른 시일 내에 연락드리겠습니다.",
+          "error": "상담 신청 중 오류가 발생했습니다.",
+          "errorBody": "상담 신청 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요."
+        }
+      }
+    }
+  },
+    "tech": {
+    "title": {
+      "default": "Blanche's Technology"
+    },
+    "mainText": {
+      "desktop": [
+        "Acquired Venture Company Certification",
+        "Handcrafted by artisans at",
+        "Blanche Lab"
+      ]
+    },
+    "description1": {
+      "default": [
+        "Crafted by ceramists trained in",
+        "France and Switzerland.",
+        "",
+        ""
+      ]
+    },
+    "description2": {
+      "default": [
+        "To perfectly reflect what you desire,",
+        "Blanche operates the only exclusive in-house lab in Korea."
+      ]
+    }
+  },
+  "expert": {
+    "title": {
+      "default": "Blanche's Expert Medical Team"
+    },
+    "mainText": {
+      "desktop": [
+        "For one person's smile,",
+        "six experts deliberate together"
+      ]
+    },
+    "subText": {
+      "desktop": [
+        "A collaborative system of 6 specialists with over 15 years",
+        "average experience creates one perfect result."
+      ]
+    },
+    "teamInfo": {
+      "default": [
+        "A collaborative system of 6 specialists with over 15 years",
+        "average experience creates one perfect result."
+      ]
+    }
+  },
+  "beforeafter": {
+    "header": {
+      "title": {
+        "default": "Blanche Before & After"
+      },
+      "subtitle": {
+        "desktop": [
+          "Changes in smiles",
+          "made by Blanche"
+        ]
+      }
+    },
+    "modal": {
+      "reviewTitle": {
+        "default": "Reviews of becoming naturally pretty\nat Blanche Dental Clinic."
+      },
+      "viewBlog": {
+        "default": "View {patientName}'s Blog"
+      }
+    },
+    "cases": [
+      {
+        "id": 1,
+        "treatmentType": "Blanche",
+        "treatmentPeriod": "One-Day",
+        "quote": "I was surprised it really finished in one day. They did exactly what I wanted, and the detailed explanation made me feel comfortable!",
+        "patientName": "",
+        "image": "/assets/beforeafter/case-1.webp",
+        "reviewTitle": "My biggest worry about laminate was teeth preparation.",
+        "reviewContent": "I visited many places, but I trusted the one that consulted most honestly.\nI decided to proceed with 'minimal prep'.",
+        "alt": "Blanche Laminate treatment case image"
+      },
+      {
+        "id": 4,
+        "treatmentType": "Blanche",
+        "treatmentPeriod": "One-Day",
+        "quote": "They tailored everything to my needs and communicated well. Other places couldn't do this!",
+        "patientName": "",
+        "image": "/assets/beforeafter/case-2.webp",
+        "reviewTitle": "I've been delaying out of fear of the dentist for 20 years.",
+        "reviewContent": "I couldn't put it off anymore. Thanks to sleep anesthesia, \neveyrthing was done when I woke up. I should have done it sooner.",
+        "alt": "Blanche Implant treatment case image"
+      },
+      {
+        "id": 3,
+        "treatmentType": "Blanche",
+        "treatmentPeriod": "One-Day",
+        "quote": "I was worried since my case required prep, but I didn't feel discomfort. Didn't know it would also have an orthodontic effect.",
+        "patientName": "Kim Da-Woon, Regained Balance",
+        "image": "/assets/beforeafter/case-3.webp",
+        "reviewTitle": "As a service worker, visible braces were a burden.",
+        "reviewContent": "With clear aligners, people couldn't tell even up close.\nI could remove them when I wanted, making meals easy.",
+        "alt": "Blanche Invisalign orthodontic treatment case image"
+      },
+      {
+        "id": 2,
+        "treatmentType": "Blanche",
+        "treatmentPeriod": "One-Day",
+        "quote": "Experiencing it firsthand was different. Met my expectations with detailed communication. Highly recommended.",
+        "patientName": "Park Si-Won, Gifted a treatment",
+        "image": "/assets/beforeafter/case-4.webp",
+        "reviewTitle": "I couldn't even consider implants due to the fear of pain.",
+        "reviewContent": "They recommended sleep anesthesia during consultation. \nI felt absolutely no pain and had a comfortable surgery. Thank you.",
+        "alt": "Blanche Sleep Anesthesia Implant treatment case image"
+      }
+    ],
+    "labels": {
+      "treatmentPeriod": "치료 기간",
+      "viewDetails": "상세 보기",
+      "close": "닫기",
+      "prevCard": "이전 카드",
+      "nextCard": "다음 카드"
+    }
+  },
+  "magazine": {
+    "header": {
+      "title": {
+        "default": "Blanche Blog"
+      },
+      "subtitle": {
+        "desktop": [
+          "Dental stories written",
+          "directly by dentists"
+        ]
+      }
+    },
+    "cases": [
+      {
+        "id": 1,
+        "treatmentType": "Is Laminate Okay?",
+        "treatmentPeriod": "2026.01.09",
+        "quote": "If you're anxious about laminate, find out about side effects, preparation amounts, and design standards.",
+        "patientName": "Editor Blanche",
+        "image": "/assets/magazine/post-01.webp",
+        "reviewTitle": "The Start of Dental Health, Proper Brushing",
+        "reviewContent": "Detailed content goes here.",
+        "alt": "Blanche informative content on choosing laminates"
+      },
+      {
+        "id": 2,
+        "treatmentType": "Beware of cheap\nlaminates.",
+        "treatmentPeriod": "2026.01.08",
+        "quote": "Promotional prices are attractive but require caution. Check 7 lists to avoid regret.",
+        "patientName": "Editor Blanche",
+        "image": "/assets/magazine/post-02.webp",
+        "reviewTitle": "Finding the Right Smile for Me",
+        "reviewContent": "Detailed content goes here.",
+        "alt": "Blanche informative content on cheap laminates"
+      },
+      {
+        "id": 3,
+        "treatmentType": "Considering\nFull Implants?",
+        "treatmentPeriod": "2026.01.07",
+        "quote": "Don't just look at the cost. Check average prices, lifespan, maintenance, and cases before consulting.",
+        "patientName": "Editor Blanche",
+        "image": "/assets/magazine/post-03.webp",
+        "reviewTitle": "2026 Dental Trends",
+        "reviewContent": "Detailed content goes here.",
+        "alt": "Blanche informative content on full implants"
+      },
+      {
+        "id": 4,
+        "treatmentType": "Invisalign Reviews,\nFrom 30s to Protruding Teeth",
+        "treatmentPeriod": "2026.01.06",
+        "quote": "Introducing before & after changes of Invisalign in 30s and cases of protruding teeth.",
+        "patientName": "Editor Blanche",
+        "image": "/assets/magazine/post-04.webp",
+        "reviewTitle": "Interview with Dr. Blanche",
+        "reviewContent": "Detailed content goes here.",
+        "alt": "Blanche informative content on Invisalign"
+      }
+    ],
+    "labels": {
+      "date": "발행일",
+      "readMore": "더보기"
+    }
+  },
+  "cta": {
+    "subtitle": {
+      "default": "Comfortable Consultation"
+    },
+    "title": {
+      "mobile": [
+        "Blanche starts with",
+        "an accurate diagnosis"
+      ],
+      "desktop": [
+        "Blanche starts with an accurate diagnosis"
+      ]
+    },
+    "description": {
+      "desktop": [
+        "We closely analyze your current condition",
+        "and suggest the most suitable treatment direction.",
+        "",
+        "Feel free to consult about your dental concerns"
+      ]
+    },
+    "footer": {
+      "desktop": [
+        "At Blanche,",
+        "begin your",
+        "transformation"
+      ]
+    },
+    "form": {
+      "title": "Consultation Request",
+      "name": "Name",
+      "namePlaceholder": "Name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Phone Number",
+      "department": "Treatment Course",
+      "departmentPlaceholder": "Treatment Course",
+      "departmentOptions": {
+        "blanche": "Blanche",
+        "implant": "Implant",
+        "orthodontic": "Orthodontics",
+        "other": "Other Treatments"
+      },
+      "privacy": "I agree to the privacy policy.",
+      "privacyLink": "Details",
+      "submit": "Book Consultation",
+      "submitting": "Submitting...",
+      "validation": {
+        "nameRequired": "Please enter your name.",
+        "phoneRequired": "Please enter your phone number.",
+        "departmentRequired": "Please select a treatment course.",
+        "privacyRequired": "Please agree to the privacy policy.",
+        "phoneEmpty": "Please enter\nyour phone number",
+        "phoneError": "Please check\nyour phone number",
+        "phoneErrorDetail": "Please enter a valid\nmobile number.",
+        "nameDetail": "Please enter your name\nfor a smooth consultation.",
+        "phoneEmptyDetail": "Please enter your phone number\nfor a smooth consultation.",
+        "deptDetail": "Please select a treatment course\nfor a smooth consultation.",
+        "privacyDetail": "Please agree to the privacy policy\nto request a consultation."
+      },
+      "success": "Consultation request completed.",
+      "successBody": "We will contact you shortly.",
+      "successDetail": "We will contact you\nshortly.",
+      "error": "An error occurred during the request.",
+      "errorBody": "An error occurred during the request. Please try again later.",
+      "errorDetail": "An error occurred during the request.\nPlease try again later."
+    },
+    "boxText": "Where a smile \nbecomes a \nmasterpiece"
+  },
+  "footer": {
+    "companyName": "블랑쉬치과의원",
+    "ceo": "대표원장 : 김태형",
+    "address": "서울특별시 서초구 강남대로 531, 7층",
+    "registration": "사업자등록번호 : 847-56-00935",
+    "medicalNumber": "의료기관명칭: 블랑쉬치과의원 | 제12345호",
+    "phone": "연락처 : 1877-2882",
+    "feeList": "비급여 수가표",
+    "privacyPolicy": "개인정보처리방침",
+    "copyright": "COPYRIGHT © BLANCHE DENTAL CLINIC.",
+    "brandSlogan": "당신의 미소가 우리의 자부심입니다."
+  },
+  "implant": {
+    "title": "블랑쉬 임플란트 | 블랑쉬치과의원 - 강남치과, 논현역치과, 무삭제 라미네이트",
+    "description": "3만 건 식립 노하우 강남 블랑쉬치과 서울대 출신 의료진의 무절개 수면 임플란트로 통증 걱정 없이 안전하게 시술하세요",
+    "hero": {
+      "title": "임플란트",
+      "subtitle": "대한민국 임플란트 '명의'\n블랑쉬만의 임플란트 프로토콜",
+      "button": "상담 예약하기"
+    },
+    "banner": {
+      "message": "더 건강하게 오래 사용하는\n인공치아, 임플란트 시술로\n일상의 즐거움을 되찾으세요."
+    },
+    "philosophy": {
+      "topText": [
+        "10년 전",
+        "아버지의 임플란트를",
+        "해드렸습니다"
+      ],
+      "bottomText": {
+        "mobile": [
+          "그 마음 그대로,",
+          "여러분의 빠진 치아도",
+          "최선을 다해",
+          "치료하고자 합니다."
+        ],
+        "desktop": [
+          "그 마음 그대로,",
+          "여러분의 빠진 치아도 최선을 다해",
+          "치료하고자 합니다."
+        ]
+      }
+    },
+    "expertise": {
+      "label": "임플란트 전문성",
+      "title": {
+        "mobile": "임플란트, \n경험과 진료 환경, 관리 방법도\n 20년 이상의 수명을\n 결정합니다",
+        "desktop": "임플란트, 경험과 진료 환경, 관리 방법도\n20년 이상의 수명을 결정합니다"
+      },
+      "columns": [
+        {
+          "title": "임플란트 100대 명의",
+          "items": [
+            "3만 건 이상 식립 경험",
+            "대한민국 100대 임플란트 명의 선정",
+            "서울대 치과대학 출신 전문의료진"
+          ]
+        },
+        {
+          "title": "대학병원급 시설과 환경",
+          "items": [
+            "정밀 분석 시스템",
+            "맞춤형 제작 장비",
+            "안전한 수면, 마취 시스템"
+          ]
+        },
+        {
+          "title": "유지관리 프로그램",
+          "items": [
+            "정기검진 시스템",
+            "임플란트 보증제 실시",
+            "철저한 A/S 지원"
+          ]
+        }
+      ]
+    },
+    "location": {
+      "label": "임플란트란",
+      "title": {
+        "mobile": "빠진 치아를 대체해\n인공치근을 식립하는\n방법입니다",
+        "desktop": "빠진 치아를 대체해\n인공치근을 식립하는 방법입니다"
+      },
+      "description": {
+        "mobile": "임플란트는\n잇몸뼈에 인공 치아 뿌리를 심고,\n그 위에 자연 치아를 닮은\n인공 치아를 씌우는 시술입니다.\n자연치아를 대체하며,\n제대로 수술 받으신다면\n20년 이상 사용이 가능합니다.",
+        "desktop": "임플란트는 잇몸뼈에 인공 치아 뿌리를 심고,\n그 위에 자연 치아를 닮은 인공 치아를 씌우는 시술입니다.\n자연치아를 대체하며, 제대로 수술 받으신다면\n20년 이상 사용이 가능합니다."
+      },
+      "differenceTitle": "브릿지, 틀니와의 차이",
+      "differenceDesc": {
+        "mobile": "브릿지는 주변 치아를 깎아야 하고,\n틀니는 주변 치아에\n불필요한 자극을 주지만\n임플란트는 그런 단점이 없습니다.",
+        "desktop": "브릿지는 주변 치아를 깎아야 하고,\n틀니는 주변 치아에 불필요한 자극을 주지만\n임플란트는 그런 단점이 없습니다."
+      },
+      "implant": {
+        "title": "임플란트",
+        "alt": "블랑쉬치과 임플란트 구조 설명, 잇몸뼈에 식립되는 픽스처와 보철 크라운 구성",
+        "table": [
+          {
+            "label": "고정력",
+            "value": "잇몸뼈에 고정, 흔들림 없음"
+          },
+          {
+            "label": "씹는 힘",
+            "value": "자연치아의 80~90%"
+          },
+          {
+            "label": "관리",
+            "value": "일반 양치+정기 검진"
+          },
+          {
+            "label": "수명",
+            "value": "관리 시 반영구적"
+          }
+        ]
+      },
+      "denture": {
+        "title": "일반 틀니",
+        "alt": "일반적인 틀니 보철 이미지",
+        "table": [
+          {
+            "label": "고정력",
+            "value": "잇몸 위에 올려놓는 방식"
+          },
+          {
+            "label": "씹는 힘",
+            "value": "자연치아의 20~30%"
+          },
+          {
+            "label": "관리",
+            "value": "매일 탈착 세척"
+          },
+          {
+            "label": "수명",
+            "value": "5~7년마다 재제작"
+          }
+        ]
+      },
+      "banner": {
+        "mobile": "더 건강하게 오래 사용하는\n인공치아, 임플란트 시술로\n일상의 즐거움을 되찾으세요.",
+        "desktop": "더 건강하게 오래 사용하는\n인공치아, 임플란트 시술로\n일상의 즐거움을 되찾으세요."
+      }
+    },
+    "tabs": {
+      "label": "임플란트 종류",
+      "subtitle": "어떤 상황이라도 환자의 상태에 맞게,\n가장 합리적인 시술을 제공합니다",
+      "items": {
+        "digital": {
+          "label": "디지털 풀아치임플란트",
+          "title": "디지털 풀아치임플란트",
+          "description": "틀니의 불편함 없이,\n전체 치아를 회복합니다.\n\n전체 치아가 상실되었거나\n 모든 치아가 흔들리는 분들을 위한\n 고정식 임플란트입니다.\n\n최소한의 임플란트 식립(4~6개)만으로\n 전체 치아의 기능을 완벽하게 복원하는\n 고난도 시술 방식입니다.",
+          "features": [
+            {
+              "title": "추천 대상",
+              "items": [
+                "잇몸뼈가 부족한 분",
+                "틀니가 불편한 분",
+                "전체 임플란트가 불가능한 분"
+              ]
+            },
+            {
+              "title": "주요 장점",
+              "items": [
+                "심는 개수가 적어 비용 부담 감소",
+                "수술 당일 식사가 가능",
+                "뼈이식 생략 가능"
+              ]
+            }
+          ],
+          "duration": [
+            "짧게는 2주, 길게는 3개월 내 완성"
+          ],
+          "tech": [
+            "3차원 디지털 CT+구강 스캐너를 활용해 정확한 위치에 식립합니다.",
+            "원내 기공소에서 직접 설계해 빠르고 정밀하게 제작합니다.",
+            "수술 당일 임시치아 장착으로 치료 기간 중 불편함을 줄일 수 있습니다."
+          ],
+          "cases": {
+            "label": "시술 사례",
+            "guide": "화면을 드래그하여 전/후를 비교해 보세요",
+            "items": [
+              {
+                "title": "60대 환자분, 윗니 전체 상실",
+                "description": "\"치료 후에 식사가 편해지고\n발음도 안정되었습니다.\""
+              },
+              {
+                "title": "60대, 윗니 전체 발치 후 치료",
+                "description": "\"음식 먹을 때 윗니가 흔들리곤 했는데\n너무 편해요.\""
+              },
+              {
+                "title": "70대 남성, 풀아치 임플란트(하악)",
+                "description": ""
+              },
+              {
+                "title": "70대 여성, 풀아치 임플란트(전악)",
+                "description": ""
+              }
+            ]
+          }
+        },
+        "all": {
+          "label": "전체임플란트",
+          "title": "전체임플란트",
+          "description": "치아를 모두 잃었거나 \n남은 치아가 제 역할을 못하는\n 분들을 위한 치료입니다.\n\n틀니처럼 빼고 끼는 방식이 아니라,\n 턱뼈에 임플란트를 심어\n 인공 치아를 단단히 고정합니다.",
+          "features": [
+            {
+              "title": "추천 대상",
+              "items": [
+                "치아 대부분을 잃은 분",
+                "틀니가 아프거나 자꾸 빠지는 분",
+                "남은 치아도 오래 못 갈 것 같은 분"
+              ]
+            },
+            {
+              "title": "주요 장점",
+              "items": [
+                "자연치아의 80~90% 씹는 힘",
+                "턱뼈가 줄어드는 것 방지",
+                "얼굴형, 발음 개선"
+              ]
+            }
+          ],
+          "duration": [
+            "3~6개월, 임시치아 적응 기간 포함"
+          ],
+          "tech": [
+            "3D CT로 뼈 상태, 신경 위치를 정밀 분석해 설계합니다.",
+            "씹는 높이와 얼굴 균형까지 함께 계획합니다."
+          ],
+          "cases": {
+            "label": "시술 사례",
+            "guide": "화면을 드래그하여 전/후를 비교해 보세요",
+            "items": [
+              {
+                "title": "70대 후반 남성, 미국에서 한국까지 내원",
+                "description": "\"치아 하나로 다시 젊어진 기분이 들어요.\""
+              },
+              {
+                "title": "50대 후반 남성, 대구에서 서울까지 내원",
+                "description": "\"웃는데 자신감이 생겼고, 먹는 재미도 되찾았습니다.\""
+              },
+              {
+                "title": "50대 남성, 전체임플란트(상악)",
+                "description": ""
+              }
+            ]
+          }
+        },
+        "incisionless": {
+          "label": "무절개임플란트",
+          "title": "무절개임플란트",
+          "description": "통증, 출혈, 부기를 최소화하는\n 블랑쉬치과의 '무절개 정밀 식립'\n\n잇몸을 크게 절개하지 않고\n 필요한 부위만 최소한으로 접근해\n 식립합니다.\n\n1개 식립 시 2~3분 내외,\n 수술 당일 외식이나 모임도\n 가능할 정도로 편안합니다.",
+          "features": [
+            {
+              "title": "추천 대상",
+              "items": [
+                "임플란트가 처음이라 막연한 분",
+                "재치료가 두려운 분",
+                "장시간 진료가 힘든 분"
+              ]
+            },
+            {
+              "title": "주요 장점",
+              "items": [
+                "절개가 작아 통증, 붓기 부담 감소",
+                "봉합 최소화로 회복이 빠름",
+                "수술 당일 일상생활 가능"
+              ]
+            }
+          ],
+          "duration": [
+            "1개당 2~3분 내외, 당일 일상 복귀 가능"
+          ],
+          "tech": [
+            "3D CT로 잇몸뼈 상태를 미리 파악해 정확한 위치에 식립합니다.",
+            "무절개 전용 임플란트로 수술 시간을 단축합니다.",
+            "무조건 무절개가 아닌, CT 진단 후 본인에게 맞는 방식을 선택합니다."
+          ],
+          "cases": {
+            "label": "시술 사례",
+            "guide": "화면을 드래그하여 전/후를 비교해 보세요",
+            "items": [
+              {
+                "title": "50대 여성 / 수도권에서 서울 내원",
+                "description": "\"씹을 때 불안함이 사라졌고,\n식사할 때 한쪽으로만 쓰지 않아도 됐어요.\""
+              },
+              {
+                "title": "40대 후반 여성 / 직장인",
+                "description": "\"잇몸을 절개한다는 부담이 없어서,\n생각했던 것보다 훨씬 편하게 지나갔어요.\""
+              }
+            ]
+          }
+        },
+        "navi": {
+          "label": "네비게이션임플란트",
+          "title": "네비게이션임플란트",
+          "description": "더 정확하게, 더 안전하게 식립합니다.\n\n3D CT와 구강스캐너 데이터를 바탕으로\n 식립 위치, 각도를 미리 계획하고\n 그대로 정확하게 식립합니다.\n\n네비게이션은\n \"무절개를 위한 기술\"이 아니라, \n안전성과 예지성을 높이는 도구입니다.",
+          "features": [
+            {
+              "title": "추천 대상",
+              "items": [
+                "여러개를 한 번에 식립하는 경우",
+                "교합이 무너져 복잡한 경우",
+                "더 정확한 식립을 원하는 경우"
+              ]
+            },
+            {
+              "title": "주요 장점",
+              "items": [
+                "신경관을 피해 안전하게 식립",
+                "뼈가 두꺼운 최적 위치 선택",
+                "케이스에 따라 당일 임시 치아 가능"
+              ]
+            }
+          ],
+          "duration": [
+            "수술 30~40분 내외",
+            "하악은 마취 포함 1시간 내외"
+          ],
+          "tech": [
+            "3D CT + 구강스캐너로 정밀 분석 후 3D 프린팅 수술 가이드 제작합니다.",
+            "오스템 원가이드(OneGuide) 기반의 가이드 수술을 진행합니다.",
+            "수술 전 보철을 위치까지 함께 고려해 설계합니다."
+          ],
+          "cases": {
+            "label": "시술 사례",
+            "guide": "화면을 드래그하여 전/후를 비교해 보세요",
+            "items": [
+              {
+                "title": "50대 남성 / 다수 임플란트 케이스",
+                "description": "\"어디에 어떻게 들어가는지 미리 보고 진행해서,\n결과가 예측 가능하다는 느낌이 들었어요.\""
+              },
+              {
+                "title": "50대 초반 여성 / 구치부 다수 임플란트",
+                "description": "\"어디에 어떻게 식립되는지 미리 확인하고 진행해서,\n결과에 대한 불안이 크지 않았어요.\""
+              }
+            ]
+          }
+        }
+      }
+    },
+    "ctaSection": {
+      "mobile": "심는 것보다\n오래 유지하는 것이 더 중요합니다.\n블랑쉬치과는 평생 관리하는\n주치의가 되겠습니다",
+      "desktop": "심는 것보다\n오래 유지하는 것이 더 중요합니다.\n블랑쉬치과는 평생 관리하는\n주치의가 되겠습니다",
+      "sectionLabel": "상담 예약 신청하기",
+      "sectionTitle": "평생을 함께하는 미소,\n블랑쉬가 만들어 드릴게요",
+      "description": "치아를 지키는 선택,\n그 선택을 위해 치아 상태를 \n면밀히 분석하고 \n투명하게 설명해드립니다 \n\n치아 고민, 블랑쉬를 찾아주세요",
+      "designElements": {
+        "box": "미소가 \n작품이 \n되는곳",
+        "text": "블랑쉬에서,\n당신의 변화를 \n시작하세요"
+      }
+    },
+    "ctaForm": {
+      "label": "상담 예약 신청하기",
+      "title": [
+        "20년 이상 사용하는\n",
+        "임플란트를 목표로 합니다\n",
+        "충분한 상담을 통해\n선택하세요"
+      ],
+      "description": "블랑쉬치과는 현재 치아와 잇몸 상태에서\n최선의 방향을 알려드리고\n판단할 수 있도록 돕습니다.\n\n자세한 상담이 필요하시다면,\n언제든 블랑쉬치과를 찾아주세요.",
+      "designElements": {
+        "box": "미소가\n작품이\n되는곳",
+        "text": "블랑쉬에서,\n당신의 변화를\n시작하세요"
+      }
+    },
+    "recommendation": {
+      "label": "임플란트 브랜드",
+      "title": "블랑쉬치과는 검증된 브랜드,\n100% 정품만을 사용합니다",
+      "brands": [
+        {
+          "name": "스트라우만",
+          "description": "세계 판매 1위, 스위스 정밀 공학의 결정체입니다. 독보적인 표면 처리 기술로 뼈와 붙는 속도가 빠르고 장기 안정성이 뛰어나 전 세계적으로 가장 신뢰받는 명품 임플란트입니다.",
+          "features": [
+            "SLA 특수 표면처리 기술 적용",
+            "5mm 이하의 얇은 두께로 식립 가능",
+            "임플란트 주위염 발병률 최저 수준"
+          ],
+          "alt": "스트라우만 임플란트 이미지, 정밀한 표면 처리 기술이 적용된 프리미엄 임플란트"
+        },
+        {
+          "name": "오스템",
+          "description": "국내 1위, 가장 많은 치과의사가 선택한 브랜드입니다. 한국인의 구강 구조에 최적화된 디자인과 방대한 임상 데이터를 보유하고 있어 믿을 수 있습니다.",
+          "features": [
+            "치료 기간 단축",
+            "다양한 종류로 환자 맞춤 가능",
+            "외부 이물질에 대한 저항력이 높음"
+          ],
+          "alt": "오스템 임플란트 이미지, 국내 치과에서 널리 사용되는 표준 임플란트 시스템"
+        },
+        {
+          "name": "메가젠",
+          "description": "유럽 수출 1위, 강력한 고정력을 자랑합니다. 뼈가 약하거나 얇은 경우에도 특유의 나사선 디자인으로 튼튼하게 고정되는 프리미엄 임플란트입니다.",
+          "features": [
+            "빠른 뼈 재생력과 높은 수술 성공률",
+            "특허받은 기술력으로 튼튼하게 식립",
+            "3D 시술로 정확도와 안전성이 높음"
+          ],
+          "alt": "메가젠 임플란트 이미지, 고정력을 고려한 나사산 구조의 임플란트"
+        }
+      ]
+    },
+    "design": {
+      "label": "임플란트 설계",
+      "title": {
+        "mobile": "오래, 건강하게 \n사용하는 임플란트를 위해\n블랑쉬치과는 시술보다\n '설계'를 먼저 생각합니다.",
+        "desktop": "오래, 건강하게 사용하는 임플란트를 위해\n블랑쉬치과는 시술보다 '설계'를 먼저 생각합니다"
+      },
+      "columns": [
+        {
+          "title": "정밀 진단",
+          "description": "정밀 CT, 3D시뮬레이션으로\n정확한 뼈 상태를 분석합니다."
+        },
+        {
+          "title": "맞춤 설계",
+          "description": "심미보철과의 조화를 고려해\n기능과 심미를 반영한\n치료 계획을 세웁니다."
+        },
+        {
+          "title": "유지관리",
+          "description": "임플란트 장기 안정성을 높이기 위해,\n환자 맞춤 유지관리 프로그램을\n세웁니다."
+        }
+      ]
+    },
+    "sleep": {
+      "label": "수면 임플란트",
+      "title": {
+        "mobile": "통증에 대한 걱정 없이,\n편안한 수면 상태에서\n임플란트를 완료합니다",
+        "desktop": "통증에 대한 걱정 없이,\n편안한 수면 상태에서 임플란트를 완료합니다"
+      },
+      "columns": [
+        {
+          "title": "안전한 수면 치료 시스템",
+          "description": "사전진단 시스템으로 맞춤형 수면 치료를 계획하고, 실시간 모니터링으로 산소포화도, 심박수, 혈압을 체크하여 안전한 치료를 제공합니다."
+        },
+        {
+          "title": "의식하진정법",
+          "description": "완전 무의식의 인공 호흡이 필요한 전신마취와는 달리, 얕은 수면 상태로 자가 호흡을 유지하는 수면치료로 몸에 무리가 가지 않습니다."
+        },
+        {
+          "title": "최소 용량-최대 진정효과",
+          "description": "미다졸람과 케타민의 안전한 약물 조합으로 진행되며, 정확한 용법과 용량을 지켜 부작용 문제를 차단합니다."
+        }
+      ],
+      "faq": {
+        "title": "자주 묻는 질문",
+        "mainTitle": "치과수면치료 상담 전\n궁금해하는 것들,\n블랑쉬치과가 알려드립니다",
+        "items": [
+          {
+            "question": "수면치료 시 준비 사항이 따로 있나요?",
+            "answer": "개인별로 안내를 드리지만, 일반적으로 치료 전 6시간 금식이 필요합니다. 편안한 복장을 착용하시면 됩니다. 시술 후 졸음이 지속될 수 있어 혼자 운전하거나 혼자 귀가하는 것은 피하시고, 보호자 동행을 권장합니다."
+          },
+          {
+            "question": "전신마취와 수면치료는 다른 건가요? 위험하지 않나요?",
+            "answer": "아니요, 다릅니다. 블랑쉬치과의 수면치료는 '의식하진정법'으로 반의식 상태에서 자가 호흡이 가능하고 외부 자극에 반응할 수 있습니다. 전신마취에 비해 신체 부담이 훨씬 적고 회복이 빠릅니다. 의료진이 지속적으로 환자 상태를 모니터링합니다."
+          },
+          {
+            "question": "치료 도중에 깰 수도 있나요?",
+            "answer": "환자의 약물 반응에 따라 의식이 잠깐 돌아올 수 있습니다. 이 경우 의료진이 즉시 안전하게 약물 용량을 조절하여 편안한 상태로 복귀시켜드리므로 과도하게 걱정하실 필요는 없습니다."
+          },
+          {
+            "question": "수면치료 중에는 통증을 전혀 느끼지 못하나요?",
+            "answer": "수면치료 중에는 거의 통증을 느끼지 못합니다. 의식하진정과 국소마취를 함께 시행하여 통증을 최소화합니다. 마취가 풀린 후 일부 통증이 있을 수 있으나, 처방된 약물과 충분한 휴식으로 관리 가능합니다."
+          },
+          {
+            "question": "수면치료 후 부작용이나 후유증은 없나요?",
+            "answer": "시술 직후 일시적인 어지러움, 졸음, 메스꺼움이 발생할 수 있으나 대부분 몇 시간 내 자연스럽게 사라집니다. 안전을 위해 시술 당일 운전, 기계 조작, 중요한 계약이나 판단이 필요한 일은 피하시고 충분한 휴식을 취하시기 바랍니다."
+          },
+          {
+            "question": "수면치료에 사용되는 약물은 안전한가요?",
+            "answer": "사용하는 진정제인 미다졸람과 케타민은 검증된 안전성을 가지고 있습니다. 블랑쉬치과는 치료 전·중·후 모든 과정에서 생체 신호(산소포화도, 심박수, 혈압)를 실시간으로 모니터링하며 필요시 적절한 안전 조치를 취합니다."
+          }
+        ]
+      }
+    },
+    "process": {
+      "label": "임플란트 과정",
+      "title": "블랑쉬치과의 체계적인\n5단계 임플란트 과정",
+      "steps": [
+        {
+          "number": "01",
+          "title": "정밀 진단 및 상담",
+          "description": "3D CT와 구강 스캐너로 뼈 상태를 정밀하게 분석하고, 환자분의 건강 상태를 고려한 1:1 맞춤 치료 계획을 수립합니다."
+        },
+        {
+          "number": "02",
+          "title": "1차 수술 (임플란트 식립)",
+          "description": "계획된 위치에 인공 치근(뿌리)을 정확하게 심습니다. 필요한 경우, 부족한 뼈를 채우는 뼈 이식을 함께 진행합니다."
+        },
+        {
+          "number": "03",
+          "title": "골 유착 및 치유",
+          "description": "임플란트와 잇몸 뼈가 단단하게 붙는 기간입니다. 개인차에 따라 보통 2~6개월 정도 소요됩니다."
+        },
+        {
+          "number": "04",
+          "title": "2차 수술 및 보철물 장착",
+          "description": "잇몸을 다듬고 기둥을 연결한 뒤, 주변 치아와 조화를 이루는 최종 보철물(머리)을 제작하여 장착합니다."
+        },
+        {
+          "number": "05",
+          "title": "정기 검진 및 사후 관리",
+          "description": "반영구적인 사용을 위해 꼼꼼한 사후 관리가 필수입니다. 정기적인 스케일링과 검진으로 임플란트 주위염을 예방하고 건강하게 유지합니다."
+        }
+      ]
+    },
+    "director": {
+      "label": "대표원장 소개",
+      "title": "30,211건의 임플란트 식립 경험,\n어렵고 까다로운 케이스도 \n블랑쉬치과는 가능합니다",
+      "description": {
+        "mobile": "풍부한 자문 활동과 \n압도적 임상 데이터를 바탕으로 \n가장 이상적인 결과를 약속드립니다",
+        "desktop": "풍부한 자문 활동과 압도적 임상 데이터를 바탕으로 \n가장 이상적인 결과를 약속드립니다"
+      },
+      "doctorAlt": "대표원장",
+      "slogan": "불가능은 없다",
+      "award": "대한민국 100대 명의 '임플란트 부문' 선정",
+      "achievements": [
+        "대한민국 100대 명의 '임플란트 부문' 선정",
+        "스트라우만(Straumann) 임플란트 식립 수 강남 1위",
+        "글로벌 4대 임플란트 제조사 공식 임상자문 및 위촉",
+        "스트라우만(Straumann) 공식 임상자문치과",
+        "오스템(Osstem) 공식 임상자문치과",
+        "메가젠(Megagen) 공식 임상자문치과",
+        "덴티움(Dentium) 공식 임상자문치과"
+      ],
+      "doctorInfo": "서울대 졸업,\n뉴욕 컬럼비아 대학,\nUCLA 치과병원 연수",
+      "doctorName": "김태형 원장",
+      "signatureAlt": "김태형 원장 서명"
+    },
+    "cta": {
+      "title": "식립보다 중요한 것은 오래도록 유지하는 것, 블랑쉬치과가 당신의 평생 주치의가 되어드립니다",
+      "button": "카카오톡 상담하기"
+    },
+    "equipment": {
+      "title": "임플란트 진료 장비",
+      "subtitle": "0.1mm 오차도 허용하지 않는\n정밀한 디지털 장비",
+      "description": "빠르고 정확한 진단 장비로\n최소한의 내원만으로도\n만족스러운 결과를 약속합니다.",
+      "items": [
+        {
+          "nameKo": "초정밀 3D CT",
+          "nameEn": "Dentium Bright CT",
+          "headline": "프리미엄 3D 카메라로 편리하고 빠르며 정확한 스캔이 가능한 CT 장비.",
+          "description": "프리미엄 3D 카메라로 편리하고 빠르며 정확한 스캔이 가능한 CT 장비.",
+          "alt": "블랑쉬치과 Dentium Bright CT로 임플란트 전 골 구조를 정밀 진단하는 3D CT 장비"
+        },
+        {
+          "nameKo": "3D 구강스캐너",
+          "nameEn": "Prime Scan | Dentsply Sirona",
+          "headline": "번거로운 본뜨기 과정 없이 더 정확하고 빠른 스캔이 가능한 장비.",
+          "description": "번거로운 본뜨기 과정 없이 더 정확하고 빠른 스캔이 가능한 장비.",
+          "alt": "블랑쉬치과 Prime Scan 구강스캐너로 본뜨기 없이 정확하게 스캔하는 디지털 장비"
+        },
+        {
+          "nameKo": "원내기공장비",
+          "nameEn": "Inlab MC-XL",
+          "headline": "빠른 속도와 정밀함을 갖춘 밀링 기공장비로 우수한 효율성 제공.",
+          "description": "빠른 속도와 정밀함을 갖춘 밀링 기공장비로 우수한 효율성 제공.",
+          "alt": "블랑쉬치과 Inlab MC-XL 원내 밀링 장비로 임플란트 보철물을 정밀 제작하는 시스템"
+        },
+        {
+          "nameKo": "원내기공장비",
+          "nameEn": "InLab Profire | Dentsply Sirona",
+          "headline": "정밀한 온도 제어가 가능한 고품질 기공장비.",
+          "description": "정밀한 온도 제어가 가능한 고품질 기공장비.",
+          "alt": "블랑쉬치과 Inlab Profire 기공장비로 보철물 소결을 정밀 제어하는 디지털 장비"
+        },
+        {
+          "nameKo": "원내기공장비",
+          "nameEn": "프레스퍼니스 x1 l Ivoclar",
+          "headline": "세라믹 보철물을 정밀하고 안정적으로 소성·프레스할 수 있는 기공장비",
+          "description": "세라믹 보철물을 정밀하고 안정적으로 소성·프레스할 수 있는 기공장비",
+          "alt": "블랑쉬치과 프레스피니스 X1 기공장비로 세라믹 보철물을 안정적으로 제작하는 시스템"
+        },
+        {
+          "nameKo": "무통마취기",
+          "nameEn": "오스템 Slow Jec",
+          "headline": "마취부터 통증 없이, 편안한 치과 치료.",
+          "description": "마취부터 통증 없이, 편안한 치과 치료.",
+          "alt": "블랑쉬치과 오스템 Slow Jec 무통마취기로 마취 통증을 줄여주는 주입 장비"
+        },
+        {
+          "nameKo": "무통마취기",
+          "nameEn": "Quicksleep5 | DHT",
+          "headline": "DHT사의 정밀한 기술로 구현한 통증 최소화 국소마취 시스템.",
+          "description": "DHT사의 정밀한 기술로 구현한 통증 최소화 국소마취 시스템.",
+          "alt": "블랑쉬치과 Quicksleep5 무통마취기로 미세 제어해 마취 통증을 최소화하는 장비"
+        }
+      ]
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "mainTitle": "임플란트 상담 전\n궁금해하는 것들,\n블랑쉬치과가\n알려드립니다",
+      "items": [
+        {
+          "question": "임플란트 시술은 아픈가요?",
+          "answer": "수술은 국소 마취 하에 진행되어 통증을 거의 느끼지 않습니다.\n수술 후 마취가 풀리면서 약간의 불편함이 있을 수 있지만,\n처방된 진통제로 충분히 관리됩니다.\n대부분 1~2일 내에 일상 복귀가 가능합니다."
+        },
+        {
+          "question": "임플란트 수명은 얼마나 되나요?",
+          "answer": "적절한 관리가 이루어진다면 평생 사용할 수 있습니다. \n수명은 구강 위생 관리, 전신 건강 상태, 정기 검진 여부에 따라 달라집니다. \n임플란트 주위염 예방을 위해 정기적인 스케일링과 검진이 필수입니다."
+        },
+        {
+          "question": "임플란트를 몇 개까지 받을 수 있나요?",
+          "answer": "뼈 상태에 따라 최대 28개까지 받을 수 있습니다.\n단일 치아 상실부터 전체 치아 상실까지 다양한 경우에 적용 가능하며,\n 무치악 환자의 경우 All-on-4나 All-on-6 방식으로\n적은 수의 임플란트로도 전체 치열을 복원할 수 있습니다."
+        },
+        {
+          "question": "임플란트 비용은 얼마인가요?",
+          "answer": "사용되는 재료, 시술의 복잡성, 치과의사의 경험 등에 따라 달라집니다.\n65세 이상 고령자의 경우 건강보험 혜택을 받을 수 있습니다.\n정확한 비용은 상담을 통해 안내드립니다."
+        },
+        {
+          "question": "임플란트를 받기 전에 금연해야 하나요?",
+          "answer": "네, 금연을 권장합니다.\n흡연은 잇몸과 뼈의 혈류를 감소시켜 회복을 더디게 하고\n임플란트 주위염의 위험을 증가시킵니다.\n시술 전후 금연을 유지하는 것이 임플란트 성공에 매우 중요합니다."
+        },
+        {
+          "question": "임플란트 주위염은 무엇인가요?",
+          "answer": "임플란트 주위의 잇몸과 뼈에 염증이 생기는 질환입니다.\n구강 위생 관리가 제대로 이루어지지 않으면 발생할 수 있으며,\n치료하지 않으면 뼈 손실이 발생해 임플란트가 탈락할 수 있습니다.\n예방을 위해 정기적인 검진과 구강 위생 관리가 필수입니다."
+        }
+      ]
+    }
+  },
+  "whitening": {
+    "title": "치아미백 | 블랑쉬치과의원 - 강남치과, 논현역치과, 무삭제 라미네이트",
+    "description": "누런 치아 고민, 블랑쉬치과에서 해결하세요 1:1 맞춤 미백으로 통증은 줄이고 효과는 확실하게! 정품 미백제와 특수 광선으로 완성하는 환한 미소",
+    "hero": {
+      "title": "치아미백",
+      "subtitle": "본연의 투명함을 되찾는,\n블랑쉬 1:1 맞춤 치아미백",
+      "button": "상담 예약하기"
+    },
+    "recommendation": {
+      "title": "이런 분들께\n추천합니다",
+      "items": [
+        "중요한 면접이나 결혼식을 앞두신 분",
+        "커피, 카레 등으로 치아가 착색되신 분",
+        "금연 후 깨끗한 이미지를 찾고 싶은 분",
+        "더 밝고 환한 미소로 자신감을 얻고 싶은 분"
+      ]
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "치아미백을 하면 치아가 깎이거나 손상되나요?",
+          "answer": "아니요, 치아미백은 치아를 깎아내는 것이 아니라 치아 표면의 미세한 구멍에 쌓인 착색 물질을 특수 미백제로 분해하는 원리입니다. 치아 자체를 손상시키지 않고 본래의 색을 되찾아주는 안전한 시술입니다."
+        },
+        {
+          "question": "시술 중이나 후에 이가 많이 시린가요?",
+          "answer": "블랑쉬는 식품의약품안전처(KFDA)의 승인을 받은 정품 미백제만을 사용하며, 잇몸 보호제를 꼼꼼히 도포하여 자극을 최소화합니다. 사람에 따라 일시적으로 약간의 시림 현상이 있을 수 있으나, 보통 하루 이내에 사라집니다."
+        },
+        {
+          "question": "치료 효과는 얼마나 지속되나요?",
+          "answer": "개인의 식습관과 관리 상태에 따라 다르지만 보통 1~2년 정도 유지됩니다. 커피, 녹차, 카레 등 색소가 강한 음식을 피하고 정기적으로 스케일링을 받으시면 더 오래 백색을 유지하실 수 있습니다."
+        },
+        {
+          "question": "미백 후 바로 식사가 가능한가요?",
+          "answer": "시술 후 약 1~2시간 동안은 치아 표면이 착색에 취약한 상태이므로 음식 섭취를 피하시는 것이 좋습니다. 특히 초기 24시간 동안은 김치, 커피, 콜라 등 색소가 있는 음식은 피해주셔야 효과가 극대화됩니다."
+        },
+        {
+          "question": "전문가 미백과 자가 미백의 차이가 무엇인가요?",
+          "answer": "전문가 미백은 높은 농도의 미백제와 특수 광선을 사용하여 단기간에 확실한 효과를 냅니다. 자가 미백은 집에서 낮은 농도의 미백제를 사용하여 유지 기간을 늘리는 데 도움을 줍니다. 블랑쉬는 빠른 효과를 위해 전문가 미백을 우선 권장해 드립니다."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "intro": {
+      "title": "블랑쉬치과 소개 | 블랑쉬치과의원 - 강남치과, 논현역치과, 무삭제 라미네이트",
+      "description": "논현역 블랑쉬치과에서 자연스러운 미소를 찾으세요! 라미네이트·임플란트 전문의 협진과 자체 기공소로 정밀함을 더합니다",
+      "siteName": "블랑쉬치과 의원",
+      "pageName": "블랑쉬치과 소개"
+    },
+    "default": {
+      "title": "블랑쉬치과",
+      "description": "단 하루면 당신의 미소가 작품이 됩니다 블랑쉬치과"
+    }
+  },
+  "price": {
+    "title": "비급여 수가표",
+    "description": "블랑쉬치과에서 제공하는 비급여 진료 항목 및 수가 안내입니다.",
+    "metadata": {
+      "title": "비급여 수가표 | 블랑쉬치과의원 - 강남치과, 논현역치과, 무삭제 라미네이트",
+      "description": "블랑쉬치과 비급여 수가표 안내! 임플란트, 원데이 무삭제 라미네이트 등 투명한 가격을 확인하세요 강남 주말 및 야간진료가 가능합니다"
+    }
+  },
+  "privacy": {
+    "title": "개인정보 처리방침",
+    "description": "블랑쉬치과 개인정보 처리방침입니다. 수집 항목과 이용 목적, 보유 기간 등을 명확히 공지합니다. 안전한 서비스를 위해 규정된 내용을 확인해 보세요",
+    "metadata": {
+      "title": "개인정보 처리방침 | 블랑쉬치과의원 - 강남치과, 논현역치과, 무삭제 라미네이트",
+      "description": "블랑쉬치과 개인정보 처리방침입니다. 수집 항목과 이용 목적, 보유 기간 등을 명확히 공지합니다. 안전한 서비스를 위해 규정된 내용을 확인해 보세요."
+    }
+  },
+  "solutionHeroScale": {
+    "title": "블랑쉬 치과 진료 서비스",
+    "subtitle": "어떤 치아 고민이든,\n블랑쉬만의 솔루션으로\n해결해 드립니다",
+    "button": "상담하기"
+  },
+  "solutionCard": {
+    "category": "시그니처 솔루션",
+    "title1": "블랑쉬가 가장 자신있는,\n프리미엄 심미 치료",
+    "title2": "블랑쉬 시그니처 솔루션",
+    "items": {
+      "implant": {
+        "title": "임플란트",
+        "description": "잃어버린 치아와\n일상을 되찾는\n정밀 임플란트입니다.",
+        "more": "더 알아보기 >"
+      },
+      "laminate": {
+        "title": "블랑쉬 라미네이트",
+        "description": "자연치아를\n지키며 완성하는\n프리미엄 라미네이트입니다.",
+        "more": "더 알아보기 >"
+      },
+      "orthodontics": {
+        "title": "인비절라인 치아교정",
+        "description": "아무도 모르게, 투명하게.\n얼굴의 조화를\n찾아드립니다.",
+        "more": "더 알아보기 >"
+      },
+      "whitening": {
+        "title": "치아미백",
+        "description": "착색을 지우고,\n본연의 투명함을 되찾는\n미백 시술입니다.",
+        "more": "더 알아보기 >"
+      }
+    }
+  },
+  "solutionGrid1": {
+    "category": "심미 보완 시술",
+    "title": "치아 너머,\n 더 자연스러운 미소를 위한\n입술과 스마일 라인까지,\n 심미 보완 시술",
+    "items": {
+      "gummySmile": {
+        "name": "거미스마일 보톡스",
+        "description": "웃을 때 잇몸이 과하게 보이는 고민,\n간단한 보톡스 시술로\n자연스럽게 개선합니다."
+      },
+      "vestibuloplasty": {
+        "name": "구강전정술",
+        "description": "입술의 움직임을 섬세하게 조절하여\n균형 잡힌 스마일 라인을\n만들어 드립니다."
+      },
+      "lipFiller": {
+        "name": "입술 필러",
+        "description": "볼륨과 라인을 채워\n입술 본연의 아름다움을\n완성합니다."
+      }
+    }
+  },
+  "solutionGrid2": {
+    "category": "치과 진료",
+    "title": "자연치아를 지키는\n기본에 충실한 진료,\n치과 진료",
+    "items": {
+      "checkup": {
+        "name": "구강 검진",
+        "description": "건강한 치아의 시작,\n정기적인 구강 검진으로\n미리 관리하세요."
+      },
+      "scaling": {
+        "name": "스케일링",
+        "description": "치석과 플라그를 깨끗하게.\n구강 건강의 기본을\n지켜드립니다."
+      },
+      "decay": {
+        "name": "충치&염증 치료",
+        "description": "초기 발견과\n정밀한 치료로\n자연치아를 오래 지킵니다."
+      }
+    }
+  },
+  "solutionBanner": {
+    "category": "수면 치료 솔루션",
+    "title": "치과가 두려웠던 분들을 위한\n블랑쉬 수면 치료 시스템까지\n수면 치료 솔루션",
+    "description": "통증과 구역반사가 걱정이었다면\n블랑쉬치과를 찾아주세요.\n\n#수면 임플란트\n#수면 사랑니 발치\n#수면 신경치료",
+    "more": "더 알아보기"
+  },
+  "solutionIntroduction": {
+    "category": "의료진 소개",
+    "title": "한 사람의 치아를 위해\n여섯 명의 전문가가\n함께 고민합니다",
+    "description": "평균 15년 이상 경력의\n6인 전문 의료진이\n하나의 완벽한 결과를 만듭니다."
+  },
+  "solutionCTA": {
+    "category": "상담 예약 신청하기",
+    "title": "어떤 치료가 필요한지\n잘 모르시겠다면,\n블랑쉬치과를 찾아주세요",
+    "description": "정확한 진단을 통해\n맞춤 솔루션을 제안해 드립니다.\n\n치아 고민, 편하게 상담해보세요.",
+    "designElements": {
+      "box": "미소가\n작품이\n되는곳",
+      "text": "블랑쉬에서,\n당신의 변화를\n시작하세요"
+    },
+    "title1": "어떤 치료가 필요한지",
+    "title2": "잘 모르시겠다면,",
+    "title3": "블랑쉬치과를 찾아주세요",
+    "brandSlogan1": "미소가\n작품이\n되는곳",
+    "brandSlogan2": "블랑쉬에서,\n당신의 변화를\n시작하세요"
+  }
+}

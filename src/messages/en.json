@@ -1,0 +1,2571 @@
+{
+  "common": {
+    "siteName": "Blanche Dental Clinic",
+    "ariaLabels": {
+      "menu": "Menu",
+      "viewDetails": "View Details",
+      "close": "Close",
+      "prevCard": "Previous Card",
+      "nextCard": "Next Card"
+    },
+    "altText": {
+      "heroMain": "We craft\nsmiles\nlike art",
+      "expertTeam": "Expert Medical Team",
+      "modelImage": "Model Image"
+    },
+    "home": "Home",
+    "confirm": "Confirm"
+  },
+  "siteMetadata": {
+    "title": "Blanche Dental Clinic | Gangnam, Nonhyeon, No-prep Laminate",
+    "description": "Blanche Dental Clinic in Gangnam Nonhyeon specializes in no-prep laminate, sleep implant, orthodontics, and teeth whitening, operated by Seoul National University alumni specialists."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for has been moved or is currently unavailable.\nPlease verify the address and try again.",
+    "goHome": "Return to Home",
+    "quickLinks": {
+      "title": "Quick Links",
+      "intro": "About Us",
+      "special": "Treatments",
+      "review": "Before & After",
+      "blog": "Blog"
+    },
+    "specialMenu": {
+      "implant": "Implant",
+      "laminate": "Blanche Veneer",
+      "orthodontics": "Invisalign",
+      "whitening": "Teeth Whitening",
+      "sleep": "Sedation"
+    }
+  },
+  "homeCustomer": {
+    "label": "Blanche Procedure Count",
+    "count": "70,011",
+    "date": "As of Jan 16, 2026",
+    "title": "Blanche, with over 70,000 procedures,\nis now available in the US and Japan",
+    "achievements": [
+      "Top 100 Doctors in Korea 'Laminate Division'",
+      "11 years of accumulated aesthetic research data",
+      "Collaborative system of 6 specialists with over 15 years average experience"
+    ]
+  },
+  "nav": {
+    "intro": "About Us",
+    "special": "Our\nTreatments",
+    "review": "Before & After",
+    "blog": "Blog",
+    "price": "Pricing",
+    "consultation": "Consultation",
+    "consultationBtn": "Book Appointment",
+    "mobileConsultationBtn": "Book Appointment Now",
+    "language": {
+      "kr": "Korean",
+      "jp": "Japanese",
+      "en": "English"
+    },
+    "specialMenu": {
+      "laminate": "Blanche Veneer",
+      "implant": "Implant",
+      "orthodontics": "Orthodontics",
+      "whitening": "Teeth Whitening",
+      "sleep": "Sedation"
+    }
+  },
+  "aboutHero": {
+    "label": "About Blanche",
+    "consultationBtn": "Book Consultation",
+    "title": "The Dental Atelier Designing Your Smile, \nBlanche Dental Clinic",
+    "description": "Pure as snow, Blanche.\nWe restore your clearest, most transparent natural beauty.\nMeticulous design completes your elegant and flawless smile."
+  },
+  "aboutStrength": {
+    "category": "Treatment Philosophy",
+    "title": "We consider your smile \neven 20 years from now",
+    "description": "Blanche Dental Clinic curates masterpieces \nthat endure the test of time.",
+    "cases": {
+      "0": {
+        "title": "Not just a simple laminate",
+        "quote": "Is it necessary to damage teeth worth over $100k just to look pretty?\nBlanche started from that question.\nMaximum beauty with minimal intervention.\nThat is the value Blanche pursues."
+      },
+      "1": {
+        "title": "We communicate kindly\nand listen carefully",
+        "quote": "Dental treatment is never an easy process.\n\nAt Blanche, we make sure to repeat all explanations at least four times.\nWe constantly check for any discomfort\nand will continue to improve."
+      },
+      "2": {
+        "title": "We constantly invest\nfor the best environment",
+        "quote": "While skill is important in dental treatment,\nthe environment and equipment are equally important.\nWe constantly invest to treat without fear and pain."
+      },
+      "3": {
+        "title": "If we can't do it,\nno one can",
+        "quote": "Trained at Seoul National University and Columbia & UCLA Dental Hospitals.\n\nWe are confident that Blanche's treatment, equipment, and medical staff are world-class."
+      }
+    }
+  },
+  "aboutDirector": {
+    "category": "Chief Director",
+    "title": "Beyond a smile,\nwe design a lifetime",
+    "description": "Crafting teeth that stay with you forever,\nwhile restoring your healthiest smile",
+    "name": "Chief Director Kim Tae-Hyung",
+    "credentials": "Major Career\n• Graduated from Seoul National University Dental College\n• Master's from SNU Graduate School of Dentistry\n• Trained at US Columbia & UCLA Dental Hospitals\n• Dental Advisor for SBS 'Doctor O's Clinic', YouTube 'Doctor Friends'\n• Clinical Advisor for Straumann & Osstem Implants\n• Surgery Center Director for Flapless Sleep Implants\n• Holds record for most Straumann BLX procedures\n• Selected among Top 100 Doctors in Korea (Implant Division)\n• Thesis (Study on the effect of professional teeth whitening)"
+  },
+  "aboutDoctors": {
+    "category": "Medical Team",
+    "title": "At Blanche, we never rely on \na single perspective. \nLeading specialists in every field \ncollaborate for perfection.",
+    "list": {
+      "0": {
+        "name": "Director Han Geon-Hee",
+        "title": "Specialist in Advanced General Dentistry",
+        "quote": "\"I promise conscientious care faithful to the basics, \nso you can smile comfortably without pain.\"",
+        "description": {
+          "0": "Graduated from Wonkwang University Dental College",
+          "1": "Completed Implant Course at SNU Graduate School of Dentistry",
+          "2": "Completed PS Endo Course",
+          "3": "Full Member of KAP and KAGD",
+          "4": "Full Member of Korean Academy of Oral & Maxillofacial Implantology",
+          "5": "Selected among Top 100 Doctors in Korea (Implant Division)",
+          "6": "Completed Implant Course at Columbia Dental College",
+          "7": "Completed Conservative Dentistry Course at Penn State University"
+        }
+      },
+      "1": {
+        "name": "Director Park Kyung-Ri",
+        "title": "Specialist in Advanced General Dentistry",
+        "quote": "\"Considering the balance of your entire oral health,\nI promise to provide safe and secure care.\"",
+        "description": {
+          "0": "B.A., Stanford University, USA",
+          "1": "D.D.S., Seoul National University, School of Dentistry",
+          "2": "M.S., Seoul National University, Graduate School of Dentistry",
+          "3": "Full Member, Korean Dental Society of Anesthesiology",
+          "4": "Clinical Externship, Columbia University & UCLA Dental Clinics",
+          "5": "Former Orthodontic Residency, Apgujeong Min Dental Clinic",
+          "6": "Full Member, Korean Academy of Prosthodontics"
+        }
+      },
+      "2": {
+        "name": "Director Baek Ju-Hee",
+        "title": "Specialist in Orthodontics",
+        "quote": "\"With expertise gathered from countless cases,\nI will treat you with delicate precision and comfort.\"",
+        "description": {
+          "0": "Graduated from Kyung Hee University Dental College (Valedictorian)",
+          "1": "Resident completed and Master's from Kyung Hee University Dental Hospital",
+          "2": "Certified Specialist in Orthodontics",
+          "3": "Adjunct Professor at Kyung Hee University School of Dentistry",
+          "4": "Presented Excellent Non-Extraction Orthodontic Case (Osaka Dental College)",
+          "5": "Presented Bracket Non-Extraction Orthodontic Case for Protruding Teeth (Japan)"
+        }
+      },
+      "3": {
+        "name": "Director Kim Min-Ju",
+        "title": "",
+        "quote": "\"I promise to deliver the finest care, \nensuring your smile becomes Blanche's signature.\"",
+        "description": {
+          "0": "Graduated from Pusan National University Dental College and Master's",
+          "1": "Completed Osstem Implant AIC Advanced Course",
+          "2": "Completed TMD Course by Korean Academy of TMD Education",
+          "3": "Full Member of IDAS (Implant Dentistry Art and Science)"
+        }
+      },
+      "4": {
+        "name": "Director Kim Ha-Young",
+        "title": "",
+        "quote": "\"With refined precision built over years,\nI discover the optimal answer for you.\"",
+        "description": {
+          "0": "Graduated from Kyung Hee University Dental College (Top Scholar)",
+          "1": "Recognized Fellow of Korean Academy of Esthetic Dentistry",
+          "2": "Completed Osstem Implant AIC Course",
+          "3": "Completed Dental Art Korea (DeArK) Course",
+          "4": "Full Member of KAED",
+          "5": "Full Member of Korean Academy of Conservative Dentistry",
+          "6": "Full Member of Korean Academy of Prosthodontics"
+        }
+      }
+    }
+  },
+  "aboutHistory": {
+    "category": "Clinic History",
+    "title": "Built upon 11 years of mastery,\nBlanche Dental Clinic continues to evolve",
+    "items": {
+      "0": {
+        "year": "2025.06",
+        "description": [
+          "Relocated to 'B722 Building', Nonhyeon Landmark (Grand Open)",
+          "Established high-end treatment environment & university hospital-level digital equipment",
+          "Built cooperative system of specialists by field",
+          "Strengthened medical tourism system for Global K-Medical Hub leap"
+        ]
+      },
+      "1": {
+        "year": "2024",
+        "description": [
+          "Selected among Top 100 Doctors in Korea 'Implant Division'",
+          "Appointed Clinical Advisor for Straumann & Osstem Implants",
+          "Dental Advisor for SBS 'Doctor O's Clinic', YouTube 'Doctor Friends'",
+          "Advanced in-house treatment system to increase customer satisfaction"
+        ]
+      },
+      "2": {
+        "year": "2023.07",
+        "description": [
+          "Opened Blanche Dental Clinic",
+          "Launched 'No-prep Laminate Blanche' signature solution",
+          "Introduced 1:1 responsible care and dedicated attending physician system",
+          "Established in-house dental lab 'Blanche Lab' & dedicated lab team",
+          "Established Blanche's unique aesthetic prosthetic design protocol"
+        ]
+      },
+      "3": {
+        "year": "2020.02",
+        "description": [
+          "Opened Seoul Haru Dental Clinic",
+          "Accumulated clinical data for no-prep laminates and implants",
+          "*A total of 11 years of clinical research and data accumulation since before Seoul Haru Dental Clinic"
+        ]
+      }
+    }
+  },
+  "aboutTech": {
+    "category": "In-house Lab",
+    "title": "The only smile of its kind in the world,\ncustom-designed for you \nat our exclusive in-house Blanche Lab",
+    "features": {
+      "0": {
+        "title": "1:1 Custom Design",
+        "description": "We analyze your face shape, lip line, skin tone, and gum line to design the most natural tooth. It's a custom prosthesis just for you, not a ready-made product from a factory."
+      },
+      "1": {
+        "title": "Replicating Natural Teeth",
+        "description": "A natural tooth is not just one color. Through dozens of ceramic layerings, we replicate the transparency for light transmission and subtle color tones."
+      },
+      "2": {
+        "title": "Real-time Communication",
+        "description": "Our resident lab team participates in treatments. Since the medical staff and lab technicians communicate and modify instantly, more precise and faster results are possible compared to external labs."
+      },
+      "3": {
+        "title": "Premium Materials and Equipment",
+        "description": "We use verified top-grade zirconia & ceramic materials, and ultra-precise 3D digital scanners. We create prosthetics that are aesthetically beautiful and functionally long-lasting."
+      }
+    }
+  },
+  "aboutEquipment": {
+    "category": "Digital Equipment",
+    "title": "Equipped with university hospital-grade tech,\nwe ensure more precise \nand exceptionally safe care",
+    "list": {
+      "0": {
+        "nameKo": "Prime Scan",
+        "nameEn": "Dentsply Sirona, Germany",
+        "tag": "Precise Diagnosis",
+        "subText": "Scans with light, without impressions",
+        "description": "Scans the mouth digitally without uncomfortable rubber impression materials. Precise to over 1M points/sec, enabling flawless prosthetic design."
+      },
+      "1": {
+        "nameKo": "Ultra-precise 3D CT",
+        "nameEn": "Dentium Bright CT",
+        "tag": "Precise Diagnosis",
+        "subText": "Checks bones and nerves in 3D",
+        "description": "Identifies gum bone condition and nerve position in 0.1mm units. Low-dose tech minimizes radiation exposure while establishing safe implant/orthodontic plans."
+      },
+      "2": {
+        "nameKo": "WaterLase",
+        "nameEn": "Water Drop Laser",
+        "tag": "Precise Diagnosis",
+        "subText": "Treats smoothly, without vibration",
+        "description": "Uses water and laser instead of drill noise and vibration to treat gums. Less pain and bleeding for faster recovery."
+      },
+      "3": {
+        "nameKo": "Ivoclar Press Furnace",
+        "nameEn": "Ivoclar Programat",
+        "tag": "Precise Production · In-house Lab",
+        "subText": "Replicates the transparency of natural teeth exactly",
+        "description": "Produces ceramic prosthetics using equipment from Ivoclar, a global dental material company. Bakes at a constant temperature/pressure for a color and transparency hard to distinguish from natural teeth."
+      },
+      "4": {
+        "nameKo": "Zirconia Milling Machine",
+        "nameEn": "Zirconia Milling Machine",
+        "tag": "Precise Production · In-house Lab",
+        "subText": "Carves precisely down to the micro unit",
+        "description": "Precisely processes zirconia based on digital design data. Produces prosthetics that fit the teeth and gum line perfectly."
+      },
+      "5": {
+        "nameKo": "Digital Painless Anesthesia Machine",
+        "nameEn": "I-JECT",
+        "tag": "Comfort and Safety",
+        "subText": "Minimizes the pain of anesthesia injections",
+        "description": "Injects anesthetic fluid at a constant speed and pressure, reducing stinging pain."
+      },
+      "6": {
+        "nameKo": "Ultra-high Pressure Sterilization System",
+        "nameEn": "Autoclave",
+        "tag": "Comfort and Safety",
+        "subText": "Thorough sterilization system with no cross-infection worries",
+        "description": "All instruments undergo ultra-high pressure sterilization. We strictly adhere to the 1-instrument-per-person rule, prioritizing patient safety."
+      }
+    }
+  },
+  "aboutFacility": {
+    "category": "Clinic Facilities",
+    "title": "A private and tranquil sanctuary \nwhere treatment transforms into pure relaxation",
+    "description": "From a waiting area that feels like a luxury lounge \nto fully isolated private treatment rooms,\nexperience exceptional care in a premium space",
+    "features": {
+      "0": {
+        "title": "Hotel-style Lounge",
+        "description": "We have prepared a hotel-style lounge space so even your waiting time is comfortable. Warm lighting and cozy furniture welcome our patients."
+      },
+      "1": {
+        "title": "1:1 Private Treatment Rooms",
+        "description": "All treatments are conducted 1:1 in isolated private rooms so you can receive care comfortably without worrying about others' gazes."
+      },
+      "2": {
+        "title": "Digital Diagnosis Center",
+        "description": "Precise and safe checkups are conducted in a center equipped with university hospital-level digital diagnostic equipment."
+      }
+    }
+  },
+  "aboutOtherCompany": {
+    "category": "Partners",
+    "title": "Places with Blanche",
+    "description": "Blanche Dental Clinic provides treatment convenience through partnerships with major corporations and various entertainment companies.",
+    "inquiry": "For partnership inquiries, please contact our Kakao channel <kakaoLink>@BlancheDental</kakaoLink>.",
+    "partners": {
+      "0": "Google",
+      "1": "Amorepacific",
+      "2": "Samsung Asset Management",
+      "3": "Big Boss Ent",
+      "4": "Barun Dental Ent",
+      "5": "Just Ent",
+      "6": "Gold Medalist Ent"
+    }
+  },
+  "aboutMap": {
+    "category": "Directions",
+    "title": "Right in front of Nonhyeon Station Exit 4,\nthe most accessible and convenient location",
+    "subtitle": "With our Sunday and night clinics,\nyou can comfortably visit \neven in your busy daily life",
+    "info": {
+      "address": "7F, 531 Gangnam-daero, Seocho-gu, Seoul",
+      "parking": "On-site parking available (Free Valet)",
+      "subway": "Line 7 / Shinbundang Line Nonhyeon Station Exit 4, 1-min walk",
+      "bus": "Get off at Nonhyeon Station Bus Stop"
+    },
+    "hours": {
+      "title": "Treatment Hours",
+      "day": "Day",
+      "time": "Hours",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun",
+      "night": "Night Clinic",
+      "noLunch": "No Lunch Break",
+      "lunchTitle": "Lunch Break",
+      "lunchInfo": "Weekdays 13:30 - 14:30\nSunday 13:00 - 14:00"
+    },
+    "parkingLabel": "Parking",
+    "supercar": "Supercar Parking Available",
+    "addressLabel": "Address",
+    "directionsLabel": "Directions",
+    "addressValue": "7F B722 Bldg, 531 Gangnam-daero, Seocho-gu, Seoul",
+    "parking": "Parking available in building",
+    "directions": "Right in front of Nonhyeon Station Exit 4"
+  },
+  "casesHero": {
+    "title": "Treatment Cases of Blanche",
+    "subtitle": {
+      "mobile": "Discover the mastery of Blanche,\nand explore our brilliant\nbefore and after now",
+      "desktop": "Discover the mastery of Blanche,\nand explore our before and after now"
+    },
+    "button": "Book Consultation",
+    "metadata": {
+      "title": "Blanche Dental Clinic | Treatment Cases",
+      "description": "Blanche's unique technology, check out the before and after now"
+    }
+  },
+  "casesPhilosophy": {
+    "category": "Treatment Philosophy",
+    "title": "Blanche Dental Clinic,\ntreating with sincerity",
+    "description": "What gives us strength is\nour patients' bright smiles.\nTo help you regain a healthy and happy smile,\nBlanche Dental Clinic will be with you."
+  },
+  "casesLaminate": {
+    "category": "Blanche",
+    "title": "Blanche Treatment Cases",
+    "description": "Smiles completed with no prep or minimal prep.\nYour smile can change too.",
+    "instruction": "Drag the screen to compare before and after",
+    "more": "Learn more about Blanche",
+    "items": {
+      "0": "Female 20s, crooked front teeth",
+      "1": "Female 20s, snaggletooth",
+      "2": "Female 20s, improved tooth shape",
+      "3": "Female 20s, black triangle",
+      "4": "Female 20s, improved tooth shape",
+      "5": "Male 40s, improved tooth color"
+    }
+  },
+  "casesImplant": {
+    "category": "Implant",
+    "title": "Implant Treatment Cases",
+    "description": "Blanche implants sought out nationwide.\nWith sleep implants and precise minimal incision,\neven temporary teeth are completed on the same day.",
+    "instruction": "Drag the screen to compare before and after",
+    "more": "Learn more about Blanche Implants",
+    "cases": {
+      "daegu": {
+        "title": "Late 50s Male, Full Arch Implant",
+        "story": "A male patient in his late 50s who visited from Daegu to Seoul and had temporary teeth attached on the same day after surgery. Reclaimed a bright smile and the joy of chewing after implant surgery at Blanche Dental Clinic."
+      },
+      "usa": {
+        "title": "Late 70s Male, Full Arch Implant",
+        "story": "A patient who visited Blanche Dental Clinic in Korea from the USA for SOI implant placement. Returned to the USA after completing the implants, having regained aesthetics and functionality through full arch implant surgery at Blanche."
+      }
+    },
+    "items": {
+      "3": "Male 50s, Full Arch Implant (Upper)",
+      "4": "Male 50s, Full Arch Implant (Upper)",
+      "5": "Male 60s, Full Arch Implant (Upper/Lower)"
+    }
+  },
+  "casesOrthodontics": {
+    "category": "Orthodontics",
+    "title": "Orthodontic Treatment Cases",
+    "description": "Customized orthodontics tailored to age and condition,\nFrom brackets to Clippy-C and Invisalign,\nBlanche is with you.",
+    "instruction": "Drag the screen to compare before and after",
+    "more": "Learn more about Blanche Orthodontics",
+    "items": {
+      "0": "Female 20s, Snaggletooth Bracket",
+      "1": "Female 30s, Invisalign",
+      "2": "Female 40s, Invisalign"
+    }
+  },
+  "casesReviews": {
+    "category": "Authentic Reviews",
+    "title": "Authentic reviews from guests\nwho experienced Blanche",
+    "items": {
+      "0": {
+        "name": "Kim Ji*",
+        "info": "Female, 22 / Cavity Treatment",
+        "content": "Diagnosed with 4 cavities elsewhere, but after examination at Blanche, only 2 were treated and 2 observed. Truly conscientious like on YouTube, valuing natural teeth. Will entrust my teeth to Blanche. Thank you Director ♡"
+      },
+      "1": {
+        "name": "Sung Min*",
+        "info": "Male, 45 / Implant",
+        "content": "Chose here because the head director operates directly. Many hospitals change doctors, which made me anxious. Thank you for treating me carefully without pain. Highly recommend to friends and family."
+      },
+      "2": {
+        "name": "Ji Soo*",
+        "info": "Female, 33 / Implant",
+        "content": "Born missing a tooth (haha). Found Dr. Kim Tae-Hyung while searching for an implant ♡ (No secret he's handsomer in person). Implant took just 5 minutes! Removed stitches today and it healed nicely. Will bring my mother too! Director is the best, clinic interior is so pretty."
+      },
+      "3": {
+        "name": "Moon Jun*",
+        "info": "Female, 27 / Blanche Laminate",
+        "content": "Got laminates elsewhere but didn't consider tooth color, so top and bottom colors were too different and looked artificial. Came for a revision. The color came out beautifully, very satisfied."
+      },
+      "4": {
+        "name": "Park Mi*",
+        "info": "Female, 30 / Blanche Laminate",
+        "content": "Hesitated due to hearing about laminate side effects. Unlike what I saw online, there was almost no tooth reduction and detailed explanations even for a layperson. The whitening nurse was so kind. The director quickly understood what I wanted and went with minimal (no) prep. Thank you!"
+      },
+      "5": {
+        "name": "Park Sun*",
+        "info": "Female, 38 / Blanche Laminate",
+        "content": "Whitening was always a concern due to frequent coffee drinking. Heard laminates are possible with almost no tooth reduction. It was done meticulously and beautifully without looking artificial."
+      },
+      "6": {
+        "name": "Yoo Seung*",
+        "info": "Female, 34 / Blanche Laminate",
+        "content": "Always bothered by uneven bottom teeth compared to top :) Writing this review with great satisfaction as they carefully checked color and shape. Confidence boosted (haha). Thank you Blanche!"
+      },
+      "7": {
+        "name": "Han Ye*",
+        "info": "Female, 37 / Implant",
+        "content": "Came after watching the director's YouTube. Delayed implant out of fear, but he explained in detail and operated painlessly. Only meant to consult but everyone was so kind I got surgery the same day. Relieved I can come without worries now."
+      },
+      "8": {
+        "name": "Lee Hye*",
+        "info": "Female, 31 / Cavity Treatment",
+        "content": "Came to change old amalgam to tooth color. Found a cavity via X-ray but treated painlessly. Manager, staff, and director were so kind. ♡ Clean and neat tooth color amalgam replacement >_<"
+      },
+      "9": {
+        "name": "Lee Kyung*",
+        "info": "Male, 42 / TMJ",
+        "content": "Visited because another clinic couldn't fix my jaw bite. Think it'll improve with regular care. Will sleep comfortably thanks to you. Thank you~ ♡ Fighting!!"
+      },
+      "10": {
+        "name": "Seo Chae*",
+        "info": "Female, 35 / Full Arch",
+        "content": "First visit today. Great facilities and trendy interior made me happy immediately. Kind hygienist, director, and manager made treatment pleasant. Thank you for the detailed X-ray and checkups. Receptionists were helpful too. May Blanche prosper~ Fighting~"
+      }
+    },
+    "altText": "Patient Treatment Review Image",
+    "beforeAlt": "Before Treatment",
+    "afterAlt": "After Treatment"
+  },
+  "casesPhilosophyDetails": {
+    "category": "Philosophy",
+    "title": "We think like this",
+    "description1": "Blanche Dental Clinic\nwill shoulder your worries for you.",
+    "description2": "Not just a good dental clinic,\nbut a clinic that brings happiness.",
+    "description3": "We appreciate the courage it takes to visit us,\nand we are committed to rewarding your trust\nwith a brighter smile and lasting oral health."
+  },
+  "casesCTA": {
+    "category": "Book Consultation",
+    "title": "A timeless, lifetime smile,\nBlanche will curate it for you",
+    "description": "The choice to preserve your teeth,\nfor this critical decision,\nwe meticuously analyze and transparently explain your condition.\n\nFor any dental concerns, consult with Blanche.",
+    "designElements": {
+      "box": "We craft\nsmiles\nlike art",
+      "text": "At Blanche,\nstart your\ntransformation"
+    }
+  },
+  "floatingActionButton": {
+    "kakao": "KakaoTalk",
+    "naverBooking": "Naver Booking",
+    "dentalKing": "Dental King",
+    "blog": "Official Blog",
+    "naverTalk": "Naver Talk",
+    "location": "Directions",
+    "quickMenu": "Quick Menu",
+    "fold": "Fold"
+  },
+  "hero": {
+    "subtitle1": "At Blanche,",
+    "subtitle2": "Rediscover your",
+    "subtitle3": "hidden smile.",
+    "rightContent": {
+      "text1": {
+        "default": "Our 6 leading specialists"
+      },
+      "text2": {
+        "default": "design your most natural smile"
+      },
+      "cta": {
+        "default": "Book Consultation Now"
+      }
+    }
+  },
+  "model": {
+    "topText": {
+      "desktop": [
+        "If you want to smile confidently,"
+      ]
+    },
+    "bottomText": {
+      "mobile": [
+        "Blanche",
+        "will restore",
+        "your confidence."
+      ],
+      "desktop": [
+        "Blanche",
+        "will restore",
+        "your confidence."
+      ]
+    }
+  },
+  "brand": {
+    "natural": {
+      "title": "Natural",
+      "description": {
+        "default": [
+          "Beyond artificial veneers,",
+          "the truly natural Blanche"
+        ]
+      }
+    },
+    "masterpieces": {
+      "title": "Masterpieces",
+      "description": {
+        "default": [
+          "Crafting every smile",
+          "as a masterpiece"
+        ]
+      }
+    },
+    "trust": {
+      "title": "Trust",
+      "description": {
+        "default": [
+          "Beyond mere treatment,",
+          "for teeth that last a lifetime"
+        ]
+      }
+    },
+    "footer": {
+      "text": {
+        "desktop": [
+          "Your smile is",
+          "our greatest pride."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "meta": {
+      "title": "Blanche Dental Clinic | Treatments",
+      "description": "Every dental need, perfected by Blanche's signature mastery."
+    },
+    "header": {
+      "subtitle": {
+        "default": "Blanche Signature Treatments"
+      },
+      "title": {
+        "desktop": [
+          "For any dental concern,",
+          "experience perfection",
+          "through Blanche's mastery"
+        ]
+      }
+    },
+    "programs": [
+      {
+        "id": 1,
+        "title": "Blanche",
+        "description": [
+          "Crafting bright",
+          "and flawless smiles"
+        ],
+        "image": "/assets/solution/item-01.webp",
+        "backgroundColor": "#EDECEA",
+        "alt": "Blanche crafting bright and flawless smiles"
+      },
+      {
+        "id": 2,
+        "title": "Blanche One-Day Implant",
+        "description": [
+          "Nationally recognized",
+          "excellence in care"
+        ],
+        "image": "/assets/solution/item-02.webp",
+        "backgroundColor": "#EDECEA",
+        "alt": "Blanche implant structure object image representing implant treatment"
+      },
+      {
+        "id": 3,
+        "title": "Invisalign Orthodontics",
+        "description": [
+          "Directed by a",
+          "22-year specialist"
+        ],
+        "image": "/assets/solution/item-03.webp",
+        "backgroundColor": "#EDECEA",
+        "alt": "Invisalign orthodontic appliance image used in Blanche transparent orthodontics treatment"
+      },
+      {
+        "id": 4,
+        "title": "#1 Nationwide Teeth Whitening",
+        "description": [
+          "SNU-certified results",
+          "for a brilliant smile"
+        ],
+        "image": "/assets/solution/item-04.webp",
+        "backgroundColor": "#EDECEA",
+        "alt": "Patient image with reborn teeth after laminate procedure at Blanche Dental Clinic"
+      },
+      {
+        "id": 5,
+        "title": "Sleep Dentistry",
+        "description": [
+          "Seamless care",
+          "while you rest"
+        ],
+        "image": "/assets/solution/item-05.webp",
+        "backgroundColor": "#EDECEA",
+        "alt": "Actual treatment scene performed by Blanche medical staff"
+      }
+    ],
+    "labels": {
+      "prevCard": "Previous Card",
+      "nextCard": "Next Card"
+    },
+    "laminate": {
+      "title": "No-Prep Laminate | Blanche Dental Clinic",
+      "description": "Blanche Dental Clinic's no-prep laminate preserves your natural teeth while perfecting an elegantly natural smile. It is an innovative aesthetic treatment that refines your teeth with zero damage.",
+      "meta": {
+        "title": "Blanche Laminate | Blanche Dental Clinic - No-Prep Laminate",
+        "description": "Blanche Laminate perfects your smile naturally by preserving your natural teeth. With meticulous craftsmanship from our in-house lab and an industry-leading 10-year warranty, we promise a healthy smile for decades."
+      },
+      "hero": {
+        "subtitle": "No-Prep Laminate",
+        "title": "Preserving your teeth\nto complete a flawless smile",
+        "description": "Achieve a beautifully aligned smile without sacrificing your natural teeth.",
+        "button": {
+          "text": "Book Consultation"
+        },
+        "textLayout": {
+          "text": "Blanche Laminate",
+          "subtitle": "Premium laminates\npreserving your teeth"
+        }
+      },
+      "what": {
+        "title": "What is No-Prep Laminate?",
+        "description": "An aesthetic dental treatment improving color, shape, and size by attaching ultra-thin ceramic veneers without grinding natural teeth.",
+        "image": {
+          "src": "/assets/laminate/laminate-1.webp",
+          "alt": "No-prep laminate illustration"
+        },
+        "textGroup": {
+          "firstText": "No-prep Laminate",
+          "secondText": "What is a no-prep laminate?",
+          "thirdText": "A method to transform\nyour front teeth without prep.\n\nHowever, minimal reshaping\nmay be needed occasionally."
+        },
+        "items": [
+          {
+            "title": "No-Prep Laminate",
+            "firstText": "No-Prep\nLaminate",
+            "secondText": "• Zero grinding\n• No sensitivity"
+          },
+          {
+            "title": "Minimal-prep Laminate",
+            "firstText": "Min-Prep\nLaminate",
+            "secondText": "• Under 0.1mm prep\n• No sensitivity"
+          },
+          {
+            "title": "General Laminate",
+            "firstText": "General\nLaminate",
+            "secondText": "• Excessive prep\n• Causes sensitivity"
+          }
+        ]
+      },
+      "highlight": {
+        "title": "Blanche Laminates are\nexclusively no-prep\nor minimal-prep.",
+        "description": "We craft the perfect smile while preserving the absolute maximum of your natural teeth.",
+        "image": {
+          "src": "/assets/laminate/laminate-2.webp",
+          "alt": "Laminate feature image"
+        }
+      },
+      "process": {
+        "label": "About Blanche",
+        "title": "The safest choice\nfor your teeth",
+        "description": "An exclusive laminate solution\ndeveloped through 11 years of research\nand over 20,000 clinical cases."
+      },
+      "solution": {
+        "title": "Treatment Process",
+        "steps": [
+          {
+            "number": 1,
+            "title": "Diagnosis",
+            "description": [
+              "Establishing the optimal plan",
+              "through precise diagnosis."
+            ]
+          },
+          {
+            "number": 2,
+            "title": "Temporary Laminate",
+            "description": [
+              "Crafting temporary laminates",
+              "to preview the shape."
+            ]
+          },
+          {
+            "number": 3,
+            "title": "Final Attachment",
+            "description": [
+              "Attaching your perfectly",
+              "custom-made laminates."
+            ]
+          }
+        ]
+      },
+      "recommendation": {
+        "label": "Recommended For",
+        "title": "If you have these concerns,",
+        "footer": "Reclaim your smile\nwith Blanche.",
+        "subtitle": "No-prep laminates are suitable for dark teeth, wide gaps, or irregular shapes.",
+        "features": [
+          {
+            "title": "Color Improvement",
+            "description": "For severely yellow or dark teeth"
+          },
+          {
+            "title": "Gap Adjustment",
+            "description": "For wide gaps between teeth"
+          },
+          {
+            "title": "Shape Refinement",
+            "description": "For irregular tooth shapes"
+          },
+          {
+            "title": "Prominent Teeth",
+            "description": "For front teeth that protrude or appear too large"
+          }
+        ],
+        "cases": [
+          {
+            "title": "Black Triangles",
+            "description": "Want to close gaps\nbut avoid braces"
+          },
+          {
+            "title": "Prominent Teeth",
+            "description": "Front teeth look\ntoo large or protruding"
+          },
+          {
+            "title": "Microdontia",
+            "description": "Teeth are too small\nlacking volume"
+          },
+          {
+            "title": "Discoloration",
+            "description": "Severe yellowing\nunfixable by whitening"
+          },
+          {
+            "title": "Irregular Alignment",
+            "description": "Overlapping front teeth\nneeding alignment"
+          },
+          {
+            "title": "Laminate Revision",
+            "description": "Need to replace\nold laminates"
+          }
+        ]
+      },
+      "highlight2": {
+        "title": "Side Effects of Limitless Prep",
+        "description": "Excessive grinding despite preservability\noften leads to sensitivity and gum inflammation.",
+        "image": {
+          "src": "/assets/laminate/laminate-3.webp",
+          "alt": "Blanche lab image"
+        }
+      },
+      "sideeffect": {
+        "title": "Side Effects & Precautions",
+        "description": "No-prep laminates carry almost no side effects. However, caution with hard foods and regular care are essential."
+      },
+      "strength": {
+        "header": {
+          "title": {
+            "default": "Blanche Strengths"
+          },
+          "subtitle": {
+            "desktop": [
+              "Blanche is different",
+              "Aiming for healthy teeth even 10 years later"
+            ]
+          }
+        },
+        "labels": {
+          "treatmentPeriod": "Treatment Period"
+        },
+        "cases": [
+          {
+            "id": 1,
+            "treatmentType": "Swiss Premium\nHybrid Ceramic",
+            "treatmentPeriod": "",
+            "quote": "Using 100% Swiss Feldspar-based\npremium ceramics.\n\nCrafting a seamlessly natural\ntransparency with a refractive index\nidentical to natural teeth.",
+            "patientName": "",
+            "image": "/assets/laminate/laminate-9.webp",
+            "reviewTitle": "Swiss Premium Hybrid Ceramic",
+            "reviewContent": "Using 100% Swiss Feldspar-based premium ceramics. Crafting a seamlessly natural transparency identically to natural teeth."
+          },
+          {
+            "id": 2,
+            "treatmentType": "In-house Facility\nBlanche Lab",
+            "treatmentPeriod": "",
+            "quote": "Handcrafted by a French-trained\ntechnician right next door.\n\nCustomized 1:1 analysis\nof gums and facial structure.",
+            "patientName": "",
+            "image": "/assets/laminate/laminate-10.webp",
+            "reviewTitle": "In-house Facility Blanche Lab",
+            "reviewContent": "Handcrafted by a French-trained technician right next door. Customized 1:1 analysis of gums and facial structure."
+          },
+          {
+            "id": 3,
+            "treatmentType": "0.01mm\nUltra-precision",
+            "treatmentPeriod": "",
+            "quote": "Ultra-thin crafting and bonding\nperfected over 11 years.\n\nPrep designs that prioritize\ntooth and gum health.",
+            "patientName": "",
+            "image": "/assets/laminate/laminate-11.webp",
+            "reviewTitle": "0.01mm Ultra-Precision Design",
+            "reviewContent": "Ultra-thin crafting and bonding perfected over 11 years. Prep designs that prioritize tooth and gum health."
+          },
+          {
+            "id": 4,
+            "treatmentType": "Industry-Max 10-Yr\nWarranty System",
+            "treatmentPeriod": "",
+            "quote": "Up to 10-year warranty\nwith no extra fees.\n\nComplete with regular checkups\nto preempt any issues.",
+            "patientName": "",
+            "image": "/assets/laminate/laminate-12.webp",
+            "reviewTitle": "Industry-Max 10-Yr Warranty System",
+            "reviewContent": "Up to 10-year warranty with no extra fees. Complete with regular checkups to preempt any issues."
+          }
+        ],
+        "title": "Strengths of Blanche Laminates",
+        "subtitle": "Performed directly by the Chief Director\nwith 30,000 cases of experience.",
+        "features": [
+          {
+            "title": "Swiss Premium Hybrid Ceramic",
+            "description": "100% Swiss Feldspar-based premium ceramics crafting a seamlessly natural transparency."
+          },
+          {
+            "title": "In-house Facility Blanche Lab",
+            "description": "Handcrafted by a French-trained technician customized 1:1 for your facial structure."
+          },
+          {
+            "title": "0.01mm Ultra-Precision Design",
+            "description": "Ultra-thin crafting and bonding prioritizing tooth and gum health."
+          },
+          {
+            "title": "10-Year Warranty & Care System",
+            "description": "Up to 10-year warranty with zero extra fees and regular preemptive checkups."
+          }
+        ],
+        "textGroup": {
+          "firstText": "About Blanche",
+          "secondText": "The safest choice for your teeth, Blanche"
+        }
+      },
+      "doctor": {
+        "label": "Directly Performed by the Chief Director",
+        "title": "Performed directly by the Chief Director\nwith 30,000 cases of experience.",
+        "description": "For no-prep or minimal-prep laminates,\nthe mastery and experience of the doctor\nabsolutely dictate the final outcome.",
+        "career": [
+          "Seoul National University Alumni",
+          "Trained at US Columbia Dental Hospital",
+          "Trained at UCLA Dental Hospital"
+        ],
+        "name": "Chief Director Kim Tae-Hyung"
+      },
+      "masterpiece": {
+        "title": "Treatment Cases",
+        "textGroup": {
+          "firstText": "Blanche Laminates",
+          "secondText": "Those who found their smiles with Blanche",
+          "thirdText": "Check the actual treatment results."
+        },
+        "items": [
+          {
+            "image": {
+              "src": "/assets/common/logo.svg",
+              "alt": "치료 사례 1"
+            },
+            "firstText": "Prominent Teeth",
+            "secondText": "Front teeth look too large or protruding",
+            "backgroundColor": "#F4F7FE4D"
+          },
+          {
+            "image": {
+              "src": "/assets/common/logo.svg",
+              "alt": "치료 사례 2"
+            },
+            "firstText": "Color Improvement",
+            "secondText": "For severely yellow or dark teeth",
+            "backgroundColor": "#FFFFFF"
+          },
+          {
+            "image": {
+              "src": "/assets/common/logo.svg",
+              "alt": "치료 사례 3"
+            },
+            "firstText": "Gap Adjustment",
+            "secondText": "For wide gaps between teeth",
+            "backgroundColor": "#FFFFFF"
+          },
+          {
+            "image": {
+              "src": "/assets/common/logo.svg",
+              "alt": "치료 사례 4"
+            },
+            "firstText": "Shape Refinement",
+            "secondText": "For irregular tooth shapes",
+            "backgroundColor": "#FFFFFF"
+          },
+          {
+            "image": {
+              "src": "/assets/common/logo.svg",
+              "alt": "치료 사례 5"
+            },
+            "firstText": "Aesthetic Revisions",
+            "secondText": "Overall smile line improvement",
+            "backgroundColor": "#FFFFFF"
+          }
+        ]
+      },
+      "procedure": {
+        "label": "Blanche Procedure Flow",
+        "title": "In just one day,\nyour smile transforms\ninto art.",
+        "subtitle": "Everything from consultation to completion happens in a single day.",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Design Consultation",
+            "description": "Designing the shape,\ncolor, and line to fit\nyour face and taste."
+          },
+          {
+            "number": "02",
+            "title": "Tooth Prep",
+            "description": "Refining teeth with\nzero grinding or\nabsolute minimal prep."
+          },
+          {
+            "number": "03",
+            "title": "3D Scanning",
+            "description": "Measuring teeth\nprecisely with an\noral 3D scanner."
+          },
+          {
+            "number": "04",
+            "title": "Prosthetic Crafting",
+            "description": "Handcrafted by a\nFrench-trained tech\nin our in-house lab."
+          },
+          {
+            "number": "05",
+            "title": "Final Attachment",
+            "description": "Attaching the Blanche\nand completing the\nprocedure same day."
+          }
+        ]
+      },
+      "beforeAfter": {
+        "label": "Laminate Treatment Reviews",
+        "title": "Those who found their smiles with Blanche",
+        "description": "Drag the screen to compare before and after",
+        "footer": "Your smile too,\nwill beautifully transform.",
+        "cases": [
+          {
+            "id": 1,
+            "title": "Black Triangles",
+            "description": "Want to close gaps but avoid braces"
+          },
+          {
+            "id": 2,
+            "title": "Prominent Teeth",
+            "description": "Front teeth look too large or protruding"
+          },
+          {
+            "id": 3,
+            "title": "Microdontia",
+            "description": "Teeth are too small lacking volume"
+          },
+          {
+            "id": 4,
+            "title": "Discoloration",
+            "description": "Severe yellowing unfixable by whitening"
+          },
+          {
+            "id": 5,
+            "title": "Irregular Alignment",
+            "description": "Overlapping front teeth needing alignment"
+          },
+          {
+            "id": 6,
+            "title": "Laminate Revision",
+            "description": "Need to replace old laminates"
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ",
+        "mainTitle": "Everything you wonder\nabout laminates, answered clearly",
+        "items": [
+          {
+            "question": "How is Blanche different\nfrom general laminates?",
+            "answer": "answer_rich_handled_in_component",
+            "answer_p1": "Blanche is not just a prosthetic that covers your teeth; it is a customized design that brings out your unique beauty.",
+            "answer_p2": "At Blanche, an expert ceramist handles the entire process directly, from consultation to crafting and final attachment."
+          },
+          {
+            "question": "Since it's thin, doesn't it break easily?\nHow long can it last?",
+            "answer": "Although Blanche laminates are ultra-thin, we use high-strength ceramics that offer outstanding durability. With proper care and regular checkups, they can last over 10 years, and there are absolutely no issues with daily eating."
+          },
+          {
+            "question": "Won't my gums swell\nor smell after the procedure?",
+            "answer": "Blanche laminates are performed with zero or absolute minimal grinding, so gum irritation is virtually nonexistent. In addition, precise custom crafting optimizes the contact surface with the gums, leaving almost no side effects."
+          },
+          {
+            "question": "Can I replace laminates done\nelsewhere with Blanche?",
+            "answer": "Yes, it is possible. After safely removing the existing laminates, we can replace them with Blanche laminates. We will first check your current condition through a consultation and propose the most optimal replacement plan."
+          },
+          {
+            "question": "How do I care for them\nafter the procedure?",
+            "answer": "Standard brushing and flossing are entirely sufficient. However, we recommend avoiding chewing on extremely hard foods or ice, and visiting for regular checkups."
+          },
+          {
+            "question": "How long does the\ncrafting process take?",
+            "answer": "To ensure hyper-precise custom crafting, Blanche laminates take about 2-3 weeks. Including pre-procedure consultation and design, the total period requires around 3-4 weeks."
+          }
+        ],
+        "comparison": {
+          "headers": [
+            "Category",
+            "General Laminate",
+            "Blanche"
+          ],
+          "rows": [
+            [
+              "Tooth Prep",
+              "Over 0.5mm grinding",
+              "Zero grinding or ~0.1mm refinement"
+            ],
+            [
+              "Crafting Method",
+              "Outsourced to external lab",
+              "Crafted directly in in-house lab"
+            ],
+            [
+              "Design",
+              "Uniformly white teeth",
+              "Personalized, natural custom design"
+            ],
+            [
+              "Durability",
+              "Simple adhesive method",
+              "Chemical bonding with the tooth"
+            ]
+          ]
+        }
+      },
+      "ctaSection": {
+        "label": "Book a Consultation",
+        "title": "A smile for a lifetime,\ncrafted by Blanche",
+        "description": "The choice to protect your teeth.\nWe thoroughly analyze your condition\nand explain every detail transparently.\n\nFor any dental concerns, visit Blanche.",
+        "boxText": "We craft\nsmiles\nlike art",
+        "footerText": "Your transformation\nbegins at Blanche"
+      }
+    },
+    "orthodontics": {
+      "hero": {
+        "text": "Invisalign Orthodontics",
+        "subtitle": "Secretly seamless, beautifully flawless. Blanche Clear Aligners."
+      },
+      "what": {
+        "description": "A state-of-the-art orthodontic treatment that uses virtually invisible clear aligners to perfect your smile, minimizing pain and discomfort for a seamless experience."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Is orthodontic treatment very painful?",
+            "answer": "Say goodbye to the pain of poking wires. You may feel a tight sensation for 2-3 days after changing to a new aligner, which is a positive sign that your teeth are shifting correctly into their planned positions. Blanche meticulously manages any discomfort by utilizing advanced low-friction self-ligating technology to ensure a smoother transition."
+          },
+          {
+            "question": "Should I choose laminates or orthodontics?",
+            "answer": "If you want to change the shape of teeth that are broken or discolored, 'Blanche Laminate' is effective. If you want to correct crooked alignment, 'Invisalign (Orthodontics)' is the answer. As we provide both solutions, we offer an unbiased, optimal recommendation tailored to your best interest."
+          },
+          {
+            "question": "How many hours a day should I wear the aligners?",
+            "answer": "Teeth constantly try to return to their original positions. You must wear them at all times, including during sleep—excluding meals and brushing—so the cellular movement continues as planned. The longer they are left out, the longer your treatment period may become."
+          },
+          {
+            "question": "Will it affect my pronunciation and disrupt my daily life?",
+            "answer": "You might find pronunciation slightly awkward initially, but your tongue naturally adapts within 2-3 days. In fact, professionals who rely on clear articulation—such as announcers and flight attendants—comfortably wear them at work without any disruption to their daily lives."
+          },
+          {
+            "question": "How long does orthodontic treatment take?",
+            "answer": "While it depends on your dental condition, partial orthodontics for front teeth requires only 3-6 months. Comprehensive orthodontics averages 1.5 to 2 years. Blanche Dental Clinic utilizes the advanced '2nd Generation Clippy-C' system, reducing friction that hiders tooth movement, which shortens the duration by 2-6 months compared to standard treatments."
+          },
+          {
+            "question": "Why do costs vary between clinics?",
+            "answer": "Orthodontics is a highly complex treatment that structurally balances the TMJ and your entire facial profile, not just straightening teeth. At Blanche, a specialist with 20 years of experience and over 10,000 clinical cases personally oversees your care, utilizing the iTero 3D scanner and 100% genuine system. Getting it impeccably right the first time is the most economical choice."
+          }
+        ]
+      }
+    },
+    "blog": {
+      "authors": {
+        "blanche_ms": {
+          "name": "Chief Director Kim Tae-Hyung",
+          "description": "Hello. I am Kim Tae-Hyung, a dedicated dentist directing Blanche Dental Clinic in Nonhyeon, Seoul. A graduate of Seoul National University College of Dentistry, I craft brilliantly natural smiles and elevate your confidence through Blanche, implants, and meticulous orthodontics."
+        }
+      },
+      "title": "BLOG",
+      "h1": "Blanche Dental Clinic Blog | Gangnam Dentistry, Nonhyeon Dentistry, No-Prep Laminate",
+      "description": "Dental insights curated directly by our specialists",
+      "metadata": {
+        "title": "Blanche Dental Clinic Blog | Gangnam Dentistry, Nonhyeon Dentistry, No-Prep Laminate",
+        "description": "Informational insights delivered by Seoul National University specialists. We provide essential knowledge on laminates, implants, orthodontics, and teeth whitening in an easy and beneficial way.",
+        "ogAlt": "Blanche Dental Clinic Blog"
+      },
+      "categories": {
+        "laminate": "Laminate",
+        "scaling": "Scaling",
+        "implant": "Implant",
+        "doctor-column": "Specialist Column",
+        "cavity": "Cavity",
+        "orthodontic": "Orthodontics",
+        "tooth-whitening": "Teeth Whitening",
+        "case": "Treatment Cases",
+        "notice": "Notice",
+        "uncategorized": "Uncategorized"
+      },
+      "common": {
+        "home": "홈",
+        "blog": "블로그",
+        "blogHome": "블로그 홈",
+        "back": "Back",
+        "prev": "Prev",
+        "next": "Next",
+        "prevPost": "Previous Post",
+        "nextPost": "Next Post",
+        "more": "View More",
+        "author": "Blanche Dental Clinic",
+        "authorLabel": "Author",
+        "introSuffix": " Check out useful dental information and treatment cases.",
+        "noPrevPost": "No previous post",
+        "noNextPost": "No next post",
+        "pagination": "Pagination",
+        "prevPage": "Previous Page",
+        "nextPage": "Next Page",
+        "pageLabel": "Page {page}"
+      },
+      "post": {
+        "blancheBlog": "Blanche Blog",
+        "consultationHeader": "Blanche Dental Clinic Consultation Request",
+        "faqTitle": "FAQs",
+        "toc": "Table of Contents",
+        "form": {
+          "name": "Name",
+          "phone": "Phone Number",
+          "department": "Treatment Course",
+          "departments": {
+            "blanche": "Blanche",
+            "implant": "Implant",
+            "orthodontic": "Orthodontics",
+            "etc": "Other Treatments"
+          },
+          "privacy": "I agree to the privacy policy",
+          "privacyLink": "Details",
+          "choice": "Please select",
+          "submit": "Book Consultation",
+          "submitting": "Submitting...",
+          "success": "Consultation request completed.",
+          "successBody": "We will contact you shortly.",
+          "error": "An error occurred during the request.",
+          "errorBody": "An error occurred during the request. Please try again later."
+        }
+      }
+    },
+    "sleep": {
+      "hero": {
+        "label": "Sleep Dentistry",
+        "title": "Pain-free treatments\nwhile you comfortably sleep",
+        "button": "Book Consultation"
+      },
+      "what": {
+        "title": "Sleep Dentistry",
+        "subtitle": "Comfortable and stress-free care.",
+        "description": "If dental anxiety has kept you away,\nBlanche's sleep dentistry is your solution.",
+        "items": {
+          "sedation": {
+            "title": "Conscious Sedation",
+            "description": "A safe method that induces\na sleep-like state while\nkeeping you conscious."
+          },
+          "pain": {
+            "title": "Pain Relief",
+            "description": "Treatments are done\nwhile you rest, leaving no\nmemory of discomfort."
+          },
+          "various": {
+            "title": "Wide Applicability",
+            "description": "Ideal for implants, extractions,\nand complex procedures\nall in a single visit."
+          }
+        }
+      },
+      "recommendation": {
+        "title": "Highly Recommended For",
+        "subtitle": "Overcome dental phobia\nwith Blanche's expertise.",
+        "items": {
+          "injection": {
+            "title": "Fear of Needles",
+            "description": "For those who feel anxious\njust seeing a syringe."
+          },
+          "noise": {
+            "title": "Sensory Sensitivity",
+            "description": "For those overwhelmed by\ndental noises and odors."
+          },
+          "gag": {
+            "title": "Severe Gag Reflex",
+            "description": "For those experiencing severe\ngagging during examinations."
+          },
+          "time": {
+            "title": "Long Procedure Anxiety",
+            "description": "For those who find keeping\ntheir mouth open exhausting."
+          }
+        }
+      },
+      "ctaLogo": {
+        "title": "Blanche's Sleep Dentistry\nis the ultimate answer\nfor a peaceful experience."
+      },
+      "safety": {
+        "title": "Safety in Sleep Treatment",
+        "subtitleMobile": "Blanche Dental Clinic\nprovides the safest\nsleep dentistry.",
+        "subtitleDesktop": "Blanche Dental Clinic\nprovides the safest sleep dentistry.",
+        "description": "Your comfort and safety are our top priorities.\nWe have engineered every step, from falling asleep\nto waking up, with strict safety protocols.",
+        "items": {
+          "checkup": {
+            "title": "Pre-Assessment System",
+            "description": "We thoroughly evaluate\nyour health beforehand to\ncreate a customized plan."
+          },
+          "monitoring": {
+            "title": "Real-time Monitoring",
+            "description": "We continuously track your\noxygen, heart rate, and blood\npressure for maximum safety."
+          },
+          "medication": {
+            "title": "Optimized Medication",
+            "description": "We utilize anesthetics like\nMidazolam and Ketamine to\nensure safety without addiction."
+          },
+          "cpr": {
+            "title": "CPR-Certified Staff",
+            "description": "All our medical staff hold\nCPR certifications to handle\nany unlikely emergencies."
+          }
+        },
+        "footer": "*Blanche Dental Clinic absolutely does not use Propofol\ndue to its addictive risks and respiratory suppression."
+      },
+      "collaboration": {
+        "title": "Expert Collaboration",
+        "subtitle": "Sleep dentistry perfected\nby specialized experts,\nnot just a single perspective.",
+        "descriptionDesktop": "Sleep dentistry requires a delicate balance of\nsedation and precise treatment.\nAt Blanche, specialists across various fields collaborate\nto establish the safest customized plan for you.",
+        "descriptionMobile": "Sleep dentistry requires a delicate balance of\nsedation and precise treatment.\nAt Blanche, specialists across various fields collaborate\nto establish the safest\ncustomized plan for you."
+      },
+      "treatments": {
+        "title": "Applicable Treatments",
+        "subtitle": "Sleep dentistry is highly\nrecommended for these procedures.",
+        "items": {
+          "implant": {
+            "title": "Sleep Implants",
+            "description": "Zero fatigue for lengthy or\nmultiple implant surgeries."
+          },
+          "laminate": {
+            "title": "Blanche Laminates",
+            "description": "Erasing the fear and pain\nmemory of complex extractions."
+          },
+          "wisdom": {
+            "title": "Wisdom Tooth Extraction",
+            "description": "Controlling sensitive nerve\nstimulation for comfort."
+          },
+          "decay": {
+            "title": "Root Canal Therapy",
+            "description": "Comfortable long sessions\nwithout gag reflex worries."
+          }
+        }
+      },
+      "process": {
+        "title": "Sleep Treatment Process",
+        "subtitle": "A systematic approach\nfor your greatest comfort.",
+        "items": {
+          "step1": {
+            "title": "Initial Consultation",
+            "description": "Evaluating your health\nand determining if sleep\ndentistry is right for you."
+          },
+          "step2": {
+            "title": "X-Rays & Diagnosis",
+            "description": "Performing necessary tests\nto confirm the feasibility\nof the procedure."
+          },
+          "step3": {
+            "title": "ECG Examination",
+            "description": "Carefully checking your\nfundamental vital signs\nbefore proceeding."
+          },
+          "step4": {
+            "title": "Sedation Therapy",
+            "description": "Inducing a relaxed state\nwhile maintaining\nshallow consciousness."
+          },
+          "step5": {
+            "title": "Anesthesia",
+            "description": "Confirming your sleep state\nbefore administering\nlocal anesthesia."
+          },
+          "step6": {
+            "title": "Dental Procedure",
+            "description": "Executing the planned\ntreatment safely with\ncontinuous monitoring."
+          },
+          "step7": {
+            "title": "Recovery Resting",
+            "description": "The treatment is complete\nonce you wake up\ncomfortably rested."
+          },
+          "step8": {
+            "title": "Result Consultation",
+            "description": "Receiving the results and\nreturning home safely\nwith guided instructions."
+          }
+        }
+      },
+      "faq": {
+        "smallTitle": "FAQ",
+        "mainTitle": "All your questions about\nSleep Dentistry,\nanswered by Blanche.",
+        "items": {
+          "q1": {
+            "question": "Is there any preparation required for sleep dentistry?",
+            "questionMobile": "Is there any preparation required\nfor sleep dentistry?",
+            "answer": "We provide individual instructions, but generally, a 6-hour fast is required before treatment. Please wear comfortable clothing. Since drowsiness may persist, we advise against driving alone and recommend bringing a guardian."
+          },
+          "q2": {
+            "question": "Is sleep dentistry hazardous? Is it different from general anesthesia?",
+            "questionMobile": "Is sleep dentistry hazardous?\nIs it different from general anesthesia?",
+            "answer": "No, it is very safe and different. Blanche utilizes 'Conscious Sedation', allowing spontaneous breathing and responsiveness. It puts significantly less strain on the body than general anesthesia with much faster recovery. Our staff continuously monitors your vitals."
+          },
+          "q3": {
+            "question": "Can I wake up during the treatment?",
+            "questionMobile": "Can I wake up\nduring the treatment?",
+            "answer": "Consciousness may briefly return depending on your reaction to the medication. If this happens, our medical staff will immediately and safely adjust the dosage to return you to a comfortable sedated state, so there is no need to worry."
+          },
+          "q4": {
+            "question": "Will I feel zero pain during sleep dentistry?",
+            "questionMobile": "Will I feel zero pain\nduring sleep dentistry?",
+            "answer": "You will feel almost no pain during the procedure. We use a combination of conscious sedation and local anesthesia to minimize discomfort. Some pain may occur after the anesthesia wears off, which can be managed with prescribed medication and rest."
+          },
+          "q5": {
+            "question": "Are there any side effects after sleep dentistry?",
+            "questionMobile": "Are there any side effects\nafter sleep dentistry?",
+            "answer": "Temporary dizziness, drowsiness, or nausea may occur immediately after the procedure but typically subside within a few hours. For your safety, please avoid driving, operating machinery, or making important decisions on the day of the procedure."
+          },
+          "q6": {
+            "question": "Are the medications used safe?",
+            "questionMobile": "Are the medications\nused safe?",
+            "answer": "Yes, Midazolam and Ketamine are clinically proven and highly safe sedatives. Blanche Dental Clinic monitors vital signs (oxygen saturation, heart rate, and blood pressure) in real-time before, during, and after the treatment."
+          }
+        }
+      },
+      "cta": {
+        "title": "Book a Consultation",
+        "subtitleDesktop": "Don't endure the pain anymore.\nBlanche will help you overcome\nyour dental fears.",
+        "subtitleMobile": "Don't endure the pain anymore.\nBlanche will help you overcome\nyour dental fears.",
+        "description": "Sometimes, a simple consultation can ease your mind.\nIf you've been delaying treatment out of fear,\nBlanche is always here for you.",
+        "designElements": {
+          "box": "We craft\nsmiles\nlike art",
+          "text": "At Blanche,\nstart your\ntransformation"
+        }
+      }
+    }
+  },
+  "tech": {
+    "title": {
+      "default": "Blanche's Technology"
+    },
+    "mainText": {
+      "desktop": [
+        "Handcrafted by artisans at Blanche Lab,",
+        "Certified Venture Company"
+      ]
+    },
+    "description1": {
+      "default": [
+        "Crafted by ceramists trained in",
+        "France and Switzerland.",
+        "",
+        ""
+      ]
+    },
+    "description2": {
+      "default": [
+        "To perfectly reflect what you desire,",
+        "Blanche operates the only exclusive in-house lab in Korea."
+      ]
+    }
+  },
+  "expert": {
+    "title": {
+      "default": "Blanche's Expert Medical Team"
+    },
+    "mainText": {
+      "desktop": [
+        "For one person's smile,",
+        "six experts deliberate together"
+      ]
+    },
+    "subText": {
+      "desktop": [
+        "A collaborative system of 6 specialists with over 15 years",
+        "average experience creates one perfect result."
+      ]
+    },
+    "teamInfo": {
+      "default": [
+        "A collaborative system of 6 specialists with over 15 years",
+        "average experience creates one perfect result."
+      ]
+    }
+  },
+  "beforeafter": {
+    "header": {
+      "title": {
+        "default": "Blanche Before & After"
+      },
+      "subtitle": {
+        "desktop": [
+          "The transformation of smiles",
+          "curated by Blanche"
+        ]
+      }
+    },
+    "modal": {
+      "reviewTitle": {
+        "default": "Reviews of beautifully natural smiles\ncrafted at Blanche Dental Clinic."
+      },
+      "viewBlog": {
+        "default": "View {patientName}'s Blog"
+      }
+    },
+    "cases": [
+      {
+        "id": 1,
+        "treatmentType": "Blanche",
+        "treatmentPeriod": "One-Day",
+        "quote": "I was surprised it really finished in one day. They did exactly what I wanted, and the detailed explanation made me feel comfortable!",
+        "patientName": "",
+        "image": "/assets/beforeafter/case-1.webp",
+        "reviewTitle": "My biggest worry about laminate was teeth preparation.",
+        "reviewContent": "I visited many places, but I trusted the one that consulted most honestly.\nI decided to proceed with 'minimal prep'.",
+        "alt": "Blanche Laminate treatment case image"
+      },
+      {
+        "id": 4,
+        "treatmentType": "Blanche",
+        "treatmentPeriod": "One-Day",
+        "quote": "They tailored everything to my needs and communicated well. Other places couldn't do this!",
+        "patientName": "",
+        "image": "/assets/beforeafter/case-2.webp",
+        "reviewTitle": "I've been delaying out of fear of the dentist for 20 years.",
+        "reviewContent": "I couldn't put it off anymore. Thanks to sleep anesthesia, \neveyrthing was done when I woke up. I should have done it sooner.",
+        "alt": "Blanche Implant treatment case image"
+      },
+      {
+        "id": 3,
+        "treatmentType": "Blanche",
+        "treatmentPeriod": "One-Day",
+        "quote": "I was worried since my case required prep, but I didn't feel discomfort. Didn't know it would also have an orthodontic effect.",
+        "patientName": "Kim Da-Woon, Regained Balance",
+        "image": "/assets/beforeafter/case-3.webp",
+        "reviewTitle": "As a service worker, visible braces were a burden.",
+        "reviewContent": "With clear aligners, people couldn't tell even up close.\nI could remove them when I wanted, making meals easy.",
+        "alt": "Blanche Invisalign orthodontic treatment case image"
+      },
+      {
+        "id": 2,
+        "treatmentType": "Blanche",
+        "treatmentPeriod": "One-Day",
+        "quote": "Experiencing it firsthand was different. Met my expectations with detailed communication. Highly recommended.",
+        "patientName": "Park Si-Won, Gifted a treatment",
+        "image": "/assets/beforeafter/case-4.webp",
+        "reviewTitle": "I couldn't even consider implants due to the fear of pain.",
+        "reviewContent": "They recommended sleep anesthesia during consultation. \nI felt absolutely no pain and had a comfortable surgery. Thank you.",
+        "alt": "Blanche Sleep Anesthesia Implant treatment case image"
+      }
+    ],
+    "labels": {
+      "treatmentPeriod": "Treatment Period",
+      "viewDetails": "View Details",
+      "close": "Close",
+      "prevCard": "Previous Card",
+      "nextCard": "Next Card"
+    }
+  },
+  "magazine": {
+    "header": {
+      "title": {
+        "default": "Blanche Blog"
+      },
+      "subtitle": {
+        "desktop": [
+          "Dental stories written",
+          "directly by dentists"
+        ]
+      }
+    },
+    "cases": [
+      {
+        "id": 1,
+        "treatmentType": "Is Laminate Okay?",
+        "treatmentPeriod": "2026.01.09",
+        "quote": "If you're anxious about laminate, find out about side effects, preparation amounts, and design standards.",
+        "patientName": "Editor Blanche",
+        "image": "/assets/magazine/post-01.webp",
+        "reviewTitle": "The Start of Dental Health, Proper Brushing",
+        "reviewContent": "Detailed content goes here.",
+        "alt": "Blanche informative content on choosing laminates"
+      },
+      {
+        "id": 2,
+        "treatmentType": "Beware of cheap\nlaminates.",
+        "treatmentPeriod": "2026.01.08",
+        "quote": "Promotional prices are attractive but require caution. Check 7 lists to avoid regret.",
+        "patientName": "Editor Blanche",
+        "image": "/assets/magazine/post-02.webp",
+        "reviewTitle": "Finding the Right Smile for Me",
+        "reviewContent": "Detailed content goes here.",
+        "alt": "Blanche informative content on cheap laminates"
+      },
+      {
+        "id": 3,
+        "treatmentType": "Considering\nFull Implants?",
+        "treatmentPeriod": "2026.01.07",
+        "quote": "Don't just look at the cost. Check average prices, lifespan, maintenance, and cases before consulting.",
+        "patientName": "Editor Blanche",
+        "image": "/assets/magazine/post-03.webp",
+        "reviewTitle": "2026 Dental Trends",
+        "reviewContent": "Detailed content goes here.",
+        "alt": "Blanche informative content on full implants"
+      },
+      {
+        "id": 4,
+        "treatmentType": "Invisalign Reviews,\nFrom 30s to Protruding Teeth",
+        "treatmentPeriod": "2026.01.06",
+        "quote": "Introducing before & after changes of Invisalign in 30s and cases of protruding teeth.",
+        "patientName": "Editor Blanche",
+        "image": "/assets/magazine/post-04.webp",
+        "reviewTitle": "Interview with Dr. Blanche",
+        "reviewContent": "Detailed content goes here.",
+        "alt": "Blanche informative content on Invisalign"
+      }
+    ],
+    "labels": {
+      "date": "Published",
+      "readMore": "Read More"
+    }
+  },
+  "cta": {
+    "subtitle": {
+      "default": "Premium Private Consultation"
+    },
+    "title": {
+      "mobile": [
+        "Blanche begins with",
+        "an impeccable diagnosis"
+      ],
+      "desktop": [
+        "Blanche begins with an impeccable diagnosis"
+      ]
+    },
+    "description": {
+      "desktop": [
+        "We meticulously analyze your current condition",
+        "and propose the most optimal treatment path.",
+        "",
+        "Consult with us for any dental concerns."
+      ]
+    },
+    "footer": {
+      "desktop": [
+        "At Blanche,",
+        "begin your",
+        "transformation"
+      ]
+    },
+    "form": {
+      "title": "Consultation Request",
+      "name": "Name",
+      "namePlaceholder": "Name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Phone Number",
+      "department": "Treatment Course",
+      "departmentPlaceholder": "Treatment Course",
+      "departmentOptions": {
+        "blanche": "Blanche",
+        "implant": "Implant",
+        "orthodontic": "Orthodontics",
+        "other": "Other Treatments"
+      },
+      "privacy": "I agree to the privacy policy.",
+      "privacyLink": "Details",
+      "submit": "Book Consultation",
+      "submitting": "Submitting...",
+      "validation": {
+        "nameRequired": "Please enter your name.",
+        "phoneRequired": "Please enter your phone number.",
+        "departmentRequired": "Please select a treatment course.",
+        "privacyRequired": "Please agree to the privacy policy.",
+        "phoneEmpty": "Please enter\nyour phone number",
+        "phoneError": "Please check\nyour phone number",
+        "phoneErrorDetail": "Please enter a valid\nmobile number.",
+        "nameDetail": "Please enter your name\nfor a smooth consultation.",
+        "phoneEmptyDetail": "Please enter your phone number\nfor a smooth consultation.",
+        "deptDetail": "Please select a treatment course\nfor a smooth consultation.",
+        "privacyDetail": "Please agree to the privacy policy\nto request a consultation."
+      },
+      "success": "Consultation request completed.",
+      "successBody": "We will contact you shortly.",
+      "successDetail": "We will contact you\nshortly.",
+      "error": "An error occurred during the request.",
+      "errorBody": "An error occurred during the request. Please try again later.",
+      "errorDetail": "An error occurred during the request.\nPlease try again later."
+    },
+    "boxText": "We craft\nsmiles\nlike art"
+  },
+  "footer": {
+    "companyName": "Blanche Dental Clinic",
+    "ceo": "Chief Director : Kim Tae-hyung",
+    "address": "7F, 531 Gangnam-daero, Seocho-gu, Seoul",
+    "registration": "Business Registration : 847-56-00935",
+    "medicalNumber": "Medical Institution : Blanche Dental Clinic | No.12345",
+    "phone": "Tel : 1877-2882",
+    "feeList": "Pricing List",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "COPYRIGHT © BLANCHE DENTAL CLINIC.",
+    "brandSlogan": "Your smile is our greatest pride."
+  },
+  "implant": {
+    "title": "Blanche Implant | Blanche Dental Clinic - No-Prep Laminate",
+    "description": "Gangnam Blanche Dental Clinic with 30,000 implant cases. Experience safe, pain-free sleep implants by Seoul National University specialists.",
+    "hero": {
+      "title": "Implants",
+      "subtitle": "Korea's Master of Implants\nBlanche's Exclusive Protocol",
+      "button": "Book Consultation"
+    },
+    "banner": {
+      "message": "Healthier, longer-lasting\nartificial teeth. Reclaim your\ndaily joy with implants."
+    },
+    "philosophy": {
+      "topText": [
+        "10 years ago,",
+        "we placed implants",
+        "for our own father"
+      ],
+      "bottomText": {
+        "mobile": [
+          "With that same heart,",
+          "we promise to treat",
+          "your missing teeth",
+          "with our absolute best."
+        ],
+        "desktop": [
+          "With that same heart,",
+          "we promise to treat your missing teeth",
+          "with our absolute best."
+        ]
+      }
+    },
+    "expertise": {
+      "label": "Implant Expertise",
+      "title": {
+        "mobile": "Implants:\nExperience, environment, and care\ndetermine a lifespan\nlasting over 20 years.",
+        "desktop": "Implants: Experience, environment, and care\ndetermine a lifespan lasting over 20 years."
+      },
+      "columns": [
+        {
+          "title": "Top 100 Masters",
+          "items": [
+            "Over 30,000 placements",
+            "Selected Top 100 Masters in Korea",
+            "SNU specialist medical team"
+          ]
+        },
+        {
+          "title": "University-Grade Facility",
+          "items": [
+            "Precision analysis system",
+            "Custom crafting equipment",
+            "Safe sleep & anesthesia system"
+          ]
+        },
+        {
+          "title": "Maintenance Program",
+          "items": [
+            "Regular checkup system",
+            "Implant warranty provided",
+            "Thorough aftercare support"
+          ]
+        }
+      ]
+    },
+    "location": {
+      "label": "What is an Implant?",
+      "title": {
+        "mobile": "Planting an artificial root\nto replace a\nmissing tooth",
+        "desktop": "Planting an artificial root\nto replace a missing tooth"
+      },
+      "description": {
+        "mobile": "An implant is a procedure\nwhere an artificial root is placed\ninto the jawbone, covered by\na crown resembling a natural tooth.\nIt replaces natural teeth,\nand with proper surgery,\nlasts over 20 years.",
+        "desktop": "An implant is a procedure where an artificial root is placed\ninto the jawbone, covered by a crown resembling a natural tooth.\nIt replaces natural teeth, and with proper surgery,\nlasts over 20 years."
+      },
+      "differenceTitle": "Difference from Bridges & Dentures",
+      "differenceDesc": {
+        "mobile": "Bridges require grinding nearby teeth,\nand dentures cause\nunnecessary irritation,\nbut implants have no such flaws.",
+        "desktop": "Bridges require grinding nearby teeth,\nand dentures cause unnecessary irritation,\nbut implants have no such flaws."
+      },
+      "implant": {
+        "title": "Implant",
+        "alt": "Blanche implant structure explanation",
+        "table": [
+          {
+            "label": "Fixation",
+            "value": "Fixed to bone, no shaking"
+          },
+          {
+            "label": "Chewing Force",
+            "value": "80-90% of natural teeth"
+          },
+          {
+            "label": "Care",
+            "value": "Brushing + regular checkups"
+          },
+          {
+            "label": "Lifespan",
+            "value": "Semi-permanent with care"
+          }
+        ]
+      },
+      "denture": {
+        "title": "Standard Denture",
+        "alt": "Standard denture image",
+        "table": [
+          {
+            "label": "Fixation",
+            "value": "Rests on top of gums"
+          },
+          {
+            "label": "Chewing Force",
+            "value": "20-30% of natural teeth"
+          },
+          {
+            "label": "Care",
+            "value": "Daily removal and washing"
+          },
+          {
+            "label": "Lifespan",
+            "value": "Remade every 5-7 years"
+          }
+        ]
+      },
+      "banner": {
+        "mobile": "Healthier, longer-lasting\nartificial teeth. Reclaim your\ndaily joy with implants.",
+        "desktop": "Healthier, longer-lasting\nartificial teeth. Reclaim your\ndaily joy with implants."
+      }
+    },
+    "tabs": {
+      "label": "Implant Types",
+      "subtitle": "Whatever the condition,\nwe provide the most reasonable procedure tailored to the patient.",
+      "items": {
+        "digital": {
+          "label": "Digital Full Arch Implant",
+          "title": "Digital Full Arch Implant",
+          "description": "Recover all teeth\nwithout the hassle of dentures.\n\nA fixed implant\nfor those who lost all teeth\n거나 or whose teeth are all shaking.\n\nA highly advanced procedure\nrestoring the function of all teeth\nwith a minimal number of implants (4-6).",
+          "features": [
+            {
+              "title": "Recommended For",
+              "items": [
+                "Lacking jawbone",
+                "Uncomfortable with dentures",
+                "Unable to get full implants"
+              ]
+            },
+            {
+              "title": "Key Benefits",
+              "items": [
+                "Fewer implants lower cost burden",
+                "Eating possible on surgery day",
+                "Bone graft often skippable"
+              ]
+            }
+          ],
+          "duration": [
+            "Completed within 2 weeks to 3 months"
+          ],
+          "tech": [
+            "1. Placed accurately using 3D CT + oral scanners.",
+            "2. Designed and crafted quickly in our in-house lab.",
+            "3. Temporary teeth attached on surgery day to reduce discomfort."
+          ],
+          "cases": {
+            "label": "Treatment Cases",
+            "guide": "Drag the screen to compare before and after",
+            "items": [
+              {
+                "title": "60s Patient, All Upper Teeth Missing",
+                "description": "\"Eating feels so comfortable\nand my pronunciation stabilized.\""
+              },
+              {
+                "title": "60s, Treated After Extracting Upper Teeth",
+                "description": "\"My upper teeth used to shake\nbut now it's incredibly comfortable.\""
+              },
+              {
+                "title": "70s Male, Full Arch Implant (Lower)",
+                "description": ""
+              },
+              {
+                "title": "70s Female, Full Arch Implant (Both)",
+                "description": ""
+              }
+            ]
+          }
+        },
+        "all": {
+          "label": "Full Implants",
+          "title": "Full Implants",
+          "description": "A treatment for those who lost all teeth\nor whose remaining teeth cannot function.\n\nUnlike removable dentures,\nimplants are fixed securely\ninto the jawbone.",
+          "features": [
+            {
+              "title": "Recommended For",
+              "items": [
+                "Lost most of their teeth",
+                "Dentures hurt or keep falling out",
+                "Remaining teeth won't last long"
+              ]
+            },
+            {
+              "title": "Key Benefits",
+              "items": [
+                "80-90% chewing force of natural teeth",
+                "Prevents jawbone loss",
+                "Improves face shape & pronunciation"
+              ]
+            }
+          ],
+          "duration": [
+            "3-6 months, including temporary teeth phase"
+          ],
+          "tech": [
+            "1. Designed by precisely analyzing bone and nerves with 3D CT.",
+            "2. Planned considering chewing height and facial balance."
+          ],
+          "cases": {
+            "label": "Treatment Cases",
+            "guide": "Drag the screen to compare before and after",
+            "items": [
+              {
+                "title": "Late 70s Male, Visited from USA",
+                "description": "\"I feel younger just from having teeth again.\""
+              },
+              {
+                "title": "Late 50s Male, Visited from Daegu",
+                "description": "\"I smile with confidence and enjoy eating again.\""
+              },
+              {
+                "title": "50s Male, Full Implants (Upper)",
+                "description": ""
+              }
+            ]
+          }
+        },
+        "incisionless": {
+          "label": "Incisionless Implants",
+          "title": "Incisionless Implants",
+          "description": "Blanche's 'incisionless precision placement'\nminimizing pain, bleeding, and swelling.\n\nPlacing by accessing only\nthe minimal required area\nwithout large incisions.\n\nTaking just 2-3 minutes per implant,\nit's comfortable enough to dine out\nor meet people on surgery day.",
+          "features": [
+            {
+              "title": "Recommended For",
+              "items": [
+                "Vaguely afraid of first implants",
+                "Afraid of retreatment",
+                "Cannot endure long procedures"
+              ]
+            },
+            {
+              "title": "Key Benefits",
+              "items": [
+                "Small incisions reduce pain and swelling",
+                "Minimized suturing speeds recovery",
+                "Daily life possible on surgery day"
+              ]
+            }
+          ],
+          "duration": [
+            "2-3 mins per implant, daily life possible same-day"
+          ],
+          "tech": [
+            "1. Placed optimally by checking jawbone beforehand with 3D CT.",
+            "2. Surgery time shortened using dedicated incisionless implants.",
+            "3. Chosen only after CT diagnosis confirms suitability."
+          ],
+          "cases": {
+            "label": "Treatment Cases",
+            "guide": "Drag the screen to compare before and after",
+            "items": [
+              {
+                "title": "50s Female / Visited from Suburbs",
+                "description": "\"The anxiety when chewing is gone,\nand I don't have to chew on one side only anymore.\""
+              },
+              {
+                "title": "Late 40s Female / Office Worker",
+                "description": "\"Without the burden of cut gums,\nit went by much more comfortably than expected.\""
+              }
+            ]
+          }
+        },
+        "navi": {
+          "label": "Navigation Implants",
+          "title": "Navigation Implants",
+          "description": "Placed more accurately and safely.\n\nPlanning the placement location and angle\nin advance based on 3D CT and oral scanner data,\nand placing it exactly as planned.\n\nNavigation is not just a \"technique for no incisions\",\nbut a tool enhancing safety and predictability.",
+          "features": [
+            {
+              "title": "Recommended For",
+              "items": [
+                "Placing multiple implants at once",
+                "Complex cases with collapsed bite",
+                "Desiring more accurate placement"
+              ]
+            },
+            {
+              "title": "Key Benefits",
+              "items": [
+                "Safely avoids nerve canals",
+                "Selects optimal location with thick bone",
+                "Same-day temporary teeth possible"
+              ]
+            }
+          ],
+          "duration": [
+            "Surgery around 30-40 mins",
+            "Lower jaw under 1 hr including anesthesia"
+          ],
+          "tech": [
+            "1. 3D printed surgical guides built after precise 3D CT analysis.",
+            "2. Guided surgery based on Osstem OneGuide.",
+            "3. Designed considering the final prosthetic location."
+          ],
+          "cases": {
+            "label": "Treatment Cases",
+            "guide": "Drag the screen to compare before and after",
+            "items": [
+              {
+                "title": "50s Male / Multiple Implants",
+                "description": "\"Seeing exactly where and how it goes beforehand\nmade the results feel very predictable.\""
+              },
+              {
+                "title": "Early 50s Female / Multiple Posterior Implants",
+                "description": "\"Confirming the placement beforehand\nrelieved a lot of my anxiety.\""
+              }
+            ]
+          }
+        }
+      }
+    },
+    "ctaSection": {
+      "mobile": "Maintaining it long-term is\nmore important than placing it.\nBlanche Dental Clinic will be\nyour lifelong doctor.",
+      "desktop": "Maintaining it long-term is more important than placing it.\nBlanche Dental Clinic will be your lifelong doctor.",
+      "sectionLabel": "Request a Consultation",
+      "sectionTitle": "A smile lasting a lifetime,\nBlanche will craft it for you",
+      "description": "A choice to protect your teeth,\nfor that choice, we meticulously analyze\nand transparently explain your condition.\n\nFor dental concerns, please visit Blanche.",
+      "designElements": {
+        "box": "We craft\nsmiles\nlike art",
+        "text": "At Blanche,\nstart your\ntransformation"
+      }
+    },
+    "ctaForm": {
+      "label": "Request a Consultation",
+      "title": [
+        "Aiming for implants\n",
+        "lasting over 20 years\n",
+        "Choose after thorough consultation"
+      ],
+      "description": "Blanche Dental Clinic helps you judge\nby advising the best direction for\nyour current teeth and gum condition.\n\nFor detailed consultation,\nplease visit us anytime.",
+      "designElements": {
+        "box": "We craft\nsmiles\nlike art",
+        "text": "At Blanche,\nstart your\ntransformation"
+      }
+    },
+    "recommendation": {
+      "label": "Implant Brands",
+      "title": "Blanche Dental Clinic uses only\n100% genuine verified brands",
+      "brands": [
+        {
+          "name": "Straumann",
+          "description": "The #1 global seller, the epitome of Swiss precision engineering. With an unrivaled surface treatment, it bonds to bone faster and boasts superior long-term stability.",
+          "features": [
+            "Applies SLA special surface treatment",
+            "Can be placed in thicknesses under 5mm",
+            "Lowest rate of peri-implantitis"
+          ],
+          "alt": "Straumann implant image"
+        },
+        {
+          "name": "Osstem",
+          "description": "The #1 brand in Korea, chosen by the most dentists. Optimized for Korean oral structures with massive clinical data for reliability.",
+          "features": [
+            "Shortens treatment periods",
+            "Various types for custom fitting",
+            "High resistance to foreign matter"
+          ],
+          "alt": "Osstem implant image"
+        },
+        {
+          "name": "Megagen",
+          "description": "The #1 European export, boasting powerful fixation. Even in weak or thin bone, its unique thread design secures it durably.",
+          "features": [
+            "Fast bone regeneration and high success rate",
+            "Patented robust placement technology",
+            "High accuracy with 3D procedures"
+          ],
+          "alt": "Megagen implant image"
+        }
+      ]
+    },
+    "design": {
+      "label": "Implant Design",
+      "title": {
+        "mobile": "For lasting, healthy implants\nBlanche Dental Clinic considers\n'design' before 'surgery'.",
+        "desktop": "For lasting, healthy implants\nBlanche Dental Clinic considers 'design' before 'surgery'."
+      },
+      "columns": [
+        {
+          "title": "Precise Diagnosis",
+          "description": "Accurately analyzing bone condition\nwith precise CT and 3D simulation."
+        },
+        {
+          "title": "Custom Design",
+          "description": "Planning treatment reflecting\nfunction and aesthetics in harmony\nwith aesthetic prosthetics."
+        },
+        {
+          "title": "Maintenance",
+          "description": "Establishing a customized care program\nto enhance long-term implant stability."
+        }
+      ]
+    },
+    "sleep": {
+      "label": "Sleep Implants",
+      "title": {
+        "mobile": "Completing implants\nin a comfortable sleep state\nwithout worrying about pain.",
+        "desktop": "Completing implants\nin a comfortable sleep state without worrying about pain."
+      },
+      "columns": [
+        {
+          "title": "Safe Sleep System",
+          "description": "Planning custom sleep therapy with pre-diagnosis, and ensuring safety via real-time monitoring of oxygen, heart rate, and blood pressure."
+        },
+        {
+          "title": "Conscious Sedation",
+          "description": "Unlike general anesthesia, which requires artificial respiration, this maintains spontaneous breathing in a light sleep state without straining the body."
+        },
+        {
+          "title": "Min Dose - Max Sedation",
+          "description": "Proceeding with a safe combination of Midazolam and Ketamine, strictly following dosage to prevent side effects."
+        }
+      ],
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "mainTitle": "Things you wonder\nbefore sleep care,\nBlanche answers them",
+        "items": [
+          {
+            "question": "Is there any preparation required for sleep dentistry?",
+            "answer": "Usually, fasting for 6 hours before treatment is required. Wear comfortable clothing. Because drowsiness may persist, avoid driving alone and come with a guardian."
+          },
+          {
+            "question": "Is sleep dentistry different from general anesthesia? Isn't it dangerous?",
+            "answer": "Yes, it is different. Blanche uses 'conscious sedation' where you can breathe independently and respond to stimuli. It carries significantly less physical burden than general anesthesia and assures fast recovery."
+          },
+          {
+            "question": "Can I wake up during the treatment?",
+            "answer": "Consciousness may briefly return depending on your reaction to the medication. If so, medical staff will safely adjust the dosage to return you to a comfortable state, so there's no need to worry."
+          },
+          {
+            "question": "Do I feel absolutely no pain during sleep dentistry?",
+            "answer": "You will barely feel any pain. We combine conscious sedation with local anesthesia to minimize pain. Some pain may occur after waking up, which is manageable with prescribed medication."
+          },
+          {
+            "question": "Are there side effects after sleep dentistry?",
+            "answer": "Temporary dizziness, drowsiness, or nausea may occur right after, but naturally disappear within a few hours. For safety, avoid driving or operating machinery on the day of surgery."
+          },
+          {
+            "question": "Are the medications used safe?",
+            "answer": "The sedatives Midazolam and Ketamine are proven safe. Blanche Dental Clinic monitors vital signs (oxygen, heart rate, blood pressure) in real-time and takes appropriate safety measures when necessary."
+          }
+        ]
+      }
+    },
+    "process": {
+      "label": "Implant Process",
+      "title": "Blanche's Systematic\n5-Step Implant Process",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Precise Diagnosis & Consultation",
+          "description": "Analyzing bone precisely with 3D CT and scanners, and establishing a 1:1 tailored plan considering your health."
+        },
+        {
+          "number": "02",
+          "title": "1st Surgery (Placement)",
+          "description": "Placing the artificial root precisely at the planned location. Required bone grafting is done concurrently."
+        },
+        {
+          "number": "03",
+          "title": "Osseointegration & Healing",
+          "description": "The period where the implant firmly bonds with the jawbone. Depending on the individual, it takes about 2 to 6 months."
+        },
+        {
+          "number": "04",
+          "title": "2nd Surgery & Prosthetics",
+          "description": "Refining the gums, connecting the abutment, and attaching the final crown crafted to harmonize with surrounding teeth."
+        },
+        {
+          "number": "05",
+          "title": "Regular Checkups & Care",
+          "description": "Meticulous aftercare is essential for semi-permanent use. Regular scaling and exams prevent peri-implantitis."
+        }
+      ]
+    },
+    "director": {
+      "label": "Chief Director Introduction",
+      "title": "With 30,211 placement cases,\nBlanche Dental Clinic excels\neven in difficult, complex cases",
+      "description": {
+        "mobile": "We promise the most ideal results\nbased on extensive advisory activities\nand overwhelming clinical data.",
+        "desktop": "We promise the most ideal results\nbased on extensive advisory activities and overwhelming clinical data."
+      },
+      "doctorAlt": "Chief Director",
+      "slogan": "Nothing is impossible",
+      "award": "Selected Top 100 Masters in Korea 'Implant Division'",
+      "achievements": [
+        "Selected Top 100 Masters in Korea 'Implant Division'",
+        "Ranked #1 in Gangnam for Straumann implant placements",
+        "Official clinical advisor & appointed by Top 4 global implant makers",
+        "Straumann Official Clinical Advisory Clinic",
+        "Osstem Official Clinical Advisory Clinic",
+        "Megagen Official Clinical Advisory Clinic",
+        "Dentium Official Clinical Advisory Clinic"
+      ],
+      "doctorInfo": "Seoul National University Alumni,\nUS Columbia Dental Hospital,\nUCLA Dental Hospital Training",
+      "doctorName": "Chief Director Kim Tae-hyung",
+      "signatureAlt": "Kim Tae-hyung signature"
+    },
+    "cta": {
+      "title": "Maintaining it long-term is more important than placing it. Blanche will be your lifelong doctor.",
+      "button": "Consult on KakaoTalk"
+    },
+    "equipment": {
+      "title": "Implant Treatment Equipment",
+      "subtitle": "Precise digital equipment\nallowing zero 0.1mm error",
+      "description": "Promising satisfying results\nwith minimal visits using\nfast and precise diagnostic tools.",
+      "items": [
+        {
+          "nameKo": "초정밀 3D CT",
+          "nameEn": "Dentium Bright CT",
+          "headline": "CT equipment enabling convenient, fast, and precise scanning with a premium 3D camera.",
+          "description": "CT equipment enabling convenient, fast, and precise scanning with a premium 3D camera.",
+          "alt": "Blanche Dentium Bright 3D CT"
+        },
+        {
+          "nameKo": "3D 구강스캐너",
+          "nameEn": "Prime Scan | Dentsply Sirona",
+          "headline": "Equipment enabling more accurate and faster scanning without the hassle of molding.",
+          "description": "Equipment enabling more accurate and faster scanning without the hassle of molding.",
+          "alt": "Blanche Prime Scan equipment"
+        },
+        {
+          "nameKo": "원내기공장비",
+          "nameEn": "Inlab MC-XL",
+          "headline": "Milling equipment offering excellent efficiency with high speed and precision.",
+          "description": "Milling equipment offering excellent efficiency with high speed and precision.",
+          "alt": "Blanche Inlab MC-XL equipment"
+        },
+        {
+          "nameKo": "원내기공장비",
+          "nameEn": "InLab Profire | Dentsply Sirona",
+          "headline": "High-quality lab equipment capable of precise temperature control.",
+          "description": "High-quality lab equipment capable of precise temperature control.",
+          "alt": "Blanche Inlab Profire equipment"
+        },
+        {
+          "nameKo": "원내기공장비",
+          "nameEn": "프레스퍼니스 x1 l Ivoclar",
+          "headline": "Lab equipment capable of precisely and stably firing and pressing ceramic prosthetics.",
+          "description": "Lab equipment capable of precisely and stably firing and pressing ceramic prosthetics.",
+          "alt": "Blanche Ivoclar equipment"
+        },
+        {
+          "nameKo": "무통마취기",
+          "nameEn": "오스템 Slow Jec",
+          "headline": "Comfortable dental care without pain from anesthesia onwards.",
+          "description": "Comfortable dental care without pain from anesthesia onwards.",
+          "alt": "Blanche Slow Jec equipment"
+        },
+        {
+          "nameKo": "무통마취기",
+          "nameEn": "Quicksleep5 | DHT",
+          "headline": "Local anesthesia system minimizing pain implemented with DHT's precise technology.",
+          "description": "Local anesthesia system minimizing pain implemented with DHT's precise technology.",
+          "alt": "Blanche Quicksleep5 equipment"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "mainTitle": "Things you wonder\nbefore implant consults,\nBlanche answers them",
+      "items": [
+        {
+          "question": "Is implant surgery painful?",
+          "answer": "The surgery is performed under local anesthesia, so you will barely feel any pain.\nSome discomfort may occur as the anesthesia wears off,\nbut it is fully manageable with prescribed painkillers.\nMost return to daily life within 1-2 days."
+        },
+        {
+          "question": "How long do implants last?",
+          "answer": "With proper care, they can be used semi-permanently.\nThe lifespan depends on oral hygiene, overall health, and regular checkups.\nRegular scaling and exams are essential to prevent peri-implantitis."
+        },
+        {
+          "question": "How many implants can I get?",
+          "answer": "Depending on bone condition, you can get up to 28.\nApplicable to various cases from single to full tooth loss.\nFor edentulous patients, the All-on-4 or All-on-6 methods\ncan restore the entire dentition with fewer implants."
+        },
+        {
+          "question": "How much do implants cost?",
+          "answer": "It varies depending on materials, surgical complexity, and the doctor's experience.\nSeniors over 65 can receive health benefits in Korea.\nExact costs will be guided through consultation."
+        },
+        {
+          "question": "Should I quit smoking before getting implants?",
+          "answer": "Yes, quitting is strongly recommended.\nSmoking decreases blood flow to gums and bone, slowing recovery\nand increasing the risk of peri-implantitis.\nMaintaining a smoke-free state is crucial to success."
+        },
+        {
+          "question": "What is peri-implantitis?",
+          "answer": "It is an inflammatory disease in the gums and bone around the implant.\nIt can occur if oral hygiene is neglected,\nand if untreated, bone loss can cause the implant to fall out.\nRegular checkups and hygiene care are essential for prevention."
+        }
+      ]
+    }
+  },
+  "whitening": {
+    "hero": {
+      "title": "Teeth Whitening",
+      "subtitle": "Restoring Pure Radiance,\nBlanche Teeth Whitening",
+      "button": "Book a Consultation"
+    },
+    "processIntro": {
+      "title": "What is Teeth Whitening?",
+      "subtitle": "A treatment that erases stains\nand restores true transparency.",
+      "description": "Our teeth naturally discolor over time as pigments from coffee, tea, and food seep into microscopic pores (dentinal tubules) on the enamel surface. Aging can also cause the inner dentin layer to darken.\n\nAt Blanche Dental Clinic, our customized whitening treatment utilizes specialized agents that trigger an oxygenating action. This selectively breaks down embedded organic stains without compromising the tooth's structural integrity. By enhancing light transmittance, we restore a pristine, luminous shade from within."
+    },
+    "process": {
+      "label": "Whitening Procedure",
+      "title": "Blanche's meticulous approach\nto diagnosis and treatment",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Precision Diagnosis & Shade Check",
+          "description": "We evaluate your current tooth condition and establish a target shade, predicting the optimal brightness achievable post-treatment."
+        },
+        {
+          "number": "02",
+          "title": "Surface Polishing & Scaling",
+          "description": "To ensure the whitening agent is evenly applied and optimally absorbed, we meticulously remove plaque and tartar beforehand."
+        },
+        {
+          "number": "03",
+          "title": "Gum Protection Barrier",
+          "description": "We carefully apply a protective barrier to shield your gums from the high-concentration whitening agent, ensuring absolute comfort and safety."
+        },
+        {
+          "number": "04",
+          "title": "Whitening Application & Light Activation",
+          "description": "The whitening gel is applied and activated using a specialized light to break down stains. (This process is repeated 2–3 times, depending on your needs.)"
+        },
+        {
+          "number": "05",
+          "title": "Final Review & Completion",
+          "description": "We assess the beautiful change in your tooth shade and check for any temporary sensitivity to ensure a perfect, comfortable finish."
+        }
+      ]
+    },
+    "recommendation": {
+      "title": "Recommended For",
+      "subtitle": "We highly recommend whitening\nif any of these apply to you",
+      "items": [
+        {
+          "title": "Your teeth appear yellow\ndespite rigorous brushing"
+        },
+        {
+          "title": "You haven't seen results\nfrom whitening toothpastes"
+        },
+        {
+          "title": "You need a brighter smile\nfor weddings, interviews, or events"
+        },
+        {
+          "title": "You desire a natural,\nelegant level of brightness"
+        }
+      ]
+    },
+    "design": {
+      "title": "Trust Blanche for Whitening",
+      "subtitle": "Definitive results,\nminimal sensitivity.\nBlanche's signature whitening.",
+      "items": [
+        {
+          "title": "1:1 Personal Shade Matching",
+          "description": "We do not aim for unnaturally stark white teeth. We meticulously design a shade that harmonizes perfectly with your unique skin tone and image."
+        },
+        {
+          "title": "Minimized Sensitivity",
+          "description": "We do not aim for unnaturally stark white teeth. We meticulously design a shade that harmonizes perfectly with your unique skin tone and image."
+        },
+        {
+          "title": "Proven Safety",
+          "description": "With KFDA-approved safe materials, specialized equipment, and experts dedicated to whitening research, we deliver nothing short of the best results."
+        }
+      ]
+    },
+    "director": {
+      "label": "Meet Our Chief Director",
+      "title": "Performed directly by\na whitening expert holding a Master's degree\nfrom Seoul National University\n",
+      "description": "I promise to deliver a whitening treatment\nthat brings you guaranteed results.",
+      "doctorInfo": "SNU Graduate,\nColumbia University (NY),\nUCLA Dental Hospital Fellowship\n"
+    },
+    "location": {
+      "label": "Our Equipment",
+      "description": "Blanche Dental Clinic exclusively utilizes KFDA-approved, authentic high-concentration whitening agents combined with the latest specialized light activation technology.",
+      "items": [
+        {
+          "title": "Professional Authentic Whitening Agent",
+          "description": "A high-concentration formula exclusively for dental clinics that effectively removes deep-seated stains that at-home whitening simply cannot reach."
+        },
+        {
+          "title": "Specialized Light Activator",
+          "description": "Enhances the activity of the whitening agent, shortening treatment time and helping the solution penetrate deeply.\n(State-of-the-art equipment with built-in safety features)"
+        }
+      ],
+      "titleDesktop": "We utilize KFDA-approved,\nauthentic professional whitening systems",
+      "titleMobile": "We utilize KFDA-approved,\nauthentic professional\nwhitening systems"
+    },
+    "customer": {
+      "label": "Home Care Whitening",
+      "title": "A radiant smile,\npreserved flawlessly\n even at home",
+      "intro": "Blanche Dental Clinic's care doesn't stop after one visit. To maintain your brilliant results beautifully and healthily, we offer a home care solution designed by dental professionals.",
+      "list": [
+        "Formulated without irritating ingredients, protecting your teeth and gums with high-performance natural components.",
+        "Improves the oral environment through precise blending developed in collaboration with an SNU research team.",
+        "Prevents dry mouth and eliminates the root causes of bad breath using naturally derived surfactants."
+      ]
+    },
+    "cases": {
+      "label": "Whitening Case Studies",
+      "title": "From dull to dazzling.\nBlanche's transformative whitening cases.",
+      "guide": "Drag the slider to compare before and after",
+      "items": [
+        {
+          "title": "Hye-bin (30s), who used to hesitate to smile",
+          "description": "A dramatic improvement in impression post-whitening"
+        },
+        {
+          "title": "Hyun-jung (20s), concerned about yellow teeth",
+          "description": "A natural tone-up with our whitening treatment"
+        },
+        {
+          "title": "Ji-won (30s), bothered by coffee stains",
+          "description": "A flawless, clean first impression achieved"
+        }
+      ]
+    },
+    "faq": {
+      "label": "Frequently Asked Questions",
+      "title": "Everything you wonder\nbefore your whitening consultation,\nanswered by Blanche",
+      "items": [
+        {
+          "question": "How long do the \nwhitening effects last?",
+          "answer": "While it varies depending on individual dietary habits and care, results typically last from 6 months to a year. Reducing the intake of stain-causing foods and maintaining meticulous oral hygiene will extend this duration."
+        },
+        {
+          "question": "Will my teeth turn \nyellow again after treatment?",
+          "answer": "Because teeth are living tissues, their color may gradually revert over time. However, they will not become as dark as they were prior to the treatment, and you can easily maintain their brightness with routine touch-ups."
+        },
+        {
+          "question": "How many sessions \nare required?",
+          "answer": "At Blanche Dental Clinic, you can achieve noticeable results in just one visit consisting of 2-3 consecutive applications. If you desire an even brighter shade or have severe staining, we may recommend additional sessions spaced a week apart."
+        },
+        {
+          "question": "Are there cases where \nwhitening is ineffective?",
+          "answer": "In the following cases, alternative treatments may be necessary instead of conventional whitening:\n- Extremely thin enamel\n- Teeth that have undergone root canal therapy\n- Teeth with resin restorations or prostheticsAt Blanche, we conduct a thorough precision diagnosis prior to any procedure to determine if whitening is the optimal solution for you."
+        },
+        {
+          "question": "Will my teeth be \nvery sensitive during the procedure?",
+          "answer": "While individual sensitivity varies, Blanche meticulously applies a gum barrier and adjusts the agent concentration and duration based on your specific sensitivity level. Maximizing your results while minimizing discomfort is the core philosophy behind a Blanche whitening treatment."
+        }
+      ]
+    },
+    "cta": {
+      "label": "Book a Consultation",
+      "title": "A day filled with confident smiles,\nstart it today at Blanche",
+      "description": "Blanche Dental Clinic analyzes your current teeth and gum condition to guide you toward the best treatment path.\n\nFor a detailed consultation, please visit us anytime.",
+      "designElements": {
+        "box": "We craft\nsmiles\nlike art",
+        "text": "At Blanche,\nstart your\ntransformation"
+      }
+    }
+  },
+  "metadata": {
+    "intro": {
+      "title": "블랑쉬치과 소개 | 블랑쉬치과의원 - 강남치과, 논현역치과, 무삭제 라미네이트",
+      "description": "논현역 블랑쉬치과에서 자연스러운 미소를 찾으세요! 라미네이트·임플란트 전문의 협진과 자체 기공소로 정밀함을 더합니다",
+      "siteName": "블랑쉬치과 의원",
+      "pageName": "블랑쉬치과 소개"
+    },
+    "default": {
+      "title": "블랑쉬치과",
+      "description": "단 하루면 당신의 미소가 작품이 됩니다 블랑쉬치과"
+    }
+  },
+  "price": {
+    "title": "비급여 수가표",
+    "description": "블랑쉬치과에서 제공하는 비급여 진료 항목 및 수가 안내입니다.",
+    "metadata": {
+      "title": "비급여 수가표 | 블랑쉬치과의원 - 강남치과, 논현역치과, 무삭제 라미네이트",
+      "description": "블랑쉬치과 비급여 수가표 안내! 임플란트, 원데이 무삭제 라미네이트 등 투명한 가격을 확인하세요 강남 주말 및 야간진료가 가능합니다"
+    }
+  },
+  "privacy": {
+    "title": "개인정보 처리방침",
+    "description": "블랑쉬치과 개인정보 처리방침입니다. 수집 항목과 이용 목적, 보유 기간 등을 명확히 공지합니다. 안전한 서비스를 위해 규정된 내용을 확인해 보세요",
+    "metadata": {
+      "title": "개인정보 처리방침 | 블랑쉬치과의원 - 강남치과, 논현역치과, 무삭제 라미네이트",
+      "description": "블랑쉬치과 개인정보 처리방침입니다. 수집 항목과 이용 목적, 보유 기간 등을 명확히 공지합니다. 안전한 서비스를 위해 규정된 내용을 확인해 보세요."
+    }
+  },
+  "solutionHeroScale": {
+    "title": "Blanche Dental Services",
+    "subtitle": "For any dental concern,\nexperience perfection\nthrough Blanche's mastery",
+    "button": "Book Consultation"
+  },
+  "solutionCard": {
+    "category": "Signature Solutions",
+    "title1": "Premium aesthetics,\nBlanche's greatest pride",
+    "title2": "Blanche Signature Solutions",
+    "items": {
+      "implant": {
+        "title": "Implants",
+        "description": "Precision implants to\nrestore your teeth\nand your daily life.",
+        "more": "Learn more >"
+      },
+      "laminate": {
+        "title": "Blanche Laminate",
+        "description": "Premium laminates\ncrafted while preserving\nyour natural teeth.",
+        "more": "Learn more >"
+      },
+      "orthodontics": {
+        "title": "Invisalign Orthodontics",
+        "description": "Invisibly transparent.\nWe bring back\nharmony to your face.",
+        "more": "Learn more >"
+      },
+      "whitening": {
+        "title": "Teeth Whitening",
+        "description": "A whitening treatment\nto erase stains and\nretrieve pure transparency.",
+        "more": "Learn more >"
+      }
+    }
+  },
+  "solutionGrid1": {
+    "category": "Aesthetic Enhancements",
+    "title": "Beyond teeth,\nenhance your lips and smile line\nfor a more natural smile\nwith Aesthetic Enhancements",
+    "items": {
+      "gummySmile": {
+        "name": "Gummy Smile Botox",
+        "description": "Concerned about excessive gum exposure?\nA simple botox procedure\nimproves it naturally."
+      },
+      "vestibuloplasty": {
+        "name": "Vestibuloplasty",
+        "description": "Delicately adjusting lip movement\nto create a perfectly balanced\nsmile line."
+      },
+      "lipFiller": {
+        "name": "Lip Fillers",
+        "description": "Adding volume and line\nto complete the inherent beauty\nof your lips."
+      }
+    }
+  },
+  "solutionGrid2": {
+    "category": "General Dentistry",
+    "title": "Faithful to the basics,\npreserving natural teeth,\nGeneral Dentistry",
+    "items": {
+      "checkup": {
+        "name": "Oral Checkups",
+        "description": "The start of healthy teeth.\nManage in advance with\nregular oral checkups."
+      },
+      "scaling": {
+        "name": "Scaling",
+        "description": "Clean away tartar and plaque.\nWe protect the basics of\nyour oral health."
+      },
+      "decay": {
+        "name": "Cavity & Inflammation",
+        "description": "Early detection and\nprecise treatment to protect\nyour natural teeth longer."
+      }
+    }
+  },
+  "solutionBanner": {
+    "category": "Sleep Dentistry Solutions",
+    "title": "For those afraid of the dentist,\nBlanche Sleep Dentistry System\nSleep Dentistry Solutions",
+    "description": "If you were worried about pain and gag reflexes,\nplease visit Blanche Dental Clinic.\n\n#Sleep Implants\n#Sleep Wisdom Tooth Extraction\n#Sleep Root Canal",
+    "more": "Learn more"
+  },
+  "solutionIntroduction": {
+    "category": "Medical Team Introduction",
+    "title": "Six specialists\ncollaborating strictly\nfor a single tooth",
+    "description": "6 specialists with over 15 years average experience\ncreate one perfect result."
+  },
+  "solutionCTA": {
+    "category": "Request a Consultation",
+    "title": "If you are unsure\nwhat treatment you need,\nplease visit Blanche",
+    "description": "We propose custom solutions\nthrough accurate diagnosis.\n\nFeel free to consult your concerns.",
+    "designElements": {
+      "box": "We craft\nsmiles\nlike art",
+      "text": "At Blanche,\nstart your\ntransformation"
+    },
+    "title1": "If you are unsure",
+    "title2": "what treatment you need,",
+    "title3": "please visit Blanche",
+    "brandSlogan1": "We craft\nsmiles\nlike art",
+    "brandSlogan2": "At Blanche,\nstart your\ntransformation"
+  }
+}
