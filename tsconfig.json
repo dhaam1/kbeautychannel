@@ -1,59 +1,26 @@
 {
   "compilerOptions": {
-    /**
-     * TypeScript 컴파일러 옵션
-     * 
-     * @description
-     * 프로젝트의 TypeScript 컴파일 설정을 정의합니다.
-     * 
-     * 주요 설정:
-     * - target: ES2017 (컴파일 대상 JavaScript 버전)
-     * - lib: DOM, DOM.iterable, ESNext (사용할 라이브러리 타입)
-     * - module: esnext (모듈 시스템)
-     * - moduleResolution: bundler (Next.js 번들러에 최적화)
-     * - jsx: react-jsx (React 17+ JSX 변환)
-     * - paths: @/* -> ./src/* (경로 별칭)
-     * - strict: true (엄격한 타입 검사)
-     */
-    "target": "ES2017",
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
     ],
-    "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
     "moduleResolution": "bundler",
-    "resolveJsonModule": true,
     "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
     "jsx": "react-jsx",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "paths": {
       "@/*": [
-        "./src/*"
+        "./*"
       ]
-    }
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
-  ],
-  "exclude": [
-    "node_modules",
-    "scripts",
-    "functions"
-  ]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
 }
