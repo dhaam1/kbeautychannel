@@ -61,7 +61,6 @@ export default function ProfessionalProfile() {
     offset: ['start start', 'end end'],
   });
 
-  // 최적화된 부드러운 물리 모델: 반응성을 위해 stiffness를 높이고 안정성을 위해 damping 조정
   const smoothProgress = useSpring(scrollYProgress, {
     stiffness: 120,
     damping: 35,
@@ -100,24 +99,21 @@ interface ExpandingColumnProps {
 
 const ExpandingColumn: React.FC<ExpandingColumnProps> = ({ data, index, progress }) => {
   const ranges = useMemo(() => [
-    [0.0, 0.2, 0.35, 0.45],
-    [0.3, 0.5, 0.65, 0.75],
-    [0.6, 0.8, 1.0, 1.0],
+    [0.1, 0.25, 0.4, 0.5],    // 첫 번째 카드
+    [0.4, 0.55, 0.7, 0.8],    // 두 번째 카드
+    [0.7, 0.85, 1.0, 1.0],    // 세 번째 카드
   ], []);
 
   const currentRange = ranges[index] as [number, number, number, number];
   const outputRange = (index === 2 ? [1, 12, 12, 12] : [1, 12, 12, 1]) as [number, number, number, number];
   
-  // 1. flexGrow 계산
   const flexGrow = useTransform(progress, currentRange, outputRange, { clamp: true });
 
-  // 2. 가시성 및 시각 효과
   const contentOpacity = useTransform(flexGrow, [2, 6], [0, 1]);
   const labelOpacity = useTransform(flexGrow, [1, 3], [1, 0]);
   const imgOpacity = useTransform(flexGrow, [1, 12], [0.05, 0.4]);
   const imgScale = useTransform(flexGrow, [1, 12], [1.1, 1]);
 
-  // 3. Cinematic 필터 효과 (V3 로직 고정)
   const blurValue = useTransform(flexGrow, [1, 12], [15, 0]);
   const grayscaleValue = useTransform(flexGrow, [1, 6], [100, 0]);
   const filter = useMotionTemplate`grayscale(${grayscaleValue}%) blur(${blurValue}px)`;
@@ -142,7 +138,6 @@ const ExpandingColumn: React.FC<ExpandingColumnProps> = ({ data, index, progress
       />
       <div className="absolute inset-0 bg-black/60 z-[1] pointer-events-none" />
 
-      {/* 액티브 콘텐츠 영역 */}
       <motion.div 
         style={{ opacity: contentOpacity }}
         className="relative z-10 w-full h-full flex flex-col justify-center px-8 lg:px-20 overflow-hidden"
@@ -170,7 +165,6 @@ const ExpandingColumn: React.FC<ExpandingColumnProps> = ({ data, index, progress
         </div>
       </motion.div>
 
-      {/* 대기 상태 라벨 영역 */}
       <motion.div 
         className="absolute inset-0 flex items-center justify-center pointer-events-none z-20"
         style={{ opacity: labelOpacity }}

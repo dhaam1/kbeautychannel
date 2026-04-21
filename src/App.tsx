@@ -36,6 +36,8 @@ export default function App() {
           <Route path="/procedures/body" element={<Body />} />
           <Route path="/procedures/care" element={<Care />} />
           
+          <Route path="/media" element={<Media />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/column" element={<Column />} />
         </Route>
       </Routes>

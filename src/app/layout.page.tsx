@@ -9,8 +9,15 @@ export const metadata: Metadata = {
   description:
     '1천2백만 뷰, 1000건 이상의 뷰티 영상. 서울대 출신 김연진 원장의 피부 미용 전문 클리닉. 리프팅, 필러, 스킨부스터, 피부레이저 전문.',
   keywords: [
-    '케이뷰티채널', '김연진 원장', '피부과', '미용 클리닉',
-    '리프팅', '필러', '스킨부스터', '피부레이저', '강남 피부과',
+    '케이뷰티채널',
+    '김연진 원장',
+    '피부과',
+    '미용 클리닉',
+    '리프팅',
+    '필러',
+    '스킨부스터',
+    '피부레이저',
+    '강남 피부과',
   ],
   authors: [{ name: '김연진' }],
   openGraph: {
@@ -19,7 +26,8 @@ export const metadata: Metadata = {
     url: 'https://kbeautychannel.com',
     siteName: 'KBEAUTYCHANNEL',
     title: 'KBEAUTYCHANNEL | 케이뷰티채널 - 김연진 원장',
-    description: '1천2백만 뷰, 1000건 이상의 뷰티 영상. 서울대 출신 김연진 원장의 피부 미용 전문 클리닉.',
+    description:
+      '1천2백만 뷰, 1000건 이상의 뷰티 영상. 서울대 출신 김연진 원장의 피부 미용 전문 클리닉.',
   },
   robots: {
     index: true,
@@ -45,7 +53,10 @@ const jsonLd = {
     '@type': 'Physician',
     name: '김연진',
     medicalSpecialty: 'Dermatology',
-    alumniOf: { '@type': 'CollegeOrUniversity', name: '서울대학교' },
+    alumniOf: {
+      '@type': 'CollegeOrUniversity',
+      name: '서울대학교',
+    },
   },
 };
 
