@@ -3,14 +3,14 @@ import SectionLabel from '../common/SectionLabel';
 
 export default function FooterCTA() {
   return (
-    <section className="relative w-full overflow-hidden transition-colors duration-700 ease-in-out">
-      <SectionLabel number="07" title="FOOTER CTA" />
+    <section id="footer-cta" className="relative w-full overflow-hidden transition-colors duration-700 ease-in-out">
+      <SectionLabel number="07" title="CONTACT" />
 
 
       <div className="w-full min-h-[70vh] flex flex-col md:flex-row overflow-hidden relative">
         
         {/* Left Panel */}
-        <div className="relative flex-1 md:flex-1 h-[40vh] md:h-auto bg-white border-b md:border-b-0 md:border-r border-gray-200 group/left hover:flex-[1.8] transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col justify-between p-8 md:p-16">
+        <div className="relative flex-1 md:flex-1 h-[40vh] md:h-auto bg-white border-b md:border-b-0 md:border-r border-gray-100 group/left hover:flex-[1.8] transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col justify-between p-8 md:p-16">
           <div className="w-full h-full absolute inset-0 bg-gray-50 opacity-0 group-hover/left:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
           
           <h2 className="relative z-10 font-sans text-5xl md:text-8xl lg:text-[10vw] font-bold text-gray-900 tracking-tighter leading-none transform origin-left transition-transform duration-[1200ms] group-hover/left:scale-105">

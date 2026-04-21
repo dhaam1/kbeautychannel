@@ -1,0 +1,211 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1776237999293,
+  "projectRoot": "C:\\Users\\김승연\\OneDrive\\Desktop\\Kbeautychannel\\01-Kbeautychannel",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "express",
+        "version": "4.21.2",
+        "category": "backend"
+      },
+      {
+        "name": "react",
+        "version": "19.0.0",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.0.0",
+        "category": "frontend"
+      },
+      {
+        "name": "vite",
+        "version": "6.2.0",
+        "category": "build"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite --port=3000 --host=0.0.0.0",
+      "build": "vite build",
+      "preview": "vite preview",
+      "clean": "rm -rf dist",
+      "lint": "tsc --noEmit"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "public",
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 1,
+      "lastAccessed": 1776237999202,
+      "keyFiles": [
+        "index.html"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 0,
+      "lastAccessed": 1776237999217,
+      "keyFiles": []
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 3,
+      "lastAccessed": 1776237999220,
+      "keyFiles": [
+        "App.tsx",
+        "index.css",
+        "main.tsx"
+      ]
+    },
+    "dist\\assets": {
+      "path": "dist\\assets",
+      "purpose": "Static assets",
+      "fileCount": 2,
+      "lastAccessed": 1776237999222,
+      "keyFiles": [
+        "index-BTR594zW.css",
+        "index-Dawf92qN.js"
+      ]
+    },
+    "public\\assets": {
+      "path": "public\\assets",
+      "purpose": "Static assets",
+      "fileCount": 0,
+      "lastAccessed": 1776237999224,
+      "keyFiles": []
+    },
+    "src\\assets": {
+      "path": "src\\assets",
+      "purpose": "Static assets",
+      "fileCount": 0,
+      "lastAccessed": 1776237999226,
+      "keyFiles": []
+    },
+    "src\\components": {
+      "path": "src\\components",
+      "purpose": "UI components",
+      "fileCount": 0,
+      "lastAccessed": 1776237999227,
+      "keyFiles": []
+    },
+    "src\\pages": {
+      "path": "src\\pages",
+      "purpose": "Page components",
+      "fileCount": 2,
+      "lastAccessed": 1776237999227,
+      "keyFiles": [
+        "column.tsx",
+        "Home.tsx"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src\\components\\sections\\YoutubeAuthority.tsx",
+      "accessCount": 22,
+      "lastAccessed": 1776240215062,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\sections\\YoutubeEmbed.tsx",
+      "accessCount": 9,
+      "lastAccessed": 1776240607826,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\sections\\ProfilePhilosophy.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1776240578336,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\sections\\SocialProofBridge.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1776240595910,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 3,
+      "lastAccessed": 1776239284709,
+      "type": "directory"
+    },
+    {
+      "path": "src\\pages\\Home.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776239812712,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\sections\\Hero.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776238689026,
+      "type": "file"
+    },
+    {
+      "path": "reference\\profile1.png",
+      "accessCount": 1,
+      "lastAccessed": 1776239288874,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\sections\\Reviews.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776240533838,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\sections\\FooterCTA.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776240535110,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

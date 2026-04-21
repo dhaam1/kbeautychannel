@@ -1,80 +1,123 @@
-import React from 'react';
-import { motion } from 'motion/react';
-import { Plus } from 'lucide-react';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'motion/react';
 import SectionLabel from '../common/SectionLabel';
 
-const YOUTUBE_VIDEO_ID = 'Webl3-Rk7uE'; // 사용자 지정 배경 영상
+const YOUTUBE_VIDEO_ID = 'Webl3-Rk7uE';
 
-const BackgroundVideo = () => (
-  <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
-    <div className="absolute inset-0 bg-black/40 z-10" />
-    <iframe
-      className="absolute top-1/2 left-1/2 w-[115%] h-[115%] -translate-x-1/2 -translate-y-1/2 scale-125 md:scale-110"
-      src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&showinfo=0&rel=0&enablejsapi=1&modestbranding=1&iv_load_policy=3&disablekb=1&fs=0&autohide=1&start=90`}
-      title="Background Video"
-      allow="autoplay; encrypted-media"
-      frameBorder="0"
-    />
-  </div>
-);
+const STATS = [
+  { label: 'Total Views',   value: '12,000,000', suffix: '+',    desc: '1천2백만 뷰가 증명하는 피부 전문성' },
+  { label: 'Beauty Videos', value: '1,000',       suffix: '+',    desc: '유튜브 뷰티 채널 최다 영상 제작' },
+  { label: 'History',       value: '730',         suffix: 'Days', desc: '2년간 쉬지 않고 이어온 콘텐츠 여정' },
+];
+
+const HEADLINE_WORDS = ['뷰티 영상 1000건으로 인사드렸지만,', '아직 할 얘기가 더 많은 김연진 원장입니다.'];
+
+const NOISE_BG = `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`;
 
 export default function YoutubeAuthority() {
-  const stats = [
-    { label: 'Total Views', value: '12,000,000', suffix: '+' },
-    { label: 'Beauty Videos', value: '990', suffix: '+' },
-    { label: 'History', value: '730', suffix: 'Days' },
-  ];
-
-  const mainText = "1000개의 영상으로 인사 드렸지만\n아직 할 얘기가 더 많은 김연진 원장입니다.";
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({ target: sectionRef, offset: ['start end', 'end start'] });
+  const videoY = useTransform(scrollYProgress, [0, 1], ['0%', '6%']);
 
   return (
-    <section className="relative z-10 w-full min-h-[85vh] md:min-h-screen flex items-center overflow-hidden bg-black transition-all duration-1000">
+    <section
+      ref={sectionRef}
+      className="relative z-10 w-full min-h-[85vh] md:min-h-screen overflow-hidden bg-[#0A0A0A] flex flex-col md:flex-row"
+    >
       <SectionLabel number="02" title="HEAD DOCTOR INTRO" dark />
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="relative w-full h-full min-h-[85vh] md:min-h-screen flex flex-col justify-between py-[10vh] px-[5%]"
-      >
-        <BackgroundVideo />
-        
-        {/* Top Left: Headline Only */}
-        <div className="relative z-20 flex flex-col md:flex-row justify-between items-start w-full">
-          <div className="max-w-4xl mb-0">
-            <h2 className="font-sans text-[32px] md:text-[48px] font-bold text-white leading-[1.2] tracking-tighter mb-0 whitespace-pre-line">
-              {mainText}
-            </h2>
-          </div>
+      <div className="absolute inset-0 opacity-[0.04] pointer-events-none z-[1]" style={{ backgroundImage: NOISE_BG }} />
+
+      {/* ── LEFT: Headline + Stat list ───────────────────────────── */}
+      <div className="relative flex-1 flex flex-col justify-center px-[6%] py-28 md:py-32 z-10">
+
+        {/* Eyebrow */}
+        <motion.span
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="block text-[9px] font-black tracking-[0.5em] text-white/20 uppercase mb-10"
+        >
+          Head Doctor — Kim Yeonjin
+        </motion.span>
+
+        {/* Headline */}
+        <div className="mb-10">
+          {HEADLINE_WORDS.map((word, i) => (
+            <motion.h2
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+              className="font-sans text-[24px] md:text-[36px] font-black text-white tracking-tighter leading-[1.05]"
+            >
+              {word}
+            </motion.h2>
+          ))}
         </div>
 
-        {/* Bottom Right: Stats with Thin Lines */}
-        <div className="relative z-20 self-end w-full md:w-[320px] mt-auto">
-          <div className="flex flex-col gap-8">
-            {stats.map((stat, idx) => (
-              <div key={idx} className="group cursor-default">
-                <div className="w-full h-[1px] bg-white/30 mb-4 overflow-hidden">
-                  <motion.div 
-                    initial={{ x: '-100%' }}
-                    whileInView={{ x: '0%' }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.5 + (idx * 0.2), duration: 1.5, ease: "circOut" }}
-                    className="w-full h-full bg-white/60"
-                  />
+        {/* Stat list */}
+        <div>
+          {STATS.map((stat, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.45 + idx * 0.14, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="group py-6 border-t border-white/[0.07] cursor-default"
+            >
+              <div className="flex items-start justify-between gap-6">
+                <div>
+                  <span className="block text-[10px] font-black tracking-[0.35em] text-white/25 uppercase mb-2">
+                    {stat.label}
+                  </span>
+                  <p className="text-[13px] text-white/35 leading-relaxed group-hover:text-white/55 transition-colors duration-500">
+                    {stat.desc}
+                  </p>
                 </div>
-                <div className="flex justify-between items-baseline">
-                  <span className="font-sans text-[11px] font-medium text-white/50 uppercase tracking-widest">{stat.label}</span>
-                  <div className="flex items-center gap-1 group-hover:gap-3 transition-all">
-                    <span className="font-sans text-4xl font-semibold text-white tracking-tighter">{stat.value}</span>
-                    <Plus size={12} className="text-white/30" />
-                  </div>
+                <div className="flex items-baseline gap-1 flex-shrink-0">
+                  <span className="font-sans text-[28px] md:text-[32px] font-black text-white tracking-tighter leading-none">
+                    {stat.value}
+                  </span>
+                  <span className="text-[11px] text-white/20 font-semibold">{stat.suffix}</span>
                 </div>
               </div>
-            ))}
-            <div className="w-full h-[1px] bg-white/30" />
-          </div>
+            </motion.div>
+          ))}
+          <div className="border-t border-white/[0.07]" />
         </div>
-      </motion.div>
+      </div>
+
+      {/* ── RIGHT: YouTube Video ─────────────────────────────────── */}
+      <div className="relative w-full md:w-[42%] h-[55vh] md:h-auto flex-shrink-0 overflow-hidden">
+        {/* Left-edge blend into bg */}
+
+
+        <motion.div className="absolute inset-0" style={{ y: videoY }}>
+          <div className="absolute inset-[-20%] w-[140%] h-[140%]">
+            <iframe
+              src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&showinfo=0&rel=0&enablejsapi=1&modestbranding=1&iv_load_policy=3&disablekb=1&fs=0&autohide=1&start=90&playsinline=1`}
+              title="Doctor Video"
+              allow="autoplay; encrypted-media"
+              frameBorder="0"
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                width: '100%',
+                height: '56.25%',
+                minHeight: '100%',
+                minWidth: '177.78%',
+                transform: 'translate(-50%, -50%)',
+              }}
+            />
+          </div>
+          {/* Dark overlay to keep video subtle */}
+          <div className="absolute inset-0 bg-black/30" />
+        </motion.div>
+      </div>
     </section>
   );
 }

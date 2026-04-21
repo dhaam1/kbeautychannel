@@ -1,12 +1,6 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import SectionLabel from '../common/SectionLabel';
-
-// --- Global Styles to hide scrollbar ---
-const noScrollbarStyle = `
-  .hide-scrollbar::-webkit-scrollbar { display: none; }
-  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-`;
 
 // --- Types & Data ---
 interface InsightItem {
@@ -60,187 +54,214 @@ const INSIGHTS_DATA: InsightItem[] = [
     videoId: "mUs_CLbjDxg",
     start: 63,
     overview: "과한 시술보다는 본질적인 아름다움을 강조하는 케이뷰티채널 김 원장의 철학적 시선을 공유합니다."
+  },
+  {
+    id: 6,
+    tag: "Thread Lift",
+    category: "Precision",
+    title: "실리프팅의 기술: 실의 배치가 만드는 입체감",
+    videoId: "wmBmCFCcXRI",
+    overview: "실의 종류와 삽입 벡터 하나하나가 결과물을 결정하는 실리프팅의 정밀한 설계 원리를 깊이 있게 풀어드립니다."
+  },
+  {
+    id: 7,
+    tag: "Filler",
+    category: "Volume",
+    title: "필러 해부학: 볼륨과 경계의 황금 비율",
+    videoId: "gezRWcZby8c",
+    overview: "과하지 않으면서도 또렷한 입체감을 위해, 얼굴 해부학에 기반한 필러 배치 전략과 자연스러운 경계 설정법을 소개합니다."
   }
 ];
 
-// --- Sub-component: Video Card ---
-const VideoCard: React.FC<{ item: InsightItem; isActive: boolean }> = ({ item, isActive }) => {
+export default function YoutubeEmbed() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  // Auto-cycle
+  useEffect(() => {
+    if (hoveredIndex !== null) return;
+    const timer = setInterval(() => {
+      setActiveIndex(prev => (prev + 1) % INSIGHTS_DATA.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [hoveredIndex]);
+
+  const activeItem = INSIGHTS_DATA[activeIndex];
+
   return (
-    <motion.div
-      layout
-      animate={{
-        width: isActive ? "640px" : "400px",
-        opacity: isActive ? 1 : 0.4,
-        scale: isActive ? 1.02 : 1
-      }}
-      transition={{ type: "spring", stiffness: 150, damping: 25 }}
-      className="flex-shrink-0 flex flex-col gap-8"
-    >
-      <div className={`relative w-full aspect-video rounded-[2rem] overflow-hidden shadow-2xl group transition-all duration-1000 ${!isActive && 'grayscale blur-[1px]'}`}>
-        <AnimatePresence mode="wait">
-          {isActive ? (
-            <motion.div
-              key="video"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="absolute inset-0 z-10"
-            >
-              <iframe 
-                width="100%" 
-                height="100%" 
-                src={`https://www.youtube.com/embed/${item.videoId}?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=${item.videoId}&start=${item.start || 0}`} 
-                title="YouTube video player" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/5 z-20 pointer-events-none" />
-            </motion.div>
-          ) : (
-            <motion.div
-              key="image"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="absolute inset-0"
-            >
-              <img src={`https://img.youtube.com/vi/${item.videoId}/maxresdefault.jpg`} alt={item.title} className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-black/10" />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
+    <section ref={sectionRef} className="relative w-full bg-[#0A0A0A] overflow-hidden" style={{ minHeight: '100vh' }}>
+      <SectionLabel number="05" title="INSIGHTS" dark />
+
+      {/* Background video (active item) */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeItem.videoId}
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          className="absolute inset-0 z-0"
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/${activeItem.videoId}?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=${activeItem.videoId}&start=${activeItem.start || 0}&playsinline=1`}
+            title="YouTube"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            className="w-full h-full object-cover"
+            style={{ pointerEvents: 'none', transform: 'scale(1.3)', transformOrigin: 'center' }}
+          />
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Cinematic overlays */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30 z-[1]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/50 z-[1]" />
+      <div className="absolute inset-0 opacity-[0.04] pointer-events-none z-[2]" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")` }} />
 
       {/* Content */}
-      <div className="flex flex-col gap-4 px-4 overflow-hidden">
-        <div className="flex justify-between items-center text-[10px] uppercase tracking-widest font-black text-gray-400">
-          <span>{item.tag}</span>
-          <span>{item.category}</span>
-        </div>
-        <h3 className={`font-sans font-bold leading-tight transition-all duration-700 whitespace-nowrap overflow-hidden text-ellipsis ${isActive ? 'text-2xl text-gray-900 translate-x-0' : 'text-lg text-gray-300 -translate-x-2'}`}>
-          {item.title}
-        </h3>
-        <AnimatePresence>
-          {isActive && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              className="overflow-hidden"
-            >
-              <p className="text-sm text-gray-400 leading-relaxed font-light mt-2 max-w-[400px]">
-                {item.overview}
-              </p>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    </motion.div>
-  );
-};
-
-export default function YoutubeEmbed() {
-  const [activeIndex, setActiveIndex] = useState(INSIGHTS_DATA.length); // Start from the middle section
-  const [isPaused, setIsPaused] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
-  
-  const infiniteData = useMemo(() => {
-    return [...INSIGHTS_DATA, ...INSIGHTS_DATA, ...INSIGHTS_DATA];
-  }, []);
-
-  // --- Step Scroll Logic ---
-  useEffect(() => {
-    if (isPaused) return;
-
-    const timer = setInterval(() => {
-      setActiveIndex((prev) => prev + 1);
-    }, 5000); // 5 Seconds Interval
-
-    return () => clearInterval(timer);
-  }, [isPaused]);
-
-  // --- Sync Scroll Position with activeIndex ---
-  useEffect(() => {
-    if (!containerRef.current) return;
-    
-    const container = containerRef.current;
-    const children = Array.from(container.firstChild?.childNodes || []) as HTMLElement[];
-    const targetChild = children[activeIndex];
-
-    if (targetChild) {
-      const targetLeft = targetChild.offsetLeft - (container.offsetWidth / 2) + (targetChild.offsetWidth / 2);
-      container.scrollTo({ left: targetLeft, behavior: 'smooth' });
-    }
-
-    // --- Seamless Reset for Infinite loop ---
-    if (activeIndex >= INSIGHTS_DATA.length * 2) {
-      setTimeout(() => {
-        const resetIndex = INSIGHTS_DATA.length;
-        setActiveIndex(resetIndex);
-        const resetChild = children[resetIndex];
-        if (resetChild) {
-          const resetLeft = resetChild.offsetLeft - (container.offsetWidth / 2) + (resetChild.offsetWidth / 2);
-          container.scrollTo({ left: resetLeft, behavior: 'auto' });
-        }
-      }, 700); // Wait for smooth scroll to finish
-    }
-    
-    if (activeIndex < INSIGHTS_DATA.length) {
-        setTimeout(() => {
-          const resetIndex = INSIGHTS_DATA.length * 2 - 1;
-          setActiveIndex(resetIndex);
-          const resetChild = children[resetIndex];
-          if (resetChild) {
-            const resetLeft = resetChild.offsetLeft - (container.offsetWidth / 2) + (resetChild.offsetWidth / 2);
-            container.scrollTo({ left: resetLeft, behavior: 'auto' });
-          }
-        }, 700);
-    }
-  }, [activeIndex]);
-
-  return (
-    <section className="relative w-full bg-white py-24 md:py-48 overflow-hidden">
-      <SectionLabel number="05" title="INSIGHTS" />
-      <style>{noScrollbarStyle}</style>
-      <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-[#F5F1EE] blur-[150px] rounded-full opacity-60 -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-
-      {/* Header */}
-      <div className="max-w-[1400px] mx-auto px-[5%] mb-24 md:mb-40 relative z-10">
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
+      <div className="relative z-10 flex flex-col justify-between h-full" style={{ minHeight: '100vh' }}>
+        
+        {/* Top header */}
+        <div className="px-[5%] pt-32 md:pt-40 max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex flex-col gap-8"
-        >
-            <span className="text-[10px] font-black tracking-[1.2em] text-gray-400 uppercase">Archive Education</span>
-            <h2 className="font-pretendard text-3xl md:text-[48px] font-bold tracking-tighter leading-[1.1] text-gray-900">
-                인터넷에서 얻을 수 없는 정보, <br /> 
-                <span className="text-gray-400">
-                    KBEAUTYCHANNEL에선 <br className="md:hidden" /> 모두 말해드리겠습니다.
-                </span>
+            transition={{ duration: 0.8 }}
+            className="flex flex-col gap-5 items-center text-center"
+          >
+            <span className="text-[9px] font-black tracking-[0.5em] text-white/30 uppercase">Archive Education</span>
+            <h2 className="font-pretendard text-[22px] md:text-[48px] font-bold tracking-tighter leading-[1.1] text-white break-keep">
+              인터넷에서 얻을 수 없는 정보,<br className="hidden md:block" />{' '}
+              <span className="text-white/40">
+                KBEAUTYCHANNEL에선 모두 말해드리겠습니다.
+              </span>
             </h2>
-        </motion.div>
-      </div>
-
-      {/* Infinite Horizontal Gallery */}
-      <div 
-        ref={containerRef}
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-        className="relative z-10 w-full overflow-x-auto hide-scrollbar"
-      >
-        <div className="flex items-center gap-12 w-max px-[20vw] pb-32 min-h-[700px]">
-          {infiniteData.map((item, idx) => (
-            <VideoCard key={`${item.id}-${idx}`} item={item} isActive={activeIndex === idx} />
-          ))}
+          </motion.div>
         </div>
-      </div>
 
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex items-center gap-4 text-[10px] font-black tracking-[0.5em] text-gray-300 uppercase z-10">
-         <span>Swipe or Flow</span>
-         <div className="w-12 h-px bg-gray-100" />
-         <span className="text-gray-900">Cinematic Experience</span>
+        {/* Active item large content */}
+        <div className="px-[5%] flex-grow flex items-center py-12">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeIndex}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -40 }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              className="max-w-xl"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <span className="px-4 py-1.5 rounded-full border border-white/20 text-[10px] font-bold tracking-[0.3em] text-white/60 uppercase backdrop-blur-sm">
+                  {activeItem.tag}
+                </span>
+                <span className="text-[10px] font-bold tracking-[0.3em] text-white/30 uppercase">
+                  {activeItem.category}
+                </span>
+              </div>
+              <h3 className="font-pretendard text-[22px] md:text-[36px] font-bold text-white tracking-tight leading-[1.15] mb-6">
+                {activeItem.title}
+              </h3>
+              <p className="text-[13px] text-white/40 leading-relaxed font-light max-w-md">
+                {activeItem.overview}
+              </p>
+
+              <motion.a
+                href={`https://www.youtube.com/watch?v=${activeItem.videoId}${activeItem.start ? `&t=${activeItem.start}` : ''}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 mt-10 group"
+                whileHover={{ x: 4 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+              >
+                {/* Play circle */}
+                <span className="relative flex items-center justify-center w-12 h-12 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm transition-all duration-500 group-hover:bg-white group-hover:border-white">
+                  {/* YouTube triangle */}
+                  <svg
+                    className="w-4 h-4 translate-x-0.5 text-white transition-colors duration-500 group-hover:text-black"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                  >
+                    <path d="M3 2.5l10 5.5-10 5.5V2.5z" />
+                  </svg>
+                  {/* Pulse ring */}
+                  <span className="absolute inset-0 rounded-full border border-white/20 scale-100 opacity-0 group-hover:scale-150 group-hover:opacity-0 transition-all duration-700" />
+                </span>
+
+                {/* Label */}
+                <span className="flex flex-col">
+                  <span className="text-[10px] font-bold tracking-[0.3em] text-white/30 uppercase mb-0.5">YouTube</span>
+                  <span className="text-sm font-semibold text-white/70 group-hover:text-white transition-colors duration-300 tracking-wide">
+                    영상 전체 보기
+                  </span>
+                </span>
+
+                {/* Arrow */}
+                <svg
+                  className="w-4 h-4 text-white/20 group-hover:text-white/60 group-hover:translate-x-1 transition-all duration-300 ml-1"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </motion.a>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        {/* Bottom strip — thumbnails */}
+        <div className="px-[5%] pb-14 md:pb-20">
+          <div className="flex items-end gap-3 md:gap-4 overflow-x-auto pb-1" style={{ scrollbarWidth: 'none' }}>
+            {INSIGHTS_DATA.map((item, i) => (
+              <motion.div
+                key={item.id}
+                onMouseEnter={() => setHoveredIndex(i)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                onClick={() => setActiveIndex(i)}
+                animate={{
+                  width: activeIndex === i ? '220px' : '110px',
+                  height: activeIndex === i ? '140px' : '86px',
+                }}
+                transition={{ type: 'spring', stiffness: 200, damping: 30 }}
+                className="relative rounded-lg overflow-hidden cursor-pointer flex-shrink-0 group"
+              >
+                <img
+                  src={`https://img.youtube.com/vi/${item.videoId}/maxresdefault.jpg`}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className={`absolute inset-0 transition-all duration-500 ${activeIndex === i ? 'bg-black/10' : 'bg-black/55'}`} />
+
+                {/* Active indicator line */}
+                <motion.div
+                  className="absolute bottom-0 left-0 h-[2px] bg-white"
+                  initial={{ width: '0%' }}
+                  animate={{ width: activeIndex === i ? '100%' : '0%' }}
+                  transition={{ duration: activeIndex === i ? 6 : 0.3, ease: 'linear' }}
+                />
+
+                {/* Label */}
+                <div className="absolute bottom-2.5 left-2.5 right-2.5">
+                  <span className={`text-[8px] font-bold uppercase tracking-[0.2em] transition-all duration-500 ${activeIndex === i ? 'text-white' : 'text-white/40'}`}>
+                    {item.tag}
+                  </span>
+                </div>
+
+                {/* Number */}
+                <div className="absolute top-2.5 right-2.5">
+                  <span className={`font-mono text-[9px] font-bold transition-all duration-500 ${activeIndex === i ? 'text-white/80' : 'text-white/20'}`}>
+                    {String(item.id).padStart(2, '0')}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

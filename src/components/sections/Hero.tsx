@@ -1,9 +1,8 @@
-import SectionLabel from '../common/SectionLabel';
+import Header from '../layout/Header';
 
 export default function Hero() {
   return (
-    <div className="relative sticky top-0 z-0 min-h-screen flex flex-col px-[5%] py-6 md:py-10 overflow-hidden">
-      <SectionLabel number="01" title="HERO" />
+    <div className="sticky top-0 z-0 min-h-screen flex flex-col px-[5%] py-6 md:py-10 overflow-hidden">
       <video
         autoPlay
         loop
@@ -12,6 +11,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover z-0"
         src="https://hzhedioacvqzxxlkttah.supabase.co/storage/v1/object/public/herolanding-herolanding/0413-01-water-skin.webm"
       />
+      <Header />
 
       <main className="flex-grow flex flex-col justify-center z-10 max-w-2xl px-4 md:px-0">
         <h1 className="font-sans text-[40px] font-bold text-gray-900 leading-tight tracking-tight">
