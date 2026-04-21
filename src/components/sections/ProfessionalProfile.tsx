@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef, useMemo } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionTemplate, type MotionValue } from 'motion/react';
 import SectionLabel from '../common/SectionLabel';

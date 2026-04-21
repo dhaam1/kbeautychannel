@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1776237999293,
+  "lastScanned": 1776752805303,
   "projectRoot": "C:\\Users\\김승연\\OneDrive\\Desktop\\Kbeautychannel\\01-Kbeautychannel",
   "techStack": {
     "languages": [
@@ -28,13 +28,18 @@
         "category": "backend"
       },
       {
+        "name": "next",
+        "version": "16.2.4",
+        "category": "fullstack"
+      },
+      {
         "name": "react",
-        "version": "19.0.0",
+        "version": "19.2.5",
         "category": "frontend"
       },
       {
         "name": "react-dom",
-        "version": "19.0.0",
+        "version": "19.2.5",
         "category": "frontend"
       },
       {
@@ -52,11 +57,10 @@
     "lintCommand": "npm run lint",
     "devCommand": "npm run dev",
     "scripts": {
-      "dev": "vite --port=3000 --host=0.0.0.0",
-      "build": "vite build",
-      "preview": "vite preview",
-      "clean": "rm -rf dist",
-      "lint": "tsc --noEmit"
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
     }
   },
   "conventions": {
@@ -80,7 +84,7 @@
       "path": "dist",
       "purpose": "Distribution/build output",
       "fileCount": 1,
-      "lastAccessed": 1776237999202,
+      "lastAccessed": 1776752805206,
       "keyFiles": [
         "index.html"
       ]
@@ -89,14 +93,24 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 0,
-      "lastAccessed": 1776237999217,
+      "lastAccessed": 1776752805209,
       "keyFiles": []
+    },
+    "reference": {
+      "path": "reference",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1776752805224,
+      "keyFiles": [
+        "profile1.png",
+        "review-01.png"
+      ]
     },
     "src": {
       "path": "src",
       "purpose": "Source code",
       "fileCount": 3,
-      "lastAccessed": 1776237999220,
+      "lastAccessed": 1776752805226,
       "keyFiles": [
         "App.tsx",
         "index.css",
@@ -107,7 +121,7 @@
       "path": "dist\\assets",
       "purpose": "Static assets",
       "fileCount": 2,
-      "lastAccessed": 1776237999222,
+      "lastAccessed": 1776752805227,
       "keyFiles": [
         "index-BTR594zW.css",
         "index-Dawf92qN.js"
@@ -117,28 +131,28 @@
       "path": "public\\assets",
       "purpose": "Static assets",
       "fileCount": 0,
-      "lastAccessed": 1776237999224,
+      "lastAccessed": 1776752805229,
       "keyFiles": []
     },
     "src\\assets": {
       "path": "src\\assets",
       "purpose": "Static assets",
       "fileCount": 0,
-      "lastAccessed": 1776237999226,
+      "lastAccessed": 1776752805231,
       "keyFiles": []
     },
     "src\\components": {
       "path": "src\\components",
       "purpose": "UI components",
       "fileCount": 0,
-      "lastAccessed": 1776237999227,
+      "lastAccessed": 1776752805232,
       "keyFiles": []
     },
     "src\\pages": {
       "path": "src\\pages",
       "purpose": "Page components",
       "fileCount": 2,
-      "lastAccessed": 1776237999227,
+      "lastAccessed": 1776752805233,
       "keyFiles": [
         "column.tsx",
         "Home.tsx"
@@ -148,14 +162,20 @@
   "hotPaths": [
     {
       "path": "src\\components\\sections\\YoutubeAuthority.tsx",
-      "accessCount": 22,
-      "lastAccessed": 1776240215062,
+      "accessCount": 24,
+      "lastAccessed": 1776754175186,
       "type": "file"
     },
     {
       "path": "src\\components\\sections\\YoutubeEmbed.tsx",
-      "accessCount": 9,
-      "lastAccessed": 1776240607826,
+      "accessCount": 11,
+      "lastAccessed": 1776754177671,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\sections\\SocialProofBridge.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1776754178844,
       "type": "file"
     },
     {
@@ -165,9 +185,9 @@
       "type": "file"
     },
     {
-      "path": "src\\components\\sections\\SocialProofBridge.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1776240595910,
+      "path": "next.config.ts",
+      "accessCount": 4,
+      "lastAccessed": 1776754934096,
       "type": "file"
     },
     {
@@ -178,14 +198,56 @@
     },
     {
       "path": "src\\pages\\Home.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1776753722628,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 3,
+      "lastAccessed": 1776754083716,
+      "type": "file"
+    },
+    {
+      "path": "index.html",
       "accessCount": 2,
-      "lastAccessed": 1776239812712,
+      "lastAccessed": 1776753722293,
       "type": "file"
     },
     {
       "path": "src\\components\\sections\\Hero.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1776238689026,
+      "accessCount": 2,
+      "lastAccessed": 1776753730084,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\sections\\FooterCTA.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776753824445,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\layout\\Header.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776754157866,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\layout\\Layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776754159464,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\procedures\\index.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776754168451,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\sections\\ProfessionalProfile.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776754176386,
       "type": "file"
     },
     {
@@ -201,9 +263,201 @@
       "type": "file"
     },
     {
-      "path": "src\\components\\sections\\FooterCTA.tsx",
+      "path": "src\\App.tsx",
       "accessCount": 1,
-      "lastAccessed": 1776240535110,
+      "lastAccessed": 1776753278812,
+      "type": "file"
+    },
+    {
+      "path": "src\\main.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776753279264,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\common\\SectionLabel.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776753824939,
+      "type": "file"
+    },
+    {
+      "path": "src\\index.css",
+      "accessCount": 1,
+      "lastAccessed": 1776753969422,
+      "type": "file"
+    },
+    {
+      "path": "src",
+      "accessCount": 1,
+      "lastAccessed": 1776754005073,
+      "type": "directory"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "accessCount": 1,
+      "lastAccessed": 1776754091733,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\layout.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754105806,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754111495,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\sitemap.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776754115909,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\robots.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776754117509,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\layout.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754124319,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754127177,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\lifting\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754129397,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\skin-booster\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754131279,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\petit\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754132875,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\laser\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754134867,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\body\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754136404,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\care\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754138406,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\column\\layout.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754140164,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\column\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754141896,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\layout.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754949175,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\page.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754950348,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\sitemap.page.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776754954181,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\robots.page.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776754954973,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\layout.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754959770,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\page.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754962522,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\lifting\\page.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754964926,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\skin-booster\\page.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754967082,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\petit\\page.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754968697,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\laser\\page.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754970321,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\body\\page.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754972289,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\procedures\\care\\page.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754973643,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\column\\layout.page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776754974467,
       "type": "file"
     }
   ],

@@ -1,7 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "mcp__plugin_oh-my-claudecode_t__list_omc_skills",
+      "mcp__plugin_oh-my-claudecode_t__load_omc_skills_global",
+      "Bash(netstat -ano)",
+      "Bash(findstr \":3000\")",
+      "Bash(taskkill /PID 19596 /F)",
+      "Bash(taskkill /PID 18752 /F)",
+      "Bash(cmd.exe *)",
+      "Bash(powershell *)",
+      "Bash(npm install *)",
+      "Bash(npx next *)"
     ]
   }
 }

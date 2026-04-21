@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"powershell -Command \\\"Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }\\\"\"}",
+  "error": "Exit code 1\nForEach-Object : 'Id' �Ű� ������ ���ε��� �� �����ϴ�. �� \"extglob.OwningProcess\"��(��) \"System.Int32\" �������� ��ȯ��\r\n �� �����ϴ�. ����: \"�Է� ���ڿ��� ������ �߸��Ǿ����ϴ�.\"\r\n��ġ ��:1 ����:70\r\n+ ... yContinue | ForEach-Object { Stop-Process -Id extglob.OwningProcess - ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidArgument: (:) [ForEach-Object], ParameterBindingException\r\n    + FullyQualifiedErrorId : CannotConvertAr...",
+  "timestamp": "2026-04-21T06:58:46.350Z",
+  "retry_count": 1
+}
