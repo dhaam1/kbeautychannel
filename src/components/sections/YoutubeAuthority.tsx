@@ -93,11 +93,14 @@ export default function YoutubeAuthority() {
       </div>
 
       {/* ── RIGHT: YouTube Video ─────────────────────────────────── */}
-      <div className="relative w-full md:w-[42%] h-[55vh] md:h-auto flex-shrink-0 overflow-hidden">
-        {/* Left-edge blend into bg */}
+      <div className="relative w-full md:w-[42%] h-[55vh] md:h-auto flex-shrink-0 overflow-hidden bg-[#0A0A0A]">
+        {/* Fixed black overlay to ensure no gaps */}
+        <div className="absolute inset-0 bg-black/40 z-[4] pointer-events-none" />
 
-
-        <motion.div className="absolute inset-0" style={{ y: videoY }}>
+        <motion.div 
+          className="absolute -inset-y-[15%] inset-x-0" 
+          style={{ y: videoY }}
+        >
           <div className="absolute inset-[-20%] w-[140%] h-[140%]">
             <iframe
               src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&showinfo=0&rel=0&enablejsapi=1&modestbranding=1&iv_load_policy=3&disablekb=1&fs=0&autohide=1&start=90&playsinline=1`}
@@ -116,8 +119,6 @@ export default function YoutubeAuthority() {
               }}
             />
           </div>
-          {/* Dark overlay to keep video subtle */}
-          <div className="absolute inset-0 bg-black/30" />
         </motion.div>
       </div>
     </section>
