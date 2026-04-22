@@ -1,5 +1,8 @@
 import React from 'react';
 import Header from '../../components/layout/Header';
+import ReviewsArchive from '../../components/sections/ReviewsArchive';
+import Reviews from '../../components/sections/Reviews';
+import FooterCTA from '../../components/sections/FooterCTA';
 
 export const metadata = {
   title: 'Reviews | KBEAUTYCHANNEL',
@@ -8,11 +11,22 @@ export const metadata = {
 export default function ReviewsPage() {
   return (
     <main className="min-h-screen bg-[#f8f7f4]">
-      <div className="px-[5%] py-6 md:py-10">
+      {/* Header Container */}
+      <div className="fixed top-0 left-0 w-full z-50 px-[5%] py-6 md:py-10 bg-[#f8f7f4]/80 backdrop-blur-md">
         <Header isDarkBackground={false} />
       </div>
-      <div className="p-20 text-black">
-        <h1>Header Test with Global Header</h1>
+
+      {/* Content Sections */}
+      <div className="pt-24 md:pt-32">
+        <div className="snap-section">
+          <ReviewsArchive />
+        </div>
+        <div className="snap-section">
+          <Reviews />
+        </div>
+        <div className="snap-section">
+          <FooterCTA />
+        </div>
       </div>
     </main>
   );
