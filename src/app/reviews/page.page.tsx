@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/layout/Header';
 import ReviewsArchive from '../../components/sections/ReviewsArchive';
-import Reviews from '../../components/sections/Reviews';
+
 import FooterCTA from '../../components/sections/FooterCTA';
 
 export const metadata = {
@@ -21,9 +21,7 @@ export default function ReviewsPage() {
         <div className="snap-section">
           <ReviewsArchive />
         </div>
-        <div className="snap-section">
-          <Reviews />
-        </div>
+
         <div className="snap-section">
           <FooterCTA />
         </div>

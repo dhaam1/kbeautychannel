@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
+import SectionLabel from '../common/SectionLabel';
 
 interface Feature {
   number: string;
@@ -50,6 +51,8 @@ interface ProcedureFeaturesProps {
   description: string;
   features: Feature[];
   bgImage: string;
+  sectionNumber?: string;
+  sectionTitle?: string;
 }
 
 export default function ProcedureFeatures({
@@ -57,18 +60,21 @@ export default function ProcedureFeatures({
   subtitle,
   description,
   features,
-  bgImage
+  bgImage,
+  sectionNumber = "02",
+  sectionTitle = "FEATURES"
 }: ProcedureFeaturesProps) {
   return (
-    <section className="relative w-full py-24 md:py-40 px-[5%]">
+    <section className="relative w-full py-24 md:py-40 px-[5%] overflow-hidden">
+      <SectionLabel number={sectionNumber} title={sectionTitle} />
       {/* Background with Pastel Gradient */}
       <div className="absolute inset-0 z-0">
         <img 
           src={bgImage} 
           alt="Background" 
-          className="w-full h-full object-cover opacity-60 mix-blend-multiply"
+          className="w-full h-full object-cover opacity-30 mix-blend-soft-light"
         />
-        <div className="absolute inset-0 bg-white/30 backdrop-blur-[4px]" />
+        <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">

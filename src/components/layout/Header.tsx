@@ -1,17 +1,27 @@
 import Link from 'next/link';
 
-export default function Header() {
+interface HeaderProps {
+  isDarkBackground?: boolean;
+}
+
+export default function Header({ isDarkBackground = false }: HeaderProps) {
+  const textColor = isDarkBackground ? "text-white" : "text-gray-900";
+  const iconColor = isDarkBackground ? "text-white/80 group-hover:text-white" : "text-gray-400 group-hover:text-gray-900";
+  const buttonStyle = isDarkBackground 
+    ? "border-white text-white hover:bg-white hover:text-black" 
+    : "border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white";
+
   return (
     <header className="w-full flex justify-between items-center z-50">
-      <Link href="/" className="font-sans font-bold text-2xl text-gray-900 tracking-tight">
+      <Link href="/" className={`font-sans font-bold text-2xl ${textColor} tracking-tight`}>
         KBEAUTYCHANNEL
       </Link>
       <div className="flex items-center gap-8">
-        <nav className="flex items-center gap-6 font-sans text-sm font-semibold text-gray-900 tracking-widest uppercase relative z-50">
+        <nav className={`flex items-center gap-6 font-sans text-sm font-semibold ${textColor} tracking-widest uppercase relative z-50`}>
           <div className="relative group">
             <div className="cursor-default hover:opacity-70 transition-opacity flex items-center gap-1.5 py-4">
               전문 시술 분야
-              <svg className="w-3.5 h-3.5 text-gray-400 group-hover:text-gray-900 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className={`w-3.5 h-3.5 ${iconColor} transition-transform duration-300 group-hover:rotate-180`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </div>
@@ -40,7 +50,7 @@ export default function Header() {
           <Link href="/reviews" className="hover:opacity-70 transition-opacity">후기</Link>
           <Link href="/column" className="hover:opacity-70 transition-opacity">DR.KIM 칼럼</Link>
         </nav>
-        <button className="px-5 py-2 rounded-full border border-gray-900 text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition-colors">
+        <button className={`px-5 py-2 rounded-full border text-sm font-semibold transition-colors ${buttonStyle}`}>
           시술 예약
         </button>
       </div>

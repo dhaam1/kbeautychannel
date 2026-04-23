@@ -1,5 +1,6 @@
 import React from 'react';
-import MediaHero from '../../components/sections/MediaHero';
+import MediaNewsArchive from '../../components/sections/MediaNewsArchive';
+import Header from '../../components/layout/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,9 +10,11 @@ export const metadata: Metadata = {
 
 export default function MediaPage() {
   return (
-    <main className="min-h-screen bg-[#2C241E]">
-      <MediaHero />
-      {/* Additional sections can be added here later */}
+    <main className="min-h-screen bg-[#1A1A1A]">
+      <div className="relative z-50 px-[5%] py-6 md:py-10">
+        <Header isDarkBackground={true} />
+      </div>
+      <MediaNewsArchive />
     </main>
   );
 }

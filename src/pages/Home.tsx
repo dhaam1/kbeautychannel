@@ -4,6 +4,7 @@ import YoutubeAuthority from '../components/sections/YoutubeAuthority';
 import ProfessionalProfile from '../components/sections/ProfessionalProfile';
 import SocialProofBridge from '../components/sections/SocialProofBridge';
 import YoutubeEmbed from '../components/sections/YoutubeEmbed';
+import ColumnSection from '../components/sections/ColumnSection';
 import FooterCTA from '../components/sections/FooterCTA';
 
 
@@ -27,9 +28,13 @@ import FooterCTA from '../components/sections/FooterCTA';
            <YoutubeEmbed />
          </div>
          <div className="snap-section">
+           <ColumnSection />
+         </div>
+         <div className="snap-section">
            <FooterCTA />
          </div>
        </div>
      </div>
    );
  }
+

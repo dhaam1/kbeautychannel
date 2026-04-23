@@ -18,6 +18,8 @@ export default function ProcedurePageTemplate({ data }: ProcedurePageTemplatePro
         description={data.description}
         bgImage={data.heroBg}
         reservationLink={data.reservationLink}
+        sectionNumber="01"
+        sectionTitle="TREATMENT"
       />
       <ProcedureFeatures 
         title={data.featuresTitle}
@@ -25,6 +27,8 @@ export default function ProcedurePageTemplate({ data }: ProcedurePageTemplatePro
         description={data.featuresDescription}
         features={data.features}
         bgImage={data.featuresBg}
+        sectionNumber="02"
+        sectionTitle="FEATURES"
       />
       <div className="relative z-10 bg-white">
         <YoutubeEmbed />

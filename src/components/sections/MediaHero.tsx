@@ -47,7 +47,7 @@ export default function MediaHero() {
 
             {/* Row 3 & 4 (Shifted Right) */}
             <div className="flex flex-col items-end mt-4 md:mt-8">
-              <h1 className="font-serif text-[6vw] md:text-[80px] lg:text-[110px] leading-none tracking-tight italic text-[#E8927D]">
+              <h1 className="font-serif text-[6vw] md:text-[80px] lg:text-[110px] leading-none tracking-tight text-[#E8927D]">
                 EXPERTISE.
               </h1>
               <div className="h-[1px] w-1/3 bg-white/20 mt-4 self-end" />
