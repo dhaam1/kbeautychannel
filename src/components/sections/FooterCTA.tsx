@@ -34,7 +34,6 @@ export default function FooterCTA() {
           >
             <div className="flex items-center gap-2 mb-12 md:mb-16">
               <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white"><path d="M12 2L2 22h20L12 2zm0 3.8l6.1 12.2H5.9L12 5.8z"/></svg>
-              <span className="font-sans font-bold text-[16px] tracking-[0.2em] uppercase text-white/80">KBEAUTYCHANNEL</span>
             </div>
 
             <div className="mb-10 md:mb-12">
@@ -58,27 +57,13 @@ export default function FooterCTA() {
                 
                 {/* Left Section (Main) */}
                 <div className="relative flex-grow h-full p-6 md:p-8 flex flex-col justify-between overflow-hidden">
-                  <div className="relative z-10 flex flex-col gap-1.5">
-                    <div className="flex items-center gap-2.5">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#E8927D] shadow-[0_0_8px_#E8927D] animate-pulse" />
-                      <span className="text-[11px] font-bold tracking-[0.4em] text-[#E8927D] uppercase">KBC Prestige Member</span>
-                    </div>
-                    <h3 className="text-2xl md:text-[32px] font-black text-white tracking-tighter leading-[1.1] mt-1">
+                  <div className="relative z-10 flex flex-col gap-1.5 justify-center h-full">
+                    <h3 className="text-2xl md:text-[32px] font-bold text-white tracking-tighter leading-[1.1] mt-1">
                       PREMIUM<br/>ESTHETIC PASS
                     </h3>
                   </div>
 
-                  <div className="relative z-10 flex items-center gap-6">
-                    <div className="flex flex-col">
-                      <span className="text-[9px] font-mono text-white/30 tracking-widest uppercase">Membership No.</span>
-                      <span className="text-[13px] font-mono text-white/70">777-KBC-PREMIUM-2026</span>
-                    </div>
-                    <div className="w-[1px] h-6 bg-white/10" />
-                    <div className="flex flex-col">
-                      <span className="text-[9px] font-mono text-white/30 tracking-widest uppercase">Verified by</span>
-                      <span className="text-[13px] font-mono text-white/70 tracking-tight">DIRECTOR KIM</span>
-                    </div>
-                  </div>
+                  {/* Info row removed for cleaner look */}
                 </div>
 
                 {/* Perforation Line & Notches Area */}
@@ -91,7 +76,7 @@ export default function FooterCTA() {
                   <div className="absolute -bottom-4 -left-4 w-8 h-8 rounded-full bg-[#0a0a0a] border border-white/10 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] z-20" />
                   
                   <div className="rotate-90 whitespace-nowrap">
-                    <span className="text-[11px] md:text-[13px] font-black tracking-[0.5em] text-white/15 uppercase select-none">
+                    <span className="text-[11px] md:text-[13px] font-bold tracking-[0.5em] text-white/15 uppercase select-none">
                       V.I.P ACCESS
                     </span>
                   </div>

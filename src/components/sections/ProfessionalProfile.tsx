@@ -9,6 +9,7 @@ interface ProfileData {
   title: string;
   subtitle: string;
   image: string;
+  video?: string;
   items: string[];
 }
 
@@ -18,6 +19,7 @@ const PROFILE_DATA: ProfileData[] = [
     title: '한국을 대표하는 미인대회,\n미스코리아 심사위원',
     subtitle: 'Judge Credentials',
     image: '/assets/images/profile_judge.png',
+    video: '/videos/miss-korea.webm',
     items: [
       '미스코리아 경기, 인천 심사위원',
       '아나테이너 월드 코리아 심사위원',
@@ -30,6 +32,7 @@ const PROFILE_DATA: ProfileData[] = [
     title: '미용을 선도하는\n학회의 Key Doctor',
     subtitle: 'Academic & Key Doctor',
     image: '/assets/images/profile_academic.png',
+    video: '/videos/CTA-video.webm',
     items: [
       '대한미용의사회 학술 의사 강사',
       '대한임상미용의학회 (KACAM) 정회원',
@@ -43,6 +46,7 @@ const PROFILE_DATA: ProfileData[] = [
     title: '한국 최고의 대학,\n서울대학의 전공의',
     subtitle: 'Academic Foundation',
     image: '/assets/images/profile_university.png',
+    video: '/videos/seoul-university.webm',
     items: [
       '서울대학교 대학원 의학석사 졸업',
       '서울대학교병원 인턴 수료',
@@ -53,7 +57,7 @@ const PROFILE_DATA: ProfileData[] = [
   },
 ];
 
-const KEY_COLOR = '#E8927D';
+const KEY_COLOR = '#FFFFFF';
 
 export default function ProfessionalProfile() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -129,19 +133,36 @@ const ExpandingCard: React.FC<ExpandingCardProps> = ({ data, index, progress }) 
       style={{ width, flexShrink: 0 }}
       className="relative h-full border-b lg:border-b-0 lg:border-r border-white/10 flex flex-col overflow-hidden"
     >
-      {/* Background Image Layer */}
+      {/* Background Image/Video Layer */}
       <motion.div 
         className="absolute inset-0 z-0 pointer-events-none"
         style={{ 
           opacity: imgOpacity,
-          backgroundImage: `url(${data.image})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
           scale: imgScale,
           filter: filter,
           willChange: 'transform, opacity, filter',
         }}
-      />
+      >
+        {data.video ? (
+          <video 
+            src={data.video}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div 
+            className="w-full h-full"
+            style={{ 
+              backgroundImage: `url(${data.image})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+        )}
+      </motion.div>
       
       <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/30 to-transparent z-[1] pointer-events-none" />
 
@@ -151,10 +172,10 @@ const ExpandingCard: React.FC<ExpandingCardProps> = ({ data, index, progress }) 
         className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-10 pointer-events-none"
       >
         <div className="min-w-[300px]">
-          <span className="text-[11px] font-black tracking-[0.6em] text-white/30 uppercase mb-5 block">
+          <span className="text-[11px] font-bold tracking-[0.6em] text-white/30 uppercase mb-5 block">
              {data.subtitle.split(' ')[0]}
           </span>
-          <h2 className="font-sans text-[20px] lg:text-[24px] font-black text-white leading-tight tracking-tighter whitespace-pre-line">
+          <h2 className="font-sans text-[24px] lg:text-[32px] font-bold text-white leading-tight tracking-tighter whitespace-pre-line">
              {data.title.split('\n')[1] || data.title}
           </h2>
         </div>
@@ -170,7 +191,7 @@ const ExpandingCard: React.FC<ExpandingCardProps> = ({ data, index, progress }) 
           {/* Top-Right Area: Main Catchy Title */}
           <div className="flex justify-end items-start pt-12 lg:pt-0">
              <div className="max-w-4xl text-right">
-                <h2 className="font-sans text-[36px] lg:text-[88px] font-black text-white leading-[1.02] tracking-tighter whitespace-pre-line">
+                <h2 className="font-sans text-[36px] lg:text-[54px] font-bold text-white leading-[1.02] tracking-tighter whitespace-pre-line">
                   {data.title}
                 </h2>
                 <div className="mt-8 flex justify-end">
@@ -185,7 +206,7 @@ const ExpandingCard: React.FC<ExpandingCardProps> = ({ data, index, progress }) 
              {/* Bottom-Left: Subtitle & ID (Category style) */}
              <div className="flex flex-col items-start">
                 <span 
-                  className="text-[16px] lg:text-[20px] font-black tracking-[0.6em] uppercase mb-4"
+                  className="text-[16px] lg:text-[20px] font-bold tracking-[0.6em] uppercase mb-4"
                   style={{ color: KEY_COLOR }}
                 >
                   {data.id} — {data.subtitle}
@@ -207,7 +228,7 @@ const ExpandingCard: React.FC<ExpandingCardProps> = ({ data, index, progress }) 
                 </ul>
                 <motion.div className="mt-12 flex justify-end">
                   <button 
-                    className="px-12 py-4 bg-white/5 text-white border border-white/10 rounded-full text-[12px] font-black tracking-[0.4em] uppercase transition-all duration-700 hover:text-black pointer-events-auto"
+                    className="px-12 py-4 bg-white/5 text-white border border-white/10 rounded-full text-[12px] font-bold tracking-[0.4em] uppercase transition-all duration-700 hover:text-black pointer-events-auto"
                     onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = KEY_COLOR)}
                     onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)')}
                   >
@@ -227,7 +248,7 @@ const ExpandingCard: React.FC<ExpandingCardProps> = ({ data, index, progress }) 
         style={{ opacity: useTransform(currentWidthValue, [0, 8, 18], [1, 0.5, 0]) }}
       >
         <div className="rotate-90 origin-center whitespace-nowrap">
-           <span className="text-[12px] font-black tracking-[1em] text-white/10 uppercase">
+           <span className="text-[12px] font-bold tracking-[1em] text-white/10 uppercase">
              {data.id} — {data.subtitle}
            </span>
         </div>

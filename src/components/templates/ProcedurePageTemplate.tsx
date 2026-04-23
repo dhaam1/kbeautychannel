@@ -7,20 +7,40 @@ import { ProcedureData } from '../../constants/procedures';
 
 interface ProcedurePageTemplateProps {
   data: ProcedureData;
+  heroOptions?: {
+    bgVideo?: string;
+    isCenter?: boolean;
+    isTop?: boolean;
+    isDarkText?: boolean;
+    hideButton?: boolean;
+    isSplitLayout?: boolean;
+    titleSize?: string;
+    descSize?: string;
+    mainCopy?: string;
+    subCopy?: string;
+  };
 }
 
-export default function ProcedurePageTemplate({ data }: ProcedurePageTemplateProps) {
+export default function ProcedurePageTemplate({ data, heroOptions }: ProcedurePageTemplateProps) {
   return (
     <main className="min-h-screen bg-white">
       <TreatmentHero 
-        category={data.category}
-        title={data.title}
-        titleItalic={data.titleItalic}
-        description={data.description}
+        category={heroOptions?.mainCopy ? undefined : data.category}
+        title={heroOptions?.mainCopy || data.title}
+        titleItalic={heroOptions?.mainCopy ? undefined : data.titleItalic}
+        description={heroOptions?.subCopy || data.description}
         bgImage={data.heroBg}
+        bgVideo={heroOptions?.bgVideo}
         reservationLink={data.reservationLink}
         sectionNumber="01"
         sectionTitle="TREATMENT"
+        isCenter={heroOptions?.isCenter}
+        isTop={heroOptions?.isTop}
+        isDarkText={heroOptions?.isDarkText}
+        hideButton={heroOptions?.hideButton}
+        isSplitLayout={heroOptions?.isSplitLayout}
+        titleSize={heroOptions?.titleSize}
+        descSize={heroOptions?.descSize}
       />
       <ProcedureFeatures 
         title={data.featuresTitle}

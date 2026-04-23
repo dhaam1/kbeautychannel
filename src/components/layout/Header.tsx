@@ -8,8 +8,8 @@ export default function Header({ isDarkBackground = false }: HeaderProps) {
   const textColor = isDarkBackground ? "text-white" : "text-gray-900";
   const iconColor = isDarkBackground ? "text-white/80 group-hover:text-white" : "text-gray-400 group-hover:text-gray-900";
   const buttonStyle = isDarkBackground 
-    ? "border-[#E8927D] text-[#E8927D] hover:bg-[#E8927D] hover:text-black" 
-    : "border-[#E8927D] text-[#E8927D] hover:bg-[#E8927D] hover:text-white";
+    ? "border-white text-white hover:bg-white hover:text-black" 
+    : "border-black text-black hover:bg-black hover:text-white";
 
   return (
     <header className="w-full flex justify-between items-center z-50">

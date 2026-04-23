@@ -1,4 +1,4 @@
-import React from 'react';
+import MediaHero from '../../components/sections/MediaHero';
 import MediaNewsArchive from '../../components/sections/MediaNewsArchive';
 import FooterCTA from '../../components/sections/FooterCTA';
 import Navbar from '../../components/layout/Navbar';
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function MediaPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Navbar isDarkBackground={false} />
+      <MediaHero />
       <MediaNewsArchive />
       <FooterCTA />
       <Footer />

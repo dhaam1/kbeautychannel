@@ -5,7 +5,7 @@ import { blogPosts } from '../../constants/column';
 
 export const metadata: Metadata = {
   title: 'DR.KIM 칼럼 | KBEAUTYCHANNEL',
-  description: '전문 의료진이 전하는 피부 건강 정보와 케이뷰티채널의 다양한 소식을 전해드립니다.',
+  description: '신뢰할 수 없었던 의료 정보, 이제 안찾아보셔도 됩니다. 단순 시술이라면 이 정도의 정보는 필요없을 겁니다. 하지만 평생의 아름다움과 피부 건강을 위해선 필요합니다.',
 };
 
 
@@ -19,8 +19,14 @@ export default function BlogPage() {
       <main className="flex-grow w-full max-w-7xl mx-auto px-4 md:px-8 pt-32 pb-12 md:pt-48 md:pb-20 relative z-10">
         {/* Title Section */}
         <div className="mb-12 md:mb-16 pl-2">
-          <h1 className="text-3xl md:text-[32px] font-bold text-gray-900 mb-3 tracking-tight">DR.KIM 칼럼</h1>
-          <p className="text-gray-500 text-[16px] md:text-base">전문 의료진이 전하는 피부 미용 건강 정보와 케이뷰티채널의 다양한 소식을 전해드립니다.</p>
+          <h1 className="text-3xl md:text-[32px] font-bold text-gray-900 mb-3 tracking-tight">
+            신뢰할 수 없었던 의료 정보,<br />
+            이제 안찾아보셔도 됩니다.
+          </h1>
+          <p className="text-gray-500 text-[16px] md:text-base">
+            단순 시술이라면 이 정도의 정보는 필요없을 겁니다.<br />
+            하지만 평생의 아름다움과 피부 건강을 위해선 필요합니다.
+          </p>
         </div>
 
         {/* Blog Grid */}
@@ -41,7 +47,7 @@ export default function BlogPage() {
                 
                 {/* ID & Category Watermark */}
                 <div className="absolute top-6 left-6">
-                  <span className="text-[16px] font-black tracking-[0.4em] text-white/40 uppercase">
+                  <span className="text-[16px] font-bold tracking-[0.4em] text-white/40 uppercase">
                     Archive {String(post.id).padStart(2, '0')}
                   </span>
                 </div>

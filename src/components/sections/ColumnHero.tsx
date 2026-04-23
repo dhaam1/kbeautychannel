@@ -28,11 +28,11 @@ export default function ColumnHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-[16px] uppercase tracking-[0.4em] font-black text-white/60 mb-8 shadow-sm">
+            <span className="inline-block py-1 px-3 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-[16px] uppercase tracking-[0.4em] font-bold text-white/60 mb-8 shadow-sm">
               Medical Insight Archive
             </span>
             
-            <h1 className="font-sans text-[48px] md:text-[54px] font-black text-white leading-[1.05] tracking-tighter mb-10">
+            <h1 className="font-sans text-[48px] md:text-[54px] font-bold text-white leading-[1.05] tracking-tighter mb-10">
               인터넷에서 얻을 수 없는<br />
               <span className="text-gray-500 font-serif font-light">깊이 있는 지식</span>
             </h1>
@@ -54,7 +54,7 @@ export default function ColumnHero() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </div>
-                <span className="text-[16px] font-black tracking-[0.2em] text-white uppercase">전체 칼럼 읽기</span>
+                <span className="text-[16px] font-bold tracking-[0.2em] text-white uppercase">전체 칼럼 읽기</span>
               </motion.div>
             </div>
           </motion.div>

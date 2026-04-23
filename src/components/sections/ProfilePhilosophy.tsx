@@ -64,12 +64,12 @@ export default function ProfilePhilosophy() {
           transition={{ duration: 1.0, ease: [0.22, 1, 0.36, 1] }}
         >
           {/* Eyebrow */}
-          <p className="text-[16px] font-black tracking-[0.45em] text-gray-300 uppercase mb-8">
+          <p className="text-[16px] font-bold tracking-[0.45em] text-gray-300 uppercase mb-8">
             Seoul National University
           </p>
 
           {/* Headline */}
-          <h2 className="font-sans text-[28px] md:text-[36px] font-black text-gray-900 leading-[1.08] tracking-tighter mb-6">
+          <h2 className="font-sans text-[28px] md:text-[36px] font-bold text-gray-900 leading-[1.08] tracking-tighter mb-6">
             서울대 출신의<br />
             정통파 클래식<br />
             뷰티 스탠다드
@@ -91,7 +91,7 @@ export default function ProfilePhilosophy() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 + idx * 0.15, duration: 0.8, ease: 'easeOut' }}
               >
-                <span className="block text-[16px] font-black tracking-[0.35em] text-gray-300 uppercase mb-2">
+                <span className="block text-[16px] font-bold tracking-[0.35em] text-gray-300 uppercase mb-2">
                   {cred.label}
                 </span>
                 <ul className="space-y-1">

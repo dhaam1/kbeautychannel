@@ -28,11 +28,11 @@ export default function ReviewsHero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-white/60 backdrop-blur-md border border-white/30 text-[16px] uppercase tracking-[0.4em] font-black text-gray-400 mb-8 shadow-sm">
+            <span className="inline-block py-1 px-3 rounded-full bg-white/60 backdrop-blur-md border border-white/30 text-[16px] uppercase tracking-[0.4em] font-bold text-gray-400 mb-8 shadow-sm">
               True Stories of Transformation
             </span>
             
-            <h1 className="font-sans text-[48px] md:text-[54px] font-black text-gray-900 leading-[1.05] tracking-tighter mb-10">
+            <h1 className="font-sans text-[48px] md:text-[54px] font-bold text-gray-900 leading-[1.05] tracking-tighter mb-10">
               결과로 증명하는<br />
               <span className="text-gray-400">압도적 만족도</span>
             </h1>
@@ -55,8 +55,8 @@ export default function ReviewsHero() {
                   transition={{ delay: 0.5 + i * 0.1, duration: 1 }}
                   className="bg-white/40 backdrop-blur-lg border border-white/50 p-6 rounded-3xl"
                 >
-                  <div className="text-[28px] font-black text-gray-900 tracking-tight mb-1">{stat.value}</div>
-                  <div className="text-[16px] font-black tracking-widest text-gray-400 uppercase">{stat.label}</div>
+                  <div className="text-[28px] font-bold text-gray-900 tracking-tight mb-1">{stat.value}</div>
+                  <div className="text-[16px] font-bold tracking-widest text-gray-400 uppercase">{stat.label}</div>
                 </motion.div>
               ))}
             </div>

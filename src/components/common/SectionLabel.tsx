@@ -30,7 +30,7 @@ export default function SectionLabel({ number, title, dark = false }: SectionLab
             NO.
           </span>
           <span className={`
-            font-sans text-[16px] font-black tracking-widest
+            font-sans text-[16px] font-bold tracking-widest
             ${dark ? 'text-white' : 'text-gray-900'}
           `}>
             {number}

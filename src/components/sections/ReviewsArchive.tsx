@@ -24,6 +24,7 @@ const REVIEWS = [
 const DUPLICATED_REVIEWS = [...REVIEWS, ...REVIEWS];
 
 export default function ReviewsArchive() {
+  const [isAnyHovered, setIsAnyHovered] = useState(false);
   const FOLDED_WIDTH = 220;
   const EXPANDED_WIDTH = 520;
   const GAP = 16;
@@ -38,10 +39,10 @@ export default function ReviewsArchive() {
           viewport={{ once: true }}
           className="flex items-center gap-2 mb-4"
         >
-          <span className="text-[16px] font-black tracking-[0.2em] text-black uppercase">
+          <span className="text-[16px] font-bold tracking-[0.2em] text-black uppercase">
             KBEAUTY
           </span>
-          <span className="text-[16px] font-black tracking-[0.2em] text-black uppercase opacity-60">
+          <span className="text-[16px] font-bold tracking-[0.2em] text-black uppercase opacity-60">
             OUR PROCEDURES
           </span>
         </motion.div>
@@ -53,9 +54,10 @@ export default function ReviewsArchive() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-sans text-[48px] md:text-[68px] font-bold text-gray-900 leading-[1] tracking-tighter"
+            className="font-sans text-[48px] md:text-[68px] font-bold text-gray-900 leading-[1.1] tracking-tighter"
           >
-            시술 아카이브
+            38,000번의 시술,<br />
+            언제나 믿음에 보답하겠습니다.
           </motion.h2>
           
           <motion.button
@@ -79,7 +81,7 @@ export default function ReviewsArchive() {
               transition={{ delay: 0.3 }}
               className="text-[18px] md:text-[22px] font-bold text-gray-900 mb-4 tracking-tight"
             >
-              경험의 가치가 투명한 KBEAUTY
+              숫자가 증명하는 압도적인 임상 경험
             </motion.h3>
             <motion.p
               initial={{ opacity: 0, x: -10 }}
@@ -88,8 +90,8 @@ export default function ReviewsArchive() {
               transition={{ delay: 0.4 }}
               className="text-[16px] md:text-[16px] text-gray-500 leading-relaxed break-keep font-medium opacity-80"
             >
-              K뷰티채널은 높은 수준의 의료 서비스를 투명한 가격으로 제공하는 것을 <br className="hidden md:block" />
-              원칙으로 하여 고객님께 신뢰할 수 있는 의료 서비스를 약속드립니다.
+              3만 8천여 건의 시술 데이터로 쌓아온 K뷰티채널만의 정교한 노하우.<br className="hidden md:block" />
+              고객 한 분 한 분의 믿음이 헛되지 않도록, 결과로 보답하는 의료진이 되겠습니다.
             </motion.p>
           </div>
           
@@ -127,6 +129,8 @@ export default function ReviewsArchive() {
               review={review} 
               foldedWidth={FOLDED_WIDTH}
               expandedWidth={EXPANDED_WIDTH}
+              isAnyHovered={isAnyHovered}
+              setIsAnyHovered={setIsAnyHovered}
             />
           ))}
         </motion.div>
@@ -146,7 +150,19 @@ export default function ReviewsArchive() {
   );
 }
 
-function ReviewCard({ review, foldedWidth, expandedWidth }: { review: any, foldedWidth: number, expandedWidth: number }) {
+function ReviewCard({ 
+  review, 
+  foldedWidth, 
+  expandedWidth,
+  isAnyHovered,
+  setIsAnyHovered
+}: { 
+  review: any, 
+  foldedWidth: number, 
+  expandedWidth: number,
+  isAnyHovered: boolean,
+  setIsAnyHovered: (val: boolean) => void
+}) {
   const [isHovered, setIsHovered] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
   const [isAtCenter, setIsAtCenter] = useState(false);
@@ -166,7 +182,7 @@ function ReviewCard({ review, foldedWidth, expandedWidth }: { review: any, folde
     return () => clearInterval(interval);
   }, []);
 
-  const isActive = isAtCenter || isHovered;
+  const isActive = isHovered || (isAtCenter && !isAnyHovered);
 
   return (
     <motion.div
@@ -178,8 +194,14 @@ function ReviewCard({ review, foldedWidth, expandedWidth }: { review: any, folde
         duration: 1.2,
         ease: [0.22, 1, 0.36, 1],
       }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => {
+        setIsHovered(true);
+        setIsAnyHovered(true);
+      }}
+      onMouseLeave={() => {
+        setIsHovered(false);
+        setIsAnyHovered(false);
+      }}
       className="flex-shrink-0 h-[560px] relative rounded-[3.5rem] overflow-hidden cursor-pointer group shadow-[0_40px_80px_rgba(0,0,0,0.08)]"
     >
       {/* Background Image - Only visible when active */}
@@ -218,7 +240,7 @@ function ReviewCard({ review, foldedWidth, expandedWidth }: { review: any, folde
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-0 flex flex-col items-center justify-center z-20 pointer-events-none"
           >
-            <span className="text-[140px] md:text-[160px] font-sans font-black text-white/90 select-none tracking-tighter leading-none">
+            <span className="text-[140px] md:text-[160px] font-sans font-bold text-white/90 select-none tracking-tighter leading-none">
               {review.letter}
             </span>
           </motion.div>
@@ -259,7 +281,7 @@ function ReviewCard({ review, foldedWidth, expandedWidth }: { review: any, folde
               rotate: isActive ? 0 : -90
             }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[320px] font-black text-white tracking-tighter select-none leading-none"
+            className="text-[320px] font-bold text-white tracking-tighter select-none leading-none"
           >
             {review.letter}
           </motion.span>

@@ -22,11 +22,12 @@ export default function ColumnSection() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight leading-tight mb-6">
-              전문 의료진이 전하는<br />
-              <span className="text-gray-400">아름다움의 본질</span>
+              신뢰할 수 없었던 의료 정보,<br />
+              <span className="text-gray-400">이제 안찾아보셔도 됩니다.</span>
             </h2>
             <p className="text-gray-500 text-base md:text-lg max-w-md">
-              단순한 시술을 넘어, 건강한 피부와 진정한 아름다움을 위한 김연진 원장의 깊이 있는 통찰을 만나보세요.
+              단순 시술이라면 이 정도의 정보는 필요없을 겁니다.<br />
+              하지만 평생의 아름다움과 피부 건강을 위해선 필요합니다.
             </p>
           </motion.div>
 

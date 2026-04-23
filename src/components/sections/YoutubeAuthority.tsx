@@ -38,7 +38,7 @@ export default function YoutubeAuthority() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="block text-[16px] font-black tracking-[0.5em] text-white/20 uppercase mb-10"
+          className="block text-[16px] font-bold tracking-[0.5em] text-white/20 uppercase mb-10"
         >
           Head Doctor — Kim Yeonjin
         </motion.span>
@@ -52,7 +52,7 @@ export default function YoutubeAuthority() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
-              className="font-sans text-[24px] md:text-[36px] font-black text-white tracking-tighter leading-[1.05]"
+              className="font-sans text-[24px] md:text-[36px] font-bold text-white tracking-tighter leading-[1.05]"
             >
               {word}
             </motion.h2>
@@ -72,7 +72,7 @@ export default function YoutubeAuthority() {
             >
               <div className="flex items-start justify-between gap-6">
                 <div>
-                  <span className="block text-[16px] font-black tracking-[0.35em] text-white/25 uppercase mb-2">
+                   <span className="block text-[16px] font-bold tracking-[0.35em] text-white/25 uppercase mb-2">
                     {stat.label}
                   </span>
                   <p className="text-[16px] text-white/35 leading-relaxed group-hover:text-white/55 transition-colors duration-500">
@@ -80,7 +80,7 @@ export default function YoutubeAuthority() {
                   </p>
                 </div>
                 <div className="flex items-baseline gap-1 flex-shrink-0">
-                  <span className="font-sans text-[28px] md:text-[32px] font-black text-white tracking-tighter leading-none">
+                   <span className="font-sans text-[28px] md:text-[32px] font-bold text-white tracking-tighter leading-none">
                     {stat.value}
                   </span>
                   <span className="text-[16px] text-white/20 font-semibold">{stat.suffix}</span>

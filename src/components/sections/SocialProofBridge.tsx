@@ -116,7 +116,7 @@ export default function SocialProofBridge() {
                  className="flex flex-col gap-1"
               >
                 <div className="flex items-baseline gap-3">
-                  <span className="text-[16px] font-black text-white/50 uppercase tracking-[0.35em]">{item.label}</span>
+                  <span className="text-[16px] font-bold text-white/50 uppercase tracking-[0.35em]">{item.label}</span>
                   <span className="text-[24px] md:text-[32px] font-sans font-extralight text-white">
                     <Counter value={item.value} duration={2} />
                     <span className="text-[16px] ml-1 opacity-40 font-normal">{item.unit}</span>

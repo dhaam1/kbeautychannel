@@ -45,10 +45,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-0">
           <div className="lg:col-span-4 lg:border-r border-white/10 pr-0 lg:pr-16 flex flex-col justify-between">
             <div className="space-y-12">
-              <Link href="/" className="font-sans font-black text-[32px] tracking-tight block">KBEAUTYCHANNEL</Link>
+              <Link href="/" className="font-sans font-bold text-[32px] tracking-tight block">KBEAUTYCHANNEL</Link>
               <div className="space-y-8">
                  <div>
-                    <span className="text-white/20 text-[10px] font-black tracking-[0.4em] uppercase block mb-4">Centralized Line</span>
+                    <span className="text-white/20 text-[10px] font-bold tracking-[0.4em] uppercase block mb-4">Centralized Line</span>
                     <a href={`tel:${OFFICIAL_DATA.tel}`} className="text-[32px] font-bold hover:text-white/70 transition-colors">{OFFICIAL_DATA.tel}</a>
                  </div>
                  <div className="flex gap-4">
@@ -59,14 +59,14 @@ export default function Footer() {
               </div>
             </div>
             <div className="mt-20 lg:mt-0">
-               <p className="text-[12px] text-white/10 tracking-[0.5em] uppercase font-black">Architecture of Beauty</p>
+               <p className="text-[12px] text-white/10 tracking-[0.5em] uppercase font-bold">Architecture of Beauty</p>
             </div>
           </div>
 
           <div className="lg:col-span-8 lg:pl-16 grid grid-cols-1 md:grid-cols-2 gap-16">
             <div className="space-y-16">
               <div className="space-y-8">
-                <h4 className="text-white/20 text-[10px] font-black tracking-[0.4em] uppercase border-b border-white/10 pb-4">Clinic Space</h4>
+                <h4 className="text-white/20 text-[10px] font-bold tracking-[0.4em] uppercase border-b border-white/10 pb-4">Clinic Space</h4>
                 <div className="space-y-10">
                   <div className="space-y-2">
                     <p className="text-[16px] font-bold">강남점</p>
@@ -79,7 +79,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="space-y-8">
-                <h4 className="text-white/20 text-[10px] font-black tracking-[0.4em] uppercase border-b border-white/10 pb-4">Corporate</h4>
+                <h4 className="text-white/20 text-[10px] font-bold tracking-[0.4em] uppercase border-b border-white/10 pb-4">Corporate</h4>
                 <div className="space-y-4 text-[13px] text-white/20 font-medium leading-relaxed">
                   <div className="space-y-1">
                     <p className="text-white/40">{OFFICIAL_DATA.gangnam.name} {OFFICIAL_DATA.gangnam.alias}</p>
@@ -95,7 +95,7 @@ export default function Footer() {
 
             <div className="space-y-16">
               <div className="space-y-8">
-                <h4 className="text-white/20 text-[10px] font-black tracking-[0.4em] uppercase border-b border-white/10 pb-4">Timeline</h4>
+                <h4 className="text-white/20 text-[10px] font-bold tracking-[0.4em] uppercase border-b border-white/10 pb-4">Timeline</h4>
                 <div className="space-y-6 text-[15px] font-medium text-white/60">
                   {OFFICIAL_DATA.hours.map(h => (
                     <div key={h.days} className="space-y-1">
@@ -106,7 +106,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="space-y-8">
-                <h4 className="text-white/20 text-[10px] font-black tracking-[0.4em] uppercase border-b border-white/10 pb-4">Menu</h4>
+                <h4 className="text-white/20 text-[10px] font-bold tracking-[0.4em] uppercase border-b border-white/10 pb-4">Menu</h4>
                 <div className="grid grid-cols-2 gap-x-4 gap-y-3">
                   {navMenu.map(item => (
                     <Link key={item.name} href={item.path} className="text-[15px] font-bold text-white/40 hover:text-white transition-colors">{item.name}</Link>

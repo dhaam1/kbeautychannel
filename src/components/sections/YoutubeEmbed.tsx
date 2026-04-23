@@ -135,7 +135,7 @@ export default function YoutubeEmbed() {
             transition={{ duration: 0.8 }}
             className="flex flex-col gap-5 items-center text-center"
           >
-            <span className="text-[16px] font-black tracking-[0.5em] text-white/30 uppercase">Archive Education</span>
+            <span className="text-[16px] font-bold tracking-[0.5em] text-white/30 uppercase">Archive Education</span>
             <h2 className="font-pretendard text-[22px] md:text-[48px] font-bold tracking-tighter leading-[1.1] text-white break-keep">
               인터넷에서 얻을 수 없는 정보,<br className="hidden md:block" />{' '}
               <span className="text-white/40">

@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { motion } from 'motion/react';
+import { motion, useScroll, useTransform, useSpring } from 'motion/react';
 import { ArrowUpRight } from 'lucide-react';
 
 const NEWS_DATA = [
@@ -82,10 +82,18 @@ const NEWS_DATA = [
 
 export default function MediaNewsArchive() {
   const [showAll, setShowAll] = useState(false);
+  const [hoveredCardId, setHoveredCardId] = useState<string | null>(null);
+  const sectionRef = useRef<HTMLElement>(null);
   
+  const activeOption = 1;
+  
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"]
+  });
+
   const displayedNews = showAll ? NEWS_DATA : NEWS_DATA.slice(0, 4);
 
-  // 시안 1 스타일 고정
   const styles = {
     bg: 'bg-white',
     text: 'text-[#1A1A1A]',
@@ -101,101 +109,41 @@ export default function MediaNewsArchive() {
   };
 
   return (
-    <section className={`relative w-full py-24 md:py-40 ${styles.bg} ${styles.text} overflow-hidden`}>
+    <section 
+      ref={sectionRef}
+      className={`relative w-full py-24 md:py-40 ${styles.bg} ${styles.text} overflow-hidden`}
+    >
       {/* Background Decor */}
       <div className={`absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#0D0E0E]/[0.03] to-transparent pointer-events-none`} />
       
       <div className="container mx-auto px-[5%]">
         {/* Main Copywriting Area */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
           <div className="max-w-2xl">
             <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="flex items-center gap-3 mb-6"
+              className="flex items-center gap-3"
             >
               <span className={`w-12 h-[1px] ${styles.headerLine}`} />
               <span className="text-[16px] tracking-[0.4em] text-[#0D0E0E] font-bold uppercase">Archive</span>
             </motion.div>
-            <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className={`font-pretendard text-3xl md:text-[38px] lg:text-[42px] font-black leading-[1.2] tracking-tighter ${styles.heading} whitespace-pre-line`}
-            >
-              공신력있는 미디어들도<br />
-              <span className="text-[#0D0E0E]">김연진 원장에게 주목합니다.</span>
-            </motion.h2>
           </div>
-          <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-right hidden md:block"
-          >
-            <p className="text-[#0D0E0E]/60 text-[16px] font-bold tracking-widest uppercase">Curated Archive of Excellence</p>
-          </motion.div>
         </div>
 
         {/* News List */}
         <div className="flex flex-col gap-12 md:gap-20">
-          {displayedNews.map((news) => (
-            <motion.div
-              key={news.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className={`relative h-[450px] md:h-[650px] w-full overflow-hidden group border ${styles.border} transition-all duration-500 rounded-sm`}
-            >
-              <Image 
-                src={news.image} 
-                alt={news.title} 
-                fill 
-                className={`object-cover ${styles.imageOpacity} transition-transform duration-[2s] group-hover:scale-105`} 
-              />
-              <div className={`absolute inset-0 ${styles.cardOverlay}`} />
-              
-              <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-24">
-                <div className="max-w-4xl">
-                  <div className="flex items-center gap-4 mb-6">
-                    <span className="px-3 py-1 bg-[#0D0E0E] text-white text-[12px] font-black tracking-widest uppercase">
-                      {news.category}
-                    </span>
-                    <span className={`${styles.itemMeta} text-[14px] font-bold tracking-wider`}>{news.publisher}</span>
-                  </div>
-                  
-                  <h3 className={`text-2xl md:text-4xl lg:text-[36px] font-pretendard font-black mb-8 md:mb-12 leading-[1.3] tracking-tighter group-hover:text-[#0D0E0E] transition-colors duration-500 ${styles.itemTitle}`}>
-                    {news.title}
-                  </h3>
-                  
-                  <div className="flex items-center gap-6 md:gap-12">
-                    <span className={`${styles.itemDate} text-[16px] md:text-base font-medium tracking-widest`}>{news.date}</span>
-                    <a 
-                      href={news.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 group/btn cursor-pointer"
-                    >
-                      <span className="text-[16px] font-black tracking-[0.2em] uppercase border-b border-black/10 pb-1 group-hover/btn:border-[#0D0E0E] group-hover/btn:text-[#0D0E0E] transition-all duration-300">
-                        View Full Article
-                      </span>
-                      <div className="w-8 h-8 rounded-full border border-black/10 flex items-center justify-center group-hover/btn:border-[#0D0E0E] group-hover/btn:bg-[#0D0E0E] transition-all duration-300">
-                        <ArrowUpRight size={16} className="text-[#0D0E0E] group-hover/btn:text-white transition-colors" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="absolute right-8 md:right-16 bottom-8 md:bottom-16 text-8xl md:text-[200px] font-pretendard font-black text-[#0D0E0E] opacity-10 group-hover:opacity-20 transition-opacity pointer-events-none select-none">
-                {news.id}
-              </div>
-              
-              <div className="absolute left-0 top-1/4 bottom-1/4 w-[2px] bg-[#0D0E0E] scale-y-0 group-hover:scale-y-100 transition-transform duration-700 origin-center" />
-            </motion.div>
+          {displayedNews.map((news, idx) => (
+            <NewsCard 
+              key={news.id} 
+              news={news} 
+              idx={idx}
+              activeOption={activeOption}
+              hoveredCardId={hoveredCardId}
+              setHoveredCardId={setHoveredCardId}
+              styles={styles}
+            />
           ))}
         </div>
 
@@ -212,7 +160,7 @@ export default function MediaNewsArchive() {
               className="group relative px-12 py-5 overflow-hidden rounded-full border border-[#0D0E0E]/10 hover:border-[#0D0E0E] transition-all duration-500"
             >
               <div className="relative z-10 flex items-center gap-4">
-                <span className="text-[16px] font-black tracking-[0.4em] text-[#0D0E0E] uppercase">View More Archive</span>
+                <span className="text-[16px] font-bold tracking-[0.4em] text-[#0D0E0E] uppercase">View More Archive</span>
                 <div className="w-6 h-6 rounded-full bg-[#0D0E0E] flex items-center justify-center group-hover:rotate-45 transition-transform duration-500">
                   <ArrowUpRight size={12} className="text-white" />
                 </div>
@@ -231,5 +179,169 @@ export default function MediaNewsArchive() {
         }
       `}</style>
     </section>
+  );
+}
+
+function NewsCard({ news, idx, activeOption, hoveredCardId, setHoveredCardId, styles }: any) {
+  const cardRef = useRef<HTMLDivElement>(null);
+  
+  // Option 1: Parallax Scroll
+  const { scrollYProgress } = useScroll({
+    target: cardRef,
+    offset: ["start end", "end start"]
+  });
+  
+  const imgY = useTransform(scrollYProgress, [0, 1], ["-15%", "15%"]);
+  const smoothImgY = useSpring(imgY, { stiffness: 100, damping: 30 });
+
+  // Option 2: 3D Tilt
+  const [rotateX, setRotateX] = useState(0);
+  const [rotateY, setRotateY] = useState(0);
+  
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (activeOption !== 2) return;
+    const card = cardRef.current;
+    if (!card) return;
+    
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    
+    const rX = ((y - centerY) / centerY) * -5; // Limit rotation
+    const rY = ((x - centerX) / centerX) * 5;
+    
+    setRotateX(rX);
+    setRotateY(rY);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredCardId(null);
+    setRotateX(0);
+    setRotateY(0);
+  };
+
+  return (
+    <motion.div
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setHoveredCardId(news.id)}
+      onMouseLeave={handleMouseLeave}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: idx * 0.1 }}
+      style={{
+        perspective: activeOption === 2 ? 1000 : undefined,
+        rotateX: activeOption === 2 ? rotateX : 0,
+        rotateY: activeOption === 2 ? rotateY : 0,
+        scale: activeOption === 3 && hoveredCardId && hoveredCardId !== news.id ? 0.98 : 1,
+        opacity: activeOption === 3 && hoveredCardId && hoveredCardId !== news.id ? 0.5 : 1,
+        filter: activeOption === 3 && hoveredCardId && hoveredCardId !== news.id ? 'grayscale(0.5) blur(2px)' : 'none',
+      }}
+      className={`relative h-[450px] md:h-[650px] w-full overflow-hidden group border ${styles.border} transition-all duration-700 rounded-sm cursor-pointer`}
+    >
+      {/* Background Image Container */}
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.div
+          style={{ 
+            y: activeOption === 1 ? smoothImgY : 0,
+            scale: activeOption === 1 ? 1.2 : 1
+          }}
+          className="absolute inset-0"
+        >
+          <Image 
+            src={news.image} 
+            alt={news.title} 
+            fill 
+            className={`object-cover ${styles.imageOpacity} transition-transform duration-[1.5s] group-hover:scale-105`} 
+          />
+        </motion.div>
+      </div>
+
+      <div className={`absolute inset-0 ${styles.cardOverlay} transition-opacity duration-700`} />
+      
+      {/* Content */}
+      <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-24 z-10">
+        <div className="max-w-4xl">
+          <motion.div 
+            initial={false}
+            animate={{ x: hoveredCardId === news.id ? 10 : 0 }}
+            className="flex items-center gap-4 mb-6"
+          >
+            <span className="px-3 py-1 bg-[#0D0E0E] text-white text-[11px] font-bold tracking-widest uppercase">
+              {news.category}
+            </span>
+            <span className={`${styles.itemMeta} text-[14px] font-bold tracking-wider`}>{news.publisher}</span>
+          </motion.div>
+          
+          <h3 className={`text-2xl md:text-4xl lg:text-[36px] font-pretendard font-bold mb-8 md:mb-12 leading-[1.3] tracking-tighter group-hover:text-[#0D0E0E] transition-colors duration-500 ${styles.itemTitle}`}>
+            {news.title.split('').map((char, i) => (
+              <motion.span
+                key={i}
+                initial={false}
+                animate={{ 
+                  y: hoveredCardId === news.id ? [0, -5, 0] : 0 
+                }}
+                transition={{ 
+                  duration: 0.4, 
+                  delay: i * 0.01,
+                  repeat: hoveredCardId === news.id ? Infinity : 0,
+                  repeatDelay: 2
+                }}
+                className="inline-block"
+              >
+                {char === ' ' ? '\u00A0' : char}
+              </motion.span>
+            ))}
+          </h3>
+          
+          <div className="flex items-center gap-6 md:gap-12">
+            <span className={`${styles.itemDate} text-[16px] md:text-base font-medium tracking-widest`}>{news.date}</span>
+            <a 
+              href={news.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 group/btn cursor-pointer"
+            >
+              <span className="text-[16px] font-bold tracking-[0.2em] uppercase border-b border-black/10 pb-1 group-hover/btn:border-[#0D0E0E] group-hover/btn:text-[#0D0E0E] transition-all duration-300">
+                View Full Article
+              </span>
+              <motion.div 
+                whileHover={{ scale: 1.2, rotate: 45 }}
+                className="w-8 h-8 rounded-full border border-black/10 flex items-center justify-center group-hover/btn:border-[#0D0E0E] group-hover/btn:bg-[#0D0E0E] transition-all duration-300"
+              >
+                <ArrowUpRight size={16} className="text-[#0D0E0E] group-hover/btn:text-white transition-colors" />
+              </motion.div>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      {/* Background ID Number */}
+      <motion.div 
+        style={{ 
+          x: activeOption === 2 ? useTransform(scrollYProgress, [0, 1], [50, -50]) : 0 
+        }}
+        className="absolute right-8 md:right-16 bottom-8 md:bottom-16 text-8xl md:text-[200px] font-pretendard font-bold text-[#0D0E0E] opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none select-none"
+      >
+        {news.id}
+      </motion.div>
+      
+      {/* Decorative vertical line */}
+      <div className="absolute left-0 top-1/4 bottom-1/4 w-[2px] bg-[#0D0E0E] scale-y-0 group-hover:scale-y-100 transition-transform duration-700 origin-center" />
+      
+      {/* Option 2: 3D Glossy Light Effect */}
+      {activeOption === 2 && (
+        <div 
+          className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity duration-500"
+          style={{
+            background: `radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255,255,255,0.4) 0%, transparent 60%)`
+          }}
+        />
+      )}
+    </motion.div>
   );
 }
