@@ -1,5 +1,4 @@
 import Header from '../../components/layout/Header';
-import { Plus } from 'lucide-react';
 import { Metadata } from 'next';
 import { blogPosts } from '../../constants/column';
 

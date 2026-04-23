@@ -90,18 +90,6 @@ export default function TreatmentHero({
           </AnimatePresence>
         </main>
 
-        {/* Plus Button Decoration */}
-        <div className="absolute bottom-12 right-12 flex flex-col items-end gap-6">
-          <motion.button
-            whileHover={{ rotate: 90, scale: 1.1 }}
-            className="w-20 h-20 rounded-full bg-gray-50 backdrop-blur-xl border border-gray-100 flex items-center justify-center text-gray-400 shadow-[0_20px_40px_rgba(0,0,0,0.05)]"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-            </svg>
-          </motion.button>
-        </div>
       </div>
     </div>
   );

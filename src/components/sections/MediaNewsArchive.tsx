@@ -81,10 +81,63 @@ const NEWS_DATA = [
 ];
 
 export default function MediaNewsArchive() {
+  const [variant] = React.useState<'option1' | 'option2' | 'option3'>('option3');
+
+  const styles = {
+    option1: {
+      bg: 'bg-white',
+      text: 'text-[#1A1A1A]',
+      heading: 'text-[#1A1A1A]',
+      subText: 'text-[#1A1A1A]/60',
+      cardBg: 'bg-[#F9F9F9]',
+      cardOverlay: 'bg-gradient-to-r from-white via-white/40 to-transparent',
+      itemTitle: 'text-[#1A1A1A]',
+      itemMeta: 'text-[#1A1A1A]/60',
+      itemDate: 'text-[#1A1A1A]/40',
+      accent: 'bg-[#E8927D]',
+      headerLine: 'bg-[#E8927D]',
+      border: 'border-[#1A1A1A]/5',
+      imageOpacity: 'opacity-100'
+    },
+    option2: {
+      bg: 'bg-[#F8F6F3]',
+      text: 'text-[#2D2D2D]',
+      heading: 'text-[#2D2D2D]',
+      subText: 'text-[#2D2D2D]/60',
+      cardBg: 'bg-white',
+      cardOverlay: 'bg-gradient-to-r from-[#F8F6F3] via-[#F8F6F3]/50 to-transparent',
+      itemTitle: 'text-[#2D2D2D]',
+      itemMeta: 'text-[#2D2D2D]/70',
+      itemDate: 'text-[#2D2D2D]/40',
+      accent: 'bg-[#E8927D]',
+      headerLine: 'bg-[#E8927D]',
+      border: 'border-[#E8927D]/10',
+      shadow: 'shadow-xl shadow-black/5',
+      imageOpacity: 'opacity-90'
+    },
+    option3: {
+      bg: 'bg-[#F2F4F7]',
+      text: 'text-[#1E293B]',
+      heading: 'text-[#1E293B]',
+      subText: 'text-[#64748B]',
+      cardBg: 'bg-white/70 backdrop-blur-md',
+      cardOverlay: 'bg-gradient-to-r from-[#F2F4F7]/90 via-[#F2F4F7]/40 to-transparent',
+      itemTitle: 'text-[#1E293B]',
+      itemMeta: 'text-[#475569]',
+      itemDate: 'text-[#94A3B8]',
+      accent: 'bg-[#E8927D]',
+      headerLine: 'bg-[#E8927D]',
+      border: 'border-[#E2E8F0]',
+      imageOpacity: 'opacity-80'
+    }
+  };
+
+  const current = styles[variant];
+
   return (
-    <section className="relative w-full py-24 md:py-40 bg-[#0A0A0A] text-white overflow-hidden">
+    <section className={`relative w-full py-24 md:py-40 ${current.bg} ${current.text} overflow-hidden transition-colors duration-700`}>
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white/[0.01] to-transparent pointer-events-none" />
+      <div className={`absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#E8927D]/[0.03] to-transparent pointer-events-none`} />
       
       <div className="container mx-auto px-[5%]">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
@@ -95,7 +148,7 @@ export default function MediaNewsArchive() {
               viewport={{ once: true }}
               className="flex items-center gap-3 mb-6"
             >
-              <span className="w-12 h-[1px] bg-[#E8927D]" />
+              <span className={`w-12 h-[1px] ${current.headerLine}`} />
               <span className="text-[16px] tracking-[0.4em] text-[#E8927D] font-bold uppercase">Archive</span>
             </motion.div>
             <motion.h2 
@@ -103,7 +156,7 @@ export default function MediaNewsArchive() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="font-pretendard text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tighter"
+              className={`font-pretendard text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tighter ${current.heading}`}
             >
               MEDIA <span className="text-[#E8927D]">INSIGHTS</span>
             </motion.h2>
@@ -115,7 +168,7 @@ export default function MediaNewsArchive() {
             viewport={{ once: true }}
             className="text-right hidden md:block"
           >
-            <p className="text-[#E8927D]/40 text-[16px] font-bold tracking-widest uppercase">Curated Archive of Excellence</p>
+            <p className="text-[#E8927D]/60 text-[16px] font-bold tracking-widest uppercase">Curated Archive of Excellence</p>
           </motion.div>
         </div>
 
@@ -127,15 +180,15 @@ export default function MediaNewsArchive() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="relative h-[450px] md:h-[650px] w-full overflow-hidden group rounded-sm"
+              className={`relative h-[450px] md:h-[650px] w-full overflow-hidden group rounded-sm border ${current.border} ${current.shadow || ''} transition-all duration-500`}
             >
               <Image
                 src={news.image}
                 alt={news.title}
                 fill
-                className="object-cover opacity-50 transition-transform duration-[2s] group-hover:scale-105"
+                className={`object-cover ${current.imageOpacity} transition-transform duration-[2s] group-hover:scale-105`}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent" />
+              <div className={`absolute inset-0 ${current.cardOverlay}`} />
               
               <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-24">
                 <div className="max-w-4xl">
@@ -145,17 +198,17 @@ export default function MediaNewsArchive() {
                     transition={{ delay: 0.3 }}
                     className="flex items-center gap-4 mb-6"
                   >
-                    <span className="px-3 py-1 bg-[#E8927D] text-black text-[12px] font-black tracking-widest uppercase">
+                    <span className="px-3 py-1 bg-[#E8927D] text-white text-[12px] font-black tracking-widest uppercase">
                       {news.category}
                     </span>
-                    <span className="text-white/80 text-[14px] font-bold tracking-wider">{news.publisher}</span>
+                    <span className={`${current.itemMeta} text-[14px] font-bold tracking-wider`}>{news.publisher}</span>
                   </motion.div>
                   
                   <motion.h3 
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
-                    className="text-3xl md:text-5xl lg:text-6xl font-pretendard font-black mb-10 md:mb-16 leading-[1.2] tracking-tighter group-hover:text-[#E8927D] transition-colors duration-500"
+                    className={`text-3xl md:text-5xl lg:text-6xl font-pretendard font-black mb-10 md:mb-16 leading-[1.2] tracking-tighter group-hover:text-[#E8927D] transition-colors duration-500 ${current.itemTitle}`}
                   >
                     {news.title}
                   </motion.h3>
@@ -166,25 +219,25 @@ export default function MediaNewsArchive() {
                     transition={{ delay: 0.5 }}
                     className="flex items-center gap-6 md:gap-12"
                   >
-                    <span className="text-white/40 text-[16px] md:text-base font-medium tracking-widest">{news.date}</span>
+                    <span className={`${current.itemDate} text-[16px] md:text-base font-medium tracking-widest`}>{news.date}</span>
                     <a 
                       href={news.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 group/btn cursor-pointer"
                     >
-                      <span className="text-[16px] md:text-[16px] font-black tracking-[0.2em] uppercase border-b border-[#E8927D]/30 pb-1 group-hover/btn:border-[#E8927D] group-hover/btn:text-[#E8927D] transition-all duration-300">
+                      <span className={`text-[16px] md:text-[16px] font-black tracking-[0.2em] uppercase border-b ${variant === 'option1' ? 'border-black/10' : 'border-[#E8927D]/30'} pb-1 group-hover/btn:border-[#E8927D] group-hover/btn:text-[#E8927D] transition-all duration-300`}>
                         View Full Article
                       </span>
-                      <div className="w-8 h-8 rounded-full border border-[#E8927D]/30 flex items-center justify-center group-hover/btn:border-[#E8927D] group-hover/btn:bg-[#E8927D] transition-all duration-300">
-                        <ArrowUpRight size={16} className="text-[#E8927D] group-hover/btn:text-black transition-colors" />
+                      <div className={`w-8 h-8 rounded-full border ${variant === 'option1' ? 'border-black/10' : 'border-[#E8927D]/30'} flex items-center justify-center group-hover/btn:border-[#E8927D] group-hover/btn:bg-[#E8927D] transition-all duration-300`}>
+                        <ArrowUpRight size={16} className={`${variant === 'option1' ? 'text-black' : 'text-[#E8927D]'} group-hover/btn:text-white transition-colors`} />
                       </div>
                     </a>
                   </motion.div>
                 </div>
               </div>
               
-              <div className="absolute right-8 md:right-16 bottom-8 md:bottom-16 text-8xl md:text-[200px] font-pretendard font-black text-[#E8927D] opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none select-none">
+              <div className={`absolute right-8 md:right-16 bottom-8 md:bottom-16 text-8xl md:text-[200px] font-pretendard font-black text-[#E8927D] opacity-10 group-hover:opacity-20 transition-opacity pointer-events-none select-none`}>
                 {news.id}
               </div>
               
@@ -202,7 +255,6 @@ export default function MediaNewsArchive() {
           }
         }
       `}</style>
-
     </section>
   );
 }

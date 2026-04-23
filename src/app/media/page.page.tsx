@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function MediaPage() {
   return (
-    <main className="min-h-screen bg-[#0A0A0A]">
+    <main className="min-h-screen bg-white">
       <div className="relative z-50 px-[5%] py-6 md:py-10">
-        <Header isDarkBackground={true} />
+        <Header isDarkBackground={false} />
       </div>
       <MediaNewsArchive />
       <FooterCTA />

@@ -11,11 +11,13 @@
  }
  
  html {
-   scroll-snap-type: y mandatory;
    scroll-behavior: smooth;
  }
  
- .snap-section {
-   scroll-snap-align: start;
-   scroll-snap-stop: always;
+ .hide-scrollbar::-webkit-scrollbar {
+   display: none;
+ }
+ .hide-scrollbar {
+   -ms-overflow-style: none;
+   scrollbar-width: none;
  }
