@@ -24,13 +24,13 @@ export default function SectionLabel({ number, title, dark = false }: SectionLab
       `}>
         <div className="flex items-center gap-1.5">
           <span className={`
-            font-mono text-[9px] font-bold uppercase tracking-tighter
+            font-mono text-[16px] font-bold uppercase tracking-tighter
             ${dark ? 'text-white/40' : 'text-gray-400'}
           `}>
             NO.
           </span>
           <span className={`
-            font-sans text-[11px] font-black tracking-widest
+            font-sans text-[16px] font-black tracking-widest
             ${dark ? 'text-white' : 'text-gray-900'}
           `}>
             {number}
@@ -40,7 +40,7 @@ export default function SectionLabel({ number, title, dark = false }: SectionLab
         <div className={`w-[1px] h-3 ${dark ? 'bg-white/20' : 'bg-gray-200'}`}></div>
         
         <span className={`
-          font-sans text-[10px] font-bold uppercase tracking-[0.2em]
+          font-sans text-[16px] font-bold uppercase tracking-[0.2em]
           ${dark ? 'text-white/80' : 'text-gray-900/80'}
         `}>
           {title}

@@ -31,7 +31,7 @@ const CREDENTIALS = [
 
 const PlaceholderImage = () => (
   <div className="w-full h-full bg-gray-100 flex items-center justify-center">
-    <span className="text-[10px] tracking-[0.4em] uppercase text-gray-300 select-none font-sans">
+    <span className="text-[16px] tracking-[0.4em] uppercase text-gray-300 select-none font-sans">
       DR. KIM PORTRAIT
     </span>
   </div>
@@ -64,7 +64,7 @@ export default function ProfilePhilosophy() {
           transition={{ duration: 1.0, ease: [0.22, 1, 0.36, 1] }}
         >
           {/* Eyebrow */}
-          <p className="text-[9px] font-black tracking-[0.45em] text-gray-300 uppercase mb-8">
+          <p className="text-[16px] font-black tracking-[0.45em] text-gray-300 uppercase mb-8">
             Seoul National University
           </p>
 
@@ -76,7 +76,7 @@ export default function ProfilePhilosophy() {
           </h2>
 
           {/* Subtitle */}
-          <p className="text-[13px] font-pretendard text-gray-400 leading-relaxed max-w-sm mb-14">
+          <p className="text-[16px] font-pretendard text-gray-400 leading-relaxed max-w-sm mb-14">
             서울대학교 학부 및 대학원 졸업,<br />
             서울대학병원 수련을 거친 정통파 클래식 뷰티 스탠다드.
           </p>
@@ -91,12 +91,12 @@ export default function ProfilePhilosophy() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 + idx * 0.15, duration: 0.8, ease: 'easeOut' }}
               >
-                <span className="block text-[9px] font-black tracking-[0.35em] text-gray-300 uppercase mb-2">
+                <span className="block text-[16px] font-black tracking-[0.35em] text-gray-300 uppercase mb-2">
                   {cred.label}
                 </span>
                 <ul className="space-y-1">
                   {cred.items.map((item, i) => (
-                    <li key={i} className="text-[13px] font-pretendard text-gray-500 leading-relaxed">
+                    <li key={i} className="text-[16px] font-pretendard text-gray-500 leading-relaxed">
                       {item}
                     </li>
                   ))}

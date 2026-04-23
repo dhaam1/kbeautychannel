@@ -67,10 +67,10 @@ export default function ReviewsArchive() {
           viewport={{ once: true }}
           className="flex items-center gap-2 mb-6"
         >
-          <span className="text-[11px] font-black tracking-[0.2em] text-black uppercase">
+          <span className="text-[16px] font-black tracking-[0.2em] text-black uppercase">
             KBEAUTY
           </span>
-          <span className="text-[11px] font-black tracking-[0.2em] text-black uppercase opacity-60">
+          <span className="text-[16px] font-black tracking-[0.2em] text-black uppercase opacity-60">
             OUR PROCEDURES
           </span>
         </motion.div>
@@ -92,7 +92,7 @@ export default function ReviewsArchive() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="px-6 py-2.5 rounded-lg border border-gray-200 bg-gray-100/50 text-[12px] font-bold text-gray-600 hover:bg-white hover:border-gray-900 transition-all shadow-sm"
+            className="px-6 py-2.5 rounded-lg border border-gray-200 bg-gray-100/50 text-[16px] font-bold text-gray-600 hover:bg-white hover:border-gray-900 transition-all shadow-sm"
           >
             시술 둘러보기
           </motion.button>
@@ -115,7 +115,7 @@ export default function ReviewsArchive() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
-              className="text-[13px] md:text-[14px] text-gray-500 leading-relaxed break-keep font-medium opacity-80"
+              className="text-[16px] md:text-[16px] text-gray-500 leading-relaxed break-keep font-medium opacity-80"
             >
               K뷰티채널은 높은 수준의 의료 서비스를 투명한 가격으로 제공하는 것을 <br className="hidden md:block" />
               원칙으로 하여 고객님께 신뢰할 수 있는 의료 서비스를 약속드립니다.
@@ -127,7 +127,7 @@ export default function ReviewsArchive() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
-            className="flex items-center gap-2 px-4 py-2 bg-white/40 backdrop-blur-sm rounded-lg border border-gray-100 text-[11px] font-bold text-gray-400 tracking-wider shadow-sm"
+            className="flex items-center gap-2 px-4 py-2 bg-white/40 backdrop-blur-sm rounded-lg border border-gray-100 text-[16px] font-bold text-gray-400 tracking-wider shadow-sm"
           >
             <svg className="w-4 h-4 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5" />
@@ -270,7 +270,7 @@ function ReviewCard({ review, foldedWidth, expandedWidth }: { review: any, folde
               exit={{ opacity: 0 }}
               className="absolute inset-y-0 right-10 flex items-center justify-center pointer-events-none"
             >
-              <span className="rotate-90 origin-center whitespace-nowrap text-[12px] font-black tracking-[0.8em] text-white/50 uppercase">
+              <span className="rotate-90 origin-center whitespace-nowrap text-[16px] font-black tracking-[0.8em] text-white/50 uppercase">
                 {review.title} — Archive
               </span>
             </motion.div>
@@ -287,10 +287,10 @@ function ReviewCard({ review, foldedWidth, expandedWidth }: { review: any, folde
                 transition={{ duration: 0.6, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
                 className="max-w-[85%]"
               >
-                <p className="text-white/80 text-[15px] leading-relaxed break-keep mb-6 line-clamp-2">
+                <p className="text-white/80 text-[16px] leading-relaxed break-keep mb-6 line-clamp-2">
                   {review.desc}
                 </p>
-                <button className="text-white text-[12px] font-bold tracking-[0.3em] uppercase border-b border-white/40 pb-2 hover:border-white transition-colors">
+                <button className="text-white text-[16px] font-bold tracking-[0.3em] uppercase border-b border-white/40 pb-2 hover:border-white transition-colors">
                   View Detail
                 </button>
               </motion.div>

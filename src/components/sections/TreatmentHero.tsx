@@ -82,7 +82,7 @@ export default function TreatmentHero({
                 }}
                 whileHover={{ scale: 1.02, backgroundColor: '#111', color: '#fff' }}
                 whileTap={{ scale: 0.98 }}
-                className="mt-10 px-12 py-5 border border-gray-200 rounded-full text-sm tracking-[0.3em] font-pretendard uppercase transition-all duration-500 bg-white shadow-sm text-gray-900"
+                className="mt-10 px-12 py-5 border border-gray-200 rounded-full text-[16px] tracking-[0.3em] font-pretendard uppercase transition-all duration-500 bg-white shadow-sm text-gray-900"
               >
                 Reservation
               </motion.button>

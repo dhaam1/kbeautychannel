@@ -59,13 +59,13 @@ export default function MediaHero() {
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-2">
                 <span className="w-10 h-[1px] bg-[#E8927D]" />
-                <span className="text-[11px] tracking-[0.3em] text-[#E8927D] font-bold uppercase">Archive Media</span>
+                <span className="text-[16px] tracking-[0.3em] text-[#E8927D] font-bold uppercase">Archive Media</span>
               </div>
-              <p className="text-[15px] md:text-[17px] font-medium leading-relaxed text-white/90">
+              <p className="text-[16px] md:text-[17px] font-medium leading-relaxed text-white/90">
                 1천2백만 뷰, 1000건 이상의 뷰티 노하우.<br />
                 김연진 원장의 시선으로 담아낸 프리미엄 미디어 아카이브입니다.
               </p>
-              <p className="text-[13px] font-light text-white/50">
+              <p className="text-[16px] font-light text-white/50">
                 격차가 만드는 아름다움, 오직 케이뷰티채널에서만 경험할 수 있습니다.
               </p>
             </div>

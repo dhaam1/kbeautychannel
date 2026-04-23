@@ -53,6 +53,8 @@ const PROFILE_DATA: ProfileData[] = [
   },
 ];
 
+const KEY_COLOR = '#E8927D';
+
 export default function ProfessionalProfile() {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -61,8 +63,9 @@ export default function ProfessionalProfile() {
     offset: ['start start', 'end end'],
   });
 
+  // 스크롤 반응성 강화: stiffness를 높여 즉각적인 반응 유도
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 120,
+    stiffness: 85,
     damping: 35,
     restDelta: 0.0001
   });
@@ -71,14 +74,14 @@ export default function ProfessionalProfile() {
     <section 
       ref={containerRef} 
       className="relative w-full bg-[#0a0a0a]"
-      style={{ height: '500vh' }}
+      style={{ height: '400vh' }} // 800vh -> 400vh로 압축 (한 번의 스크롤로 전환 유도)
     >
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col lg:flex-row">
+      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col lg:flex-row bg-[#050505]">
         <SectionLabel number="03" title="PROFESSIONAL PROFILE" dark />
 
         <div className="relative z-10 w-full h-full flex flex-col lg:flex-row border-t lg:border-t-0 lg:border-l border-white/10">
           {PROFILE_DATA.map((data, idx) => (
-            <ExpandingColumn 
+            <ExpandingCard 
               key={data.id} 
               data={data} 
               index={idx} 
@@ -91,38 +94,42 @@ export default function ProfessionalProfile() {
   );
 }
 
-interface ExpandingColumnProps {
+interface ExpandingCardProps {
   data: ProfileData;
   index: number;
   progress: MotionValue<number>;
 }
 
-const ExpandingColumn: React.FC<ExpandingColumnProps> = ({ data, index, progress }) => {
-  const ranges = useMemo(() => [
-    [0.1, 0.25, 0.4, 0.5],    // 첫 번째 카드
-    [0.4, 0.55, 0.7, 0.8],    // 두 번째 카드
-    [0.7, 0.85, 1.0, 1.0],    // 세 번째 카드
-  ], []);
+const ExpandingCard: React.FC<ExpandingCardProps> = ({ data, index, progress }) => {
+  // 스크롤 리듬 최적화 (압축된 높이에 맞춰 즉각적인 반응)
+  const width = useTransform(
+    progress,
+    [0, 0.05, 0.1, 0.35, 0.4, 0.65, 0.7, 0.95, 1.0],
+    index === 0
+      ? ['33.333%', '33.333%', '100%', '100%', '0%', '0%', '0%', '0%', '0%']
+      : index === 1
+      ? ['33.333%', '33.333%', '0%', '0%', '100%', '100%', '0%', '0%', '0%']
+      : ['33.333%', '33.333%', '0%', '0%', '0%', '0%', '100%', '100%', '100%']
+  );
 
-  const currentRange = ranges[index] as [number, number, number, number];
-  const outputRange = (index === 2 ? [1, 12, 12, 12] : [1, 12, 12, 1]) as [number, number, number, number];
+  const currentWidthValue = useTransform(width, (v) => parseFloat(v));
   
-  const flexGrow = useTransform(progress, currentRange, outputRange, { clamp: true });
+  // 가시성 로직 최적화
+  const isCover = useTransform(currentWidthValue, [32, 45], [1, 0]);
+  const isExpanded = useTransform(currentWidthValue, [85, 98], [0, 1]);
 
-  const contentOpacity = useTransform(flexGrow, [2, 6], [0, 1]);
-  const labelOpacity = useTransform(flexGrow, [1, 3], [1, 0]);
-  const imgOpacity = useTransform(flexGrow, [1, 12], [0.05, 0.4]);
-  const imgScale = useTransform(flexGrow, [1, 12], [1.1, 1]);
-
-  const blurValue = useTransform(flexGrow, [1, 12], [15, 0]);
-  const grayscaleValue = useTransform(flexGrow, [1, 6], [100, 0]);
-  const filter = useMotionTemplate`grayscale(${grayscaleValue}%) blur(${blurValue}px)`;
+  const imgOpacity = useTransform(currentWidthValue, [0, 33, 100], [0, 0.18, 0.45]);
+  const imgScale = useTransform(currentWidthValue, [33, 100], [1.15, 1]);
+  
+  const grayscaleValue = useTransform(currentWidthValue, [33, 100], [100, 0]);
+  const filter = useMotionTemplate`grayscale(${grayscaleValue}%)`;
 
   return (
     <motion.div 
-      style={{ flex: `${flexGrow} ${flexGrow} 0%` }}
-      className="relative h-full border-b lg:border-b-0 lg:border-r border-white/10 flex flex-col overflow-hidden min-w-[50px] lg:min-w-[80px]"
+      style={{ width, flexShrink: 0 }}
+      className="relative h-full border-b lg:border-b-0 lg:border-r border-white/10 flex flex-col overflow-hidden"
     >
+      {/* Background Image Layer */}
       <motion.div 
         className="absolute inset-0 z-0 pointer-events-none"
         style={{ 
@@ -133,48 +140,98 @@ const ExpandingColumn: React.FC<ExpandingColumnProps> = ({ data, index, progress
           scale: imgScale,
           filter: filter,
           willChange: 'transform, opacity, filter',
-          transform: 'translateZ(0)'
         }}
       />
-      <div className="absolute inset-0 bg-black/60 z-[1] pointer-events-none" />
+      
+      <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/30 to-transparent z-[1] pointer-events-none" />
 
+      {/* 1. Cover View */}
       <motion.div 
-        style={{ opacity: contentOpacity }}
-        className="relative z-10 w-full h-full flex flex-col justify-center px-8 lg:px-20 overflow-hidden"
+        style={{ opacity: isCover }}
+        className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-10 pointer-events-none"
       >
-        <div className="max-w-4xl min-w-[400px]">
-          <span className="text-[10px] font-black tracking-[0.4em] text-gray-500 uppercase mb-8 block">
-            {data.id} — {data.subtitle}
+        <div className="min-w-[300px]">
+          <span className="text-[11px] font-black tracking-[0.6em] text-white/30 uppercase mb-5 block">
+             {data.subtitle.split(' ')[0]}
           </span>
-          
-          <h2 className="font-sans text-[24px] lg:text-[52px] font-black text-white leading-none mb-10 tracking-tighter whitespace-pre-line">
-            {data.title}
+          <h2 className="font-sans text-[20px] lg:text-[24px] font-black text-white leading-tight tracking-tighter whitespace-pre-line">
+             {data.title.split('\n')[1] || data.title}
           </h2>
-
-          <ul className="space-y-5">
-            {data.items.map((item, i) => (
-              <li 
-                key={i}
-                className="text-[14px] lg:text-[15.5px] font-pretendard text-gray-400 leading-relaxed flex items-start"
-              >
-                <span className="inline-block w-4 h-[1px] bg-white/20 mr-4 mt-3 flex-shrink-0" />
-                {item}
-              </li>
-            ))}
-          </ul>
         </div>
       </motion.div>
 
+      {/* 2. Expanded View (Editorial Distributed Layout) */}
       <motion.div 
-        className="absolute inset-0 flex items-center justify-center pointer-events-none z-20"
-        style={{ opacity: labelOpacity }}
+        style={{ opacity: isExpanded }}
+        className="absolute inset-0 z-20 pointer-events-none"
+      >
+        <div className="relative w-full h-full p-[5%] lg:p-[8%] flex flex-col justify-between">
+          
+          {/* Top-Right Area: Main Catchy Title */}
+          <div className="flex justify-end items-start pt-12 lg:pt-0">
+             <div className="max-w-4xl text-right">
+                <h2 className="font-sans text-[36px] lg:text-[88px] font-black text-white leading-[1.02] tracking-tighter whitespace-pre-line">
+                  {data.title}
+                </h2>
+                <div className="mt-8 flex justify-end">
+                   <div className="h-[2px] w-24" style={{ backgroundColor: KEY_COLOR }} />
+                </div>
+             </div>
+          </div>
+
+          {/* Bottom Area: Info & Category (Distributed) */}
+          <div className="flex flex-col lg:flex-row items-end justify-between gap-12">
+             
+             {/* Bottom-Left: Subtitle & ID (Category style) */}
+             <div className="flex flex-col items-start">
+                <span 
+                  className="text-[16px] lg:text-[20px] font-black tracking-[0.6em] uppercase mb-4"
+                  style={{ color: KEY_COLOR }}
+                >
+                  {data.id} — {data.subtitle}
+                </span>
+                <div className="h-[1px] w-full bg-white/20" />
+             </div>
+
+             {/* Bottom-Right: Detailed Items List */}
+             <div className="max-w-2xl text-right">
+                <ul className="space-y-4 lg:space-y-6">
+                  {data.items.map((item, i) => (
+                    <li 
+                      key={i}
+                      className="text-[15px] lg:text-[20px] font-pretendard text-gray-300 leading-relaxed font-light"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <motion.div className="mt-12 flex justify-end">
+                  <button 
+                    className="px-12 py-4 bg-white/5 text-white border border-white/10 rounded-full text-[12px] font-black tracking-[0.4em] uppercase transition-all duration-700 hover:text-black pointer-events-auto"
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = KEY_COLOR)}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)')}
+                  >
+                    EXPLORE CREDENTIALS
+                  </button>
+                </motion.div>
+             </div>
+
+          </div>
+
+        </div>
+      </motion.div>
+
+      {/* 3. Transition Sidebar Label */}
+      <motion.div 
+        className="absolute inset-y-0 right-0 w-20 flex items-center justify-center pointer-events-none z-10"
+        style={{ opacity: useTransform(currentWidthValue, [0, 8, 18], [1, 0.5, 0]) }}
       >
         <div className="rotate-90 origin-center whitespace-nowrap">
-           <span className="text-[11px] font-black tracking-[0.6em] text-white/20 uppercase">
+           <span className="text-[12px] font-black tracking-[1em] text-white/10 uppercase">
              {data.id} — {data.subtitle}
            </span>
         </div>
       </motion.div>
     </motion.div>
   );
-}
+};

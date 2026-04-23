@@ -83,7 +83,7 @@ export default function SocialProofBridge() {
               <div className="w-2.5 h-2.5 bg-gray-400/30 flex-shrink-0" />
               <div className="w-2.5 h-2.5 bg-white flex-shrink-0" />
             </div>
-            <span className="text-[13px] font-pretendard text-white tracking-tight font-medium uppercase">KBEAUTYCHANNEL Archive</span>
+            <span className="text-[16px] font-pretendard text-white tracking-tight font-medium uppercase">KBEAUTYCHANNEL Archive</span>
           </div>
 
           {/* Cumulative Counter */}
@@ -91,7 +91,7 @@ export default function SocialProofBridge() {
             <h2 className="text-[64px] md:text-[100px] font-serif text-white leading-none tracking-tighter">
               <Counter value={TOTAL_VALUE} duration={2.5} />
             </h2>
-            <span className="absolute -bottom-6 left-1 text-[11px] text-white/60 font-pretendard uppercase tracking-[0.2em] opacity-70">
+            <span className="absolute -bottom-6 left-1 text-[16px] text-white/60 font-pretendard uppercase tracking-[0.2em] opacity-70">
               Verified Treatment Archives
             </span>
           </div>
@@ -116,13 +116,13 @@ export default function SocialProofBridge() {
                  className="flex flex-col gap-1"
               >
                 <div className="flex items-baseline gap-3">
-                  <span className="text-[9px] font-black text-white/50 uppercase tracking-[0.35em]">{item.label}</span>
+                  <span className="text-[16px] font-black text-white/50 uppercase tracking-[0.35em]">{item.label}</span>
                   <span className="text-[24px] md:text-[32px] font-sans font-extralight text-white">
                     <Counter value={item.value} duration={2} />
-                    <span className="text-[14px] ml-1 opacity-40 font-normal">{item.unit}</span>
+                    <span className="text-[16px] ml-1 opacity-40 font-normal">{item.unit}</span>
                   </span>
                 </div>
-                <p className="text-[13px] text-white/60 font-pretendard font-light tracking-tight opacity-80">
+                <p className="text-[16px] text-white/60 font-pretendard font-light tracking-tight opacity-80">
                   {item.desc}
                 </p>
               </motion.div>

@@ -8,8 +8,8 @@ export default function Header({ isDarkBackground = false }: HeaderProps) {
   const textColor = isDarkBackground ? "text-white" : "text-gray-900";
   const iconColor = isDarkBackground ? "text-white/80 group-hover:text-white" : "text-gray-400 group-hover:text-gray-900";
   const buttonStyle = isDarkBackground 
-    ? "border-white text-white hover:bg-white hover:text-black" 
-    : "border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white";
+    ? "border-[#E8927D] text-[#E8927D] hover:bg-[#E8927D] hover:text-black" 
+    : "border-[#E8927D] text-[#E8927D] hover:bg-[#E8927D] hover:text-white";
 
   return (
     <header className="w-full flex justify-between items-center z-50">
@@ -17,7 +17,7 @@ export default function Header({ isDarkBackground = false }: HeaderProps) {
         KBEAUTYCHANNEL
       </Link>
       <div className="flex items-center gap-8">
-        <nav className={`flex items-center gap-6 font-sans text-sm font-semibold ${textColor} tracking-widest uppercase relative z-50`}>
+        <nav className={`flex items-center gap-6 font-sans text-[16px] font-semibold ${textColor} tracking-widest uppercase relative z-50`}>
           <div className="relative group">
             <div className="cursor-default hover:opacity-70 transition-opacity flex items-center gap-1.5 py-4">
               전문 시술 분야
@@ -38,7 +38,7 @@ export default function Header({ isDarkBackground = false }: HeaderProps) {
                   <Link
                     key={item.name}
                     href={item.path}
-                    className="px-3 py-2.5 text-[11px] font-semibold text-gray-500 hover:text-gray-900 hover:bg-gray-50 rounded-xl transition-all tracking-wider text-center"
+                    className="px-3 py-2.5 text-[16px] font-semibold text-gray-500 hover:text-gray-900 hover:bg-gray-50 rounded-xl transition-all tracking-wider text-center"
                   >
                     {item.name}
                   </Link>
@@ -50,7 +50,7 @@ export default function Header({ isDarkBackground = false }: HeaderProps) {
           <Link href="/reviews" className="hover:opacity-70 transition-opacity">후기</Link>
           <Link href="/column" className="hover:opacity-70 transition-opacity">DR.KIM 칼럼</Link>
         </nav>
-        <button className={`px-5 py-2 rounded-full border text-sm font-semibold transition-colors ${buttonStyle}`}>
+        <button className={`px-5 py-2 rounded-full border text-[16px] font-semibold transition-colors ${buttonStyle}`}>
           시술 예약
         </button>
       </div>

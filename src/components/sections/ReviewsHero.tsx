@@ -27,7 +27,7 @@ export default function ReviewsHero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-white/60 backdrop-blur-md border border-white/30 text-[10px] uppercase tracking-[0.4em] font-black text-gray-400 mb-8 shadow-sm">
+            <span className="inline-block py-1 px-3 rounded-full bg-white/60 backdrop-blur-md border border-white/30 text-[16px] uppercase tracking-[0.4em] font-black text-gray-400 mb-8 shadow-sm">
               True Stories of Transformation
             </span>
             
@@ -55,7 +55,7 @@ export default function ReviewsHero() {
                   className="bg-white/40 backdrop-blur-lg border border-white/50 p-6 rounded-3xl"
                 >
                   <div className="text-[28px] font-black text-gray-900 tracking-tight mb-1">{stat.value}</div>
-                  <div className="text-[11px] font-black tracking-widest text-gray-400 uppercase">{stat.label}</div>
+                  <div className="text-[16px] font-black tracking-widest text-gray-400 uppercase">{stat.label}</div>
                 </motion.div>
               ))}
             </div>

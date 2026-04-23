@@ -38,7 +38,7 @@ export default function YoutubeAuthority() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="block text-[9px] font-black tracking-[0.5em] text-white/20 uppercase mb-10"
+          className="block text-[16px] font-black tracking-[0.5em] text-white/20 uppercase mb-10"
         >
           Head Doctor — Kim Yeonjin
         </motion.span>
@@ -72,10 +72,10 @@ export default function YoutubeAuthority() {
             >
               <div className="flex items-start justify-between gap-6">
                 <div>
-                  <span className="block text-[10px] font-black tracking-[0.35em] text-white/25 uppercase mb-2">
+                  <span className="block text-[16px] font-black tracking-[0.35em] text-white/25 uppercase mb-2">
                     {stat.label}
                   </span>
-                  <p className="text-[13px] text-white/35 leading-relaxed group-hover:text-white/55 transition-colors duration-500">
+                  <p className="text-[16px] text-white/35 leading-relaxed group-hover:text-white/55 transition-colors duration-500">
                     {stat.desc}
                   </p>
                 </div>
@@ -83,7 +83,7 @@ export default function YoutubeAuthority() {
                   <span className="font-sans text-[28px] md:text-[32px] font-black text-white tracking-tighter leading-none">
                     {stat.value}
                   </span>
-                  <span className="text-[11px] text-white/20 font-semibold">{stat.suffix}</span>
+                  <span className="text-[16px] text-white/20 font-semibold">{stat.suffix}</span>
                 </div>
               </div>
             </motion.div>

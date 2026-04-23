@@ -32,7 +32,7 @@ export default function ColumnSection() {
 
           <motion.a
             href="/column"
-            className="group flex items-center gap-3 text-sm font-bold tracking-widest text-gray-900 uppercase"
+            className="group flex items-center gap-3 text-[16px] font-bold tracking-widest text-gray-900 uppercase"
             whileHover={{ x: 5 }}
             transition={{ duration: 0.3 }}
           >
@@ -62,7 +62,7 @@ export default function ColumnSection() {
                 />
                 <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-500" />
                 <div className="absolute top-6 left-6">
-                  <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[10px] font-bold text-white tracking-wider">
+                  <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[16px] font-bold text-white tracking-wider">
                     {post.category.split(',')[0]}
                   </span>
                 </div>
@@ -70,10 +70,10 @@ export default function ColumnSection() {
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight mb-4 group-hover:text-gray-600 transition-colors">
                 {post.title}
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed line-clamp-2 mb-6">
+              <p className="text-gray-500 text-[16px] leading-relaxed line-clamp-2 mb-6">
                 {post.description}
               </p>
-              <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-gray-900 transition-colors">
+              <div className="flex items-center gap-2 text-[16px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-gray-900 transition-colors">
                 Read More <ArrowRight size={12} />
               </div>
             </motion.article>

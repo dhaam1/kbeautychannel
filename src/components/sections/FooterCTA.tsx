@@ -26,7 +26,7 @@ export default function FooterCTA() {
           >
             <div className="flex items-center gap-2 mb-12 md:mb-16">
               <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white"><path d="M12 2L2 22h20L12 2zm0 3.8l6.1 12.2H5.9L12 5.8z"/></svg>
-              <span className="font-sans font-bold text-xs tracking-[0.2em] uppercase text-white/80">KBEAUTYCHANNEL</span>
+              <span className="font-sans font-bold text-[16px] tracking-[0.2em] uppercase text-white/80">KBEAUTYCHANNEL</span>
             </div>
 
             <div className="mb-10 md:mb-12">
@@ -36,46 +36,91 @@ export default function FooterCTA() {
               </h2>
             </div>
 
-            <div className="w-full aspect-[2.5/1] rounded-xl overflow-hidden mb-10 shadow-sm border border-white/10 shrink-0">
-              <img src="/images/water_texture_cta.png" alt="Water Texture" className="w-full h-full object-cover opacity-80" />
-            </div>
+            {/* Prestige Ticket Container */}
+            <motion.div 
+              whileHover={{ rotateY: 5, rotateX: -2, scale: 1.02 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+              className="relative w-full aspect-[2.8/1] mb-12 group cursor-default perspective-1000"
+            >
+              {/* Ticket Body */}
+              <div className="absolute inset-0 bg-[#151515] border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)] flex overflow-hidden rounded-xl">
+                {/* Background Textures */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/[0.08] to-transparent z-0" />
+                <img src="/images/water_texture_cta.png" alt="Ticket Texture" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0" />
+                
+                {/* Left Section (Main) */}
+                <div className="relative flex-grow h-full p-6 md:p-8 flex flex-col justify-between overflow-hidden">
+                  <div className="relative z-10 flex flex-col gap-1.5">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#E8927D] shadow-[0_0_8px_#E8927D] animate-pulse" />
+                      <span className="text-[11px] font-bold tracking-[0.4em] text-[#E8927D] uppercase">KBC Prestige Member</span>
+                    </div>
+                    <h3 className="text-2xl md:text-[32px] font-black text-white tracking-tighter leading-[1.1] mt-1">
+                      PREMIUM<br/>ESTHETIC PASS
+                    </h3>
+                  </div>
+
+                  <div className="relative z-10 flex items-center gap-6">
+                    <div className="flex flex-col">
+                      <span className="text-[9px] font-mono text-white/30 tracking-widest uppercase">Membership No.</span>
+                      <span className="text-[13px] font-mono text-white/70">777-KBC-PREMIUM-2026</span>
+                    </div>
+                    <div className="w-[1px] h-6 bg-white/10" />
+                    <div className="flex flex-col">
+                      <span className="text-[9px] font-mono text-white/30 tracking-widest uppercase">Verified by</span>
+                      <span className="text-[13px] font-mono text-white/70 tracking-tight">DIRECTOR KIM</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Perforation Line & Notches Area */}
+                <div className="relative w-[60px] md:w-[100px] h-full flex flex-col items-center justify-center border-l border-white/10 bg-white/[0.03]">
+                  {/* Perforation Dots */}
+                  <div className="absolute inset-y-6 left-0 border-l border-dashed border-white/20 -ml-[0.5px] z-10" />
+                  
+                  {/* The Notches (Visual cutout effect) */}
+                  <div className="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-[#0a0a0a] border border-white/10 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] z-20" />
+                  <div className="absolute -bottom-4 -left-4 w-8 h-8 rounded-full bg-[#0a0a0a] border border-white/10 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] z-20" />
+                  
+                  <div className="rotate-90 whitespace-nowrap">
+                    <span className="text-[11px] md:text-[13px] font-black tracking-[0.5em] text-white/15 uppercase select-none">
+                      V.I.P ACCESS
+                    </span>
+                  </div>
+                </div>
+
+                {/* Shine Animation Effect */}
+                <div className="absolute inset-0 pointer-events-none bg-gradient-to-tr from-transparent via-white/[0.05] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
+              </div>
+            </motion.div>
 
             <div className="mb-12">
-              <p className="font-bold text-sm md:text-base text-white mb-2">당신의 아름다움을 책임질 케이뷰티채널의 프리미엄 컬렉션</p>
-              <p className="text-xs md:text-sm text-white/60 leading-relaxed max-w-[90%]">
+              <p className="font-bold text-[16px] md:text-base text-white mb-2">당신의 아름다움을 책임질 케이뷰티채널의 프리미엄 컬렉션</p>
+              <p className="text-[16px] md:text-[16px] text-white/60 leading-relaxed max-w-[90%]">
                 최신 기술이 구현하는 맞춤형 변화를 통해<br />
                 더욱 섬세하고 완성도 높은 아름다움을 경험하세요.
               </p>
             </div>
 
             <div className="mt-auto flex items-end justify-between">
-              <a 
+              <motion.a 
                 href="https://line.me/R/ti/p/@kbeauty_clinic" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center border border-white/30 rounded-md px-6 py-3 text-xs md:text-sm font-bold text-white hover:bg-white hover:text-black transition-all duration-300"
+                whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(6, 199, 85, 0.4)' }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center gap-3 bg-[#06C755] border border-[#06C755] rounded-full px-8 py-4 text-[16px] font-bold text-white transition-all duration-300 shadow-lg"
               >
+                <svg viewBox="0 0 24 24" className="w-6 h-6 fill-white">
+                  <path d="M19.467 11.233c0-4.004-3.348-7.266-7.467-7.266s-7.467 3.262-7.467 7.266c0 3.59 2.65 6.6 6.222 7.164.242.052.571.161.654.37.075.187.05.479.025.668l-.112.671c-.034.205-.157.801.678.437.834-.363 4.5-2.65 6.138-4.542 1.057-1.127 1.334-2.81 1.334-4.768zm-11.4 3.037H7.014a.276.276 0 01-.277-.277V9.014a.276.276 0 01.277-.277h1.053a.276.276 0 01.277.277v4.679a.276.276 0 01-.277.277zm2.467 0h-1.053a.276.276 0 01-.277-.277V9.014a.276.276 0 01.277-.277h1.053a.276.276 0 01.277.277v4.679a.276.276 0 01-.277.277zm3.746 0H12.94a.276.276 0 01-.277-.277V9.014a.276.276 0 01.277-.277h1.053a.276.276 0 01.277.277v4.062h1.341a.276.276 0 01.277.277v.661a.276.276 0 01-.277.277zm3.084-2.222h-1.341a.276.276 0 01-.277-.277V9.014a.276.276 0 01.277-.277h1.053a.276.276 0 01.277.277v.661h1.341a.276.276 0 01.277.277v1.053a.276.276 0 01-.277.277z"/>
+                </svg>
                 LINE 상담 및 예약
-              </a>
-              
-              <div className="font-serif text-5xl md:text-6xl font-light tracking-tighter text-white/80">
-                07
-              </div>
+              </motion.a>
             </div>
           </motion.div>
         </div>
 
-        <motion.a 
-          href="https://line.me/R/ti/p/@kbeauty_clinic"
-          target="_blank"
-          rel="noopener noreferrer"
-          initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.8, type: "spring" }}
-          className="absolute bottom-8 right-8 md:bottom-12 md:right-12 w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center text-[#06C755] shadow-[0_8px_30px_rgba(255,255,255,0.1)] hover:scale-110 transition-transform cursor-pointer z-20 group"
-        >
-          <svg className="w-8 h-8 md:w-10 md:h-10 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 3.938 8.902 9.312 9.585.391.087.922.258 1.057.592.114.288.038.736.015.992-.036.331-.168 1.002-.208 1.23-.049.27-.229 1.127.986.616 1.215-.512 6.541-3.854 8.806-6.495 2.656-3.136 4.032-6.527 4.032-6.52Z"/>
-          </svg>
-        </motion.a>
+
       </motion.div>
     </section>
   );

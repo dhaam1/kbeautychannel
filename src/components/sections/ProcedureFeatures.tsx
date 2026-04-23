@@ -38,7 +38,7 @@ const FeatureCard = ({ number, title, description, icon }: FeatureCardProps) => 
     </div>
     
     <div className="mt-auto pt-12">
-      <p className="text-sm md:text-base text-gray-500 font-pretendard leading-relaxed max-w-sm whitespace-pre-line text-pretty">
+      <p className="text-[16px] md:text-base text-gray-500 font-pretendard leading-relaxed max-w-sm whitespace-pre-line text-pretty">
         {description}
       </p>
     </div>
@@ -90,7 +90,7 @@ export default function ProcedureFeatures({
               >
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-[1px] bg-gray-900/30" />
-                  <span className="text-xs font-bold tracking-[0.4em] uppercase text-gray-500">{subtitle}</span>
+                  <span className="text-[16px] font-bold tracking-[0.4em] uppercase text-gray-500">{subtitle}</span>
                 </div>
                 <h2 className="text-6xl md:text-[90px] font-sans font-black leading-[0.85] tracking-tight text-gray-900 uppercase whitespace-pre-line">
                   {title}
@@ -101,7 +101,7 @@ export default function ProcedureFeatures({
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.3 }}
-                className="text-sm text-gray-500 font-pretendard leading-relaxed max-w-xs whitespace-pre-line text-pretty"
+                className="text-[16px] text-gray-500 font-pretendard leading-relaxed max-w-xs whitespace-pre-line text-pretty"
               >
                 {description}
               </motion.p>

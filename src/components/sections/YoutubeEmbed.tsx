@@ -135,7 +135,7 @@ export default function YoutubeEmbed() {
             transition={{ duration: 0.8 }}
             className="flex flex-col gap-5 items-center text-center"
           >
-            <span className="text-[9px] font-black tracking-[0.5em] text-white/30 uppercase">Archive Education</span>
+            <span className="text-[16px] font-black tracking-[0.5em] text-white/30 uppercase">Archive Education</span>
             <h2 className="font-pretendard text-[22px] md:text-[48px] font-bold tracking-tighter leading-[1.1] text-white break-keep">
               인터넷에서 얻을 수 없는 정보,<br className="hidden md:block" />{' '}
               <span className="text-white/40">
@@ -157,17 +157,17 @@ export default function YoutubeEmbed() {
               className="max-w-xl"
             >
               <div className="flex items-center gap-4 mb-6">
-                <span className="px-4 py-1.5 rounded-full border border-white/20 text-[10px] font-bold tracking-[0.3em] text-white/60 uppercase backdrop-blur-sm">
+                <span className="px-4 py-1.5 rounded-full border border-white/20 text-[16px] font-bold tracking-[0.3em] text-white/60 uppercase backdrop-blur-sm">
                   {activeItem.tag}
                 </span>
-                <span className="text-[10px] font-bold tracking-[0.3em] text-white/30 uppercase">
+                <span className="text-[16px] font-bold tracking-[0.3em] text-white/30 uppercase">
                   {activeItem.category}
                 </span>
               </div>
               <h3 className="font-pretendard text-[22px] md:text-[36px] font-bold text-white tracking-tight leading-[1.15] mb-6">
                 {activeItem.title}
               </h3>
-              <p className="text-[13px] text-white/40 leading-relaxed font-light max-w-md">
+              <p className="text-[16px] text-white/40 leading-relaxed font-light max-w-md">
                 {activeItem.overview}
               </p>
 
@@ -195,8 +195,8 @@ export default function YoutubeEmbed() {
 
                 {/* Label */}
                 <span className="flex flex-col">
-                  <span className="text-[10px] font-bold tracking-[0.3em] text-white/30 uppercase mb-0.5">YouTube</span>
-                  <span className="text-sm font-semibold text-white/70 group-hover:text-white transition-colors duration-300 tracking-wide">
+                  <span className="text-[16px] font-bold tracking-[0.3em] text-white/30 uppercase mb-0.5">YouTube</span>
+                  <span className="text-[16px] font-semibold text-white/70 group-hover:text-white transition-colors duration-300 tracking-wide">
                     영상 전체 보기
                   </span>
                 </span>
@@ -249,14 +249,14 @@ export default function YoutubeEmbed() {
 
                 {/* Label */}
                 <div className="absolute bottom-2.5 left-2.5 right-2.5">
-                  <span className={`text-[8px] font-bold uppercase tracking-[0.2em] transition-all duration-500 ${activeIndex === i ? 'text-white' : 'text-white/40'}`}>
+                  <span className={`text-[16px] font-bold uppercase tracking-[0.2em] transition-all duration-500 ${activeIndex === i ? 'text-white' : 'text-white/40'}`}>
                     {item.tag}
                   </span>
                 </div>
 
                 {/* Number */}
                 <div className="absolute top-2.5 right-2.5">
-                  <span className={`font-mono text-[9px] font-bold transition-all duration-500 ${activeIndex === i ? 'text-white/80' : 'text-white/20'}`}>
+                  <span className={`font-mono text-[16px] font-bold transition-all duration-500 ${activeIndex === i ? 'text-white/80' : 'text-white/20'}`}>
                     {String(item.id).padStart(2, '0')}
                   </span>
                 </div>

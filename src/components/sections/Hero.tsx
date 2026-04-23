@@ -21,7 +21,7 @@ export default function Hero() {
           <input
             type="text"
             placeholder="4월. 오버레이 프로모션 살펴보기"
-            className="bg-transparent border-none outline-none text-sm text-gray-700 placeholder-gray-700 w-64 md:w-80"
+            className="bg-transparent border-none outline-none text-[16px] text-gray-700 placeholder-gray-700 w-64 md:w-80"
           />
           <button className="text-gray-900">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
