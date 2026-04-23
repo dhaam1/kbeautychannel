@@ -3,54 +3,25 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
+import { Settings2 } from 'lucide-react';
 
 const REVIEWS = [
-  {
-    id: 1,
-    title: '써마지 FLX 리프팅',
-    image: '/images/reviews/review_card_skin_1_1776875174630.png',
-    desc: '처진 피부 탄력을 되찾아주는 프리미엄 리프팅 솔루션',
-    letter: 'C',
-  },
-  {
-    id: 2,
-    title: '울쎄라 타이트닝',
-    image: '/images/reviews/review_card_skin_2_1776875188901.png',
-    desc: '속부터 차오르는 탄력, 정교한 초음파 리프팅',
-    letter: 'L',
-  },
-  {
-    id: 3,
-    title: '쥬베룩 볼륨',
-    image: '/images/reviews/review_card_skin_3_1776875206372.png',
-    desc: '자연스러운 볼륨감과 피부 결 개선을 동시에',
-    letter: 'I',
-  },
-  {
-    id: 4,
-    title: '리쥬란 힐러',
-    image: '/images/reviews/review_card_skin_4_1776875226599.png',
-    desc: '손상된 피부 내부의 생리적 조건을 개선하는 스킨 부스터',
-    letter: 'N',
-  },
-  {
-    id: 5,
-    title: '티타늄 리프팅',
-    image: '/images/reviews/review_card_skin_5_1776875242705.png',
-    desc: '세 가지 파장으로 리프팅, 타이트닝, 화이트닝까지',
-    letter: 'I',
-  },
-  {
-    id: 6,
-    title: '인모드 리프팅',
-    image: '/images/reviews/review_card_skin_6_1776875257420.png',
-    desc: '불필요한 지방은 줄이고 탄력은 높이는 이중 효과',
-    letter: 'C',
-  },
+  { id: 1, title: '써마지 FLX 리프팅', image: '/images/reviews/review_card_skin_1_1776875174630.png', desc: '처진 피부 탄력을 되찾아주는 프리미엄 리프팅 솔루션', letter: 'U' },
+  { id: 2, title: '울쎄라 타이트닝', image: '/images/reviews/review_card_skin_2_1776875188901.png', desc: '속부터 차오르는 탄력, 정교한 초음파 리프팅', letter: 'H' },
+  { id: 3, title: '쥬베룩 볼륨', image: '/images/reviews/review_card_skin_3_1776875206372.png', desc: '자연스러운 볼륨감과 피부 결 개선을 동시에', letter: 'C' },
+  { id: 4, title: '리쥬란 힐러', image: '/images/reviews/review_card_skin_4_1776875226599.png', desc: '손상된 피부 내부의 생리적 조건을 개선하는 스킨 부스터', letter: 'E' },
+  { id: 5, title: '티타늄 리프팅', image: '/images/reviews/review_card_skin_5_1776875242705.png', desc: '세 가지 파장으로 리프팅, 타이트닝, 화이트닝까지', letter: 'L' },
+  { id: 6, title: '인모드 리프팅', image: '/images/reviews/review_card_skin_6_1776875257420.png', desc: '불필요한 지방은 줄이고 탄력은 높이는 이중 효과', letter: 'L' },
+  { id: 7, title: '튠페이스 리프팅', image: '/images/reviews/review_card_skin_1_1776875174630.png', desc: '입체적인 페이스 라인을 완성하는 멀티 리프팅', letter: 'C' },
+  { id: 8, title: '올리지오 리프팅', image: '/images/reviews/review_card_skin_2_1776875188901.png', desc: '한국인 피부 타입에 최적화된 고주파 탄력 리프팅', letter: 'L' },
+  { id: 9, title: '슈링크 유니버스', image: '/images/reviews/review_card_skin_3_1776875206372.png', desc: '빠르고 섬세한 초음파 리프팅 기술', letter: 'I' },
+  { id: 10, title: '피코슈어 토닝', image: '/images/reviews/review_card_skin_4_1776875226599.png', desc: '색소 병변만을 정교하게 제거하는 프리미엄 토닝', letter: 'N' },
+  { id: 11, title: '프리미엄 보톡스', image: '/images/reviews/review_card_skin_5_1776875242705.png', desc: '자연스러운 근육 축소와 주름 개선 효과', letter: 'I' },
+  { id: 12, title: '내추럴 필러', image: '/images/reviews/review_card_skin_6_1776875257420.png', desc: '부족한 볼륨을 채워 입체감을 살리는 정교한 디자인', letter: 'C' },
 ];
 
 // Duplicate for infinite loop
-const DUPLICATED_REVIEWS = [...REVIEWS, ...REVIEWS, ...REVIEWS];
+const DUPLICATED_REVIEWS = [...REVIEWS, ...REVIEWS];
 
 export default function ReviewsArchive() {
   const FOLDED_WIDTH = 220;
@@ -58,14 +29,14 @@ export default function ReviewsArchive() {
   const GAP = 16;
 
   return (
-    <section className="bg-[#f8f7f4] py-24 md:py-32 overflow-hidden">
+    <section className="bg-[#f8f7f4] pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
       <div className="px-[5%] max-w-[1400px] mx-auto mb-20">
         {/* Top Label */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex items-center gap-2 mb-6"
+          className="flex items-center gap-2 mb-4"
         >
           <span className="text-[16px] font-black tracking-[0.2em] text-black uppercase">
             KBEAUTY
@@ -161,6 +132,7 @@ export default function ReviewsArchive() {
         </motion.div>
       </div>
 
+
       <style jsx global>{`
         .no-scrollbar::-webkit-scrollbar {
           display: none;
@@ -210,16 +182,48 @@ function ReviewCard({ review, foldedWidth, expandedWidth }: { review: any, folde
       onMouseLeave={() => setIsHovered(false)}
       className="flex-shrink-0 h-[560px] relative rounded-[3.5rem] overflow-hidden cursor-pointer group shadow-[0_40px_80px_rgba(0,0,0,0.08)]"
     >
-      {/* Background Image */}
-      <Image
-        src={review.image}
-        alt={review.title}
-        fill
-        className="object-cover transition-transform duration-1000 group-hover:scale-110"
-      />
+      {/* Background Image - Only visible when active */}
+      <motion.div
+        animate={{
+          opacity: isActive ? 1 : 0,
+          scale: isActive ? 1 : 1.1,
+        }}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute inset-0"
+      >
+        <Image
+          src={review.image}
+          alt={review.title}
+          fill
+          className="object-cover transition-transform duration-1000 group-hover:scale-110"
+        />
+      </motion.div>
       
-      {/* Overlay Gradient */}
-      <div className={`absolute inset-0 bg-black/40 transition-opacity duration-700 ${isActive ? 'opacity-60' : 'opacity-30 group-hover:opacity-60'}`} />
+      {/* Solid Cover Layer - Midnight Noir (#0D0E0E) */}
+      <motion.div 
+        animate={{
+          backgroundColor: isActive ? 'rgba(0, 0, 0, 0.6)' : '#0D0E0E',
+        }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute inset-0 z-10 pointer-events-none" 
+      />
+
+      {/* Cover Letter (Folded State) - Center Spellings */}
+      <AnimatePresence>
+        {!isActive && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1.1 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute inset-0 flex flex-col items-center justify-center z-20 pointer-events-none"
+          >
+            <span className="text-[140px] md:text-[160px] font-sans font-black text-white/90 select-none tracking-tighter leading-none">
+              {review.letter}
+            </span>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Content */}
       <div className="absolute inset-0 p-12 flex flex-col justify-between z-10 overflow-hidden">
@@ -261,21 +265,6 @@ function ReviewCard({ review, foldedWidth, expandedWidth }: { review: any, folde
           </motion.span>
         </div>
 
-        {/* Vertical Title for Folded State */}
-        <AnimatePresence>
-          {!isActive && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="absolute inset-y-0 right-10 flex items-center justify-center pointer-events-none"
-            >
-              <span className="rotate-90 origin-center whitespace-nowrap text-[16px] font-black tracking-[0.8em] text-white/50 uppercase">
-                {review.title} — Archive
-              </span>
-            </motion.div>
-          )}
-        </AnimatePresence>
 
         <div className="relative h-28">
           <AnimatePresence>

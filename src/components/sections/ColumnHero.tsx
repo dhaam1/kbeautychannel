@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Header from '../layout/Header';
+import Navbar from '../layout/Navbar';
 import Image from 'next/image';
 
 export default function ColumnHero() {
@@ -18,8 +18,9 @@ export default function ColumnHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-[#0A0A0A]/40"></div>
       </div>
 
-      <div className="relative z-10 w-full h-full flex flex-col px-[5%] py-6 md:py-10">
-        <Header />
+      <div className="relative z-10 w-full h-full flex flex-col px-[5%] py-4 md:py-5">
+        <Navbar isDarkBackground={true} />
+        <div className="w-full h-[88px] invisible pointer-events-none" />
 
         <div className="flex-grow flex flex-col justify-end max-w-5xl pb-24">
           <motion.div
@@ -31,7 +32,7 @@ export default function ColumnHero() {
               Medical Insight Archive
             </span>
             
-            <h1 className="font-sans text-[48px] md:text-[84px] font-black text-white leading-[1.05] tracking-tighter mb-10">
+            <h1 className="font-sans text-[48px] md:text-[54px] font-black text-white leading-[1.05] tracking-tighter mb-10">
               인터넷에서 얻을 수 없는<br />
               <span className="text-gray-500 font-serif font-light">깊이 있는 지식</span>
             </h1>

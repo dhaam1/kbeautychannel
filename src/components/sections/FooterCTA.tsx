@@ -14,7 +14,15 @@ export default function FooterCTA() {
         className="relative w-full min-h-screen flex items-stretch justify-start overflow-hidden bg-gray-900"
       >
         <div className="absolute inset-0 z-0">
-          <img src="/images/premium_clinic_portrait.png" alt="Premium Clinic" className="w-full h-full object-cover opacity-80 mix-blend-luminosity" />
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            className="w-full h-full object-cover opacity-80 mix-blend-luminosity"
+          >
+            <source src="/videos/CTA-video.webm" type="video/webm" />
+          </video>
           <div className="absolute inset-0 bg-black/30"></div>
         </div>
 

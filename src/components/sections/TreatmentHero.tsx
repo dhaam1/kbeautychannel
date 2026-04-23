@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, AnimatePresence } from 'motion/react';
-import Header from '../layout/Header';
+import Navbar from '../layout/Navbar';
 import SectionLabel from '../common/SectionLabel';
 
 interface TreatmentHeroProps {
@@ -45,8 +45,9 @@ export default function TreatmentHero({
       </AnimatePresence>
 
       <SectionLabel number={sectionNumber} title={sectionTitle} />
-      <div className="relative z-10 px-[5%] py-6 md:py-10 flex flex-col h-full">
-        <Header isDarkBackground={false} />
+      <div className="relative z-10 px-[5%] py-4 md:py-5 flex flex-col h-full">
+        <Navbar isDarkBackground={false} />
+        <div className="w-full h-[88px] invisible pointer-events-none" />
 
         <main className="flex-grow flex flex-col justify-center text-gray-900">
           <AnimatePresence mode="wait">
@@ -66,7 +67,7 @@ export default function TreatmentHero({
                 />
                 <h2 className="text-xl md:text-2xl font-sans font-bold text-gray-400 tracking-[0.2em] uppercase">{category}</h2>
               </div>
-              <h1 className="text-7xl md:text-[120px] font-sans font-black tracking-tighter leading-none uppercase">
+              <h1 className="text-[54px] md:text-[54px] font-sans font-black tracking-tighter leading-none uppercase">
                 {title} {titleItalic && <span className="text-gray-300 font-normal">{titleItalic}</span>}
               </h1>
               <p className="text-lg md:text-2xl text-gray-500 max-w-2xl mt-4 font-pretendard leading-relaxed font-light whitespace-pre-line text-pretty">

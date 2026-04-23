@@ -19,7 +19,7 @@ export default function Header({ isDarkBackground = false }: HeaderProps) {
       <div className="flex items-center gap-8">
         <nav className={`flex items-center gap-6 font-sans text-[16px] font-semibold ${textColor} tracking-widest uppercase relative z-50`}>
           <div className="relative group">
-            <div className="cursor-default hover:opacity-70 transition-opacity flex items-center gap-1.5 py-4">
+            <div className="cursor-default hover:opacity-70 transition-opacity flex items-center gap-1.5 py-2">
               전문 시술 분야
               <svg className={`w-3.5 h-3.5 ${iconColor} transition-transform duration-300 group-hover:rotate-180`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

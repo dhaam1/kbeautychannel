@@ -2,6 +2,7 @@ import TreatmentHero from '../sections/TreatmentHero';
 import ProcedureFeatures from '../sections/ProcedureFeatures';
 import YoutubeEmbed from '../sections/YoutubeEmbed';
 import FooterCTA from '../sections/FooterCTA';
+import Footer from '../layout/Footer';
 import { ProcedureData } from '../../constants/procedures';
 
 interface ProcedurePageTemplateProps {
@@ -33,6 +34,7 @@ export default function ProcedurePageTemplate({ data }: ProcedurePageTemplatePro
       <div className="relative z-10 bg-white">
         <YoutubeEmbed />
         <FooterCTA />
+        <Footer />
       </div>
     </main>
   );

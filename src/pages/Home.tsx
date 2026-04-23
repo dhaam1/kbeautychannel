@@ -1,4 +1,3 @@
-import Header from '../components/layout/Header';
 import Hero from '../components/sections/Hero';
 import YoutubeAuthority from '../components/sections/YoutubeAuthority';
 import ProfessionalProfile from '../components/sections/ProfessionalProfile';
@@ -6,6 +5,7 @@ import SocialProofBridge from '../components/sections/SocialProofBridge';
 import YoutubeEmbed from '../components/sections/YoutubeEmbed';
 import ColumnSection from '../components/sections/ColumnSection';
 import FooterCTA from '../components/sections/FooterCTA';
+import Footer from '../components/layout/Footer';
 
 
  export default function Home() {
@@ -33,6 +33,7 @@ import FooterCTA from '../components/sections/FooterCTA';
          <div className="snap-section">
            <FooterCTA />
          </div>
+         <Footer />
        </div>
      </div>
    );

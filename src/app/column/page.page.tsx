@@ -1,4 +1,5 @@
-import Header from '../../components/layout/Header';
+import Navbar from '../../components/layout/Navbar';
+import Footer from '../../components/layout/Footer';
 import { Metadata } from 'next';
 import { blogPosts } from '../../constants/column';
 
@@ -12,12 +13,10 @@ export default function BlogPage() {
   return (
     <div className="w-full flex flex-col min-h-screen bg-[#FDFDFD] font-sans">
       {/* Header Area */}
-      <div className="w-full px-[5%] py-6 md:py-8 sticky top-0 z-40">
-        <Header />
-      </div>
+      <Navbar isDarkBackground={false} />
 
       {/* Main Content Area */}
-      <main className="flex-grow w-full max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20 relative z-10">
+      <main className="flex-grow w-full max-w-7xl mx-auto px-4 md:px-8 pt-32 pb-12 md:pt-48 md:pb-20 relative z-10">
         {/* Title Section */}
         <div className="mb-12 md:mb-16 pl-2">
           <h1 className="text-3xl md:text-[32px] font-bold text-gray-900 mb-3 tracking-tight">DR.KIM 칼럼</h1>
@@ -72,6 +71,7 @@ export default function BlogPage() {
           ))}
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

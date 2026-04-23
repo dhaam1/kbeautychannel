@@ -1,8 +1,8 @@
-import Header from '../layout/Header';
+import Navbar from '../layout/Navbar';
 
 export default function Hero() {
   return (
-    <div className="sticky top-0 z-0 min-h-screen flex flex-col px-[5%] py-6 md:py-10 overflow-hidden">
+    <div className="sticky top-0 z-0 min-h-screen flex flex-col px-[5%] py-4 md:py-5 overflow-hidden">
       <video
         autoPlay
         loop
@@ -11,7 +11,9 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover z-0"
         src="https://hzhedioacvqzxxlkttah.supabase.co/storage/v1/object/public/herolanding-herolanding/0413-01-water-skin.webm"
       />
-      <Header isDarkBackground={true} />
+      <Navbar isDarkBackground={true} />
+      {/* Spacer to maintain layout flow since Navbar is fixed */}
+      <div className="w-full h-[88px] invisible pointer-events-none" />
 
       <main className="flex-grow flex flex-col justify-center z-10 max-w-2xl px-4 md:px-0">
         <h1 className="font-sans text-[40px] font-bold text-gray-900 leading-tight tracking-tight">

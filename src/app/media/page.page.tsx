@@ -1,7 +1,8 @@
 import React from 'react';
 import MediaNewsArchive from '../../components/sections/MediaNewsArchive';
 import FooterCTA from '../../components/sections/FooterCTA';
-import Header from '../../components/layout/Header';
+import Navbar from '../../components/layout/Navbar';
+import Footer from '../../components/layout/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,11 +13,10 @@ export const metadata: Metadata = {
 export default function MediaPage() {
   return (
     <main className="min-h-screen bg-white">
-      <div className="relative z-50 px-[5%] py-6 md:py-10">
-        <Header isDarkBackground={false} />
-      </div>
+      <Navbar isDarkBackground={false} />
       <MediaNewsArchive />
       <FooterCTA />
+      <Footer />
     </main>
   );
 }

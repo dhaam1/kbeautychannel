@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Header from '../layout/Header';
+import Navbar from '../layout/Navbar';
 import Image from 'next/image';
 
 export default function ReviewsHero() {
@@ -18,8 +18,9 @@ export default function ReviewsHero() {
         <div className="absolute inset-0 bg-white/10 backdrop-blur-[2px]"></div>
       </div>
 
-      <div className="relative z-10 w-full h-full flex flex-col px-[5%] py-6 md:py-10">
-        <Header />
+      <div className="relative z-10 w-full h-full flex flex-col px-[5%] py-4 md:py-5">
+        <Navbar isDarkBackground={false} />
+        <div className="w-full h-[88px] invisible pointer-events-none" />
 
         <div className="flex-grow flex flex-col justify-center items-center text-center max-w-5xl mx-auto">
           <motion.div
@@ -31,7 +32,7 @@ export default function ReviewsHero() {
               True Stories of Transformation
             </span>
             
-            <h1 className="font-sans text-[48px] md:text-[84px] font-black text-gray-900 leading-[1.05] tracking-tighter mb-10">
+            <h1 className="font-sans text-[48px] md:text-[54px] font-black text-gray-900 leading-[1.05] tracking-tighter mb-10">
               결과로 증명하는<br />
               <span className="text-gray-400">압도적 만족도</span>
             </h1>

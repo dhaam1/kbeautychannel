@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Plus } from 'lucide-react';
-import Header from '../layout/Header';
+import Navbar from '../layout/Navbar';
 
 export default function MediaHero() {
   return (
@@ -20,9 +20,8 @@ export default function MediaHero() {
       </div>
 
       {/* Header Integration - Using Global Header */}
-      <div className="absolute top-0 left-0 w-full z-20 px-[5%] py-6 md:py-10">
-        <Header isDarkBackground={true} />
-      </div>
+      <Navbar isDarkBackground={true} />
+      <div className="w-full h-[88px] invisible pointer-events-none" />
 
       {/* Main Typography Content - KBEAUTYCHANNEL Copywriting */}
       <div className="relative z-10 w-full h-full flex flex-col justify-center px-12 md:px-24">
@@ -30,24 +29,24 @@ export default function MediaHero() {
           <div className="flex flex-col gap-2 md:gap-4">
             {/* Row 1 */}
             <div className="flex justify-between items-baseline border-b border-white/10 pb-4">
-              <h1 className="font-serif text-[6vw] md:text-[80px] lg:text-[110px] leading-none tracking-tight">
+              <h1 className="font-serif text-4xl md:text-[48px] lg:text-[54px] leading-none tracking-tight">
                 CRAFTING
               </h1>
-              <h1 className="font-serif text-[6vw] md:text-[80px] lg:text-[110px] leading-none tracking-tight">
+              <h1 className="font-serif text-4xl md:text-[48px] lg:text-[54px] leading-none tracking-tight">
                 THE BEAUTY,
               </h1>
             </div>
 
             {/* Row 2 */}
             <div className="mt-2">
-              <h1 className="font-serif text-[6vw] md:text-[80px] lg:text-[110px] leading-none tracking-tight">
+              <h1 className="font-serif text-4xl md:text-[48px] lg:text-[54px] leading-none tracking-tight">
                 THE DEPTH OF
               </h1>
             </div>
 
             {/* Row 3 & 4 (Shifted Right) */}
             <div className="flex flex-col items-end mt-4 md:mt-8">
-              <h1 className="font-serif text-[6vw] md:text-[80px] lg:text-[110px] leading-none tracking-tight text-[#E8927D]">
+              <h1 className="font-serif text-4xl md:text-[48px] lg:text-[54px] leading-none tracking-tight text-[#E8927D]">
                 EXPERTISE.
               </h1>
               <div className="h-[1px] w-1/3 bg-white/20 mt-4 self-end" />

@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../../components/layout/Header';
+import Navbar from '../../components/layout/Navbar';
 import ReviewsArchive from '../../components/sections/ReviewsArchive';
-
 import FooterCTA from '../../components/sections/FooterCTA';
+import Footer from '../../components/layout/Footer';
 
 export const metadata = {
   title: 'Reviews | KBEAUTYCHANNEL',
@@ -12,9 +12,7 @@ export default function ReviewsPage() {
   return (
     <main className="min-h-screen bg-[#f8f7f4]">
       {/* Header Container */}
-      <div className="fixed top-0 left-0 w-full z-50 px-[5%] py-6 md:py-10">
-        <Header isDarkBackground={false} />
-      </div>
+      <Navbar isDarkBackground={false} />
 
       {/* Content Sections */}
       <div className="pt-24 md:pt-32">
@@ -26,6 +24,7 @@ export default function ReviewsPage() {
           <FooterCTA />
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
