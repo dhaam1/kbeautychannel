@@ -56,7 +56,7 @@ export default function BlogPage() {
   return (
     <div className="w-full flex flex-col min-h-screen bg-[#FDFDFD] font-sans">
       {/* Header Area */}
-      <div className="w-full px-[5%] py-6 md:py-8 bg-white border-b border-gray-100 sticky top-0 z-40">
+      <div className="w-full px-[5%] py-6 md:py-8 sticky top-0 z-40">
         <Header />
       </div>
 

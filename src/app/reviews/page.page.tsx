@@ -12,7 +12,7 @@ export default function ReviewsPage() {
   return (
     <main className="min-h-screen bg-[#f8f7f4]">
       {/* Header Container */}
-      <div className="fixed top-0 left-0 w-full z-50 px-[5%] py-6 md:py-10 bg-[#f8f7f4]/80 backdrop-blur-md">
+      <div className="fixed top-0 left-0 w-full z-50 px-[5%] py-6 md:py-10">
         <Header isDarkBackground={false} />
       </div>
 
