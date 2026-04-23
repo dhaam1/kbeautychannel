@@ -94,14 +94,9 @@ export default function YoutubeAuthority() {
 
       {/* ── RIGHT: YouTube Video ─────────────────────────────────── */}
       <div className="relative w-full md:w-[42%] h-[55vh] md:h-auto flex-shrink-0 overflow-hidden bg-[#0A0A0A]">
-        {/* Fixed black overlay to ensure no gaps */}
-        <div className="absolute inset-0 bg-black/40 z-[4] pointer-events-none" />
-
-        <motion.div 
-          className="absolute -inset-y-[15%] inset-x-0" 
-          style={{ y: videoY }}
-        >
-          <div className="absolute inset-[-20%] w-[140%] h-[140%]">
+        {/* Left-edge blend into bg */}
+        <motion.div className="absolute inset-x-0 top-[-15%] bottom-[-15%] h-[130%]" style={{ y: videoY }}>
+          <div className="absolute inset-0 w-full h-full">
             <iframe
               src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&showinfo=0&rel=0&enablejsapi=1&modestbranding=1&iv_load_policy=3&disablekb=1&fs=0&autohide=1&start=90&playsinline=1`}
               title="Doctor Video"
@@ -113,13 +108,15 @@ export default function YoutubeAuthority() {
                 left: '50%',
                 width: '100%',
                 height: '56.25%',
-                minHeight: '100%',
-                minWidth: '177.78%',
-                transform: 'translate(-50%, -50%)',
+                minHeight: '120%',
+                minWidth: '210%',
+                transform: 'translate(-50%, -50%) scale(1.1)',
               }}
             />
           </div>
         </motion.div>
+        {/* Dark overlay fixed to container to prevent parallax gaps and block interactions */}
+        <div className="absolute inset-0 bg-black/80 z-20" />
       </div>
     </section>
   );
