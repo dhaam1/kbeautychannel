@@ -67,19 +67,27 @@ export default function ProfessionalProfile() {
     offset: ['start start', 'end end'],
   });
 
-  // 스크롤 반응성 강화: stiffness를 높여 즉각적인 반응 유도
+  // 스크롤 반응성 극대화 (stiffness를 높이고 damping을 조절하여 윈도우 스크롤에 즉각 반응)
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 85,
-    damping: 35,
-    restDelta: 0.0001
+    stiffness: 120,
+    damping: 25,
+    restDelta: 0.001
   });
 
   return (
     <section 
       ref={containerRef} 
       className="relative w-full bg-[#0a0a0a]"
-      style={{ height: '400vh' }} // 800vh -> 400vh로 압축 (한 번의 스크롤로 전환 유도)
+      style={{ height: '550vh' }} // 500vh -> 550vh로 확장하여 마지막 카드 여유 공간 확보
     >
+      {/* Scroll Snap points for each card expansion */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="snap-point absolute top-0" />
+        <div className="snap-point absolute top-[16%]" /> {/* Card 1: 미스코리아 */}
+        <div className="snap-point absolute top-[47%]" /> {/* Card 2: KEY 닥터 */}
+        <div className="snap-point absolute top-[78%]" /> {/* Card 3: 서울대 전공의 (조금 더 위로 조정하여 안정감 확보) */}
+      </div>
+
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col lg:flex-row bg-[#050505]">
         <SectionLabel number="03" title="PROFESSIONAL PROFILE" dark />
 
@@ -105,10 +113,10 @@ interface ExpandingCardProps {
 }
 
 const ExpandingCard: React.FC<ExpandingCardProps> = ({ data, index, progress }) => {
-  // 스크롤 리듬 최적화 (압축된 높이에 맞춰 즉각적인 반응)
+  // 스크롤 리듬 최적화 (550vh 기준, 마지막 카드가 끝까지 유지되도록 범위 조정)
   const width = useTransform(
     progress,
-    [0, 0.05, 0.1, 0.35, 0.4, 0.65, 0.7, 0.95, 1.0],
+    [0, 0.05, 0.1, 0.3, 0.35, 0.6, 0.65, 0.9, 1.0],
     index === 0
       ? ['33.333%', '33.333%', '100%', '100%', '0%', '0%', '0%', '0%', '0%']
       : index === 1

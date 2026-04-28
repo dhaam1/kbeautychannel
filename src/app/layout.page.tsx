@@ -60,6 +60,8 @@ const jsonLd = {
   },
 };
 
+import SnapController from '../components/layout/SnapController';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
@@ -69,7 +71,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <SnapController />
+        {children}
+      </body>
     </html>
   );
 }

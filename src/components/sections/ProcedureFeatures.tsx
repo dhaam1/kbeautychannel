@@ -18,27 +18,26 @@ const FeatureCard = ({ number, title, description, icon }: FeatureCardProps) => 
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white/90 backdrop-blur-xl border border-gray-100 rounded-[40px] p-8 md:p-12 flex flex-col min-h-[420px] shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_32px_64px_rgba(0,0,0,0.08)] transition-all duration-700 group"
+      className="relative overflow-hidden bg-white/90 backdrop-blur-xl border border-gray-100 rounded-[40px] p-8 md:p-12 flex flex-col min-h-[420px] shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_32px_64px_rgba(0,0,0,0.08)] transition-all duration-700 group"
     >
-      <div className="flex justify-between items-start w-full">
+      {/* Subtle Background Image */}
+      <div className="absolute top-1/2 -right-12 -translate-y-1/2 w-64 h-64 md:w-96 md:h-96 pointer-events-none opacity-30 mix-blend-multiply group-hover:scale-110 group-hover:rotate-6 transition-transform duration-1000 ease-out z-0">
+        <img 
+          src={icon} 
+          alt={title} 
+          className="w-full h-full object-contain" 
+        />
+      </div>
+
+      <div className="relative z-10 flex justify-between items-start w-full">
         <div className="flex flex-col gap-3">
-          <span className="text-3xl md:text-4xl font-sans font-bold tracking-tighter text-gray-900 leading-none">
-            ({number})
-          </span>
           <h3 className="text-3xl md:text-[48px] font-sans font-bold tracking-tighter text-gray-900 leading-[0.9] uppercase max-w-[150px] md:max-w-[250px]">
             {title}
           </h3>
         </div>
-        <div className="w-24 h-24 md:w-36 md:h-36 -mt-4 -mr-4">
-          <img 
-            src={icon} 
-            alt={title} 
-            className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 group-hover:rotate-6 transition-transform duration-700 ease-out" 
-          />
-        </div>
       </div>
       
-      <div className="mt-auto pt-8 flex flex-col gap-8">
+      <div className="relative z-10 mt-auto pt-8 flex flex-col gap-8">
         <p className="text-[16px] text-gray-500 font-pretendard leading-relaxed max-w-sm whitespace-pre-line text-pretty">
           {description}
         </p>

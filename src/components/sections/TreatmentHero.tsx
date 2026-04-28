@@ -101,7 +101,7 @@ export default function TreatmentHero({
               
               <div className={`w-full flex flex-col ${isSplitLayout ? 'md:flex-row md:justify-between md:items-end gap-10' : 'items-start gap-6'}`}>
                 {title && (
-                  <h1 className={`${titleSize || 'text-[42px] md:text-[72px]'} font-sans font-bold tracking-tighter leading-[1.1] uppercase whitespace-pre-line text-pretty ${isSplitLayout ? 'md:text-left flex-1' : ''}`}>
+                  <h1 className={`${titleSize || 'text-[42px] md:text-[54px]'} font-sans font-bold tracking-tighter leading-[1.1] uppercase whitespace-pre-line text-pretty ${isSplitLayout ? 'md:text-left flex-1' : ''}`}>
                     {title} {titleItalic && <span className={`${isDarkText ? 'text-gray-300' : 'text-white/30'} font-normal`}>{titleItalic}</span>}
                   </h1>
                 )}

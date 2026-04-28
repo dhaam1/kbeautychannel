@@ -16,13 +16,8 @@ export default function ReviewsPage() {
 
       {/* Content Sections */}
       <div className="pt-24 md:pt-32">
-        <div className="snap-section">
-          <ReviewsArchive />
-        </div>
-
-        <div className="snap-section">
-          <FooterCTA />
-        </div>
+        <ReviewsArchive />
+        <FooterCTA />
       </div>
       <Footer />
     </main>

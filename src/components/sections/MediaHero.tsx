@@ -34,7 +34,7 @@ export default function MediaHero() {
                 <span className="text-[16px] md:text-[18px] tracking-[0.4em] text-white font-bold uppercase">Archive Media</span>
               </div>
               
-              <h1 className="font-pretendard text-4xl md:text-[56px] lg:text-[68px] font-bold leading-[1.1] tracking-tighter text-white">
+              <h1 className="font-pretendard text-4xl md:text-[54px] font-bold leading-[1.1] tracking-tighter text-white">
                 공신력있는 미디어들도<br />
                 <span className="text-white">김연진 원장에게 주목합니다.</span>
               </h1>
