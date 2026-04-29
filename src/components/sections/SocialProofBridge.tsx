@@ -88,7 +88,7 @@ export default function SocialProofBridge() {
 
           {/* Cumulative Counter */}
           <div className="flex flex-col mb-12 relative">
-            <h2 className="text-[48px] md:text-[48px] font-serif text-white leading-none tracking-tighter">
+            <h2 className="text-[64px] md:text-[100px] font-serif text-white leading-none tracking-tighter">
               <Counter value={TOTAL_VALUE} duration={2.5} />
             </h2>
             <span className="absolute -bottom-6 left-1 text-[16px] text-white/60 font-pretendard uppercase tracking-[0.2em] opacity-70">

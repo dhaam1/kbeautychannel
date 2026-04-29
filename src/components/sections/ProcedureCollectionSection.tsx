@@ -95,7 +95,6 @@ export default function ProcedureCollectionSection({
                   {[
                     { label: 'AREA', value: current.recommendedArea },
                     { label: 'DURATION', value: current.duration },
-                    { label: 'ANESTHESIA', value: current.anesthesia },
                     { label: 'DOWNTIME', value: current.downtime }
                   ].map((spec) => (
                     <div key={spec.label} className="flex flex-col gap-2">

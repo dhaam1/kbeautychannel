@@ -19,7 +19,7 @@ export default function SkinBoosterHero() {
         <h1 className="font-sans text-[40px] font-bold text-gray-900 leading-tight tracking-tight">
           더 가까이서 봐봐.<br />격차를 보여줄테니.
         </h1>
-        <div className="mt-8 bg-white/50 backdrop-blur-sm px-6 py-3 rounded-full border border-gray-200 flex items-center gap-4 shadow-sm w-fit">
+        <div className="mt-8 bg-white/50 backdrop-blur-sm px-6 py-3 rounded-full border border-gray-200 flex items-center gap-4 shadow-sm w-fit" style={{ display: 'none' }}>
           <input
             type="text"
             placeholder="4월. 오버레이 프로모션 살펴보기"

@@ -47,9 +47,14 @@ export default function Header({ isDarkBackground = false }: HeaderProps) {
           <Link href="/reviews" className="hover:opacity-70 transition-opacity">후기</Link>
           <Link href="/column" className="hover:opacity-70 transition-opacity">DR.KIM 칼럼</Link>
         </nav>
-        <button className={`px-5 py-2 rounded-full border text-[16px] font-semibold transition-colors ${buttonStyle}`}>
+        <a 
+          href="https://line.me/R/ti/p/@875eebes"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`px-5 py-2 rounded-full border text-[16px] font-semibold transition-colors ${buttonStyle}`}
+        >
           시술 예약
-        </button>
+        </a>
       </div>
     </header>
   );

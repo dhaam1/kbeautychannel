@@ -97,7 +97,7 @@ export default function FooterCTA() {
 
             <div className="mt-auto flex items-end justify-between">
               <motion.a 
-                href="https://line.me/R/ti/p/@kbeauty_clinic" 
+                href="https://line.me/R/ti/p/@875eebes" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(6, 199, 85, 0.4)' }}
