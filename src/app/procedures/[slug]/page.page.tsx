@@ -68,7 +68,9 @@ export default async function ProcedurePage({ params }: Props) {
 }
 
 export async function generateStaticParams() {
-  return Object.keys(PROCEDURES).map((slug) => ({
-    slug: slug,
-  }));
+  return Object.keys(PROCEDURES)
+    .filter((slug) => slug !== 'skin-booster')
+    .map((slug) => ({
+      slug: slug,
+    }));
 }
