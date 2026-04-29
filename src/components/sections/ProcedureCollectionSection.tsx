@@ -44,7 +44,7 @@ export default function ProcedureCollectionSection({
                   key={f.title}
                   onClick={() => handleSelect(idx)}
                   className={`whitespace-nowrap text-[14px] font-bold tracking-tight transition-all duration-300 ${
-                    selectedIdx === idx ? 'text-black' : 'text-gray-300 hover:text-gray-500'
+                    selectedIdx === idx ? 'text-black' : 'text-gray-500 hover:text-black'
                   }`}
                 >
                   {f.title}
@@ -82,7 +82,7 @@ export default function ProcedureCollectionSection({
                   <p className="text-[14px] font-bold text-gray-300 uppercase tracking-widest mb-12">{current.enTitle || current.title}</p>
                   
                   <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed font-medium mb-12 break-keep">
-                    {current.description}. 피부 표면의 손상 없이 깊은 층까지 에너지를 전달하여 탄력적인 피부를 기대할 수 있는 프리미엄 솔루션입니다.
+                    {current.description}
                   </p>
 
                   <button className="px-8 py-3 border border-gray-200 rounded-lg text-[14px] font-bold text-gray-500 hover:bg-gray-50 transition-all mb-20">
@@ -207,30 +207,125 @@ export default function ProcedureCollectionSection({
 }
 
 /* -------------------------------------------------------------------------- */
-/* Effects Style A: Spotlight Focus (Scroll-based)                            */
+/* Effects Style A: Sticky Scrollytelling (Cinematic Fade-up)                 */
 /* -------------------------------------------------------------------------- */
 function EffectsStyleA({ effects }: { effects?: string[] }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  });
+
+  const total = effects?.length || 1;
+  const containerHeight = `${total * 100}vh`;
+
   return (
-    <section className="relative z-10 bg-black py-60 px-[5%]">
-      <div className="max-w-[1400px] mx-auto">
-        <h3 className="text-[12px] font-bold tracking-[0.8em] text-white/30 uppercase mb-24 text-center">Treatment Excellence</h3>
-        <div className="flex flex-col gap-32">
+    <section ref={containerRef} className="relative z-10 bg-black" style={{ height: containerHeight }}>
+      <div className="sticky top-0 w-full h-screen overflow-hidden">
+        
+        {/* Animated Background */}
+        <SineWaveBackground scrollYProgress={scrollYProgress} />
+
+        <div className="absolute top-24 left-0 w-full z-20 px-[5%]">
+          <h3 className="text-[12px] font-bold tracking-[0.8em] text-white/30 uppercase text-center">Treatment Excellence</h3>
+        </div>
+
+        <div className="relative z-10 flex items-center justify-center w-full h-full max-w-[1400px] mx-auto">
           {effects?.map((e, i) => (
-            <motion.div 
-              key={i}
-              initial={{ opacity: 0.1, scale: 0.95, filter: 'blur(10px)' }}
-              whileInView={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
-              viewport={{ margin: "-20%" }}
-              transition={{ duration: 1 }}
-              className="flex flex-col items-center text-center"
-            >
-              <span className="text-[120px] md:text-[180px] font-sans font-extrabold leading-none text-white/5 mb-[-60px] md:mb-[-100px]">{i + 1}</span>
-              <p className="text-[32px] md:text-[48px] font-sans font-bold text-white uppercase tracking-tighter relative z-10">{e}</p>
-            </motion.div>
+            <EffectItem 
+              key={i} 
+              e={e} 
+              i={i} 
+              total={total} 
+              scrollYProgress={scrollYProgress} 
+            />
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function EffectItem({ 
+  e, i, total, scrollYProgress 
+}: { 
+  e: string, i: number, total: number, scrollYProgress: any
+}) {
+  const start = (i - 0.5) / total;
+  const peakStart = i / total;
+  const peakEnd = (i + 0.5) / total;
+  const end = i === total - 1 ? 2 : (i + 1) / total;
+
+  // 배열 방식이 아닌 함수 방식으로 매핑하여 브라우저 WAAPI의 Offset 범위(0~1) 에러를 원천 차단합니다.
+  const y1 = useTransform(scrollYProgress, (v: number) => {
+    if (v <= start) return 200;
+    if (v >= end) return -200;
+    if (v >= peakStart && v <= peakEnd) return 0;
+    if (v < peakStart) {
+      return 200 * (1 - (v - start) / (peakStart - start));
+    }
+    return -200 * ((v - peakEnd) / (end - peakEnd));
+  });
+
+  const opacity = useTransform(scrollYProgress, (v: number) => {
+    if (v <= start || v >= end) return 0;
+    if (v >= peakStart && v <= peakEnd) return 1;
+    if (v < peakStart) return (v - start) / (peakStart - start);
+    return 1 - ((v - peakEnd) / (end - peakEnd));
+  });
+
+  return (
+    <motion.div 
+      className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none px-[5%]"
+      style={{ opacity, zIndex: total - i }}
+    >
+      <motion.div style={{ y: y1 }} className="flex flex-col items-center text-center w-full">
+         <span className="text-[120px] md:text-[180px] font-sans font-extrabold leading-none text-white/5 mb-[-60px] md:mb-[-100px]">{i + 1}</span>
+         <p className="text-[32px] md:text-[48px] font-sans font-bold text-white uppercase tracking-tighter relative z-10 break-keep">{e}</p>
+      </motion.div>
+    </motion.div>
+  );
+}
+
+function SineWaveBackground({ scrollYProgress }: { scrollYProgress: any }) {
+  // 스크롤이 진행됨에 따라 배경 색상(Hue)과 크기가 유동적으로 변환됨
+  const filter = useTransform(scrollYProgress, (v: number) => `hue-rotate(${v * 240}deg)`);
+  const scale = useTransform(scrollYProgress, (v: number) => {
+    if (v < 0.5) return 1 + (v / 0.5) * 0.3;
+    return 1.3 - ((v - 0.5) / 0.5) * 0.3;
+  });
+
+  return (
+    <motion.div 
+      className="absolute inset-0 overflow-hidden opacity-40 pointer-events-none flex items-center justify-center z-0"
+      style={{ filter, scale }}
+    >
+      <svg className="w-full h-full min-w-[800px]" viewBox="0 0 100 100" preserveAspectRatio="none">
+        {Array.from({ length: 6 }).map((_, i) => (
+          <motion.path
+            key={i}
+            d={`M 0,50 Q 25,${30 + i * 8} 50,50 T 100,50`}
+            stroke={`rgba(${120 + i*15}, ${160 + i*10}, 255, 0.4)`}
+            strokeWidth="0.1"
+            fill="transparent"
+            animate={{
+              d: [
+                `M 0,50 Q 25,${30 + i * 8} 50,50 T 100,50`,
+                `M 0,50 Q 25,${70 - i * 8} 50,50 T 100,50`,
+                `M 0,50 Q 25,${30 + i * 8} 50,50 T 100,50`
+              ]
+            }}
+            transition={{ 
+              duration: 10 + i * 2, 
+              repeat: Infinity, 
+              ease: "easeInOut",
+              delay: i * 0.5 
+            }}
+          />
+        ))}
+      </svg>
+    </motion.div>
   );
 }
 
