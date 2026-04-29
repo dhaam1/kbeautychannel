@@ -142,7 +142,7 @@ export default function ProcedureCollectionSection({
                     transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                     className="text-[40px] md:text-[48px] font-bold text-white leading-[1.2] mb-8 break-keep"
                   >
-                    이런 분들께서<br/>많이들 찾으십니다.
+                    이런 분들께서<br/>다들 만족하십니다.
                   </motion.h3>
                   <motion.p 
                     initial={{ y: 20, opacity: 0 }}

@@ -2,15 +2,18 @@
 
 import React, { useRef } from 'react';
 import { useInView } from 'framer-motion';
-import Hero from '../components/sections/Hero';
-import YoutubeAuthority from '../components/sections/YoutubeAuthority';
-import ProfessionalProfile from '../components/sections/ProfessionalProfile';
-import SocialProofBridge from '../components/sections/SocialProofBridge';
-import YoutubeEmbed from '../components/sections/YoutubeEmbed';
-import ColumnSection from '../components/sections/ColumnSection';
-import FooterCTA from '../components/sections/FooterCTA';
-import Footer from '../components/layout/Footer';
+import dynamic from 'next/dynamic';
 
+import Hero from '../components/sections/Hero';
+
+// 뷰포트 아래에 있는 무거운 섹션들을 동적으로 로딩하여 초기 번들 사이즈와 메인 스레드 부담을 줄입니다.
+const YoutubeAuthority = dynamic(() => import('../components/sections/YoutubeAuthority'), { ssr: true });
+const ProfessionalProfile = dynamic(() => import('../components/sections/ProfessionalProfile'), { ssr: true });
+const SocialProofBridge = dynamic(() => import('../components/sections/SocialProofBridge'), { ssr: true });
+const YoutubeEmbed = dynamic(() => import('../components/sections/YoutubeEmbed'), { ssr: true });
+const ColumnSection = dynamic(() => import('../components/sections/ColumnSection'), { ssr: true });
+const FooterCTA = dynamic(() => import('../components/sections/FooterCTA'), { ssr: true });
+const Footer = dynamic(() => import('../components/layout/Footer'), { ssr: true });
 
  export default function Home() {
    const profileRef = useRef<HTMLDivElement>(null);
