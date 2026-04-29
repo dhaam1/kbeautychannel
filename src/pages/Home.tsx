@@ -17,7 +17,7 @@ import Footer from '../components/layout/Footer';
 
    return (
      <div className="w-full snap-container font-sans text-gray-900">
-       <div className="snap-section">
+       <div className="snap-section relative z-50">
          <Hero />
        </div>
        <div className="snap-section relative z-10 bg-white">

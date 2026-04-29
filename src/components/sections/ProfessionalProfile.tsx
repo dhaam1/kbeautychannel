@@ -67,10 +67,10 @@ export default function ProfessionalProfile() {
     offset: ['start start', 'end end'],
   });
 
-  // 스크롤 반응성 극대화 (stiffness를 높이고 damping을 조절하여 윈도우 스크롤에 즉각 반응)
+  // 스크롤이 부드럽게 전환되도록 stiffness를 낮추고 damping을 조절
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 120,
-    damping: 25,
+    stiffness: 40,
+    damping: 20,
     restDelta: 0.001
   });
 
