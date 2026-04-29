@@ -103,7 +103,7 @@ export default function ReviewsArchive() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-sans text-[48px] md:text-[54px] font-bold text-gray-900 leading-[1.1] tracking-tighter"
+            className="font-sans text-[48px] md:text-[48px] font-bold text-gray-900 leading-[1.1] tracking-tighter"
           >
             결과로 증명하는,<br />
             진심이 담긴 후기들.

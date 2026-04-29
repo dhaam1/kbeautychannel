@@ -5,6 +5,7 @@ export interface Feature {
   icon: string;
   targets?: string[];
   effects?: string[];
+  image?: string;
   qna?: { q: string; a: string }[];
   // 시술 상세 정보
   recommendedArea?: string; // 추천부위
@@ -12,6 +13,7 @@ export interface Feature {
   downtime?: string;        // 다운타임
   anesthesia?: string;      // 마취
   maintenance?: string;     // 유지기간
+  enTitle?: string;         // 영문 이름
 }
 
 export interface ProcedureData {
@@ -46,13 +48,15 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '01',
         title: '써마지FLX',
-        description: '강력한 고주파 에너지를 통해 피부 본연의 탄력을 깨우는 하이엔드 리프팅.',
+        enTitle: 'Thermage FLX',
+        description: '단극성 고주파(RF)로 진피 깊은 층을 가열해 새 콜라겐이 형성되며 쳐짐과 잔주름을 개선시키는 리프팅입니다. AccuREP 기술로 매 샷마다 피부 저항을 읽고 커스터마이징해 조사합니다.',
         icon: '/images/thermage_flx_premium.png',
+        image: '/images/lifting_texture.png',
         recommendedArea: '얼굴 전체, 눈가, 목',
-        duration: '40분 - 60분',
-        downtime: '즉시 일상생활 가능',
-        anesthesia: '연고 마취 (필요 시)',
-        maintenance: '1년 - 1년 6개월',
+        duration: '50분',
+        downtime: '시술 직후 일상생활 가능',
+        anesthesia: '꼼꼼한 연고 마취',
+        maintenance: '10~12개월',
         targets: [
           '피부 탄력 저하로 고민이신 분', 
           '잔주름 및 피부 결 개선을 원하시는 분', 
@@ -70,8 +74,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '02',
         title: '올리지오X',
+        enTitle: 'Oligio X',
         description: '한국인 피부 타입에 최적화된 고주파 에너지로 완성하는 정교한 타이트닝.',
         icon: '/images/thermage_icon_2.png',
+        image: '/images/lifting_texture.png',
         recommendedArea: '얼굴 전체, 볼, 눈가',
         duration: '30분 - 40분',
         downtime: '즉시 일상생활 가능',
@@ -94,8 +100,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '03',
         title: '소프웨이브',
+        enTitle: 'Sofwave',
         description: '차세대 초음파 기술로 피부 표면 손상 없이 깊은 층까지 탄력을 전달.',
         icon: '/images/thermage_icon_3.png',
+        image: '/images/lifting_texture.png',
         recommendedArea: '눈가, 입가, 목 주름',
         duration: '30분 - 45분',
         downtime: '즉시 일상생활 가능',
@@ -118,8 +126,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '04',
         title: '울쎄라피 프라임',
+        enTitle: 'Ultherapy Prime',
         description: '초음파 영상으로 피부 층을 직접 보며 시술하는 프리미엄 커스텀 리프팅.',
         icon: '/images/thermage_icon_4.png',
+        image: '/images/lifting_texture.png',
         recommendedArea: '얼굴 하안부, 턱선, 이중턱, 목',
         duration: '60분 내외',
         downtime: '즉시 일상생활 가능 (미세 붓기 가능)',
@@ -142,8 +152,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '05',
         title: '슈링크유니버스',
+        enTitle: 'Shurink Universe',
         description: '더욱 빨라진 속도와 정교해진 모드로 완성하는 V라인 실루엣.',
         icon: '/images/thermage_icon_5.png',
+        image: '/images/lifting_texture.png',
         recommendedArea: 'V라인, 팔자주름, 눈가',
         duration: '15분 - 20분',
         downtime: '즉시 일상생활 가능',
@@ -166,8 +178,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '06',
         title: '리니어지',
+        enTitle: 'Linear Z',
         description: '선 타입 초음파 에너지를 통해 빈틈없이 촘촘하게 채워주는 탄력 케어.',
         icon: '/images/thermage_icon_2.png',
+        image: '/images/lifting_texture.png',
         recommendedArea: '볼, 턱선, 광대',
         duration: '10분 - 15분',
         downtime: '즉시 일상생활 가능',
@@ -190,8 +204,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '07',
         title: '브이로',
+        enTitle: 'V-RO',
         description: '고주파와 초음파의 결합으로 복합적인 피부 고민을 한 번에 해결하는 듀얼 시술.',
         icon: '/images/thermage_icon_3.png',
+        image: '/images/lifting_texture.png',
         recommendedArea: '얼굴 전체, 목',
         duration: '30분 내외',
         downtime: '즉시 일상생활 가능',
@@ -214,8 +230,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '08',
         title: '티타늄',
+        enTitle: 'Titanium',
         description: '세 가지 파장을 동시에 조사하여 리프팅, 타이트닝, 브라이트닝을 동시에.',
         icon: '/images/thermage_icon_4.png',
+        image: '/images/lifting_texture.png',
         recommendedArea: '얼굴 전체, 턱선',
         duration: '20분 - 30분',
         downtime: '즉시 일상생활 가능',
@@ -238,8 +256,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '09',
         title: '온다',
+        enTitle: 'Onda',
         description: '극초음파(Microwave) 에너지를 이용해 통증은 줄이고 효과는 극대화한 신개념 리프팅.',
         icon: '/images/thermage_icon_1.png',
+        image: '/images/lifting_texture.png',
         recommendedArea: '이중턱, 심부볼, 하안면',
         duration: '15분 - 20분',
         downtime: '즉시 일상생활 가능',
@@ -277,8 +297,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '01',
         title: '쥬베룩',
+        enTitle: 'Juvelook',
         description: '자가 콜라겐 생성을 유도하여 자연스러운 볼륨과 결 개선을 동시에.',
         icon: '/images/thermage_icon_1.png',
+        image: '/images/booster_texture.png',
         recommendedArea: '얼굴 전체, 흉터 부위',
         duration: '20분 - 30분',
         downtime: '1-2일 (엠보 현상 가능)',
@@ -301,8 +323,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '02',
         title: '리쥬란 힐러',
+        enTitle: 'Rejuran Healer',
         description: '연어 주사로 알려진 PN 성분으로 피부 속 환경을 근본적으로 개선.',
         icon: '/images/thermage_icon_2.png',
+        image: '/images/booster_texture.png',
         recommendedArea: '얼굴 전체, 눈가',
         duration: '15분 - 20분',
         downtime: '2-3일 (엠보 현상)',
@@ -325,8 +349,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '03',
         title: '엑소좀',
+        enTitle: 'Exosome',
         description: '줄기세포 유래 성분으로 강력한 피부 재생과 염증 완화 효과.',
         icon: '/images/thermage_icon_3.png',
+        image: '/images/booster_texture.png',
         recommendedArea: '얼굴 전체, 여드름 부위',
         duration: '15분 - 20분',
         downtime: '당일 수시간 내 진정',
@@ -364,8 +390,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '01',
         title: '디자인 필러',
+        enTitle: 'Design Filler',
         description: '부족한 볼륨을 채워 입체감 있고 생기 넘치는 얼굴 라인을 완성합니다.',
         icon: '/images/thermage_icon_3.png',
+        image: '/images/petit_texture.png',
         recommendedArea: '이마, 코, 볼, 턱끝, 입술',
         duration: '15분 - 30분',
         downtime: '즉시 일상생활 가능 (멍/부기 가능)',
@@ -388,8 +416,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '02',
         title: 'V라인 보톡스',
+        enTitle: 'V-line Botox',
         description: '불필요한 근육의 움직임을 조절하여 매끄러운 페이스 라인을 만듭니다.',
         icon: '/images/thermage_icon_4.png',
+        image: '/images/petit_texture.png',
         recommendedArea: '사각턱',
         duration: '5분 내외',
         downtime: '즉시 일상생활 가능',
@@ -412,8 +442,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '03',
         title: '윤곽주사',
+        enTitle: 'Contouring Injection',
         description: '불필요한 지방을 분해하여 더욱 슬림한 얼굴 라인을 완성.',
         icon: '/images/thermage_icon_5.png',
+        image: '/images/petit_texture.png',
         recommendedArea: '이중턱, 심부볼, 광대살',
         duration: '10분 내외',
         downtime: '수 시간 내 붓기 감소',
@@ -451,8 +483,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '01',
         title: '피코 토닝',
+        enTitle: 'Pico Toning',
         description: 'Pico초 단위 레이저로 색소 입자를 정교하게 파괴하는 화이트닝 솔루션.',
         icon: '/images/thermage_icon_1.png',
+        image: '/images/laser_texture.png',
         recommendedArea: '얼굴 전체',
         duration: '10분 - 15분',
         downtime: '즉시 일상생활 가능',
@@ -475,8 +509,10 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '02',
         title: '엑셀V',
+        enTitle: 'Excel V',
         description: '세 가지 모드의 파장을 활용해 혈관, 색소, 탄력을 동시에 관리하는 복합 레이저.',
         icon: '/images/thermage_icon_2.png',
+        image: '/images/laser_texture.png',
         recommendedArea: '홍조 부위, 기미/잡티',
         duration: '15분 - 20분',
         downtime: '즉시 일상생활 가능',
@@ -514,6 +550,7 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '01',
         title: '트리플 바디',
+        enTitle: 'Triple Body',
         description: '저준위 레이저, 고주파, 중저주파의 복합 작용으로 체지방 분해와 탄력을 동시에.',
         icon: '/images/thermage_icon_3.png',
         recommendedArea: '복부, 허벅지, 팔뚝, 러브핸들',
@@ -553,6 +590,7 @@ export const PROCEDURES: Record<string, ProcedureData> = {
       {
         number: '01',
         title: 'LDM 수분 관리',
+        enTitle: 'LDM Water Care',
         description: '고밀도 초음파로 피부 속 수분 균형을 잡고 재생력을 높이는 프리미엄 관리.',
         icon: '/images/thermage_icon_1.png',
         recommendedArea: '얼굴 전체',

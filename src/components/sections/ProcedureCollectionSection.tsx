@@ -9,12 +9,14 @@ interface ProcedureCollectionSectionProps {
   features: Feature[];
   sectionNumber?: string;
   sectionTitle?: string;
+  targetBgImage?: string;
 }
 
 export default function ProcedureCollectionSection({
   features,
   sectionNumber = "02",
-  sectionTitle = "COLLECTION"
+  sectionTitle = "COLLECTION",
+  targetBgImage = "/images/uhcell-01.png"
 }: ProcedureCollectionSectionProps) {
   const [selectedIdx, setSelectedIdx] = useState(0);
   const current = features[selectedIdx];
@@ -77,7 +79,7 @@ export default function ProcedureCollectionSection({
                   transition={{ duration: 0.8 }}
                 >
                   <h3 className="text-[32px] md:text-[48px] font-bold text-black mb-2">{current.title}</h3>
-                  <p className="text-[14px] font-bold text-gray-300 uppercase tracking-widest mb-12">{current.title} on demand</p>
+                  <p className="text-[14px] font-bold text-gray-300 uppercase tracking-widest mb-12">{current.enTitle || current.title}</p>
                   
                   <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed font-medium mb-12 break-keep">
                     {current.description}. 피부 표면의 손상 없이 깊은 층까지 에너지를 전달하여 탄력적인 피부를 기대할 수 있는 프리미엄 솔루션입니다.
@@ -108,13 +110,13 @@ export default function ProcedureCollectionSection({
             {/* Right Illustration Column */}
             <div className="md:w-1/2 bg-gray-50 flex items-center justify-center overflow-hidden">
               <motion.img 
-                key={current.icon}
+                key={current.title}
                 initial={{ scale: 1.1, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-                src="/skin_treatment_effect_illustration_1777450748011.png" 
+                src={current.image || '/images/lifting_texture.png'} 
                 className="w-full h-full object-cover"
-                alt="Treatment Effect"
+                alt={`${current.title} Treatment Effect`}
               />
             </div>
           </section>
@@ -124,7 +126,7 @@ export default function ProcedureCollectionSection({
             {/* Background Image with Cinematic Overlay */}
             <div className="absolute inset-0 z-0">
               <img 
-                src="/luxury_medical_beauty_bg_1777450068800.png" 
+                src={targetBgImage} 
                 className="w-full h-full object-cover"
                 alt="Luxury Medical Background"
               />
@@ -139,7 +141,7 @@ export default function ProcedureCollectionSection({
                     initial={{ y: 30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-[40px] md:text-[64px] font-bold text-white leading-[1.2] mb-8 break-keep"
+                    className="text-[40px] md:text-[48px] font-bold text-white leading-[1.2] mb-8 break-keep"
                   >
                     이런 분들께서<br/>많이들 찾으십니다.
                   </motion.h3>
@@ -223,7 +225,7 @@ function EffectsStyleA({ effects }: { effects?: string[] }) {
               className="flex flex-col items-center text-center"
             >
               <span className="text-[120px] md:text-[180px] font-sans font-extrabold leading-none text-white/5 mb-[-60px] md:mb-[-100px]">{i + 1}</span>
-              <p className="text-[32px] md:text-[64px] font-sans font-bold text-white uppercase tracking-tighter relative z-10">{e}</p>
+              <p className="text-[32px] md:text-[48px] font-sans font-bold text-white uppercase tracking-tighter relative z-10">{e}</p>
             </motion.div>
           ))}
         </div>

@@ -17,3 +17,5 @@
 
 
 # 
+# ui_design_rules
+- **Maximum Font Size**: 사용자가 직접적으로 특정 폰트 크기를 요구하지 않는 이상, 프로젝트 내 모든 페이지 및 컴포넌트의 최대 폰트 크기는 **48px (`text-5xl` 또는 `text-[48px]`)**로 제한합니다. (예: `text-6xl`, `text-[54px]` 이상 금지)

@@ -64,7 +64,7 @@ export default function ProcedureDetailIntro({ feature }: ProcedureDetailIntroPr
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="text-[42px] md:text-[80px] font-sans font-bold tracking-tighter uppercase mb-6 leading-none text-gray-900"
+                className="text-[42px] md:text-[48px] font-sans font-bold tracking-tighter uppercase mb-6 leading-none text-gray-900"
               >
                 {feature.title}
               </motion.h3>
@@ -127,7 +127,7 @@ export default function ProcedureDetailIntro({ feature }: ProcedureDetailIntroPr
                   transition={{ duration: 0.8 }}
                 >
                   <span className="text-[14px] font-bold tracking-[0.4em] text-gray-400 uppercase mb-4 block">Premium Procedure</span>
-                  <h3 className="text-[48px] md:text-[72px] font-sans font-bold tracking-tighter uppercase mb-8 leading-[0.9] text-gray-900">
+                  <h3 className="text-[48px] md:text-[48px] font-sans font-bold tracking-tighter uppercase mb-8 leading-[0.9] text-gray-900">
                     {feature.title}
                   </h3>
                   <p className="text-[18px] md:text-[20px] text-gray-500 font-pretendard leading-relaxed mb-16 max-w-lg break-keep">
@@ -194,7 +194,7 @@ export default function ProcedureDetailIntro({ feature }: ProcedureDetailIntroPr
                     transition={{ duration: 0.8 }}
                     className="flex flex-col mb-10"
                   >
-                    <h3 className="text-[54px] md:text-[64px] font-sans font-bold tracking-tighter uppercase text-gray-900 mb-6">{feature.title}</h3>
+                    <h3 className="text-[48px] md:text-[48px] font-sans font-bold tracking-tighter uppercase text-gray-900 mb-6">{feature.title}</h3>
                     <div className="w-16 h-1 bg-black mb-8" />
                     <p className="text-[17px] md:text-[19px] text-gray-500 font-pretendard leading-relaxed break-keep">
                       {feature.description}

@@ -32,7 +32,7 @@ export default function ColumnHero() {
               Medical Insight Archive
             </span>
             
-            <h1 className="font-sans text-[48px] md:text-[54px] font-bold text-white leading-[1.05] tracking-tighter mb-10">
+            <h1 className="font-sans text-[48px] md:text-[48px] font-bold text-white leading-[1.05] tracking-tighter mb-10">
               인터넷에서 얻을 수 없는<br />
               <span className="text-gray-500 font-serif font-light">깊이 있는 지식</span>
             </h1>

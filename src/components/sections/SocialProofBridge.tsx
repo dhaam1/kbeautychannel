@@ -88,7 +88,7 @@ export default function SocialProofBridge() {
 
           {/* Cumulative Counter */}
           <div className="flex flex-col mb-12 relative">
-            <h2 className="text-[64px] md:text-[100px] font-serif text-white leading-none tracking-tighter">
+            <h2 className="text-[48px] md:text-[48px] font-serif text-white leading-none tracking-tighter">
               <Counter value={TOTAL_VALUE} duration={2.5} />
             </h2>
             <span className="absolute -bottom-6 left-1 text-[16px] text-white/60 font-pretendard uppercase tracking-[0.2em] opacity-70">
@@ -117,12 +117,12 @@ export default function SocialProofBridge() {
               >
                 <div className="flex items-baseline gap-3">
                   <span className="text-[16px] font-bold text-white/50 uppercase tracking-[0.35em]">{item.label}</span>
-                  <span className="text-[24px] md:text-[32px] font-sans font-extralight text-white">
+                  <span className="text-[24px] md:text-[32px] font-sans font-light text-white">
                     <Counter value={item.value} duration={2} />
-                    <span className="text-[16px] ml-1 opacity-40 font-normal">{item.unit}</span>
+                    <span className="text-[16px] ml-1 opacity-40 font-medium">{item.unit}</span>
                   </span>
                 </div>
-                <p className="text-[16px] text-white/60 font-pretendard font-light tracking-tight opacity-80">
+                <p className="text-[16px] text-white/60 font-pretendard font-normal tracking-tight opacity-80">
                   {item.desc}
                 </p>
               </motion.div>

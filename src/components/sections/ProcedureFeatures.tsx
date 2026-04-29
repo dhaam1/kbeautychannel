@@ -110,7 +110,7 @@ export default function ProcedureFeatures({
                   <div className="w-8 h-[1px] bg-gray-900/30" />
                   <span className="text-[16px] font-bold tracking-[0.4em] uppercase text-gray-500">{subtitle}</span>
                 </div>
-                <h2 className="text-[54px] md:text-[54px] font-sans font-bold leading-[0.85] tracking-tight text-gray-900 uppercase whitespace-pre-line">
+                <h2 className="text-[48px] md:text-[48px] font-sans font-bold leading-[0.85] tracking-tight text-gray-900 uppercase whitespace-pre-line">
                   {title}
                 </h2>
               </motion.div>

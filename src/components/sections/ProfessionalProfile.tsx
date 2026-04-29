@@ -199,7 +199,7 @@ const ExpandingCard: React.FC<ExpandingCardProps> = ({ data, index, progress }) 
           {/* Top-Right Area: Main Catchy Title */}
           <div className="flex justify-end items-start pt-12 lg:pt-0">
              <div className="max-w-4xl text-right">
-                <h2 className="font-sans text-[36px] lg:text-[54px] font-bold text-white leading-[1.02] tracking-tighter whitespace-pre-line">
+                <h2 className="font-sans text-[36px] lg:text-[48px] font-bold text-white leading-[1.02] tracking-tighter whitespace-pre-line">
                   {data.title}
                 </h2>
                 <div className="mt-8 flex justify-end">
@@ -234,15 +234,6 @@ const ExpandingCard: React.FC<ExpandingCardProps> = ({ data, index, progress }) 
                     </li>
                   ))}
                 </ul>
-                <motion.div className="mt-12 flex justify-end">
-                  <button 
-                    className="px-12 py-4 bg-white/5 text-white border border-white/10 rounded-full text-[12px] font-bold tracking-[0.4em] uppercase transition-all duration-700 hover:text-black pointer-events-auto"
-                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = KEY_COLOR)}
-                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)')}
-                  >
-                    EXPLORE CREDENTIALS
-                  </button>
-                </motion.div>
              </div>
 
           </div>

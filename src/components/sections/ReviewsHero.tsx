@@ -32,7 +32,7 @@ export default function ReviewsHero() {
               True Stories of Transformation
             </span>
             
-            <h1 className="font-sans text-[48px] md:text-[54px] font-bold text-gray-900 leading-[1.05] tracking-tighter mb-10">
+            <h1 className="font-sans text-[48px] md:text-[48px] font-bold text-gray-900 leading-[1.05] tracking-tighter mb-10">
               결과로 증명하는<br />
               <span className="text-gray-400">압도적 만족도</span>
             </h1>

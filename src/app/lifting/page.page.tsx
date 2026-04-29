@@ -21,7 +21,7 @@ export default function LiftingPage() {
         isDarkText: true,
         hideButton: true,
         isSplitLayout: true,
-        titleSize: 'md:text-[54px] text-[32px]',
+        titleSize: 'md:text-[48px] text-[32px]',
         descSize: 'md:text-[24px] text-[18px]'
       }}
       middleSection={

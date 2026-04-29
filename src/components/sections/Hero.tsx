@@ -1,4 +1,5 @@
 import Navbar from '../layout/Navbar';
+import TypewriterText from '../ui/TypewriterText';
 
 export default function Hero() {
   return (
@@ -9,29 +10,22 @@ export default function Hero() {
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
-        src="https://hzhedioacvqzxxlkttah.supabase.co/storage/v1/object/public/herolanding-herolanding/0413-01-water-skin.webm"
+        src="https://hzhedioacvqzxxlkttah.supabase.co/storage/v1/object/public/10.%20kbeautychannel/main-hero.webm"
       />
       <Navbar isDarkBackground={true} />
       {/* Spacer to maintain layout flow since Navbar is fixed */}
       <div className="w-full h-[88px] invisible pointer-events-none" />
 
-      <main className="flex-grow flex flex-col justify-center z-10 max-w-2xl px-4 md:px-0">
-        <h1 className="font-sans text-[40px] font-bold text-gray-900 leading-tight tracking-tight">
-          더 가까이서 봐봐.<br />격차를 보여줄테니.
+      <main className="flex-grow relative z-10 w-full flex flex-col justify-between px-8 md:px-16 lg:px-24 pb-20 md:pb-32 pt-16 md:pt-24">
+        {/* Top Left Text */}
+        <h1 className="font-sans text-[40px] md:text-[48px] font-bold text-white drop-shadow-md leading-tight tracking-tight self-start">
+          <TypewriterText text={"강남에서만 10년.\n사랑받는데는 이유가 있습니다."} delay={500} speed={80} />
         </h1>
-        <div className="mt-8 bg-white/50 backdrop-blur-sm px-6 py-3 rounded-full border border-gray-200 flex items-center gap-4 shadow-sm w-fit">
-          <input
-            type="text"
-            placeholder="4월. 오버레이 프로모션 살펴보기"
-            className="bg-transparent border-none outline-none text-[16px] text-gray-700 placeholder-gray-700 w-64 md:w-80"
-          />
-          <button className="text-gray-900">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </button>
-        </div>
+        
+        {/* Bottom Right Text */}
+        <h2 className="font-sans text-[40px] md:text-[48px] font-bold text-white drop-shadow-md leading-tight tracking-tight self-end text-right">
+          <TypewriterText text={"38,000건의 피부과 시술.\n대표 원장 김연진입니다."} delay={2500} speed={80} />
+        </h2>
       </main>
     </div>
   );

@@ -39,7 +39,7 @@ export default function BlogPage() {
               {/* Image Area (Editorial Cover Style) */}
               <div className="relative overflow-hidden aspect-[4/3] bg-gray-900">
                 <img 
-                  src={post.id % 2 === 0 ? "/images/column_cover_bg.png" : "/images/column_cover_bg_2.png"}
+                  src={post.image}
                   alt={post.category}
                   className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000"
                 />
