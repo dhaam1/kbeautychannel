@@ -1,4 +1,5 @@
 import ProcedurePageTemplate from '../../../components/templates/ProcedurePageTemplate';
+import ProcedureCollectionSection from '../../../components/sections/ProcedureCollectionSection';
 import { PROCEDURES } from '../../../constants/procedures';
 import type { Metadata } from 'next';
 
@@ -9,5 +10,15 @@ export const metadata: Metadata = {
 
 export default function PetitPage() {
   const data = PROCEDURES['petit'];
-  return <ProcedurePageTemplate data={data} />;
+  return (
+    <ProcedurePageTemplate 
+      data={data} 
+      middleSection={
+        <ProcedureCollectionSection 
+          features={data.features} 
+          sectionTitle="Petit Collection"
+        />
+      }
+    />
+  );
 }

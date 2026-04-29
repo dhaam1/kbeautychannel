@@ -19,38 +19,48 @@ interface ProcedurePageTemplateProps {
     mainCopy?: string;
     subCopy?: string;
   };
+  customHero?: React.ReactNode;
+  middleSection?: React.ReactNode;
 }
 
-export default function ProcedurePageTemplate({ data, heroOptions }: ProcedurePageTemplateProps) {
+export default function ProcedurePageTemplate({ data, heroOptions, customHero, middleSection }: ProcedurePageTemplateProps) {
   return (
     <main className="min-h-screen bg-white">
-      <TreatmentHero 
-        category={heroOptions?.mainCopy ? undefined : data.category}
-        title={heroOptions?.mainCopy || data.title}
-        titleItalic={heroOptions?.mainCopy ? undefined : data.titleItalic}
-        description={heroOptions?.subCopy || data.description}
-        bgImage={data.heroBg}
-        bgVideo={heroOptions?.bgVideo}
-        reservationLink={data.reservationLink}
-        sectionNumber="01"
-        sectionTitle="TREATMENT"
-        isCenter={heroOptions?.isCenter}
-        isTop={heroOptions?.isTop}
-        isDarkText={heroOptions?.isDarkText}
-        hideButton={heroOptions?.hideButton}
-        isSplitLayout={heroOptions?.isSplitLayout}
-        titleSize={heroOptions?.titleSize}
-        descSize={heroOptions?.descSize}
-      />
-      <ProcedureFeatures 
-        title={data.featuresTitle}
-        subtitle={data.featuresSubtitle}
-        description={data.featuresDescription}
-        features={data.features}
-        bgImage={data.featuresBg}
-        sectionNumber="02"
-        sectionTitle="FEATURES"
-      />
+      {customHero ? (
+        customHero
+      ) : (
+        <TreatmentHero 
+          category={heroOptions?.mainCopy ? undefined : data.category}
+          title={heroOptions?.mainCopy || data.title}
+          titleItalic={heroOptions?.mainCopy ? undefined : data.titleItalic}
+          description={heroOptions?.subCopy || data.description}
+          bgImage={data.heroBg}
+          bgVideo={heroOptions?.bgVideo}
+          reservationLink={data.reservationLink}
+          sectionNumber="01"
+          sectionTitle="TREATMENT"
+          isCenter={heroOptions?.isCenter}
+          isTop={heroOptions?.isTop}
+          isDarkText={heroOptions?.isDarkText}
+          hideButton={heroOptions?.hideButton}
+          isSplitLayout={heroOptions?.isSplitLayout}
+          titleSize={heroOptions?.titleSize}
+          descSize={heroOptions?.descSize}
+        />
+      )}
+      {middleSection ? (
+        middleSection
+      ) : (
+        <ProcedureFeatures 
+          title={data.featuresTitle}
+          subtitle={data.featuresSubtitle}
+          description={data.featuresDescription}
+          features={data.features}
+          bgImage={data.featuresBg}
+          sectionNumber="02"
+          sectionTitle="FEATURES"
+        />
+      )}
       <div className="relative z-10 bg-white">
         <YoutubeEmbed />
         <FooterCTA />

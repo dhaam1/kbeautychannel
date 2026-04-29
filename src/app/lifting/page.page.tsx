@@ -1,10 +1,11 @@
 import ProcedurePageTemplate from '../../components/templates/ProcedurePageTemplate';
+import ProcedureCollectionSection from '../../components/sections/ProcedureCollectionSection';
 import { PROCEDURES } from '../../constants/procedures';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '써마지 FLX | 전문 시술 분야 - 케이뷰티채널',
-  description: '피부 본연의 아름다움을 깨우는 혁신적인 탄력 솔루션.',
+  title: '리프팅 컬렉션 | 케이뷰티채널',
+  description: 'UHCELL이 제안하는 최상위 리프팅 라인업.',
 };
 
 export default function LiftingPage() {
@@ -23,6 +24,9 @@ export default function LiftingPage() {
         titleSize: 'md:text-[54px] text-[32px]',
         descSize: 'md:text-[24px] text-[18px]'
       }}
+      middleSection={
+        <ProcedureCollectionSection features={data.features} />
+      }
     />
   );
 }

@@ -1,4 +1,6 @@
 import ProcedurePageTemplate from '../../../components/templates/ProcedurePageTemplate';
+import ProcedureCollectionSection from '../../../components/sections/ProcedureCollectionSection';
+import Hero from '../../../components/sections/Hero';
 import { PROCEDURES } from '../../../constants/procedures';
 import type { Metadata } from 'next';
 
@@ -9,5 +11,16 @@ export const metadata: Metadata = {
 
 export default function SkinBoosterPage() {
   const data = PROCEDURES['skin-booster'];
-  return <ProcedurePageTemplate data={data} />;
+  return (
+    <ProcedurePageTemplate 
+      data={data} 
+      customHero={<Hero />}
+      middleSection={
+        <ProcedureCollectionSection 
+          features={data.features} 
+          sectionTitle="Skin Collection"
+        />
+      }
+    />
+  );
 }

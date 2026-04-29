@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   return (
-    <div className="w-full flex flex-col min-h-screen bg-[#FDFDFD] font-sans">
+    <div className="w-full flex flex-col min-h-screen bg-white font-sans">
       {/* Header Area */}
       <Navbar isDarkBackground={false} />
 

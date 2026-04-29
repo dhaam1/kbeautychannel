@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function ReviewsPage() {
   return (
-    <main className="min-h-screen bg-[#f8f7f4]">
+    <main className="min-h-screen bg-white">
       {/* Header Container */}
       <Navbar isDarkBackground={false} />
 

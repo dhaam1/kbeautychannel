@@ -43,7 +43,7 @@ const FeatureCard = ({ number, title, description, icon }: FeatureCardProps) => 
         </p>
         
         <div className="flex justify-start">
-          <button className="group/btn flex items-center gap-2 px-6 py-2.5 rounded-full border border-gray-200 text-[14px] font-bold text-gray-900 transition-all duration-300 hover:bg-gray-900 hover:text-white hover:border-gray-900">
+          <button className="group/btn flex items-center gap-2 px-6 py-2.5 rounded-full border border-gray-200 text-[16px] font-bold text-gray-900 transition-all duration-300 hover:bg-gray-900 hover:text-white hover:border-gray-900">
             <span>자세히 보기</span>
             <svg 
               width="16" 

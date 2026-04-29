@@ -35,7 +35,7 @@ import Footer from '../components/layout/Footer';
        <div className="snap-section relative z-10 bg-white">
          <ColumnSection />
        </div>
-       <div className="snap-section relative z-10 bg-white">
+       <div className="relative z-10 bg-white">
          <FooterCTA />
        </div>
        <Footer />

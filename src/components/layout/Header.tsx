@@ -30,10 +30,7 @@ export default function Header({ isDarkBackground = false }: HeaderProps) {
                 {[
                   { name: '리프팅', path: '/lifting' },
                   { name: '스킨부스터', path: '/procedures/skin-booster' },
-                  { name: '쁘띠 시술', path: '/procedures/petit' },
-                  { name: '피부레이저', path: '/procedures/laser' },
-                  { name: '바디', path: '/procedures/body' },
-                  { name: '케어', path: '/procedures/care' },
+                  { name: '더 알아보기', path: 'https://uhcell.com/' },
                 ].map((item) => (
                   <Link
                     key={item.name}

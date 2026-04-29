@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import TreatmentHero from '../../../components/sections/TreatmentHero';
+import ProcedureDetailIntro from '../../../components/sections/ProcedureDetailIntro';
 import ProcedureFeatures from '../../../components/sections/ProcedureFeatures';
 import YoutubeEmbed from '../../../components/sections/YoutubeEmbed';
 import FooterCTA from '../../../components/sections/FooterCTA';
@@ -46,6 +47,11 @@ export default async function ProcedurePage({ params }: Props) {
         bgImage={procedure.heroBg}
         reservationLink={procedure.reservationLink}
       />
+      
+      {/* 주요 시술 기계 상세 소개 섹션 (3가지 시안 포함) */}
+      {procedure.features && procedure.features.length > 0 && (
+        <ProcedureDetailIntro feature={procedure.features[0]} />
+      )}
       <ProcedureFeatures 
         title={procedure.featuresTitle}
         subtitle={procedure.featuresSubtitle}

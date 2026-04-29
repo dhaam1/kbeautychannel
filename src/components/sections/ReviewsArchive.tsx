@@ -18,33 +18,53 @@ const REVIEWS = [
   },
   { 
     id: 2, 
-    userName: 'K. Min-ji', 
-    visitCount: '첫 방문',
+    userName: 'sena s*o', 
+    visitCount: '첫번째 방문',
     meta: '30대 / 여',
-    procedures: '써마지 FLX',
-    content: '인스타그램에서 보고 반신반의하며 방문했는데, 정말 다르네요. 원장님께서 직접 얼굴 라인 디자인해주시는 거 보고 신뢰가 확 갔어요. 시술 후 붓기도 거의 없고 일상생활 바로 가능해서 좋았습니다. 탄력이 생기니까 얼굴이 작아 보이는 효과까지! 대만족입니다.',
+    procedures: '사각턱 보톡스 / 인모드',
+    content: '사각턱 보톡스랑 인모드 받았습니다! 벌써부터 효과가 보이는게 만족도 100%에요 !! 통증은 거의 없다고 생각하심 됩니다! 나이가 먹으니 주름이랑 볼패임은 진짜 어쩔수가 없더라구요. 성형 생각해 본 적 없는데 피부 쳐지고 늙어보이는건 너무 싫어서 정말 고민 많이하다가 찾게 되었어요. 후회 없습니다 ♬',
+    image: '/review_bg_minimal_2_1776942327870.png', 
+    letter: 'S' 
+  },
+  { 
+    id: 3, 
+    userName: 'osa os*', 
+    visitCount: '첫번째 방문',
+    meta: '20대 / 여',
+    procedures: '스킨부스터 시술',
+    content: '얼굴과 피부 관리를 위해 처음 방문했습니다. 아무것도 필요하지 않다고 해서 예상보다 적은 양의 스킨 부스터만 필요했습니다. 의사 선생님과 통역사 모두 친절하고 편안하게 상담해 주셨습니다. 관리 중에도 제 피부 고민을 잘 들어주시고 다양한 무료 서비스를 제공해 주셔서 정말 만족스러웠습니다. 가성비 좋은 3회권 패키지를 구매했는데, 다음 방문이 기대됩니다. 정말 감사합니다. ☺️🩷',
+    image: '/review_bg_minimal_3_1776942342044.png', 
+    letter: 'O' 
+  },
+  { 
+    id: 4, 
+    userName: '匿名さん', 
+    visitCount: '첫번째 방문',
+    meta: '30대 / 여',
+    procedures: '올리지오X / 하이푸 / 스킨보톡스',
+    content: '수많은 한국의 클리닉 안에서 이 병원을 찾게되어 다행이라고 생각합니다. 한국에 오기전 유튜브에서 원장 선생님의 동영상을 전부 보고 이곳으로 오기로 결정했습니다. 처짐이 가장 신경쓰였기 때문에 올리지오X와 하이푸를 받기로 했습니다. 스킨보톡스도 추가해 연어주사를 서비스로 받았습니다. 시술 후 곧바로 효과를 느꼈고, 내일 더 서서히 효과가 나오는것이 기대됩니다. 시술은 개인실에서 가능하고 일본어 통역도 친절해 또 방문할 예정입니다. 감사합니다!',
+    image: '/review_bg_minimal_1_1776942314152.png', 
+    letter: 'T' 
+  },
+  { 
+    id: 5, 
+    userName: '匿名さん', 
+    visitCount: '첫번째 방문',
+    meta: '30대 / 여',
+    procedures: '온다 / 울쎄라 시술',
+    content: '처음 생각하고 왔던 시술이 아닌, 상담 선생님과 상담한 결과 온다와 울쎄라 시술을 받았습니다!역시 이게 정답이었다고 생각합니다✨ 완전 대만족!스탭분들도 전부 친절해서 안심하고 시술을 받을 수 있었습니다.',
     image: '/review_bg_minimal_2_1776942327870.png', 
     letter: 'H' 
   },
   { 
-    id: 3, 
-    userName: 'Anonymous', 
-    visitCount: '정기 방문',
-    meta: '40대 / 남',
-    procedures: '인모드 / 보톡스',
-    content: '남성분들도 부담 없이 오기 좋은 분위기입니다. 프라이빗한 대기실이 있어서 편했고, 시술도 과하지 않게 딱 필요한 부분만 집어주셔서 좋았습니다. 주위에서 요즘 인상이 훨씬 깔끔해졌다는 소리를 많이 들어서 꾸준히 다닐 예정입니다.',
+    id: 6, 
+    userName: 'A. Tanaka', 
+    visitCount: '두번째 방문',
+    meta: '40대 / 여',
+    procedures: '써마지FLX / 쥬베룩',
+    content: '지난번 방문 때 결과가 너무 좋아서 다시 찾았습니다. 나이가 들면서 피부 탄력이 떨어지는 게 늘 고민이었는데, 써마지와 쥬베룩 조합을 추천해주셔서 믿고 진행했습니다. 시술 시 통증도 잘 케어해주시고, 무엇보다 과잉 진료 없이 저에게 꼭 필요한 시술만 제안해주시는 점이 가장 마음에 듭니다. 이번에도 대만족입니다!',
     image: '/review_bg_minimal_3_1776942342044.png', 
-    letter: 'C' 
-  },
-  { 
-    id: 4, 
-    userName: 'S. Takahashi', 
-    visitCount: '세번째 방문',
-    meta: '20대 / 여',
-    procedures: '쥬베룩 볼륨 / 스킨부스터',
-    content: '상담부터 시술까지 과정이 매우 매끄러웠습니다. 특히 원장님의 섬세한 터치 덕분에 통증이 거의 없었어요. 시술 후에 피부결이 눈에 띄게 좋아져서 거울 볼 때마다 행복합니다. 외국인 환자에 대한 배려도 깊어서 감동받았습니다.',
-    image: '/review_bg_minimal_1_1776942314152.png', 
-    letter: 'E' 
+    letter: 'A' 
   },
 ];
 
@@ -59,7 +79,7 @@ export default function ReviewsArchive() {
   const SINGLE_SET_WIDTH = (FOLDED_WIDTH + GAP) * REVIEWS.length;
 
   return (
-    <section className="bg-[#f8f7f4] pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden relative">
+    <section className="bg-white pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden relative">
       <div className="px-[5%] max-w-[1400px] mx-auto mb-20">
         {/* Top Label */}
         <motion.div
@@ -96,7 +116,7 @@ export default function ReviewsArchive() {
             transition={{ delay: 0.2 }}
             className="hidden md:flex flex-col items-end gap-2"
           >
-            <span className="text-[14px] font-bold text-gray-400 tracking-widest uppercase">Experience Growth</span>
+            <span className="text-[16px] font-bold text-gray-400 tracking-widest uppercase">Experience Growth</span>
             <div className="flex items-baseline gap-2">
               <span className="text-4xl font-bold text-gray-900 tracking-tighter">38,000+</span>
               <span className="text-gray-400 font-medium">Verified Cases</span>
@@ -133,7 +153,7 @@ export default function ReviewsArchive() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
-            className="flex items-center gap-2 px-4 py-2 bg-white/40 backdrop-blur-sm rounded-lg border border-gray-100 text-[14px] font-bold text-gray-400 tracking-wider shadow-sm"
+            className="flex items-center gap-2 px-4 py-2 bg-white/40 backdrop-blur-sm rounded-lg border border-gray-100 text-[16px] font-bold text-gray-400 tracking-wider shadow-sm"
           >
             <Sparkles className="w-4 h-4 text-orange-300" />
             Hover to read full stories
@@ -286,7 +306,7 @@ function ReviewCard({
                 {review.letter}
               </span>
               <div className="mt-auto">
-                <p className="text-white/60 text-[14px] font-bold tracking-widest uppercase mb-1">{review.visitCount}</p>
+                <p className="text-white/60 text-[16px] font-bold tracking-widest uppercase mb-1">{review.visitCount}</p>
                 <p className="text-white font-bold text-[18px] tracking-tight">{review.userName}</p>
               </div>
             </motion.div>
@@ -324,7 +344,7 @@ function LayoutOption1({ review }: { review: any }) {
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-col gap-2"
         >
-          <span className="inline-block px-3 py-1 bg-white/10 rounded-full text-[12px] font-bold text-white tracking-widest uppercase border border-white/20">
+          <span className="inline-block px-3 py-1 bg-white/10 rounded-full text-[16px] font-bold text-white tracking-widest uppercase border border-white/20">
             {review.visitCount}
           </span>
           <h4 className="text-white text-3xl font-bold tracking-tight">{review.userName}</h4>
@@ -345,10 +365,10 @@ function LayoutOption1({ review }: { review: any }) {
 
       <div className="mt-auto pt-8 border-t border-white/10 flex justify-between items-end">
         <div className="flex flex-col gap-1">
-          <p className="text-white/40 text-[12px] font-bold tracking-widest uppercase">Target Treatment</p>
+          <p className="text-white/40 text-[16px] font-bold tracking-widest uppercase">Target Treatment</p>
           <p className="text-white text-[16px] font-bold">{review.procedures}</p>
         </div>
-        <span className="text-white/40 text-[14px] font-medium">{review.meta}</span>
+        <span className="text-white/40 text-[16px] font-medium">{review.meta}</span>
       </div>
     </div>
   );
@@ -365,12 +385,12 @@ function LayoutOption2({ review }: { review: any }) {
           </div>
           <div>
             <p className="text-white font-bold text-xl">{review.userName}</p>
-            <p className="text-white/40 text-xs font-bold tracking-widest uppercase">{review.meta}</p>
+            <p className="text-white/40 text-[16px] font-bold tracking-widest uppercase">{review.meta}</p>
           </div>
         </div>
         <div className="text-right">
-          <p className="text-orange-300 font-bold text-[14px]">{review.visitCount}</p>
-          <p className="text-white/60 text-[12px]">{review.procedures}</p>
+          <p className="text-orange-300 font-bold text-[16px]">{review.visitCount}</p>
+          <p className="text-white/60 text-[16px]">{review.procedures}</p>
         </div>
       </div>
 
@@ -387,7 +407,7 @@ function LayoutOption2({ review }: { review: any }) {
 
       <div className="flex justify-end items-center gap-2">
         <span className="w-1.5 h-1.5 rounded-full bg-orange-300"></span>
-        <span className="text-white/40 text-[12px] font-bold tracking-tighter uppercase">Verified Case Archive No.{review.id}</span>
+        <span className="text-white/40 text-[16px] font-bold tracking-tighter uppercase">Verified Case Archive No.{review.id}</span>
       </div>
     </div>
   );
@@ -402,7 +422,7 @@ function LayoutOption3({ review }: { review: any }) {
       <div className="pl-6">
         <div className="flex flex-wrap gap-2 mb-8">
           {[review.visitCount, review.meta, review.procedures.split(' / ')[0]].map((tag, i) => (
-            <span key={i} className="text-[11px] font-bold text-white/50 border border-white/10 px-3 py-1 rounded-sm uppercase tracking-widest">
+            <span key={i} className="text-[16px] font-bold text-white/50 border border-white/10 px-3 py-1 rounded-sm uppercase tracking-widest">
               {tag}
             </span>
           ))}
@@ -422,7 +442,7 @@ function LayoutOption3({ review }: { review: any }) {
           transition={{ delay: 0.2 }}
           className="max-w-md"
         >
-          <p className="text-white text-[19px] font-pretendard font-light leading-loose tracking-tight italic opacity-90">
+          <p className="text-white text-[19px] font-pretendard font-light leading-loose tracking-tight opacity-90">
             &quot;{review.content}&quot;
           </p>
         </motion.div>
