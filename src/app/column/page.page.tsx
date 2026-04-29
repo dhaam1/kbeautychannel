@@ -45,13 +45,7 @@ export default function BlogPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60" />
                 
-                {/* ID & Category Watermark */}
-                <div className="absolute top-6 left-6">
-                  <span className="text-[16px] font-bold tracking-[0.4em] text-white/40 uppercase">
-                    Archive {String(post.id).padStart(2, '0')}
-                  </span>
-                </div>
-                
+                {/* ID & Category Watermark (Removed) */}
                 <div className="absolute bottom-6 left-6 right-6">
                   <span className="inline-block px-3 py-1 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-[16px] font-bold tracking-[0.2em] text-white/70 uppercase mb-3">
                     {post.category.split(',')[0]}
